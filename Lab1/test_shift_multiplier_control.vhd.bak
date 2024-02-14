@@ -1,0 +1,58 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity test_shift_multiplier_control is
+end test_shift_multiplier_control;
+
+architecture test of test_shift_multiplier_control is
+signal i_reset : std_logic;
+signal i_clock : std_logic;
+signal i_startMultiply : std_logic;
+signal i_countDone	: std_logic;
+signal i_multiplier_LSB : std_logic;
+signal i_multiplier_second_LSB : std_logic;
+signal o_initialize : std_logic;
+signal o_shift: std_logic;
+signal o_loadPR: std_logic;
+signal o_loadOut: std_logic;
+signal o_setCounter : std_logic;
+signal o_multiplier_Busy: std_logic;
+
+component shift_multiplier_8_bit_control is
+	port ( i_reset : in std_logic;
+			 i_clock : in std_logic;
+			 i_startMultiply : in std_logic;
+			 i_countDone	: in std_logic;
+			 i_multiplier_LSB : in std_logic;
+			 i_multiplier_second_LSB : in std_logic;
+			 o_initialize : out std_logic;
+			 o_shift: out std_logic;
+			 o_loadPR: out std_logic;
+			 o_loadOut: out std_logic;
+			 o_setCounter : out std_logic;
+			 o_multiplier_Busy: out std_logic);
+end component;
+
+begin
+
+impl: shift_multiplier_8_bit_data port map
+					(a,b,clock, initialize, shift, loadPR, loadOut, 
+					setCounter,multiplier_LSB, multiplier_second_LSB,countDone,product);
+
+clock <= not(clock) after 5 ns;
+
+stimulus: process begin
+		a <= "00000101";
+		b <= "00000110";
+		initialize <= '0';
+		setCounter <= '0';
+		shift <= '0';
+		loadPR  <= '0';
+		loadOut <= '0';
+		wait for 20 ns;
+		initialize <= '1';
+		setCounter <= '1';
+
+end process;	
+end test;

@@ -1,0 +1,209 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Lab1_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/MUX_4_To_1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUX_4_To_1
+# -- Compiling architecture Structural of MUX_4_To_1
+# -- Compiling entity MUX_4_To_1_n
+# -- Compiling architecture struct of MUX_4_To_1_n
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/MUX_2_To_1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUX_2_To_1
+# -- Compiling architecture Structural of MUX_2_To_1
+# -- Compiling entity MUX_2_To_1_n
+# -- Compiling architecture Structural of MUX_2_To_1_n
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/reg_clear.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg_clear
+# -- Compiling architecture struct of reg_clear
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/cmp.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cmp_1
+# -- Compiling architecture struct of cmp_1
+# -- Compiling entity cmp
+# -- Compiling architecture struct of cmp
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/reg_load_shiftr.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg_load_shiftr
+# -- Compiling architecture struct of reg_load_shiftr
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/reg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg
+# -- Compiling architecture struct of reg
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/dFF_2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dFF_2
+# -- Compiling architecture rtl of dFF_2
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/timer.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity timer
+# -- Compiling architecture struct of timer
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/full_addr_1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity full_addr_1
+# -- Compiling architecture struct of full_addr_1
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/reg_load_shiftL.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg_load_shiftL
+# -- Compiling architecture struct of reg_load_shiftL
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/shift_multiplier_8_bit_control.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_multiplier_8_bit_control
+# -- Compiling architecture struct of shift_multiplier_8_bit_control
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/MUX_36_To_9.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUX_36_To_9
+# -- Compiling architecture struct of MUX_36_To_9
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/add_9.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity add_9
+# -- Compiling architecture struct of add_9
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/floating_point_multiplier_top.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity floating_point_multiplier_top
+# -- Compiling architecture structural of floating_point_multiplier_top
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/floating_point_multiplier_control.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity floating_point_multiplier_control
+# -- Compiling architecture structural of floating_point_multiplier_control
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/MUX_18_To_9.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUX_18_To_9
+# -- Compiling architecture struct of MUX_18_To_9
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/shift_multiplier_9_bit_data.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_multiplier_9_bit_data
+# -- Compiling architecture structural of shift_multiplier_9_bit_data
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/add_18.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity add_18
+# -- Compiling architecture struct of add_18
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/shift_multiplier_9_bit_top.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_multiplier_9_bit_top
+# -- Compiling architecture structural of shift_multiplier_9_bit_top
+# 
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/test_floating_point_multiplier_top.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity test_floating_point_multiplier_top
+# -- Compiling architecture test of test_floating_point_multiplier_top
+# ** Warning: [4] C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/test_floating_point_multiplier_top.vhd(60): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/ncers/OneDrive/Documents/CEG3156/QuartusProjects/Lab1/test_floating_point_multiplier_top.vhd(64): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  test_floating_point_multiplier_top
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=\"+acc\" -t 1ps test_floating_point_multiplier_top 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.test_floating_point_multiplier_top(test)
+# Loading work.floating_point_multiplier_top(structural)
+# Loading work.reg(struct)
+# Loading work.mux_2_to_1(structural)
+# Loading work.dff_2(rtl)
+# Loading work.mux_18_to_9(struct)
+# Loading work.mux_36_to_9(struct)
+# Loading work.mux_4_to_1(structural)
+# Loading work.add_9(struct)
+# Loading work.full_addr_1(struct)
+# Loading work.shift_multiplier_9_bit_top(structural)
+# Loading work.shift_multiplier_9_bit_data(structural)
+# Loading work.reg_load_shiftl(struct)
+# Loading work.reg_load_shiftr(struct)
+# Loading work.add_18(struct)
+# Loading work.reg_clear(struct)
+# Loading work.timer(struct)
+# Loading work.cmp(struct)
+# Loading work.cmp_1(struct)
+# Loading work.shift_multiplier_8_bit_control(struct)
+# Loading work.floating_point_multiplier_control(structural)
+# ** Warning: Design size of 549 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: ncers  Hostname: NICK-LAPTOP  ProcessID: 31580
+# 
+#           Attempting to use alternate WLF file "./wlft2ryabs".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft2ryabs
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all

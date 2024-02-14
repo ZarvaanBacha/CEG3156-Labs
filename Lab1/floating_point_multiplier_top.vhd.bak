@@ -1,0 +1,43 @@
+library ieee;
+use ieee.std_logic_194.all;
+
+entity blankEntity is
+	port(input: in std_logic_vector(7 downto 0);
+		  output: in std_logic);
+end blankEntity;
+
+architecture structural of blank is
+--Input Signals
+signal int_inputSignal: std_logic_vector (7 downto 0);
+
+--Output Signals
+signal int_outputSignal: std_logic;
+
+
+--Data Signals
+
+
+--Control Signals
+
+
+component blankComponent1 is
+	port(
+	
+	);
+end component;
+
+component blankComponent2 is
+	port(
+	
+	);
+end component;
+
+begin
+
+blankImplementation1: blankComponent1 port map ();
+blankImplementation2: blankComponent2 port map ();
+
+input <= int_inputSignal;
+output <= int_outputSignal;
+
+end structural;

@@ -1,0 +1,16 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity shift_multiplier_8_bit_control is
+	port ( i_reset : in std_logic;
+			 i_clock : in std_logic;
+			 i_start_Multiply : in std_logic;
+			 i_countDone	: in std_logic;
+			 i_multiplier_LSB : in std_logic;
+			 i_multiplier_second_LSB : in std_logic;
+			 o_initialize : out std_logic;
+			 o_loadPR: out std_logic;
+			 o_loadOut: out std_logic;
+			 o_setCounter : out std_logic;
+			 o_multiplier_Busy: out std_logic);
+end shift_multiplier_8_bit_data;

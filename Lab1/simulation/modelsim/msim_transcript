@@ -1,0 +1,85 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Lab1_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/Quartus Projects/Lab 1/reg_clear.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg_clear
+# -- Compiling architecture struct of reg_clear
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/Quartus Projects/Lab 1/cmp.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cmp_1
+# -- Compiling architecture struct of cmp_1
+# -- Compiling entity cmp
+# -- Compiling architecture struct of cmp
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/Quartus Projects/Lab 1/reg_load_shiftr.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg_load_shiftr
+# -- Compiling architecture struct of reg_load_shiftr
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/Quartus Projects/Lab 1/reg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg
+# -- Compiling architecture struct of reg
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/Quartus Projects/Lab 1/dFF_2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dFF_2
+# -- Compiling architecture rtl of dFF_2
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/Quartus Projects/Lab 1/timer.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity timer
+# -- Compiling architecture struct of timer
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/Quartus Projects/Lab 1/full_addr_1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity full_addr_1
+# -- Compiling architecture struct of full_addr_1
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/Quartus Projects/Lab 1/add_16.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity add_16
+# -- Compiling architecture struct of add_16
+# vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/Quartus Projects/Lab 1/shift_multiplier_8_bit_data.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_multiplier_8_bit_data
+# -- Compiling architecture structural of shift_multiplier_8_bit_data
+# ** Error: C:/Users/ncers/OneDrive/Documents/CEG3156/Quartus Projects/Lab 1/shift_multiplier_8_bit_data.vhd(70): (vcom-1436) Actual expression (infix expression) of formal "i_data" is not globally static.
+# 
+# ** Error: C:/Users/ncers/OneDrive/Documents/CEG3156/Quartus Projects/Lab 1/shift_multiplier_8_bit_data.vhd(101): VHDL Compiler exiting
+# ** Error: C:/altera/13.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./Lab1_run_msim_rtl_vhdl.do line 16
+# C:/altera/13.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/Users/ncers/OneDrive/Documents/CEG3156/Quartus Projects/Lab 1/shift_multiplier_8_bit_data.vhd}"

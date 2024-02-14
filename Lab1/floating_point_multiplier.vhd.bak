@@ -1,0 +1,11 @@
+library ieee;
+use ieee.std_logic_194.all;
+
+entity floating_point_multiplier is
+	port(i_a, i_b: in std_logic_vector(7 downto 0);
+		i_clock, i_reset: in std_logic;
+		i_startMultiply: in std_logic;
+		o_multiplier_Busy: out std_logic;
+		o_multiplication_Complete: out std_logic;
+      o_product : out std_logic_vector(15 downto 0));
+end floating_point_multiplier;
