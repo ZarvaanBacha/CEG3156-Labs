@@ -1,0 +1,74 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity nineBitAdder is 
+    port(
+        in_a, in_b : in std_logic_vector(8 downto 0);
+        in_cin, in_reset, in_clock : in std_logic;  -- Added in_load signal
+        out_sum : out std_logic_vector(8 downto 0);
+        out_cout : out std_logic
+    );
+end nineBitAdder;
+
+architecture struct of nineBitAdder is
+    component oneBitFullAdder
+        port (
+            in_a, in_b, in_cin : in std_logic;
+            out_cout, out_sum : out std_logic
+        );
+    end component;
+
+    component eightBitRegister
+        port (
+            in_reset, in_clock, in_load : in std_logic;
+            in_data : in std_logic_vector(7 downto 0);
+            out_data : out std_logic_vector(7 downto 0)
+        );
+    end component;
+
+    signal sum : std_logic_vector (8 downto 0);
+    signal carry : std_logic_vector (7 downto 0);
+
+    signal reg_in_data : std_logic_vector(7 downto 0);
+    signal reg_out_data : std_logic_vector(7 downto 0);
+	 signal int_load : std_logic;
+
+begin 
+	int_load <= in_reset and in_clock;
+    adder8: oneBitFullAdder 
+        port map(in_a => in_a(8),
+                in_b => in_b(8),
+                in_cin => carry(7),
+                out_cout => out_cout,
+                out_sum => sum(8));
+
+    gen_adders: for i in 7 downto 1 generate
+        adder_i: oneBitFullAdder 
+            port map(in_a => in_a(i),
+                    in_b => in_b(i),
+                    in_cin => carry(i-1),
+                    out_cout => carry(i),
+                    out_sum => sum(i));
+    end generate gen_adders;
+
+    -- For the first bit, use in_cin directly
+    adder0: oneBitFullAdder 
+        port map(in_a => in_a(0),
+                in_b => in_b(0),
+                in_cin => in_cin,
+                out_cout => carry(0),
+                out_sum => sum(0));
+
+    reg: eightBitRegister
+        port map(
+            in_reset => in_reset,
+            in_clock => in_clock,
+            in_load => '1',  -- Use the in_load signal
+            in_data => sum(7 downto 0),  -- Use only the lower 8 bits
+            out_data => reg_out_data
+        );
+
+    out_sum(8) <= sum(8);  -- Assign the MSB directly
+    out_sum(7 downto 0) <= reg_out_data;  -- Assign the lower 8 bits from the register
+
+end struct;

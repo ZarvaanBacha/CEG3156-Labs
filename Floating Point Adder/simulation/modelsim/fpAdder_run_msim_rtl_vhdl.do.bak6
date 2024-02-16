@@ -1,0 +1,26 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/enasdFF.vhd}
+vcom -93 -work work {X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/srlatch.vhd}
+vcom -93 -work work {X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitUpCounter.vhd}
+vcom -93 -work work {X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitRegister.vhd}
+vcom -93 -work work {X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitDownCounter.vhd}
+vcom -93 -work work {X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitComparator.vhd}
+vcom -93 -work work {X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitAdder.vhd}
+vcom -93 -work work {X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBit2x1Mux.vhd}
+vcom -93 -work work {X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/oneBitFullAdder.vhd}
+vcom -93 -work work {X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/oneBitComparator.vhd}
+vcom -93 -work work {X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/nineBitShiftRegister.vhd}
+vcom -93 -work work {X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/nineBitAdder.vhd}
+vcom -93 -work work {X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/fpAdderControl.vhd}
+vcom -93 -work work {X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/enardFF_2.vhd}
+vcom -93 -work work {X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/eightBitRegister.vhd}
+vcom -93 -work work {X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/eightBitComplementer.vhd}
+vcom -93 -work work {X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/eightBitAdder.vhd}
+vcom -93 -work work {X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/fpAdder.vhd}
+

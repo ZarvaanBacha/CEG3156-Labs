@@ -1,0 +1,59 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity nineBitShiftRegister is
+    port (
+        in_reset, in_clock       : in    std_logic;
+        in_load, in_clear, in_shift : in    std_logic;
+        in_a                        : in    std_logic_vector(8 downto 0);
+        out_q                       : out   std_logic_vector(8 downto 0)
+    );
+end nineBitShiftRegister;
+
+architecture rtl of nineBitShiftRegister is
+
+    component enARdFF_2
+        PORT(
+		i_resetBar	: IN	STD_LOGIC;
+		i_d		: IN	STD_LOGIC;
+		i_enable	: IN	STD_LOGIC;
+		i_clock		: IN	STD_LOGIC;
+		o_q, o_qBar	: OUT	STD_LOGIC);
+    end component;
+
+    signal int_enable : std_logic;
+    signal int_d      : std_logic_vector(8 downto 0);
+    signal int_q      : std_logic_vector(8 downto 0);
+	 
+	 -- Intermediate signal to invert reset
+    signal inverted_reset : std_logic := not '0';
+
+begin
+
+    int_enable <= in_shift xor in_load xor in_clear;
+	 
+	 inverted_reset <= in_reset;  -- Invert the reset signal
+
+	 
+	 int_d <= ((in_load & in_load & in_load & in_load & in_load & in_load & in_load & in_load & in_load) and in_a) or
+		((in_shift & in_shift & in_shift & in_shift & in_shift & in_shift & in_shift & in_shift & in_shift) and 
+		('0' & int_q(8) & int_q(7) & int_q(6) & int_q(5) & int_q(4) & int_q(3) & int_q(2) & int_q(1))) or
+		((in_clear & in_clear & in_clear & in_clear & in_clear & in_clear & in_clear & in_clear & in_clear) and "000000000");
+
+    -- Initialize enARdFF_2 instances in a loop
+    gen_enARdFF:
+    for i in 0 to 8 generate
+        enARdFF_instance: enARdFF_2
+        port map(
+            i_resetBar => inverted_reset,
+            i_d => int_d(i),
+            i_enable => int_enable,
+            i_clock => in_clock,
+            o_q => int_q(i)
+        );
+    end generate gen_enARdFF;
+
+    -- Output driver
+    out_q <= int_q;
+
+end rtl;

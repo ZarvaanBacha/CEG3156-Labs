@@ -1,0 +1,672 @@
+m255
+K3
+13
+cModel Technology
+Z0 dX:\School\Year 5\Computer Systems Design\Labs\Lab 1\fpAdder\simulation\modelsim
+Eeightbitadder
+Z1 w1706883665
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dX:\School\Year 5\Computer Systems Design\Labs\Lab 1\fpAdder\simulation\modelsim
+Z5 8X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/eightBitAdder.vhd
+Z6 FX:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/eightBitAdder.vhd
+l0
+L4
+V<8J8j3GNKzSIL2EahjYH51
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1708105646.343000
+Z9 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/eightBitAdder.vhd|
+Z10 !s107 X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/eightBitAdder.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 9T4AoPPC?bdPa1?LEVh]V1
+!i10b 1
+Astruct
+R2
+R3
+DEx4 work 13 eightbitadder 0 22 <8J8j3GNKzSIL2EahjYH51
+l22
+L13
+VS5S9TMC>E3g[cEKPb^mYM2
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 P>@<^OOTbD:VZ<BgCiE]02
+!i10b 1
+Eeightbitcomplementer
+Z13 w1706886677
+R2
+R3
+R4
+Z14 8X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/eightBitComplementer.vhd
+Z15 FX:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/eightBitComplementer.vhd
+l0
+L4
+V?oakP^R:PPHOodPRlZi;41
+R7
+31
+Z16 !s108 1708105646.120000
+Z17 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/eightBitComplementer.vhd|
+Z18 !s107 X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/eightBitComplementer.vhd|
+R11
+R12
+!s100 V7iJiR8`G;nHF4mfDV;G=1
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 20 eightbitcomplementer 0 22 ?oakP^R:PPHOodPRlZi;41
+l11
+L10
+VbD<Mn0YZfUEh;ez3<;ZQQ2
+R7
+31
+R16
+R17
+R18
+R11
+R12
+!s100 o[SE=lfPWD=L;J2iFoz0K3
+!i10b 1
+Eeightbitregister
+Z19 w1708104504
+R2
+R3
+R4
+Z20 8X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/eightBitRegister.vhd
+Z21 FX:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/eightBitRegister.vhd
+l0
+L4
+V;SC81Vg`ZcfPKzJ]De^Ob0
+R7
+31
+Z22 !s108 1708105645.863000
+Z23 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/eightBitRegister.vhd|
+Z24 !s107 X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/eightBitRegister.vhd|
+R11
+R12
+!s100 Qhz6iFA?JEckDOa1HEiNi1
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 16 eightbitregister 0 22 ;SC81Vg`ZcfPKzJ]De^Ob0
+l27
+L12
+VHFl70PI6chbJAONo5963I3
+R7
+31
+R22
+R23
+R24
+R11
+R12
+!s100 =iWRIXOSOEkH7zTEKcfWB0
+!i10b 1
+Eenardff_2
+Z25 w1190736404
+R2
+R3
+R4
+Z26 8X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/enardFF_2.vhd
+Z27 FX:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/enardFF_2.vhd
+l0
+L31
+VefK2f?3R7`bZO40Rc84Mm0
+R7
+31
+Z28 !s108 1708105645.612000
+Z29 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/enardFF_2.vhd|
+Z30 !s107 X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/enardFF_2.vhd|
+R11
+R12
+!s100 LM:aJ[Ade62O^TDCQB2jH0
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 9 enardff_2 0 22 efK2f?3R7`bZO40Rc84Mm0
+l43
+L40
+VAd]:U5^6W=P5UO^;ST?Bz2
+R7
+31
+R28
+R29
+R30
+R11
+R12
+!s100 n`NKG5gX7V@?eV@4dAU663
+!i10b 1
+Eenasdff
+Z31 w1708102389
+R2
+R3
+R4
+Z32 8X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/enasdFF.vhd
+Z33 FX:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/enasdFF.vhd
+l0
+L5
+V@oTl>@VIH0jTR^_KiD]mB1
+R7
+31
+Z34 !s108 1708105642.366000
+Z35 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/enasdFF.vhd|
+Z36 !s107 X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/enasdFF.vhd|
+R11
+R12
+!s100 ^hldDf6Y_W[NV^SJo5eWV1
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 7 enasdff 0 22 @oTl>@VIH0jTR^_KiD]mB1
+l17
+L14
+V]53?XBFOgJE]_CcUSXE8W0
+R7
+31
+R34
+R35
+R36
+R11
+R12
+!s100 8:D_LK:Q6dl9[eg;:_4S;1
+!i10b 1
+Efpadder
+Z37 w1708105214
+R2
+R3
+R4
+Z38 8X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/fpAdder.vhd
+Z39 FX:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/fpAdder.vhd
+l0
+L4
+VHGBzT^_N_]NfKGOW4E:`V2
+R7
+31
+Z40 !s108 1708105646.612000
+Z41 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/fpAdder.vhd|
+Z42 !s107 X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/fpAdder.vhd|
+R11
+R12
+!s100 HzWoV@L<LXdj@5;56CR4j3
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 7 fpadder 0 22 HGBzT^_N_]NfKGOW4E:`V2
+l164
+L15
+V1]aLX^K^MPod_gUhW_c512
+R7
+31
+R40
+R41
+R42
+R11
+R12
+!s100 <`BZ6H]L[[fLoX[3<@Em@3
+!i10b 1
+Efpadder_tb
+Z43 w1708103437
+Z44 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z45 8X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/fpAdder_tb.vhd
+Z46 FX:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/fpAdder_tb.vhd
+l0
+L5
+VR?Yb8FIC_[X_BS;n5P4b53
+!s100 fOe30MBCZdT<agMB5dF3R0
+R7
+32
+!i10b 1
+Z47 !s108 1708105671.502000
+Z48 !s90 -reportprogress|300|-work|work|X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/fpAdder_tb.vhd|
+Z49 !s107 X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/fpAdder_tb.vhd|
+Z50 o-work work -O0
+R12
+Atb_arch
+R44
+R2
+R3
+DEx4 work 10 fpadder_tb 0 22 R?Yb8FIC_[X_BS;n5P4b53
+l33
+L8
+VfG4POMAI=W@S]nX73>[]41
+!s100 5W0Rn8MEAjRzJk3=zeUhA2
+R7
+32
+!i10b 1
+R47
+R48
+R49
+R50
+R12
+Efpaddercontrol
+Z51 w1708102540
+R2
+R3
+R4
+Z52 8X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/fpAdderControl.vhd
+Z53 FX:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/fpAdderControl.vhd
+l0
+L4
+VA2LEkAoOe9GMH?3C3<n?=2
+R7
+31
+Z54 !s108 1708105645.408000
+Z55 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/fpAdderControl.vhd|
+Z56 !s107 X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/fpAdderControl.vhd|
+R11
+R12
+!s100 QP]i0Q_]4^Ob5FD3R@dc;1
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 14 fpaddercontrol 0 22 A2LEkAoOe9GMH?3C3<n?=2
+l39
+L16
+V_zMW43NAO@_U;`5JJB20n2
+R7
+31
+R54
+R55
+R56
+R11
+R12
+!s100 =oGnhgWRP7Lnb^golXi^n1
+!i10b 1
+Eninebitadder
+Z57 w1708105589
+R2
+R3
+R4
+Z58 8X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/nineBitAdder.vhd
+Z59 FX:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/nineBitAdder.vhd
+l0
+L4
+V;?E?hJ7;_cfUl;cHd386@0
+R7
+31
+Z60 !s108 1708105645.174000
+Z61 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/nineBitAdder.vhd|
+Z62 !s107 X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/nineBitAdder.vhd|
+R11
+R12
+!s100 lN8X>:llh;;lC;Nah[0Wn0
+!i10b 1
+Astruct
+R2
+R3
+DEx4 work 12 ninebitadder 0 22 ;?E?hJ7;_cfUl;cHd386@0
+l36
+L13
+V0F[eV`nGW>488f3Y_5@Nl2
+R7
+31
+R60
+R61
+R62
+R11
+R12
+!s100 fJzlYD?Kk`;A3<>Cflh3c1
+!i10b 1
+Eninebitshiftregister
+Z63 w1708105247
+R2
+R3
+R4
+Z64 8X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/nineBitShiftRegister.vhd
+Z65 FX:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/nineBitShiftRegister.vhd
+l0
+L4
+VN:hWALh;>`V2Ae8b6mzQ;1
+R7
+31
+Z66 !s108 1708105644.908000
+Z67 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/nineBitShiftRegister.vhd|
+Z68 !s107 X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/nineBitShiftRegister.vhd|
+R11
+R12
+!s100 iFU>m>b:Oo;3FgNDc@0]_0
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 20 ninebitshiftregister 0 22 N:hWALh;>`V2Ae8b6mzQ;1
+l31
+L13
+V0Cbk[Oa2YAXgnUHBDoXJV3
+R7
+31
+R66
+R67
+R68
+R11
+R12
+!s100 ^Uk3Whz:LeP:B7Jj20`HV3
+!i10b 1
+Eonebitcomparator
+Z69 w1707427667
+R2
+R3
+R4
+Z70 8X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/oneBitComparator.vhd
+Z71 FX:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/oneBitComparator.vhd
+l0
+L4
+V_14f7Rg9=><S`Q8QB9K[R1
+R7
+31
+Z72 !s108 1708105644.653000
+Z73 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/oneBitComparator.vhd|
+Z74 !s107 X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/oneBitComparator.vhd|
+R11
+R12
+!s100 5>Eai:jGz`NACFl`]CnB^2
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 16 onebitcomparator 0 22 _14f7Rg9=><S`Q8QB9K[R1
+l14
+L11
+VTS`J?n3Z[m`9b0M5?b3<_2
+R7
+31
+R72
+R73
+R74
+R11
+R12
+!s100 jj9]JL9l5b^MK@?oi2eXe3
+!i10b 1
+Eonebitfulladder
+Z75 w1706641212
+R2
+R3
+R4
+Z76 8X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/oneBitFullAdder.vhd
+Z77 FX:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/oneBitFullAdder.vhd
+l0
+L4
+VNfd:Tlo[1XUWEO39:>cIa0
+R7
+31
+Z78 !s108 1708105644.402000
+Z79 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/oneBitFullAdder.vhd|
+Z80 !s107 X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/oneBitFullAdder.vhd|
+R11
+R12
+!s100 =M=]lD_;i_c7F]iN>69;;3
+!i10b 1
+Astruct
+R2
+R3
+DEx4 work 15 onebitfulladder 0 22 Nfd:Tlo[1XUWEO39:>cIa0
+l13
+L9
+V977^jJJ26kZ_GL@Bzf`;n2
+R7
+31
+R78
+R79
+R80
+R11
+R12
+!s100 =FVWUY_X3E?Hk:JZz4XVe0
+!i10b 1
+Esevenbit2x1mux
+Z81 w1707434451
+R2
+R3
+R4
+Z82 8X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBit2x1Mux.vhd
+Z83 FX:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBit2x1Mux.vhd
+l0
+L4
+Vg:m7a<[<fQ?BPATionm4K0
+R7
+31
+Z84 !s108 1708105644.174000
+Z85 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBit2x1Mux.vhd|
+Z86 !s107 X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBit2x1Mux.vhd|
+R11
+R12
+!s100 ?T7J1GIh7^?DRY`3D]bV01
+!i10b 1
+Astruct
+R2
+R3
+DEx4 work 14 sevenbit2x1mux 0 22 g:m7a<[<fQ?BPATionm4K0
+l11
+L10
+Vg[kG3QjoJCT3Jb_9HM<JJ2
+R7
+31
+R84
+R85
+R86
+R11
+R12
+!s100 ^@TSE1eYmRV5?6KVIHfL]3
+!i10b 1
+Esevenbitadder
+Z87 w1707491095
+R2
+R3
+R4
+Z88 8X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitAdder.vhd
+Z89 FX:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitAdder.vhd
+l0
+L4
+VXaEgCN<JCVaz9Ho<Qe@m23
+R7
+31
+Z90 !s108 1708105643.924000
+Z91 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitAdder.vhd|
+Z92 !s107 X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitAdder.vhd|
+R11
+R12
+!s100 S]2VMc_<Zn4Z=JVe2]DQc0
+!i10b 1
+Astructural
+R2
+R3
+DEx4 work 13 sevenbitadder 0 22 XaEgCN<JCVaz9Ho<Qe@m23
+l24
+L13
+VndgKQKLUhJCmWRhheXYSg2
+R7
+31
+R90
+R91
+R92
+R11
+R12
+!s100 bQ_QDgA::1h0OjckF]9]b1
+!i10b 1
+Esevenbitcomparator
+Z93 w1708042879
+R2
+R3
+R4
+Z94 8X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitComparator.vhd
+Z95 FX:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitComparator.vhd
+l0
+L4
+V0`Ga?f48?8<h^`XlRPG4I2
+R7
+31
+Z96 !s108 1708105643.619000
+Z97 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitComparator.vhd|
+Z98 !s107 X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitComparator.vhd|
+R11
+R12
+!s100 `^zH6UP87EiB6kZ0JU@de2
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 18 sevenbitcomparator 0 22 0`Ga?f48?8<h^`XlRPG4I2
+l22
+L11
+Vk1<QUzI8?iVZdTC;ad`BV1
+R7
+31
+R96
+R97
+R98
+R11
+R12
+!s100 WOQO7JWQB<0WVj7zSj_4@2
+!i10b 1
+Esevenbitdowncounter
+Z99 w1708102785
+R2
+R3
+R4
+Z100 8X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitDownCounter.vhd
+Z101 FX:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitDownCounter.vhd
+l0
+L4
+V>a7L9XWzTUHH^HkD<cZ9f1
+R7
+31
+Z102 !s108 1708105643.337000
+Z103 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitDownCounter.vhd|
+Z104 !s107 X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitDownCounter.vhd|
+R11
+R12
+!s100 JiJf=Y0aVgNXRb`;ZclPk3
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 19 sevenbitdowncounter 0 22 >a7L9XWzTUHH^HkD<cZ9f1
+l39
+L14
+Vg3XhZMV0j4E?<VCPOalj;0
+R7
+31
+R102
+R103
+R104
+R11
+R12
+!s100 UaZDFSgiT9n_Y^LU[ZaiV2
+!i10b 1
+Esevenbitregister
+Z105 w1706636612
+R2
+R3
+R4
+Z106 8X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitRegister.vhd
+Z107 FX:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitRegister.vhd
+l0
+L4
+V23XSF[l4A9C32]G22WWjL2
+R7
+31
+Z108 !s108 1708105642.960000
+Z109 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitRegister.vhd|
+Z110 !s107 X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitRegister.vhd|
+R11
+R12
+!s100 o:7bmT;z=4O6SefTdR38d0
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 16 sevenbitregister 0 22 23XSF[l4A9C32]G22WWjL2
+l22
+L12
+V0AXhkYB@M43VHGVz:6nGV0
+R7
+31
+R108
+R109
+R110
+R11
+R12
+!s100 F7mibzOXE4W<kaP2_7?IM3
+!i10b 1
+Esevenbitupcounter
+Z111 w1708102719
+R2
+R3
+R4
+Z112 8X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitUpCounter.vhd
+Z113 FX:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitUpCounter.vhd
+l0
+L4
+V:WU?JzRaE1=l=hOh8IKoA1
+R7
+31
+Z114 !s108 1708105642.742000
+Z115 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitUpCounter.vhd|
+Z116 !s107 X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitUpCounter.vhd|
+R11
+R12
+!s100 nVWQO5[Hb0Ze592P47aYg0
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 17 sevenbitupcounter 0 22 :WU?JzRaE1=l=hOh8IKoA1
+l35
+L12
+VXCfH`U[oAP`lmzE4iAl0<1
+R7
+31
+R114
+R115
+R116
+R11
+R12
+!s100 OFZ<YaK=R724ebRE[ISQ13
+!i10b 1
+Esrlatch
+Z117 w1190736504
+R2
+R3
+R4
+Z118 8X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/srlatch.vhd
+Z119 FX:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/srlatch.vhd
+l0
+L31
+V<Z0M6E`9S2V3?R^@;^KJB3
+R7
+31
+Z120 !s108 1708105642.554000
+Z121 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/srlatch.vhd|
+Z122 !s107 X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/srlatch.vhd|
+R11
+R12
+!s100 3CWg0zV;_XQ8?<G:<oH?90
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 7 srlatch 0 22 <Z0M6E`9S2V3?R^@;^KJB3
+l39
+L37
+V;TX9Oz8bPzJHkB6MK2@JJ1
+R7
+31
+R120
+R121
+R122
+R11
+R12
+!s100 LJ=6Zm:b7:BI?[nel>M9G1
+!i10b 1

@@ -1,0 +1,1174 @@
+Analysis & Synthesis report for fpAdder
+Fri Feb 16 12:46:41 2024
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Logic Cells Representing Combinational Loops
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Port Connectivity Checks: "nineBitShiftRegister:normalizeRegister"
+ 12. Port Connectivity Checks: "nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:0:bit_component"
+ 13. Port Connectivity Checks: "nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:1:bit_component"
+ 14. Port Connectivity Checks: "nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:2:bit_component"
+ 15. Port Connectivity Checks: "nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:3:bit_component"
+ 16. Port Connectivity Checks: "nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:4:bit_component"
+ 17. Port Connectivity Checks: "nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:5:bit_component"
+ 18. Port Connectivity Checks: "nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:6:bit_component"
+ 19. Port Connectivity Checks: "nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:7:bit_component"
+ 20. Port Connectivity Checks: "nineBitAdder:mantissaAdder|eightBitRegister:reg"
+ 21. Port Connectivity Checks: "nineBitAdder:mantissaAdder"
+ 22. Port Connectivity Checks: "nineBitShiftRegister:Fy"
+ 23. Port Connectivity Checks: "nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:8:enARdFF_instance"
+ 24. Port Connectivity Checks: "nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:7:enARdFF_instance"
+ 25. Port Connectivity Checks: "nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:6:enARdFF_instance"
+ 26. Port Connectivity Checks: "nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:5:enARdFF_instance"
+ 27. Port Connectivity Checks: "nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:4:enARdFF_instance"
+ 28. Port Connectivity Checks: "nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:3:enARdFF_instance"
+ 29. Port Connectivity Checks: "nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:2:enARdFF_instance"
+ 30. Port Connectivity Checks: "nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:1:enARdFF_instance"
+ 31. Port Connectivity Checks: "nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:0:enARdFF_instance"
+ 32. Port Connectivity Checks: "nineBitShiftRegister:Fx"
+ 33. Port Connectivity Checks: "sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit0"
+ 34. Port Connectivity Checks: "sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit1"
+ 35. Port Connectivity Checks: "sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit2"
+ 36. Port Connectivity Checks: "sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit3"
+ 37. Port Connectivity Checks: "sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit4"
+ 38. Port Connectivity Checks: "sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit5"
+ 39. Port Connectivity Checks: "sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit6"
+ 40. Port Connectivity Checks: "sevenBitUpCounter:exponentUpCounter|sevenBitAdder:adder"
+ 41. Port Connectivity Checks: "srLatch:exponentSRLatch"
+ 42. Port Connectivity Checks: "sevenBitComparator:exponentComparator|oneBitComparator:\comparison_loop:0:compare_i"
+ 43. Port Connectivity Checks: "sevenBitComparator:exponentComparator|oneBitComparator:\comparison_loop:1:compare_i"
+ 44. Port Connectivity Checks: "sevenBitComparator:exponentComparator|oneBitComparator:\comparison_loop:2:compare_i"
+ 45. Port Connectivity Checks: "sevenBitComparator:exponentComparator|oneBitComparator:\comparison_loop:3:compare_i"
+ 46. Port Connectivity Checks: "sevenBitComparator:exponentComparator|oneBitComparator:\comparison_loop:4:compare_i"
+ 47. Port Connectivity Checks: "sevenBitComparator:exponentComparator|oneBitComparator:\comparison_loop:5:compare_i"
+ 48. Port Connectivity Checks: "sevenBitComparator:exponentComparator|oneBitComparator:compare_0"
+ 49. Port Connectivity Checks: "sevenBitComparator:exponentComparator"
+ 50. Port Connectivity Checks: "sevenBitDownCounter:exponentCounter|enARdFF_2:bit0"
+ 51. Port Connectivity Checks: "sevenBitDownCounter:exponentCounter|enARdFF_2:bit1"
+ 52. Port Connectivity Checks: "sevenBitDownCounter:exponentCounter|enARdFF_2:bit2"
+ 53. Port Connectivity Checks: "sevenBitDownCounter:exponentCounter|enARdFF_2:bit3"
+ 54. Port Connectivity Checks: "sevenBitDownCounter:exponentCounter|enARdFF_2:bit4"
+ 55. Port Connectivity Checks: "sevenBitDownCounter:exponentCounter|enARdFF_2:bit5"
+ 56. Port Connectivity Checks: "sevenBitDownCounter:exponentCounter|enARdFF_2:bit6"
+ 57. Port Connectivity Checks: "sevenBitDownCounter:exponentCounter|sevenBitAdder:adder"
+ 58. Port Connectivity Checks: "eightBitAdder:exponentAdder|oneBitFullAdder:adder7"
+ 59. Port Connectivity Checks: "eightBitComplementer:complementerY"
+ 60. Port Connectivity Checks: "eightBitComplementer:complementerX"
+ 61. Port Connectivity Checks: "sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:0:bit_component"
+ 62. Port Connectivity Checks: "sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:1:bit_component"
+ 63. Port Connectivity Checks: "sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:2:bit_component"
+ 64. Port Connectivity Checks: "sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:3:bit_component"
+ 65. Port Connectivity Checks: "sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:4:bit_component"
+ 66. Port Connectivity Checks: "sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:5:bit_component"
+ 67. Port Connectivity Checks: "sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:6:bit_component"
+ 68. Port Connectivity Checks: "fpAdderControl:controller|enARdFF_2:s9"
+ 69. Port Connectivity Checks: "fpAdderControl:controller|enARdFF_2:s8"
+ 70. Port Connectivity Checks: "fpAdderControl:controller|enARdFF_2:s7"
+ 71. Port Connectivity Checks: "fpAdderControl:controller|enARdFF_2:s6"
+ 72. Port Connectivity Checks: "fpAdderControl:controller|enARdFF_2:s5"
+ 73. Port Connectivity Checks: "fpAdderControl:controller|enARdFF_2:s4"
+ 74. Port Connectivity Checks: "fpAdderControl:controller|enARdFF_2:s3"
+ 75. Port Connectivity Checks: "fpAdderControl:controller|enARdFF_2:s2"
+ 76. Port Connectivity Checks: "fpAdderControl:controller|enARdFF_2:s1"
+ 77. Port Connectivity Checks: "fpAdderControl:controller|enasdff:s0"
+ 78. Port Connectivity Checks: "fpAdderControl:controller"
+ 79. Elapsed Time Per Partition
+ 80. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Feb 16 12:46:41 2024      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; fpAdder                                    ;
+; Top-level Entity Name              ; fpAdder                                    ;
+; Family                             ; Cyclone IV GX                              ;
+; Total logic elements               ; 168                                        ;
+;     Total combinational functions  ; 153                                        ;
+;     Dedicated logic registers      ; 72                                         ;
+; Total registers                    ; 72                                         ;
+; Total pins                         ; 51                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total GXB Receiver Channel PCS     ; 0                                          ;
+; Total GXB Receiver Channel PMA     ; 0                                          ;
+; Total GXB Transmitter Channel PCS  ; 0                                          ;
+; Total GXB Transmitter Channel PMA  ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; fpAdder            ; fpAdder            ;
+; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                         ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------+---------+
+; enasdFF.vhd                      ; yes             ; User VHDL File  ; X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/enasdFF.vhd              ;         ;
+; srlatch.vhd                      ; yes             ; User VHDL File  ; X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/srlatch.vhd              ;         ;
+; sevenBitUpCounter.vhd            ; yes             ; User VHDL File  ; X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitUpCounter.vhd    ;         ;
+; sevenBitRegister.vhd             ; yes             ; User VHDL File  ; X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitRegister.vhd     ;         ;
+; sevenBitDownCounter.vhd          ; yes             ; User VHDL File  ; X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitDownCounter.vhd  ;         ;
+; sevenBitComparator.vhd           ; yes             ; User VHDL File  ; X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitComparator.vhd   ;         ;
+; sevenBitAdder.vhd                ; yes             ; User VHDL File  ; X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBitAdder.vhd        ;         ;
+; sevenBit2x1Mux.vhd               ; yes             ; User VHDL File  ; X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/sevenBit2x1Mux.vhd       ;         ;
+; oneBitFullAdder.vhd              ; yes             ; User VHDL File  ; X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/oneBitFullAdder.vhd      ;         ;
+; oneBitComparator.vhd             ; yes             ; User VHDL File  ; X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/oneBitComparator.vhd     ;         ;
+; nineBitShiftRegister.vhd         ; yes             ; User VHDL File  ; X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/nineBitShiftRegister.vhd ;         ;
+; nineBitAdder.vhd                 ; yes             ; User VHDL File  ; X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/nineBitAdder.vhd         ;         ;
+; fpAdderControl.vhd               ; yes             ; User VHDL File  ; X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/fpAdderControl.vhd       ;         ;
+; enardFF_2.vhd                    ; yes             ; User VHDL File  ; X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/enardFF_2.vhd            ;         ;
+; eightBitRegister.vhd             ; yes             ; User VHDL File  ; X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/eightBitRegister.vhd     ;         ;
+; eightBitComplementer.vhd         ; yes             ; User VHDL File  ; X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/eightBitComplementer.vhd ;         ;
+; eightBitAdder.vhd                ; yes             ; User VHDL File  ; X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/eightBitAdder.vhd        ;         ;
+; fpAdder.vhd                      ; yes             ; User VHDL File  ; X:/School/Year 5/Computer Systems Design/Labs/Lab 1/fpAdder/fpAdder.vhd              ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------+------------------+
+; Resource                 ; Usage            ;
++--------------------------+------------------+
+; I/O pins                 ; 51               ;
+; DSP block 9-bit elements ; 0                ;
+; Maximum fan-out node     ; GReset~input     ;
+; Maximum fan-out          ; 73               ;
+; Total fan-out            ; 856              ;
+; Average fan-out          ; 2.62             ;
++--------------------------+------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                            ;
++-----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                          ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                               ; Library Name ;
++-----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
+; |fpAdder                                            ; 153 (32)          ; 72 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 51   ; 0            ; |fpAdder                                                                                          ;              ;
+;    |eightBitAdder:exponentAdder|                    ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|eightBitAdder:exponentAdder                                                              ;              ;
+;       |oneBitFullAdder:adder0|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|eightBitAdder:exponentAdder|oneBitFullAdder:adder0                                       ;              ;
+;       |oneBitFullAdder:adder1|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|eightBitAdder:exponentAdder|oneBitFullAdder:adder1                                       ;              ;
+;       |oneBitFullAdder:adder2|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|eightBitAdder:exponentAdder|oneBitFullAdder:adder2                                       ;              ;
+;       |oneBitFullAdder:adder3|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|eightBitAdder:exponentAdder|oneBitFullAdder:adder3                                       ;              ;
+;       |oneBitFullAdder:adder4|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|eightBitAdder:exponentAdder|oneBitFullAdder:adder4                                       ;              ;
+;       |oneBitFullAdder:adder5|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|eightBitAdder:exponentAdder|oneBitFullAdder:adder5                                       ;              ;
+;       |oneBitFullAdder:adder6|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|eightBitAdder:exponentAdder|oneBitFullAdder:adder6                                       ;              ;
+;    |eightBitComplementer:complementerY|             ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|eightBitComplementer:complementerY                                                       ;              ;
+;    |fpAdderControl:controller|                      ; 12 (11)           ; 9 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|fpAdderControl:controller                                                                ;              ;
+;       |enARdFF_2:s1|                                ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|fpAdderControl:controller|enARdFF_2:s1                                                   ;              ;
+;       |enARdFF_2:s2|                                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|fpAdderControl:controller|enARdFF_2:s2                                                   ;              ;
+;       |enARdFF_2:s3|                                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|fpAdderControl:controller|enARdFF_2:s3                                                   ;              ;
+;       |enARdFF_2:s4|                                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|fpAdderControl:controller|enARdFF_2:s4                                                   ;              ;
+;       |enARdFF_2:s5|                                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|fpAdderControl:controller|enARdFF_2:s5                                                   ;              ;
+;       |enARdFF_2:s6|                                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|fpAdderControl:controller|enARdFF_2:s6                                                   ;              ;
+;       |enARdFF_2:s7|                                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|fpAdderControl:controller|enARdFF_2:s7                                                   ;              ;
+;       |enARdFF_2:s8|                                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|fpAdderControl:controller|enARdFF_2:s8                                                   ;              ;
+;       |enasdff:s0|                                  ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|fpAdderControl:controller|enasdff:s0                                                     ;              ;
+;    |nineBitAdder:mantissaAdder|                     ; 20 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitAdder:mantissaAdder                                                               ;              ;
+;       |eightBitRegister:reg|                        ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitAdder:mantissaAdder|eightBitRegister:reg                                          ;              ;
+;          |enARdFF_2:\gen_enardFF_2:0:bit_component| ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:0:bit_component ;              ;
+;          |enARdFF_2:\gen_enardFF_2:1:bit_component| ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:1:bit_component ;              ;
+;          |enARdFF_2:\gen_enardFF_2:2:bit_component| ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:2:bit_component ;              ;
+;          |enARdFF_2:\gen_enardFF_2:3:bit_component| ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:3:bit_component ;              ;
+;          |enARdFF_2:\gen_enardFF_2:4:bit_component| ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:4:bit_component ;              ;
+;          |enARdFF_2:\gen_enardFF_2:5:bit_component| ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:5:bit_component ;              ;
+;          |enARdFF_2:\gen_enardFF_2:6:bit_component| ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:6:bit_component ;              ;
+;          |enARdFF_2:\gen_enardFF_2:7:bit_component| ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:7:bit_component ;              ;
+;       |oneBitFullAdder:\gen_adders:1:adder_i|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitAdder:mantissaAdder|oneBitFullAdder:\gen_adders:1:adder_i                         ;              ;
+;       |oneBitFullAdder:\gen_adders:2:adder_i|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitAdder:mantissaAdder|oneBitFullAdder:\gen_adders:2:adder_i                         ;              ;
+;       |oneBitFullAdder:\gen_adders:3:adder_i|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitAdder:mantissaAdder|oneBitFullAdder:\gen_adders:3:adder_i                         ;              ;
+;       |oneBitFullAdder:\gen_adders:4:adder_i|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitAdder:mantissaAdder|oneBitFullAdder:\gen_adders:4:adder_i                         ;              ;
+;       |oneBitFullAdder:\gen_adders:5:adder_i|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitAdder:mantissaAdder|oneBitFullAdder:\gen_adders:5:adder_i                         ;              ;
+;       |oneBitFullAdder:\gen_adders:6:adder_i|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitAdder:mantissaAdder|oneBitFullAdder:\gen_adders:6:adder_i                         ;              ;
+;       |oneBitFullAdder:\gen_adders:7:adder_i|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitAdder:mantissaAdder|oneBitFullAdder:\gen_adders:7:adder_i                         ;              ;
+;       |oneBitFullAdder:adder0|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitAdder:mantissaAdder|oneBitFullAdder:adder0                                        ;              ;
+;       |oneBitFullAdder:adder8|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitAdder:mantissaAdder|oneBitFullAdder:adder8                                        ;              ;
+;    |nineBitShiftRegister:Fx|                        ; 10 (9)            ; 9 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:Fx                                                                  ;              ;
+;       |enARdFF_2:\gen_enARdFF:0:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:0:enARdFF_instance                        ;              ;
+;       |enARdFF_2:\gen_enARdFF:1:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:1:enARdFF_instance                        ;              ;
+;       |enARdFF_2:\gen_enARdFF:2:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:2:enARdFF_instance                        ;              ;
+;       |enARdFF_2:\gen_enARdFF:3:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:3:enARdFF_instance                        ;              ;
+;       |enARdFF_2:\gen_enARdFF:4:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:4:enARdFF_instance                        ;              ;
+;       |enARdFF_2:\gen_enARdFF:5:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:5:enARdFF_instance                        ;              ;
+;       |enARdFF_2:\gen_enARdFF:6:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:6:enARdFF_instance                        ;              ;
+;       |enARdFF_2:\gen_enARdFF:7:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:7:enARdFF_instance                        ;              ;
+;       |enARdFF_2:\gen_enARdFF:8:enARdFF_instance|   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:8:enARdFF_instance                        ;              ;
+;    |nineBitShiftRegister:Fy|                        ; 10 (9)            ; 9 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:Fy                                                                  ;              ;
+;       |enARdFF_2:\gen_enARdFF:0:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:Fy|enARdFF_2:\gen_enARdFF:0:enARdFF_instance                        ;              ;
+;       |enARdFF_2:\gen_enARdFF:1:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:Fy|enARdFF_2:\gen_enARdFF:1:enARdFF_instance                        ;              ;
+;       |enARdFF_2:\gen_enARdFF:2:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:Fy|enARdFF_2:\gen_enARdFF:2:enARdFF_instance                        ;              ;
+;       |enARdFF_2:\gen_enARdFF:3:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:Fy|enARdFF_2:\gen_enARdFF:3:enARdFF_instance                        ;              ;
+;       |enARdFF_2:\gen_enARdFF:4:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:Fy|enARdFF_2:\gen_enARdFF:4:enARdFF_instance                        ;              ;
+;       |enARdFF_2:\gen_enARdFF:5:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:Fy|enARdFF_2:\gen_enARdFF:5:enARdFF_instance                        ;              ;
+;       |enARdFF_2:\gen_enARdFF:6:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:Fy|enARdFF_2:\gen_enARdFF:6:enARdFF_instance                        ;              ;
+;       |enARdFF_2:\gen_enARdFF:7:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:Fy|enARdFF_2:\gen_enARdFF:7:enARdFF_instance                        ;              ;
+;       |enARdFF_2:\gen_enARdFF:8:enARdFF_instance|   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:Fy|enARdFF_2:\gen_enARdFF:8:enARdFF_instance                        ;              ;
+;    |nineBitShiftRegister:normalizeRegister|         ; 9 (9)             ; 9 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:normalizeRegister                                                   ;              ;
+;       |enARdFF_2:\gen_enARdFF:0:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:normalizeRegister|enARdFF_2:\gen_enARdFF:0:enARdFF_instance         ;              ;
+;       |enARdFF_2:\gen_enARdFF:1:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:normalizeRegister|enARdFF_2:\gen_enARdFF:1:enARdFF_instance         ;              ;
+;       |enARdFF_2:\gen_enARdFF:2:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:normalizeRegister|enARdFF_2:\gen_enARdFF:2:enARdFF_instance         ;              ;
+;       |enARdFF_2:\gen_enARdFF:3:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:normalizeRegister|enARdFF_2:\gen_enARdFF:3:enARdFF_instance         ;              ;
+;       |enARdFF_2:\gen_enARdFF:4:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:normalizeRegister|enARdFF_2:\gen_enARdFF:4:enARdFF_instance         ;              ;
+;       |enARdFF_2:\gen_enARdFF:5:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:normalizeRegister|enARdFF_2:\gen_enARdFF:5:enARdFF_instance         ;              ;
+;       |enARdFF_2:\gen_enARdFF:6:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:normalizeRegister|enARdFF_2:\gen_enARdFF:6:enARdFF_instance         ;              ;
+;       |enARdFF_2:\gen_enARdFF:7:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:normalizeRegister|enARdFF_2:\gen_enARdFF:7:enARdFF_instance         ;              ;
+;       |enARdFF_2:\gen_enARdFF:8:enARdFF_instance|   ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|nineBitShiftRegister:normalizeRegister|enARdFF_2:\gen_enARdFF:8:enARdFF_instance         ;              ;
+;    |sevenBitDownCounter:exponentCounter|            ; 20 (18)           ; 7 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitDownCounter:exponentCounter                                                      ;              ;
+;       |enARdFF_2:bit0|                              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitDownCounter:exponentCounter|enARdFF_2:bit0                                       ;              ;
+;       |enARdFF_2:bit1|                              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitDownCounter:exponentCounter|enARdFF_2:bit1                                       ;              ;
+;       |enARdFF_2:bit2|                              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitDownCounter:exponentCounter|enARdFF_2:bit2                                       ;              ;
+;       |enARdFF_2:bit3|                              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitDownCounter:exponentCounter|enARdFF_2:bit3                                       ;              ;
+;       |enARdFF_2:bit4|                              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitDownCounter:exponentCounter|enARdFF_2:bit4                                       ;              ;
+;       |enARdFF_2:bit5|                              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitDownCounter:exponentCounter|enARdFF_2:bit5                                       ;              ;
+;       |enARdFF_2:bit6|                              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitDownCounter:exponentCounter|enARdFF_2:bit6                                       ;              ;
+;       |sevenBitAdder:adder|                         ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitDownCounter:exponentCounter|sevenBitAdder:adder                                  ;              ;
+;          |oneBitFullAdder:FA3|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitDownCounter:exponentCounter|sevenBitAdder:adder|oneBitFullAdder:FA3              ;              ;
+;          |oneBitFullAdder:FA6|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitDownCounter:exponentCounter|sevenBitAdder:adder|oneBitFullAdder:FA6              ;              ;
+;    |sevenBitRegister:Ex|                            ; 0 (0)             ; 7 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitRegister:Ex                                                                      ;              ;
+;       |enARdFF_2:\gen_enardFF_2:0:bit_component|    ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:0:bit_component                             ;              ;
+;       |enARdFF_2:\gen_enardFF_2:1:bit_component|    ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:1:bit_component                             ;              ;
+;       |enARdFF_2:\gen_enardFF_2:2:bit_component|    ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:2:bit_component                             ;              ;
+;       |enARdFF_2:\gen_enardFF_2:3:bit_component|    ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:3:bit_component                             ;              ;
+;       |enARdFF_2:\gen_enardFF_2:4:bit_component|    ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:4:bit_component                             ;              ;
+;       |enARdFF_2:\gen_enardFF_2:5:bit_component|    ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:5:bit_component                             ;              ;
+;       |enARdFF_2:\gen_enardFF_2:6:bit_component|    ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:6:bit_component                             ;              ;
+;    |sevenBitRegister:Ey|                            ; 0 (0)             ; 7 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitRegister:Ey                                                                      ;              ;
+;       |enARdFF_2:\gen_enardFF_2:0:bit_component|    ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitRegister:Ey|enARdFF_2:\gen_enardFF_2:0:bit_component                             ;              ;
+;       |enARdFF_2:\gen_enardFF_2:1:bit_component|    ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitRegister:Ey|enARdFF_2:\gen_enardFF_2:1:bit_component                             ;              ;
+;       |enARdFF_2:\gen_enardFF_2:2:bit_component|    ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitRegister:Ey|enARdFF_2:\gen_enardFF_2:2:bit_component                             ;              ;
+;       |enARdFF_2:\gen_enardFF_2:3:bit_component|    ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitRegister:Ey|enARdFF_2:\gen_enardFF_2:3:bit_component                             ;              ;
+;       |enARdFF_2:\gen_enardFF_2:4:bit_component|    ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitRegister:Ey|enARdFF_2:\gen_enardFF_2:4:bit_component                             ;              ;
+;       |enARdFF_2:\gen_enardFF_2:5:bit_component|    ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitRegister:Ey|enARdFF_2:\gen_enardFF_2:5:bit_component                             ;              ;
+;       |enARdFF_2:\gen_enardFF_2:6:bit_component|    ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitRegister:Ey|enARdFF_2:\gen_enardFF_2:6:bit_component                             ;              ;
+;    |sevenBitUpCounter:exponentUpCounter|            ; 20 (17)           ; 7 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitUpCounter:exponentUpCounter                                                      ;              ;
+;       |enARdFF_2:bit0|                              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit0                                       ;              ;
+;       |enARdFF_2:bit1|                              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit1                                       ;              ;
+;       |enARdFF_2:bit2|                              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit2                                       ;              ;
+;       |enARdFF_2:bit3|                              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit3                                       ;              ;
+;       |enARdFF_2:bit4|                              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit4                                       ;              ;
+;       |enARdFF_2:bit5|                              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit5                                       ;              ;
+;       |enARdFF_2:bit6|                              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit6                                       ;              ;
+;       |sevenBitAdder:adder|                         ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitUpCounter:exponentUpCounter|sevenBitAdder:adder                                  ;              ;
+;          |oneBitFullAdder:FA3|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitUpCounter:exponentUpCounter|sevenBitAdder:adder|oneBitFullAdder:FA3              ;              ;
+;          |oneBitFullAdder:FA6|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|sevenBitUpCounter:exponentUpCounter|sevenBitAdder:adder|oneBitFullAdder:FA6              ;              ;
+;    |srLatch:exponentSRLatch|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fpAdder|srLatch:exponentSRLatch                                                                  ;              ;
++-----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops               ;
++--------------------------------------------------------+---+
+; Logic Cell Name                                        ;   ;
++--------------------------------------------------------+---+
+; srLatch:exponentSRLatch|o_q~0                          ;   ;
+; Number of logic cells representing combinational loops ; 1 ;
++--------------------------------------------------------+---+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 72    ;
+; Number of registers using Synchronous Clear  ; 2     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 72    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 55    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------+
+; Inverted Register Statistics                         ;
++--------------------------------------------+---------+
+; Inverted Register                          ; Fan out ;
++--------------------------------------------+---------+
+; fpAdderControl:controller|enasdff:s0|int_q ; 35      ;
+; Total number of inverted registers = 1     ;         ;
++--------------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nineBitShiftRegister:normalizeRegister"                                                 ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; in_clear ; Input  ; Info     ; Stuck at GND                                                                        ;
+; out_q[8] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:0:bit_component" ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                 ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.     ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:1:bit_component" ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                 ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.     ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:2:bit_component" ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                 ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.     ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:3:bit_component" ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                 ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.     ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:4:bit_component" ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                 ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.     ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:5:bit_component" ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                 ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.     ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:6:bit_component" ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                 ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.     ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nineBitAdder:mantissaAdder|eightBitRegister:reg|enARdFF_2:\gen_enardFF_2:7:bit_component" ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                 ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.     ;
++--------+--------+----------+-----------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "nineBitAdder:mantissaAdder|eightBitRegister:reg" ;
++---------+-------+----------+------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                        ;
++---------+-------+----------+------------------------------------------------+
+; in_load ; Input ; Info     ; Stuck at VCC                                   ;
++---------+-------+----------+------------------------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "nineBitAdder:mantissaAdder" ;
++--------+-------+----------+----------------------------+
+; Port   ; Type  ; Severity ; Details                    ;
++--------+-------+----------+----------------------------+
+; in_cin ; Input ; Info     ; Stuck at GND               ;
++--------+-------+----------+----------------------------+
+
+
++-----------------------------------------------------+
+; Port Connectivity Checks: "nineBitShiftRegister:Fy" ;
++---------+-------+----------+------------------------+
+; Port    ; Type  ; Severity ; Details                ;
++---------+-------+----------+------------------------+
+; in_a[8] ; Input ; Info     ; Stuck at VCC           ;
++---------+-------+----------+------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:8:enARdFF_instance"                    ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:7:enARdFF_instance"                    ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:6:enARdFF_instance"                    ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:5:enARdFF_instance"                    ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:4:enARdFF_instance"                    ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:3:enARdFF_instance"                    ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:2:enARdFF_instance"                    ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:1:enARdFF_instance"                    ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "nineBitShiftRegister:Fx|enARdFF_2:\gen_enARdFF:0:enARdFF_instance"                    ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Port Connectivity Checks: "nineBitShiftRegister:Fx" ;
++---------+-------+----------+------------------------+
+; Port    ; Type  ; Severity ; Details                ;
++---------+-------+----------+------------------------+
+; in_a[8] ; Input ; Info     ; Stuck at VCC           ;
++---------+-------+----------+------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit0"                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit1"                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit2"                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit3"                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit4"                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit5"                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitUpCounter:exponentUpCounter|enARdFF_2:bit6"                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitUpCounter:exponentUpCounter|sevenBitAdder:adder"                                                       ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                                                  ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; in_b[6..1] ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; in_b[0]    ; Input  ; Info     ; Stuck at VCC                                                                                             ;
+; cin        ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; out_cout   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "srLatch:exponentSRLatch"                                                              ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitComparator:exponentComparator|oneBitComparator:\comparison_loop:0:compare_i"     ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; out_equal ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitComparator:exponentComparator|oneBitComparator:\comparison_loop:1:compare_i"     ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; out_equal ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitComparator:exponentComparator|oneBitComparator:\comparison_loop:2:compare_i"     ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; out_equal ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitComparator:exponentComparator|oneBitComparator:\comparison_loop:3:compare_i"     ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; out_equal ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitComparator:exponentComparator|oneBitComparator:\comparison_loop:4:compare_i"     ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; out_equal ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitComparator:exponentComparator|oneBitComparator:\comparison_loop:5:compare_i"     ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; out_equal ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitComparator:exponentComparator|oneBitComparator:compare_0" ;
++----------------+-------+----------+----------------------------------------------------------+
+; Port           ; Type  ; Severity ; Details                                                  ;
++----------------+-------+----------+----------------------------------------------------------+
+; in_greaterprev ; Input ; Info     ; Stuck at GND                                             ;
+; in_lessprev    ; Input ; Info     ; Stuck at GND                                             ;
++----------------+-------+----------+----------------------------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitComparator:exponentComparator" ;
++------------+-------+----------+-----------------------------------+
+; Port       ; Type  ; Severity ; Details                           ;
++------------+-------+----------+-----------------------------------+
+; in_b[6..4] ; Input ; Info     ; Stuck at GND                      ;
+; in_b[2..0] ; Input ; Info     ; Stuck at GND                      ;
+; in_b[3]    ; Input ; Info     ; Stuck at VCC                      ;
++------------+-------+----------+-----------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitDownCounter:exponentCounter|enARdFF_2:bit0"                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitDownCounter:exponentCounter|enARdFF_2:bit1"                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitDownCounter:exponentCounter|enARdFF_2:bit2"                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitDownCounter:exponentCounter|enARdFF_2:bit3"                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitDownCounter:exponentCounter|enARdFF_2:bit4"                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitDownCounter:exponentCounter|enARdFF_2:bit5"                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitDownCounter:exponentCounter|enARdFF_2:bit6"                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitDownCounter:exponentCounter|sevenBitAdder:adder"                                                       ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                                                  ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; in_b[6..1] ; Input  ; Info     ; Stuck at VCC                                                                                             ;
+; in_b[0]    ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; cin        ; Input  ; Info     ; Stuck at VCC                                                                                             ;
+; out_cout   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitAdder:exponentAdder|oneBitFullAdder:adder7"                                     ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; out_cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitComplementer:complementerY" ;
++---------+-------+----------+-----------------------------------+
+; Port    ; Type  ; Severity ; Details                           ;
++---------+-------+----------+-----------------------------------+
+; in_a[7] ; Input ; Info     ; Stuck at GND                      ;
++---------+-------+----------+-----------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitComplementer:complementerX" ;
++---------+-------+----------+-----------------------------------+
+; Port    ; Type  ; Severity ; Details                           ;
++---------+-------+----------+-----------------------------------+
+; in_a[7] ; Input ; Info     ; Stuck at GND                      ;
++---------+-------+----------+-----------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:0:bit_component"                         ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:1:bit_component"                         ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:2:bit_component"                         ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:3:bit_component"                         ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:4:bit_component"                         ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:5:bit_component"                         ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenBitRegister:Ex|enARdFF_2:\gen_enardFF_2:6:bit_component"                         ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fpAdderControl:controller|enARdFF_2:s9"                                                 ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fpAdderControl:controller|enARdFF_2:s8"                                                 ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fpAdderControl:controller|enARdFF_2:s7"                                                 ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fpAdderControl:controller|enARdFF_2:s6"                                                 ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fpAdderControl:controller|enARdFF_2:s5"                                                 ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fpAdderControl:controller|enARdFF_2:s4"                                                 ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fpAdderControl:controller|enARdFF_2:s3"                                                 ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fpAdderControl:controller|enARdFF_2:s2"                                                 ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fpAdderControl:controller|enARdFF_2:s1"                                                 ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fpAdderControl:controller|enasdff:s0"                                                   ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_d      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fpAdderControl:controller"                                                               ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; out_done  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; out_state ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Fri Feb 16 12:46:36 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fpAdder -c fpAdder
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file enasdff.vhd
+    Info (12022): Found design unit 1: enasdff-rtl
+    Info (12023): Found entity 1: enasdff
+Info (12021): Found 2 design units, including 1 entities, in source file srlatch.vhd
+    Info (12022): Found design unit 1: srLatch-rtl
+    Info (12023): Found entity 1: srLatch
+Info (12021): Found 2 design units, including 1 entities, in source file sevenbitupcounter.vhd
+    Info (12022): Found design unit 1: sevenBitUpCounter-rtl
+    Info (12023): Found entity 1: sevenBitUpCounter
+Info (12021): Found 2 design units, including 1 entities, in source file sevenbitregister.vhd
+    Info (12022): Found design unit 1: sevenBitRegister-rtl
+    Info (12023): Found entity 1: sevenBitRegister
+Info (12021): Found 2 design units, including 1 entities, in source file sevenbitdowncounter.vhd
+    Info (12022): Found design unit 1: sevenBitDownCounter-rtl
+    Info (12023): Found entity 1: sevenBitDownCounter
+Info (12021): Found 2 design units, including 1 entities, in source file sevenbitcomparator.vhd
+    Info (12022): Found design unit 1: sevenBitComparator-rtl
+    Info (12023): Found entity 1: sevenBitComparator
+Info (12021): Found 2 design units, including 1 entities, in source file sevenbitadder.vhd
+    Info (12022): Found design unit 1: sevenBitAdder-structural
+    Info (12023): Found entity 1: sevenBitAdder
+Info (12021): Found 2 design units, including 1 entities, in source file sevenbit2x1mux.vhd
+    Info (12022): Found design unit 1: sevenBit2x1Mux-struct
+    Info (12023): Found entity 1: sevenBit2x1Mux
+Info (12021): Found 2 design units, including 1 entities, in source file onebitfulladder.vhd
+    Info (12022): Found design unit 1: oneBitFullAdder-struct
+    Info (12023): Found entity 1: oneBitFullAdder
+Info (12021): Found 2 design units, including 1 entities, in source file onebitcomparator.vhd
+    Info (12022): Found design unit 1: oneBitComparator-rtl
+    Info (12023): Found entity 1: oneBitComparator
+Info (12021): Found 2 design units, including 1 entities, in source file ninebitshiftregister.vhd
+    Info (12022): Found design unit 1: nineBitShiftRegister-rtl
+    Info (12023): Found entity 1: nineBitShiftRegister
+Info (12021): Found 2 design units, including 1 entities, in source file ninebitadder.vhd
+    Info (12022): Found design unit 1: nineBitAdder-struct
+    Info (12023): Found entity 1: nineBitAdder
+Info (12021): Found 2 design units, including 1 entities, in source file fpaddercontrol.vhd
+    Info (12022): Found design unit 1: fpAdderControl-rtl
+    Info (12023): Found entity 1: fpAdderControl
+Info (12021): Found 2 design units, including 1 entities, in source file enardff_2.vhd
+    Info (12022): Found design unit 1: enARdFF_2-rtl
+    Info (12023): Found entity 1: enARdFF_2
+Info (12021): Found 2 design units, including 1 entities, in source file eightbitregister.vhd
+    Info (12022): Found design unit 1: eightBitRegister-rtl
+    Info (12023): Found entity 1: eightBitRegister
+Info (12021): Found 2 design units, including 1 entities, in source file eightbitcomplementer.vhd
+    Info (12022): Found design unit 1: eightBitComplementer-rtl
+    Info (12023): Found entity 1: eightBitComplementer
+Info (12021): Found 2 design units, including 1 entities, in source file eightbitadder.vhd
+    Info (12022): Found design unit 1: eightBitAdder-struct
+    Info (12023): Found entity 1: eightBitAdder
+Info (12021): Found 2 design units, including 1 entities, in source file fpadder.vhd
+    Info (12022): Found design unit 1: fpAdder-rtl
+    Info (12023): Found entity 1: fpAdder
+Info (12021): Found 2 design units, including 1 entities, in source file fpadder_tb.vhd
+    Info (12022): Found design unit 1: fpAdder_tb-tb_arch
+    Info (12023): Found entity 1: fpAdder_tb
+Info (12127): Elaborating entity "fpAdder" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at fpAdder.vhd(12): used implicit default value for signal "Overflow" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at fpAdder.vhd(141): object "int_done" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at fpAdder.vhd(145): object "int_state" assigned a value but never read
+Info (12128): Elaborating entity "fpAdderControl" for hierarchy "fpAdderControl:controller"
+Info (12128): Elaborating entity "enasdff" for hierarchy "fpAdderControl:controller|enasdff:s0"
+Info (12128): Elaborating entity "enARdFF_2" for hierarchy "fpAdderControl:controller|enARdFF_2:s1"
+Info (12128): Elaborating entity "sevenBitRegister" for hierarchy "sevenBitRegister:Ex"
+Info (12128): Elaborating entity "eightBitComplementer" for hierarchy "eightBitComplementer:complementerX"
+Info (12128): Elaborating entity "eightBitAdder" for hierarchy "eightBitAdder:exponentAdder"
+Info (12128): Elaborating entity "oneBitFullAdder" for hierarchy "eightBitAdder:exponentAdder|oneBitFullAdder:adder7"
+Info (12128): Elaborating entity "sevenBitDownCounter" for hierarchy "sevenBitDownCounter:exponentCounter"
+Info (12128): Elaborating entity "sevenBitAdder" for hierarchy "sevenBitDownCounter:exponentCounter|sevenBitAdder:adder"
+Info (12128): Elaborating entity "sevenBitComparator" for hierarchy "sevenBitComparator:exponentComparator"
+Info (12128): Elaborating entity "oneBitComparator" for hierarchy "sevenBitComparator:exponentComparator|oneBitComparator:compare_0"
+Info (12128): Elaborating entity "srLatch" for hierarchy "srLatch:exponentSRLatch"
+Info (12128): Elaborating entity "sevenBit2x1Mux" for hierarchy "sevenBit2x1Mux:exponentSelect"
+Info (12128): Elaborating entity "sevenBitUpCounter" for hierarchy "sevenBitUpCounter:exponentUpCounter"
+Info (12128): Elaborating entity "nineBitShiftRegister" for hierarchy "nineBitShiftRegister:Fx"
+Info (12128): Elaborating entity "nineBitAdder" for hierarchy "nineBitAdder:mantissaAdder"
+Warning (10036): Verilog HDL or VHDL warning at nineBitAdder.vhd(34): object "int_load" assigned a value but never read
+Info (12128): Elaborating entity "eightBitRegister" for hierarchy "nineBitAdder:mantissaAdder|eightBitRegister:reg"
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "Overflow" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 220 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 34 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 169 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4672 megabytes
+    Info: Processing ended: Fri Feb 16 12:46:41 2024
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:03
+
+
