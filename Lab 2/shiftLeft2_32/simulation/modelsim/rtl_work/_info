@@ -1,0 +1,75 @@
+m255
+K3
+13
+cModel Technology
+Z0 dH:\School\Year 5\Computer Systems Design\My Labs\Lab 2\shiftLeft2_32\simulation\modelsim
+Eshiftleft2_32
+Z1 w1709663898
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dH:\School\Year 5\Computer Systems Design\My Labs\Lab 2\shiftLeft2_32\simulation\modelsim
+Z5 8H:/School/Year 5/Computer Systems Design/My Labs/Lab 2/shiftLeft2_32/shiftLeft2_32.vhd
+Z6 FH:/School/Year 5/Computer Systems Design/My Labs/Lab 2/shiftLeft2_32/shiftLeft2_32.vhd
+l0
+L4
+VYcjKiNS8e@`R@V^NP6>jP3
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1709663928.218000
+Z9 !s90 -reportprogress|300|-93|-work|work|H:/School/Year 5/Computer Systems Design/My Labs/Lab 2/shiftLeft2_32/shiftLeft2_32.vhd|
+Z10 !s107 H:/School/Year 5/Computer Systems Design/My Labs/Lab 2/shiftLeft2_32/shiftLeft2_32.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 WA;`k@cON3WeeI]L12Y`P1
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 13 shiftleft2_32 0 22 YcjKiNS8e@`R@V^NP6>jP3
+l14
+L12
+V`T>>1i:C3^F45Cb=KN^`U1
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 RBiVaYXL;<1[[88:^15Xf0
+!i10b 1
+Eshiftleft2_32_tb
+Z13 w1709659700
+R2
+R3
+R4
+Z14 8H:/School/Year 5/Computer Systems Design/My Labs/Lab 2/shiftLeft2_32/shiftLeft2_32_tb.vhd
+Z15 FH:/School/Year 5/Computer Systems Design/My Labs/Lab 2/shiftLeft2_32/shiftLeft2_32_tb.vhd
+l0
+L4
+V5=_e?lKRQ=BdmAk[:0X:`2
+!s100 NKfoR_RagbV4h6U9IZY2^1
+R7
+32
+!i10b 1
+Z16 !s108 1709663951.833000
+Z17 !s90 -reportprogress|300|-work|work|H:/School/Year 5/Computer Systems Design/My Labs/Lab 2/shiftLeft2_32/shiftLeft2_32_tb.vhd|
+Z18 !s107 H:/School/Year 5/Computer Systems Design/My Labs/Lab 2/shiftLeft2_32/shiftLeft2_32_tb.vhd|
+Z19 o-work work -O0
+R12
+Atb_arch
+R2
+R3
+DEx4 work 16 shiftleft2_32_tb 0 22 5=_e?lKRQ=BdmAk[:0X:`2
+l22
+L7
+V:7K`8]P;o?ldhf8d1K;gQ3
+!s100 F3>;oL8DaLIgc2fB>S9je0
+R7
+32
+!i10b 1
+R16
+R17
+R18
+R19
+R12

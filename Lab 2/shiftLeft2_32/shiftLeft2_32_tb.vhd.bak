@@ -1,0 +1,79 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity shiftLeft2_32_tb is
+end entity shiftLeft2_32_tb;
+
+architecture testbench of shiftLeft2_32_tb is
+    -- Component declaration
+    component shiftLeft2_32
+        Port (
+            clk   : in  std_logic;
+            in_q  : in  std_logic_vector(31 downto 0);
+            out_d : out std_logic_vector(31 downto 0)
+        );
+    end component;
+
+    -- Signals for testbench
+    signal clk_tb       : std_logic := '0';
+    signal in_q_tb      : std_logic_vector(31 downto 0);
+    signal out_d_tb     : std_logic_vector(31 downto 0);
+
+    -- Clock period
+    constant clk_period : time := 10 ns;
+
+begin
+
+    -- Instantiate the component
+    uut: shiftLeft2_32 port map (
+        clk   => clk_tb,
+        in_q  => in_q_tb,
+        out_d => out_d_tb
+    );
+
+    -- Clock process
+    clk_process: process
+    begin
+        while now < 400 ns loop
+            clk_tb <= '0';
+            wait for clk_period / 2;
+            clk_tb <= '1';
+            wait for clk_period / 2;
+        end loop;
+        wait;
+    end process;
+
+    -- Test cases
+    process
+    begin
+        wait for 20 ns; -- Wait for initial stabilization
+
+        -- Test case 1: All 0's input
+        in_q_tb <= (others => '0');
+        wait for 100 ns;
+        assert out_d_tb = (others => '0')
+            report "Test case 1 failed" severity error;
+
+        -- Test case 2: All 1's input
+        in_q_tb <= (others => '1');
+        wait for 100 ns;
+        assert out_d_tb = "11111111111111111111111111111100"
+            report "Test case 2 failed" severity error;
+
+        -- Test case 3: Random input
+        in_q_tb <= "10101010101010101010101010101010";
+        wait for 100 ns;
+        assert out_d_tb = "01010101010101010101010101010100"
+            report "Test case 3 failed" severity error;
+
+        -- Test case 4: Input with significant bits at the right end
+        in_q_tb <= "00000000000000000000000000001111";
+        wait for 100 ns;
+        assert out_d_tb = "00000000000000000000000000111100"
+            report "Test case 4 failed" severity error;
+
+        -- End simulation
+        wait;
+    end process;
+
+end architecture testbench;

@@ -1,0 +1,73 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do sgnExt16_32_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {H:/School/Year 5/Computer Systems Design/My Labs/Lab 2/sgnExt16_32/sgnExt16_32.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sgnExt16_32
+# -- Compiling architecture RTL of sgnExt16_32
+# 
+vcom -reportprogress 300 -work work {H:/School/Year 5/Computer Systems Design/My Labs/Lab 2/sgnExt16_32/sgnExt16_32_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sgnExt16_32_tb
+# -- Compiling architecture testbench of sgnExt16_32_tb
+# ** Error: H:/School/Year 5/Computer Systems Design/My Labs/Lab 2/sgnExt16_32/sgnExt16_32_tb.vhd(46): String literal has a character '_' not in the enumeration type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: H:/School/Year 5/Computer Systems Design/My Labs/Lab 2/sgnExt16_32/sgnExt16_32_tb.vhd(50): String literal has a character '_' not in the enumeration type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: H:/School/Year 5/Computer Systems Design/My Labs/Lab 2/sgnExt16_32/sgnExt16_32_tb.vhd(54): String literal has a character '_' not in the enumeration type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: H:/School/Year 5/Computer Systems Design/My Labs/Lab 2/sgnExt16_32/sgnExt16_32_tb.vhd(58): String literal has a character '_' not in the enumeration type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: H:/School/Year 5/Computer Systems Design/My Labs/Lab 2/sgnExt16_32/sgnExt16_32_tb.vhd(46): (vcom-1272) Length of expected is 16; length of actual is 19.
+# 
+# ** Error: H:/School/Year 5/Computer Systems Design/My Labs/Lab 2/sgnExt16_32/sgnExt16_32_tb.vhd(50): (vcom-1272) Length of expected is 16; length of actual is 19.
+# 
+# ** Error: H:/School/Year 5/Computer Systems Design/My Labs/Lab 2/sgnExt16_32/sgnExt16_32_tb.vhd(54): (vcom-1272) Length of expected is 16; length of actual is 19.
+# 
+# ** Error: H:/School/Year 5/Computer Systems Design/My Labs/Lab 2/sgnExt16_32/sgnExt16_32_tb.vhd(58): (vcom-1272) Length of expected is 16; length of actual is 19.
+# 
+# ** Error: H:/School/Year 5/Computer Systems Design/My Labs/Lab 2/sgnExt16_32/sgnExt16_32_tb.vhd(64): VHDL Compiler exiting
+vcom -93 -work work -O0 {H:/School/Year 5/Computer Systems Design/My Labs/Lab 2/sgnExt16_32/sgnExt16_32.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sgnExt16_32
+# -- Compiling architecture RTL of sgnExt16_32
+vcom -work work -O0 {H:/School/Year 5/Computer Systems Design/My Labs/Lab 2/sgnExt16_32/sgnExt16_32_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sgnExt16_32_tb
+# -- Compiling architecture testbench of sgnExt16_32_tb
+vsim work.sgnext16_32_tb
+# vsim work.sgnext16_32_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.sgnext16_32_tb(testbench)
+# Loading work.sgnext16_32(rtl)
+vsim work.sgnext16_32_tb
+# vsim work.sgnext16_32_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.sgnext16_32_tb(testbench)
+# Loading work.sgnext16_32(rtl)
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/sgnext16_32_tb/*
+run
