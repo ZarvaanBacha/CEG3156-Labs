@@ -1,0 +1,53 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do shiftLeft2_32_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/shiftLeft2_32 - no clk/shiftLeft2_32.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shiftLeft2_32
+# -- Compiling architecture RTL of shiftLeft2_32
+# 
+vcom -reportprogress 300 -work work {X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/shiftLeft2_32 - no clk/shiftLeft2_32_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shiftLeft2_32_tb
+# -- Compiling architecture tb_arch of shiftLeft2_32_tb
+vsim work.shiftleft2_32_tb
+# vsim work.shiftleft2_32_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.shiftleft2_32_tb(tb_arch)
+# Loading work.shiftleft2_32(rtl)
+add wave -position insertpoint sim:/shiftleft2_32_tb/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: zarvaanbacha  Hostname: ZARVAANBACH78C4  ProcessID: 10048
+# 
+#           Attempting to use alternate WLF file "./wlft2gngfg".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft2gngfg
+# 
+run
+restart
+run
+restart
+run
+restart
+run
+restart
+run
