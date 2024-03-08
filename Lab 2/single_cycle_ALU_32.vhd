@@ -7,12 +7,10 @@ entity single_cycle_ALU_32 is
         a_in, b_in : in std_logic_vector(31 downto 0);
         alu_op : in std_logic_vector(2 downto 0);
         zero, c_out, V : out std_logic;
-        result : out std_logic_vector(31 downto 0); 
+        result : out std_logic_vector(31 downto 0)
     );
-end entity;
-
-
-architecture rtl is 
+end single_cycle_ALU_32;
+architecture rtl of single_cycle_ALU_32 is 
 signal res, send_out, slt : std_logic_vector(31 downto 0);
 begin 
 
