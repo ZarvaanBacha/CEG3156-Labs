@@ -31,7 +31,7 @@ begin
 		end if; 
 	end process; 
     adder: work.adder_nbit(rtl)
-        generic map(32)
+        generic map(8)
         port map(
             a_in => a_in,
             b_in => b_in,
@@ -41,7 +41,7 @@ begin
             s_out => res
         );
     mux : work.mux81n(rtl)
-        generic map(32)
+        generic map(8)
         port map(
             sel => alu_op,
             i0 => a_in and b_in, -- and 
@@ -55,7 +55,7 @@ begin
             outp => send_out
         );
 	all_zeroes <= (others => '0');
-	slt <= (0 => res(31), others => '0');
+	slt <= (0 => res(8), others => '0');
    result <= send_out;
 
 	
