@@ -1,0 +1,14 @@
+|OneBitComparator
+i_A => int_GT.IN0
+i_A => int_LT.IN0
+i_B => int_LT.IN1
+i_B => int_GT.IN1
+i_GTprev => int_GT.IN1
+i_GTprev => int_LT.IN1
+i_LTprev => int_LT.IN1
+i_LTprev => int_GT.IN1
+o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
+o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
+o_EQ <= o_EQ.DB_MAX_OUTPUT_PORT_TYPE
+
+

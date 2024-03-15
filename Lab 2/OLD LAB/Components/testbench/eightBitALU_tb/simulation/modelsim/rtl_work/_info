@@ -1,0 +1,217 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\neira\OneDrive\Escritorio\8 semestre\Computer_System_Design\Labs\Lab 2\testbench\eightBitALU_tb\simulation\modelsim
+Eeightbit8x3mux
+Z1 w1678638102
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\neira\OneDrive\Escritorio\8 semestre\Computer_System_Design\Labs\Lab 2\testbench\eightBitALU_tb\simulation\modelsim
+Z5 8C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/eightBit8x3MUX.vhd
+Z6 FC:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/eightBit8x3MUX.vhd
+l0
+L4
+VjQlk3b51:nKifn:DYmC::0
+!s100 X`3P7[a>AZX85OY@lWMii0
+Z7 OV;C;10.1d;51
+31
+!i10b 1
+Z8 !s108 1678833226.154000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/eightBit8x3MUX.vhd|
+Z10 !s107 C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/eightBit8x3MUX.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+Astruct
+R2
+R3
+DEx4 work 14 eightbit8x3mux 0 22 jQlk3b51:nKifn:DYmC::0
+l16
+L12
+VhHRP^EJHV4ZKDAZ][jFDB1
+!s100 I887DHiFOfM?P?LF[Dn]l1
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12
+Eeightbitadder
+Z13 w1678831521
+R2
+R3
+R4
+Z14 8C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/eightBitAdder.vhd
+Z15 FC:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/eightBitAdder.vhd
+l0
+L4
+V9C]2h3<N:HZ:F?V2ae2T91
+R7
+31
+Z16 !s108 1678833226.015000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/eightBitAdder.vhd|
+Z18 !s107 C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/eightBitAdder.vhd|
+R11
+R12
+!s100 6J6>a`8IO;GCdFcOWbed81
+!i10b 1
+Astruct
+R2
+R3
+DEx4 work 13 eightbitadder 0 22 9C]2h3<N:HZ:F?V2ae2T91
+l25
+L13
+VU;lT:0PUk^4KbQ]KBfNMP2
+R7
+31
+R16
+R17
+R18
+R11
+R12
+!s100 @TgR:N3>O<dQ0B0PmIjT?0
+!i10b 1
+Eeightbitalu
+Z19 w1678833074
+Z20 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z21 8C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/eightBitALU.vhd
+Z22 FC:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/eightBitALU.vhd
+l0
+L7
+VFiCN2khnb4ISMYC2`RZc^0
+R7
+31
+Z23 !s108 1678833225.876000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/eightBitALU.vhd|
+Z25 !s107 C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/eightBitALU.vhd|
+R11
+R12
+!s100 DzJKnjoOAZcKkhPBgo1bZ2
+!i10b 1
+Astruct
+R20
+R2
+R3
+DEx4 work 11 eightbitalu 0 22 FiCN2khnb4ISMYC2`RZc^0
+l41
+L14
+VjlF]M2RHcP_DPUbMJiPEl0
+R7
+31
+R23
+R24
+R25
+R11
+R12
+!s100 X6>biKGj^]9Wh]g1;f@[?0
+!i10b 1
+Eeightbitcomparator
+Z26 w1678637885
+R2
+R3
+R4
+Z27 8C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/eightBitComparator.vhd
+Z28 FC:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/eightBitComparator.vhd
+l0
+L4
+VfL>GAeH;PAT8_=PTU:B812
+R7
+31
+Z29 !s108 1678833225.734000
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/eightBitComparator.vhd|
+Z31 !s107 C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/eightBitComparator.vhd|
+R11
+R12
+!s100 l`l950ELPWiTN5hm4BOC^2
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 18 eightbitcomparator 0 22 fL>GAeH;PAT8_=PTU:B812
+l21
+L10
+V@?:4A8hd`liG>`M_P>YI30
+R7
+31
+R29
+R30
+R31
+R11
+R12
+!s100 U^AKf:<8n9`H<h=1:EbH:2
+!i10b 1
+Eonebitcomparator
+Z32 w1674842635
+R2
+R3
+R4
+Z33 8C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/oneBitComparator.vhd
+Z34 FC:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/oneBitComparator.vhd
+l0
+L4
+V=NAS[<n>eTmZ=iT4P>YGk0
+R7
+31
+Z35 !s108 1678833225.584000
+Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/oneBitComparator.vhd|
+Z37 !s107 C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/oneBitComparator.vhd|
+R11
+R12
+!s100 Hjl24EbT9DJN5HaFS1Ofz0
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 16 onebitcomparator 0 22 =NAS[<n>eTmZ=iT4P>YGk0
+l14
+L11
+V?cCM[cJ1:F`J0XXQbRN_W0
+R7
+31
+R35
+R36
+R37
+R11
+R12
+!s100 4iXLAL1h:aTFH`US_f1[P0
+!i10b 1
+Eonebitfulladder
+Z38 w1674842636
+R2
+R3
+R4
+Z39 8C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/oneBitFullAdder.vhd
+Z40 FC:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/oneBitFullAdder.vhd
+l0
+L12
+VZb;Ajc7ImP:8Kd:Pf]`=o1
+R7
+31
+Z41 !s108 1678833225.433000
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/oneBitFullAdder.vhd|
+Z43 !s107 C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitALU_tb/oneBitFullAdder.vhd|
+R11
+R12
+!s100 biZH]7a3MKN[IUOi@iBMa3
+!i10b 1
+Astruct
+R2
+R3
+DEx4 work 15 onebitfulladder 0 22 Zb;Ajc7ImP:8Kd:Pf]`=o1
+l25
+L20
+VLf5l0B6Uf6H3[9?WD3kO@0
+R7
+31
+R41
+R42
+R43
+R11
+R12
+!s100 1ei>2aGLl@1_bDU6<LMk<2
+!i10b 1

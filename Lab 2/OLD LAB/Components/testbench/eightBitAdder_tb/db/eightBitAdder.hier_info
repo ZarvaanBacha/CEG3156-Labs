@@ -1,0 +1,141 @@
+|eightBitAdder
+i_x[0] => oneBitFullAdder:adder0.i_x
+i_x[1] => oneBitFullAdder:adder1.i_x
+i_x[2] => oneBitFullAdder:adder2.i_x
+i_x[3] => oneBitFullAdder:adder3.i_x
+i_x[4] => oneBitFullAdder:adder4.i_x
+i_x[5] => oneBitFullAdder:adder5.i_x
+i_x[6] => oneBitFullAdder:adder6.i_x
+i_x[7] => oneBitFullAdder:adder7.i_x
+i_y[0] => oneBitFullAdder:adder0.i_y
+i_y[1] => oneBitFullAdder:adder1.i_y
+i_y[2] => oneBitFullAdder:adder2.i_y
+i_y[3] => oneBitFullAdder:adder3.i_y
+i_y[4] => oneBitFullAdder:adder4.i_y
+i_y[5] => oneBitFullAdder:adder5.i_y
+i_y[6] => oneBitFullAdder:adder6.i_y
+i_y[7] => oneBitFullAdder:adder7.i_y
+i_cin => oneBitFullAdder:adder0.i_cin
+o_cout <= oneBitFullAdder:adder7.o_cout
+o_s[0] <= oneBitFullAdder:adder0.o_s
+o_s[1] <= oneBitFullAdder:adder1.o_s
+o_s[2] <= oneBitFullAdder:adder2.o_s
+o_s[3] <= oneBitFullAdder:adder3.o_s
+o_s[4] <= oneBitFullAdder:adder4.o_s
+o_s[5] <= oneBitFullAdder:adder5.o_s
+o_s[6] <= oneBitFullAdder:adder6.o_s
+o_s[7] <= oneBitFullAdder:adder7.o_s
+
+
+|eightBitAdder|oneBitFullAdder:adder7
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitAdder|oneBitFullAdder:adder6
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitAdder|oneBitFullAdder:adder5
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitAdder|oneBitFullAdder:adder4
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitAdder|oneBitFullAdder:adder3
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitAdder|oneBitFullAdder:adder2
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitAdder|oneBitFullAdder:adder1
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitAdder|oneBitFullAdder:adder0
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+

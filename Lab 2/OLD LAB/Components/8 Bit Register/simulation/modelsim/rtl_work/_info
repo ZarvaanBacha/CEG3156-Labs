@@ -1,0 +1,110 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Zarvaan Bacha\Documents\School\Year 4\Winter\CEG 3156 - Computer Systems Design\Labs\Lab 2\Code\8 Bit Register\simulation\modelsim
+Eeightbitregister
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+31
+Z3 w1678380491
+Z4 dC:\Users\Zarvaan Bacha\Documents\School\Year 4\Winter\CEG 3156 - Computer Systems Design\Labs\Lab 2\Code\8 Bit Register\simulation\modelsim
+Z5 8C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/8 Bit Register/eightBitRegister.vhd
+Z6 FC:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/8 Bit Register/eightBitRegister.vhd
+l0
+L4
+VDi8Um3CBz7[XZ<[W^hY?`0
+Z7 OV;C;10.1d;51
+Z8 !s108 1678384498.293000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/8 Bit Register/eightBitRegister.vhd|
+Z10 !s107 C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/8 Bit Register/eightBitRegister.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!i10b 1
+!s100 5P=S8a@f0mh=<N]2PYI=g0
+Artl
+R1
+R2
+DEx4 work 16 eightbitregister 0 22 Di8Um3CBz7[XZ<[W^hY?`0
+31
+l22
+L10
+V2k>=ak3inY:<H=c_[j29X3
+R7
+R8
+R9
+R10
+R11
+R12
+!i10b 1
+!s100 fJ3XQciT0eZQ2?kEeL9Q33
+Eenardff_2
+R1
+R2
+31
+Z13 w1678376336
+R4
+Z14 8C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/8 Bit Register/enardFF_2.vhd
+Z15 FC:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/8 Bit Register/enardFF_2.vhd
+l0
+L31
+VefK2f?3R7`bZO40Rc84Mm0
+R7
+Z16 !s108 1678384498.353000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/8 Bit Register/enardFF_2.vhd|
+Z18 !s107 C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/8 Bit Register/enardFF_2.vhd|
+R11
+R12
+!i10b 1
+!s100 LM:aJ[Ade62O^TDCQB2jH0
+Artl
+R1
+R2
+DEx4 work 9 enardff_2 0 22 efK2f?3R7`bZO40Rc84Mm0
+31
+l43
+L40
+VAd]:U5^6W=P5UO^;ST?Bz2
+R7
+R16
+R17
+R18
+R11
+R12
+!i10b 1
+!s100 n`NKG5gX7V@?eV@4dAU663
+Etestbench_eightbitregister
+Z19 w1678384745
+R1
+R2
+R4
+Z20 8C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/8 Bit Register/eightBitRegister_Testbench.vhd
+Z21 FC:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/8 Bit Register/eightBitRegister_Testbench.vhd
+l0
+L4
+VT2=i52;QVe87H>46C6keV1
+!s100 cJjUiKQeX_749b4Yh:KL90
+R7
+32
+!i10b 1
+Z22 !s108 1678384811.724000
+Z23 !s90 -reportprogress|300|-work|work|-O0|C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/8 Bit Register/eightBitRegister_Testbench.vhd|
+Z24 !s107 C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/8 Bit Register/eightBitRegister_Testbench.vhd|
+Z25 o-work work -O0
+R12
+Abehavior
+R1
+R2
+Z26 DEx4 work 26 testbench_eightbitregister 0 22 T2=i52;QVe87H>46C6keV1
+l32
+L7
+V1S[X?I@E6DaKbLZkI4k7`3
+!s100 3fOSUYCJ=k888z3;YZM@=3
+R7
+32
+!i10b 1
+R22
+R23
+R24
+R25
+R12

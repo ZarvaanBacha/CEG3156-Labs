@@ -1,0 +1,59 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do OneBitFullAdder_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/One Bit Full Adder/OneBitFullAdder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity oneBitFullAdder
+# -- Compiling architecture rtl of oneBitFullAdder
+# 
+vcom -reportprogress 300 -work work {C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/One Bit Full Adder/OneBitFullAdder_Testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_oneBitFullAdder
+# -- Compiling architecture testbench of tb_oneBitFullAdder
+vsim -voptargs=+acc work.tb_onebitfulladder
+# vsim -voptargs=+acc work.tb_onebitfulladder 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_onebitfulladder(testbench)
+# Loading work.onebitfulladder(rtl)
+add wave -position insertpoint  \
+sim:/tb_onebitfulladder/o_s \
+sim:/tb_onebitfulladder/o_cout \
+sim:/tb_onebitfulladder/i_y \
+sim:/tb_onebitfulladder/i_x \
+sim:/tb_onebitfulladder/i_cin
+run
+# ** Note: Test case 1
+#    Time: 0 ps  Iteration: 0  Instance: /tb_onebitfulladder
+# ** Note: Test case 2
+#    Time: 10 ns  Iteration: 0  Instance: /tb_onebitfulladder
+# ** Note: Test case 3
+#    Time: 20 ns  Iteration: 0  Instance: /tb_onebitfulladder
+# ** Note: Test case 4
+#    Time: 30 ns  Iteration: 0  Instance: /tb_onebitfulladder
+# ** Note: Test case 5
+#    Time: 40 ns  Iteration: 0  Instance: /tb_onebitfulladder
+# ** Note: Test case 6
+#    Time: 50 ns  Iteration: 0  Instance: /tb_onebitfulladder
+# ** Note: Test case 7
+#    Time: 60 ns  Iteration: 0  Instance: /tb_onebitfulladder
+# ** Note: Test case 8
+#    Time: 70 ns  Iteration: 0  Instance: /tb_onebitfulladder
+# ** Note: All test cases passed
+#    Time: 80 ns  Iteration: 0  Instance: /tb_onebitfulladder

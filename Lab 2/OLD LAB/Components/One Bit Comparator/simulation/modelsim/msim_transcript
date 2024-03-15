@@ -1,0 +1,43 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do OneBitComparator_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/One Bit Comparator/OneBitComparator.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity oneBitComparator
+# -- Compiling architecture rtl of oneBitComparator
+# 
+vcom -reportprogress 300 -work work {C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/One Bit Comparator/OneBitComparator_Testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_oneBitComparator
+# -- Compiling architecture testbench of tb_oneBitComparator
+vsim -voptargs=+acc work.tb_onebitcomparator
+# vsim -voptargs=+acc work.tb_onebitcomparator 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_onebitcomparator(testbench)
+# Loading work.onebitcomparator(rtl)
+add wave -position insertpoint  \
+sim:/tb_onebitcomparator/o_LT \
+sim:/tb_onebitcomparator/o_GT \
+sim:/tb_onebitcomparator/o_EQ \
+sim:/tb_onebitcomparator/i_LTprev \
+sim:/tb_onebitcomparator/i_GTprev \
+sim:/tb_onebitcomparator/i_B \
+sim:/tb_onebitcomparator/i_A
+run
