@@ -19,5 +19,5 @@ architecture rtl of clockDiv2 is
 			end if;
 		end if;
 		out_clk <= int_clk;
-	end process;
+		end process;
 end rtl;	
