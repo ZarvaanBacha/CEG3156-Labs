@@ -1,0 +1,641 @@
+m255
+K3
+13
+cModel Technology
+Z0 dX:\School\Year 5\Computer Systems Design\My Labs\Lab 2\Single Cycle Processor\simulation\modelsim
+Econtrolunit
+Z1 w1679067342
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dX:\School\Year 5\Computer Systems Design\My Labs\Lab 2\Single Cycle Processor\simulation\modelsim
+Z5 8X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/controlUnit.vhd
+Z6 FX:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/controlUnit.vhd
+l0
+L4
+VEmE`_dn6ZJ>T0oa2EHJ750
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1711129634.010000
+Z9 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/controlUnit.vhd|
+Z10 !s107 X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/controlUnit.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 aWj84ZPjNM7LKH@eA5[m71
+!i10b 1
+Astruct
+R2
+R3
+DEx4 work 11 controlunit 0 22 EmE`_dn6ZJ>T0oa2EHJ750
+l19
+L13
+V9JmeBVNS8DAY8QflR;cDf3
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 Q@bS`4?hRHM3^iCPgQGiA3
+!i10b 1
+Econtrolunitalu
+Z13 w1678916598
+R2
+R3
+R4
+Z14 8X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/controlUnitALU.vhd
+Z15 FX:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/controlUnitALU.vhd
+l0
+L4
+V4J29hQdZ:M__01hGhjTl>2
+R7
+31
+Z16 !s108 1711129633.837000
+Z17 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/controlUnitALU.vhd|
+Z18 !s107 X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/controlUnitALU.vhd|
+R11
+R12
+!s100 n3ElfYf=_53SgB@41ITRF1
+!i10b 1
+Astruct
+R2
+R3
+DEx4 work 14 controlunitalu 0 22 4J29hQdZ:M__01hGhjTl>2
+l16
+L12
+VcJn;KHU7ST7@Vc3J0>:oB3
+R7
+31
+R16
+R17
+R18
+R11
+R12
+!s100 T`0oEnUc_7<4^YChJPe>>0
+!i10b 1
+Edispcontroller
+Z19 w1711124094
+Z20 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z21 8X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/DispController.vhd
+Z22 FX:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/DispController.vhd
+l0
+L5
+V3H:Fo_o7DoAhl=IM]e3<k3
+R7
+31
+Z23 !s108 1711129630.304000
+Z24 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/DispController.vhd|
+Z25 !s107 X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/DispController.vhd|
+R11
+R12
+!s100 hjV:n=jEPYNVZ0eKIdk9U3
+!i10b 1
+Abehave
+R20
+R2
+R3
+DEx4 work 14 dispcontroller 0 22 3H:Fo_o7DoAhl=IM]e3<k3
+l44
+L12
+VU?a12;a=_<a>0`KKDP9f[3
+R7
+31
+R23
+R24
+R25
+R11
+R12
+!s100 NzKMHR6ZcKBW4UWKc3M5S1
+!i10b 1
+Eeightbit2x1mux
+R13
+R2
+R3
+R4
+Z26 8X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBit2x1MUX.vhd
+Z27 FX:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBit2x1MUX.vhd
+l0
+L4
+VhhafF;2O55VS3]A053@432
+R7
+31
+Z28 !s108 1711129633.665000
+Z29 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBit2x1MUX.vhd|
+Z30 !s107 X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBit2x1MUX.vhd|
+R11
+R12
+!s100 PQo90dg;3W:ORlI13hA[m2
+!i10b 1
+Astruct
+R2
+R3
+DEx4 work 14 eightbit2x1mux 0 22 hhafF;2O55VS3]A053@432
+l14
+L12
+VPfKj1a6]`d_6UOf6mPfS33
+R7
+31
+R28
+R29
+R30
+R11
+R12
+!s100 6;ni:[dc_L@E=N:H;R;cW2
+!i10b 1
+Eeightbit8x3mux
+R13
+R2
+R3
+R4
+Z31 8X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBit8x3MUX.vhd
+Z32 FX:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBit8x3MUX.vhd
+l0
+L4
+VjQlk3b51:nKifn:DYmC::0
+R7
+31
+Z33 !s108 1711129633.478000
+Z34 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBit8x3MUX.vhd|
+Z35 !s107 X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBit8x3MUX.vhd|
+R11
+R12
+!s100 X`3P7[a>AZX85OY@lWMii0
+!i10b 1
+Astruct
+R2
+R3
+DEx4 work 14 eightbit8x3mux 0 22 jQlk3b51:nKifn:DYmC::0
+l16
+L12
+VhHRP^EJHV4ZKDAZ][jFDB1
+R7
+31
+R33
+R34
+R35
+R11
+R12
+!s100 I887DHiFOfM?P?LF[Dn]l1
+!i10b 1
+Eeightbitadder
+R13
+R2
+R3
+R4
+Z36 8X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBitAdder.vhd
+Z37 FX:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBitAdder.vhd
+l0
+L4
+V9C]2h3<N:HZ:F?V2ae2T91
+R7
+31
+Z38 !s108 1711129633.291000
+Z39 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBitAdder.vhd|
+Z40 !s107 X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBitAdder.vhd|
+R11
+R12
+!s100 6J6>a`8IO;GCdFcOWbed81
+!i10b 1
+Astruct
+R2
+R3
+DEx4 work 13 eightbitadder 0 22 9C]2h3<N:HZ:F?V2ae2T91
+l25
+L13
+VU;lT:0PUk^4KbQ]KBfNMP2
+R7
+31
+R38
+R39
+R40
+R11
+R12
+!s100 @TgR:N3>O<dQ0B0PmIjT?0
+!i10b 1
+Eeightbitalu
+R13
+R20
+R2
+R3
+R4
+Z41 8X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBitALU.vhd
+Z42 FX:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBitALU.vhd
+l0
+L7
+VFiCN2khnb4ISMYC2`RZc^0
+R7
+31
+Z43 !s108 1711129633.088000
+Z44 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBitALU.vhd|
+Z45 !s107 X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBitALU.vhd|
+R11
+R12
+!s100 DzJKnjoOAZcKkhPBgo1bZ2
+!i10b 1
+Astruct
+R20
+R2
+R3
+DEx4 work 11 eightbitalu 0 22 FiCN2khnb4ISMYC2`RZc^0
+l41
+L14
+VjlF]M2RHcP_DPUbMJiPEl0
+R7
+31
+R43
+R44
+R45
+R11
+R12
+!s100 X6>biKGj^]9Wh]g1;f@[?0
+!i10b 1
+Eeightbitcomparator
+Z46 w1679068918
+R2
+R3
+R4
+Z47 8X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBitComparator.vhd
+Z48 FX:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBitComparator.vhd
+l0
+L4
+VfL>GAeH;PAT8_=PTU:B812
+R7
+31
+Z49 !s108 1711129632.915000
+Z50 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBitComparator.vhd|
+Z51 !s107 X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBitComparator.vhd|
+R11
+R12
+!s100 l`l950ELPWiTN5hm4BOC^2
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 18 eightbitcomparator 0 22 fL>GAeH;PAT8_=PTU:B812
+l19
+L10
+VC30ic0DGz[z>Sezo5@B1<1
+R7
+31
+R49
+R50
+R51
+R11
+R12
+!s100 U=C[XWeOMR_Pjl^UD>9>70
+!i10b 1
+Eeightbitdecoder
+R13
+R2
+R3
+R4
+Z52 8X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBitDecoder.vhd
+Z53 FX:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBitDecoder.vhd
+l0
+L4
+VN?7zZzCY6;[S>hb_X^E>b2
+R7
+31
+Z54 !s108 1711129632.743000
+Z55 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBitDecoder.vhd|
+Z56 !s107 X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBitDecoder.vhd|
+R11
+R12
+!s100 Zl=4K3ZNAA:d?@?i4cR652
+!i10b 1
+Astruct
+R2
+R3
+DEx4 work 15 eightbitdecoder 0 22 N?7zZzCY6;[S>hb_X^E>b2
+l14
+L10
+VcA]3zVYAeoCXjU;YnUThU0
+R7
+31
+R54
+R55
+R56
+R11
+R12
+!s100 mb6=oM9l:5m<MCLiOd@3J3
+!i10b 1
+Eeightbitregister
+Z57 w1678380491
+R2
+R3
+R4
+Z58 8X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBitRegister.vhd
+Z59 FX:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBitRegister.vhd
+l0
+L4
+VDi8Um3CBz7[XZ<[W^hY?`0
+R7
+31
+Z60 !s108 1711129632.572000
+Z61 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBitRegister.vhd|
+Z62 !s107 X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/eightBitRegister.vhd|
+R11
+R12
+!s100 5P=S8a@f0mh=<N]2PYI=g0
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 16 eightbitregister 0 22 Di8Um3CBz7[XZ<[W^hY?`0
+l22
+L10
+V2k>=ak3inY:<H=c_[j29X3
+R7
+31
+R60
+R61
+R62
+R11
+R12
+!s100 fJ3XQciT0eZQ2?kEeL9Q33
+!i10b 1
+Eenardff_2
+Z63 w1678376336
+R2
+R3
+R4
+Z64 8X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/enardFF_2.vhd
+Z65 FX:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/enardFF_2.vhd
+l0
+L31
+VefK2f?3R7`bZO40Rc84Mm0
+R7
+31
+Z66 !s108 1711129632.384000
+Z67 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/enardFF_2.vhd|
+Z68 !s107 X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/enardFF_2.vhd|
+R11
+R12
+!s100 LM:aJ[Ade62O^TDCQB2jH0
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 9 enardff_2 0 22 efK2f?3R7`bZO40Rc84Mm0
+l43
+L40
+VAd]:U5^6W=P5UO^;ST?Bz2
+R7
+31
+R66
+R67
+R68
+R11
+R12
+!s100 n`NKG5gX7V@?eV@4dAU663
+!i10b 1
+Elpm_ram2
+Z69 w1711127132
+R2
+R3
+R4
+Z70 8X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/lpm_ram2.vhd
+Z71 FX:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/lpm_ram2.vhd
+l0
+L42
+VGPLz;PX1EQ8UZ;?g>5d323
+R7
+31
+Z72 !s108 1711129629.992000
+Z73 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/lpm_ram2.vhd|
+Z74 !s107 X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/lpm_ram2.vhd|
+R11
+R12
+!s100 9Ole?]>9YfnF>Pc2@g2Cj1
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 8 lpm_ram2 0 22 GPLz;PX1EQ8UZ;?g>5d323
+l94
+L55
+VRcf=UFzKHk18=i7S7:6af2
+R7
+31
+R72
+R73
+R74
+R11
+R12
+!s100 0XQS=6m>1AUSHh?CeLaog0
+!i10b 1
+Elpm_rom1
+Z75 w1711127173
+R2
+R3
+R4
+Z76 8X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/lpm_rom1.vhd
+Z77 FX:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/lpm_rom1.vhd
+l0
+L42
+Vclc>WcICXFRj75S]WORKV0
+R7
+31
+Z78 !s108 1711129629.727000
+Z79 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/lpm_rom1.vhd|
+Z80 !s107 X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/lpm_rom1.vhd|
+R11
+R12
+!s100 MY@NMjVE8Lad@]11lCnkm2
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 8 lpm_rom1 0 22 clc>WcICXFRj75S]WORKV0
+l82
+L52
+Vn932D1U@kDFe=2QJGm5113
+R7
+31
+R78
+R79
+R80
+R11
+R12
+!s100 FNXNV1@Yhe6A:VUmXFmO51
+!i10b 1
+Eonebitcomparator
+Z81 w1678559726
+R2
+R3
+R4
+Z82 8X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/OneBitComparator.vhd
+Z83 FX:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/OneBitComparator.vhd
+l0
+L4
+Vm`95kXmP=gmm6jh;k1^F:1
+R7
+31
+Z84 !s108 1711129632.118000
+Z85 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/OneBitComparator.vhd|
+Z86 !s107 X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/OneBitComparator.vhd|
+R11
+R12
+!s100 W4R_IF79LVWCf?=@`FE2Y2
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 16 onebitcomparator 0 22 m`95kXmP=gmm6jh;k1^F:1
+l12
+L9
+VSdcM2>cH=KcVWR6PgBeHS0
+R7
+31
+R84
+R85
+R86
+R11
+R12
+!s100 =UBdaX1<NWJIWXIVOZ8cM2
+!i10b 1
+Eonebitfulladder
+Z87 w1678560705
+R2
+R3
+R4
+Z88 8X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/OneBitFullAdder.vhd
+Z89 FX:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/OneBitFullAdder.vhd
+l0
+L4
+VY9d1C2ne1jWa>b@66OjSN3
+R7
+31
+Z90 !s108 1711129631.806000
+Z91 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/OneBitFullAdder.vhd|
+Z92 !s107 X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/OneBitFullAdder.vhd|
+R11
+R12
+!s100 I^F[97khdZg?zbWbQ5`8g2
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 15 onebitfulladder 0 22 Y9d1C2ne1jWa>b@66OjSN3
+l13
+L9
+ViJX?F35?NCIH7bL^zHDDX3
+R7
+31
+R90
+R91
+R92
+R11
+R12
+!s100 k0oYHQB5oM@gO4K<DB5>X3
+!i10b 1
+Eregisterfile
+Z93 w1678983041
+R2
+R3
+R4
+Z94 8X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/registerFile.vhd
+Z95 FX:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/registerFile.vhd
+l0
+L4
+V2ci?<ffTV`L@eObmVP`6V2
+R7
+31
+Z96 !s108 1711129631.207000
+Z97 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/registerFile.vhd|
+Z98 !s107 X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/registerFile.vhd|
+R11
+R12
+!s100 SFYN?POO`aJWJ_9N7fcUQ3
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 12 registerfile 0 22 2ci?<ffTV`L@eObmVP`6V2
+l41
+L12
+V8Oe>7dz1T4B3f6nUPgROV1
+R7
+31
+R96
+R97
+R98
+R11
+R12
+!s100 Kf6j8e;?<95daFlzL]EL[3
+!i10b 1
+Esinglecycleprocessor
+Z99 w1711129596
+Z100 DPx3 lpm 14 lpm_components 0 22 iingGbl@N@a>h=m<^4?ml0
+R2
+R3
+R4
+Z101 8X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/SingleCycleProcessor.vhd
+Z102 FX:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/SingleCycleProcessor.vhd
+l0
+L7
+VUBkLWCS=89ZjN^8dWR81:1
+R7
+31
+Z103 !s108 1711129634.197000
+Z104 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/SingleCycleProcessor.vhd|
+Z105 !s107 X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/SingleCycleProcessor.vhd|
+R11
+R12
+!s100 WQ^4R:K8;`4PKW6j082mm3
+!i10b 1
+Artl
+R100
+R2
+R3
+DEx4 work 20 singlecycleprocessor 0 22 UBkLWCS=89ZjN^8dWR81:1
+l190
+L17
+V@[QgkJGG9nf4geY<?Bf8X3
+R7
+31
+R103
+R104
+R105
+R11
+R12
+!s100 Wc^3FR:STDoh20aKYGHDW3
+!i10b 1
+Etb_singlecycleprocessor
+Z106 w1711126775
+R2
+R3
+R4
+Z107 8X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/SingleCycleProcessor_testbench.vhd
+Z108 FX:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/SingleCycleProcessor_testbench.vhd
+l0
+L4
+V7;R:lFJ7>SQS_bhX9MN[X3
+!s100 _ZPhfdURTogJ_C^Th@5d<1
+R7
+31
+!i10b 1
+Z109 !s108 1711129634.416000
+Z110 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/SingleCycleProcessor_testbench.vhd|
+Z111 !s107 X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/SingleCycleProcessor_testbench.vhd|
+R11
+R12
+Atestbench
+R2
+R3
+DEx4 work 23 tb_singlecycleprocessor 0 22 7;R:lFJ7>SQS_bhX9MN[X3
+l26
+L7
+V4nAKQ_lPKD^L;;dI0bz>@2
+!s100 0@Wbk[1f0cgX2GAWiVOgk3
+R7
+31
+!i10b 1
+R109
+R110
+R111
+R11
+R12

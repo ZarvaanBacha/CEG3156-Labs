@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="SingleCycleProcessor">
+		<CBX_INST_ENTRY INSTANCE_NAME="|SingleCycleProcessor|lpm_ram2:dataMem|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_map1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|SingleCycleProcessor|lpm_rom1:instructionMem|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_fr91.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

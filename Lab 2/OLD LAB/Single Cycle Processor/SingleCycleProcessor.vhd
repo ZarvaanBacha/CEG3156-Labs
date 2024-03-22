@@ -158,9 +158,6 @@ SIGNAL int_muxOut : STD_LOGIC_VECTOR(7 downto 0);
 
 BEGIN
 
-int_DivClk <= GClock;
-int_DivClk1 <= CLOCK_50;
-int_DivClk2 <= CLOCK2_50;
 
 int_readRegister1 <= int_instruction(23 downto 21);
 int_readRegister2 <= int_instruction(18 downto 16);
@@ -169,9 +166,9 @@ int_muxOther <= '0' & int_regDst & int_jump & int_memRead & int_memToReg & int_a
 
 
 --Clock Divider Assignment--
---clkDiv: clockDiv
-	--PORT MAP(in_clk => GClock,
-				--out_clk => int_DivClk);
+clkDiv: clockDiv
+	PORT MAP(in_clk => CLOCK_50,
+				out_clk => int_DivClk);
 
 --clkDiv_50_1: clockDiv2
 	--PORT MAP(in_clk => CLOCK_50,
@@ -211,7 +208,7 @@ ioMUX: eightBit8x3MUX
 
 PC: eightBitRegister
 	PORT MAP (	i_gReset => GReset,
-			i_clock => int_DivClk,
+			i_clock => GClock,
 			i_enable => '1',
 			i_Data => int_PCin,
 			o_q => int_PCout);
@@ -225,8 +222,8 @@ PCAdder: eightBitAdder
 			
 
 instructionMem: instructionMemory
-	PORT MAP (	i_inclock => int_DivClk1,
-			i_outclock => int_DivClk2,
+	PORT MAP (	i_inclock => int_DivClk,
+			i_outclock => CLOCK2_50,
 			i_addr => int_PCout,
 			o_q => int_instruction);
 
@@ -255,7 +252,7 @@ int_extendedAddress <= int_instruction(6) & int_instruction(6 downto 0);
 int_extendedShiftedAddress <= int_extendedAddress(5 downto 0) & '0' & '0';
 
 registers: registerFile
-	PORT MAP (	 i_clock => int_DivClk,
+	PORT MAP (	 i_clock => GClock,
 			 i_gReset => GReset,
 			 i_regWrite => int_regWrite,
 			 i_readRegister1 => int_readRegister1,
@@ -305,8 +302,8 @@ alu: eightBitALU
 			o_q => int_aluRes);
 
 dataMem: dataMemory
-	PORT MAP (	i_inclock => int_DivClk1, --CLOCK_50
-			i_outclock => int_DivClk2,
+	PORT MAP (	i_inclock => int_DivClk, --CLOCK_50
+			i_outclock => CLOCK2_50,
 			i_writeEnable => int_memWrite,
 			i_addr => int_aluRes,
 			i_data => int_readData2,

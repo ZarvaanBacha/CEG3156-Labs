@@ -1,5 +1,5 @@
 Flow report for SingleCycleProcessor
-Fri Mar 15 11:46:34 2024
+Thu Mar 21 17:48:57 2024
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Fri Mar 15 11:46:34 2024      ;
+; Flow Status                        ; Successful - Thu Mar 21 17:48:57 2024      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; SingleCycleProcessor                       ;
 ; Top-level Entity Name              ; singleCycleProcessor                       ;
 ; Family                             ; Cyclone IV E                               ;
 ; Device                             ; EP4CE115F29C7                              ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 338 / 114,480 ( < 1 % )                    ;
-;     Total combinational functions  ; 326 / 114,480 ( < 1 % )                    ;
-;     Dedicated logic registers      ; 127 / 114,480 ( < 1 % )                    ;
-; Total registers                    ; 127                                        ;
+; Total logic elements               ; 378 / 114,480 ( < 1 % )                    ;
+;     Total combinational functions  ; 330 / 114,480 ( < 1 % )                    ;
+;     Dedicated logic registers      ; 131 / 114,480 ( < 1 % )                    ;
+; Total registers                    ; 131                                        ;
 ; Total pins                         ; 108 / 529 ( 20 % )                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 10,240 / 3,981,312 ( < 1 % )               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+----------------------+
 ; Option            ; Setting              ;
 +-------------------+----------------------+
-; Start date & time ; 03/15/2024 11:45:14  ;
+; Start date & time ; 03/21/2024 17:48:20  ;
 ; Main task         ; Compilation          ;
 ; Revision Name     ; SingleCycleProcessor ;
 +-------------------+----------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 121373346598.171051751400940          ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 13870900008077.171105770012912        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
@@ -94,12 +94,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 4656 MB             ; 00:00:05                           ;
-; Fitter                    ; 00:00:42     ; 1.0                     ; 5080 MB             ; 00:00:33                           ;
-; Assembler                 ; 00:00:06     ; 1.0                     ; 4568 MB             ; 00:00:06                           ;
-; TimeQuest Timing Analyzer ; 00:00:07     ; 1.0                     ; 4663 MB             ; 00:00:04                           ;
-; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 4529 MB             ; 00:00:02                           ;
-; Total                     ; 00:01:09     ; --                      ; --                  ; 00:00:50                           ;
+; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 4655 MB             ; 00:00:03                           ;
+; Fitter                    ; 00:00:21     ; 1.0                     ; 5082 MB             ; 00:00:19                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 4565 MB             ; 00:00:04                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4667 MB             ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4531 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:34     ; --                      ; --                  ; 00:00:30                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -108,11 +108,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; ZARVAANBACH78C4  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; ZARVAANBACH78C4  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; ZARVAANBACH78C4  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; ZARVAANBACH78C4  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; ZARVAANBACH78C4  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; Winathan         ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; Winathan         ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; Winathan         ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; Winathan         ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Winathan         ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

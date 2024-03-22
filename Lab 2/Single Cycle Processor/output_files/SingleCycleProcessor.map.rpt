@@ -1,0 +1,780 @@
+Analysis & Elaboration report for SingleCycleProcessor
+Fri Mar 22 13:46:54 2024
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration IP Cores Summary
+  5. Source assignments for lpm_rom1:instructionMem|altsyncram:altsyncram_component|altsyncram_fr91:auto_generated
+  6. Source assignments for lpm_ram2:dataMem|altsyncram:altsyncram_component|altsyncram_map1:auto_generated
+  7. Parameter Settings for User Entity Instance: lpm_rom1:instructionMem|altsyncram:altsyncram_component
+  8. Parameter Settings for User Entity Instance: lpm_ram2:dataMem|altsyncram:altsyncram_component
+  9. altsyncram Parameter Settings by Entity Instance
+ 10. Analysis & Elaboration Settings
+ 11. Port Connectivity Checks: "eightBitALU:alu|eightBit8x3MUX:mux"
+ 12. Port Connectivity Checks: "eightBitALU:alu|eightBitComparator:comparator|oneBitComparator:comp0"
+ 13. Port Connectivity Checks: "eightBitALU:alu|eightBitComparator:comparator|oneBitComparator:comp1"
+ 14. Port Connectivity Checks: "eightBitALU:alu|eightBitComparator:comparator|oneBitComparator:comp2"
+ 15. Port Connectivity Checks: "eightBitALU:alu|eightBitComparator:comparator|oneBitComparator:comp3"
+ 16. Port Connectivity Checks: "eightBitALU:alu|eightBitComparator:comparator|oneBitComparator:comp4"
+ 17. Port Connectivity Checks: "eightBitALU:alu|eightBitComparator:comparator|oneBitComparator:comp5"
+ 18. Port Connectivity Checks: "eightBitALU:alu|eightBitComparator:comparator|oneBitComparator:comp6"
+ 19. Port Connectivity Checks: "eightBitALU:alu|eightBitComparator:comparator|oneBitComparator:comp7"
+ 20. Port Connectivity Checks: "eightBitALU:alu|eightBitComparator:comparator"
+ 21. Port Connectivity Checks: "eightBitALU:alu|eightBitAdder:subtractor"
+ 22. Port Connectivity Checks: "eightBitALU:alu|eightBitAdder:adder"
+ 23. Port Connectivity Checks: "eightBit2x1MUX:writeRegMUX"
+ 24. Port Connectivity Checks: "eightBit2x1MUX:branchOrJump"
+ 25. Port Connectivity Checks: "eightBitAdder:branchAdder"
+ 26. Port Connectivity Checks: "eightBitAdder:PCAdder"
+ 27. Port Connectivity Checks: "eightBitRegister:PC|enARdFF_2:bit0"
+ 28. Port Connectivity Checks: "eightBitRegister:PC|enARdFF_2:bit1"
+ 29. Port Connectivity Checks: "eightBitRegister:PC|enARdFF_2:bit2"
+ 30. Port Connectivity Checks: "eightBitRegister:PC|enARdFF_2:bit3"
+ 31. Port Connectivity Checks: "eightBitRegister:PC|enARdFF_2:bit4"
+ 32. Port Connectivity Checks: "eightBitRegister:PC|enARdFF_2:bit5"
+ 33. Port Connectivity Checks: "eightBitRegister:PC|enARdFF_2:bit6"
+ 34. Port Connectivity Checks: "eightBitRegister:PC|enARdFF_2:bit7"
+ 35. Port Connectivity Checks: "eightBitRegister:PC"
+ 36. Port Connectivity Checks: "eightBit8x3MUX:ioMUX"
+ 37. Analysis & Elaboration Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                  ;
++------------------------------------+--------------------------------------------+
+; Analysis & Elaboration Status      ; Successful - Fri Mar 22 13:46:54 2024      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; SingleCycleProcessor                       ;
+; Top-level Entity Name              ; singleCycleProcessor                       ;
+; Family                             ; Cyclone IV E                               ;
+; Total logic elements               ; N/A until Partition Merge                  ;
+;     Total combinational functions  ; N/A until Partition Merge                  ;
+;     Dedicated logic registers      ; N/A until Partition Merge                  ;
+; Total registers                    ; N/A until Partition Merge                  ;
+; Total pins                         ; N/A until Partition Merge                  ;
+; Total virtual pins                 ; N/A until Partition Merge                  ;
+; Total memory bits                  ; N/A until Partition Merge                  ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
+; Total PLLs                         ; N/A until Partition Merge                  ;
++------------------------------------+--------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration IP Cores Summary                                                                                                                                                                    ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------+--------------------------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                               ; IP Include File                                                                            ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------+--------------------------------------------------------------------------------------------+
+; Altera ; RAM: 2-PORT  ; 13.0    ; N/A          ; N/A          ; |singleCycleProcessor|lpm_ram2:dataMem        ; X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/lpm_ram2.vhd ;
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |singleCycleProcessor|lpm_rom1:instructionMem ; X:/School/Year 5/Computer Systems Design/My Labs/Lab 2/Single Cycle Processor/lpm_rom1.vhd ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------+--------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Source assignments for lpm_rom1:instructionMem|altsyncram:altsyncram_component|altsyncram_fr91:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                              ;
++---------------------------------+--------------------+------+-------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                               ;
++---------------------------------+--------------------+------+-------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Source assignments for lpm_ram2:dataMem|altsyncram:altsyncram_component|altsyncram_map1:auto_generated ;
++---------------------------------+--------------------+------+------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                       ;
++---------------------------------+--------------------+------+------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                        ;
++---------------------------------+--------------------+------+------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_rom1:instructionMem|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                     ;
++------------------------------------+----------------------+------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                  ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                               ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                             ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                             ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                           ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                  ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                                  ;
+; WIDTH_A                            ; 32                   ; Signed Integer                           ;
+; WIDTHAD_A                          ; 8                    ; Signed Integer                           ;
+; NUMWORDS_A                         ; 256                  ; Signed Integer                           ;
+; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                                  ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                  ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                  ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                  ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                  ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                  ;
+; WIDTH_B                            ; 1                    ; Untyped                                  ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                  ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                  ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                  ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                  ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                  ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                  ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                  ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                  ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                  ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                  ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                  ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                  ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                  ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                  ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                           ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                  ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                  ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                  ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                  ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                  ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                  ;
+; INIT_FILE                          ; instruction.mif      ; Untyped                                  ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                  ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                  ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                  ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                  ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                  ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                  ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                  ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                  ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                  ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                  ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                  ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                  ;
+; CBXI_PARAMETER                     ; altsyncram_fr91      ; Untyped                                  ;
++------------------------------------+----------------------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_ram2:dataMem|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+-----------------------------------+
+; Parameter Name                     ; Value                ; Type                              ;
++------------------------------------+----------------------+-----------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                           ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                        ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                      ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                      ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                    ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                           ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                           ;
+; WIDTH_A                            ; 8                    ; Signed Integer                    ;
+; WIDTHAD_A                          ; 8                    ; Signed Integer                    ;
+; NUMWORDS_A                         ; 256                  ; Signed Integer                    ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                           ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                           ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                           ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                           ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                           ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                           ;
+; WIDTH_B                            ; 8                    ; Signed Integer                    ;
+; WIDTHAD_B                          ; 8                    ; Signed Integer                    ;
+; NUMWORDS_B                         ; 256                  ; Signed Integer                    ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                           ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                           ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                           ;
+; ADDRESS_REG_B                      ; CLOCK0               ; Untyped                           ;
+; OUTDATA_REG_B                      ; CLOCK0               ; Untyped                           ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                           ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                           ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                           ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                           ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                           ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                           ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                           ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                    ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                           ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                           ;
+; BYTE_SIZE                          ; 8                    ; Untyped                           ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                           ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                           ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                           ;
+; INIT_FILE                          ; data.mif             ; Untyped                           ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                           ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                           ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                           ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS               ; Untyped                           ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                           ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS               ; Untyped                           ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                           ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                           ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                           ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                           ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                           ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                           ;
+; CBXI_PARAMETER                     ; altsyncram_map1      ; Untyped                           ;
++------------------------------------+----------------------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                    ;
++-------------------------------------------+---------------------------------------------------------+
+; Name                                      ; Value                                                   ;
++-------------------------------------------+---------------------------------------------------------+
+; Number of entity instances                ; 2                                                       ;
+; Entity Instance                           ; lpm_rom1:instructionMem|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                                     ;
+;     -- WIDTH_A                            ; 32                                                      ;
+;     -- NUMWORDS_A                         ; 256                                                     ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                                  ;
+;     -- WIDTH_B                            ; 1                                                       ;
+;     -- NUMWORDS_B                         ; 1                                                       ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                  ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                            ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                    ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                               ;
+; Entity Instance                           ; lpm_ram2:dataMem|altsyncram:altsyncram_component        ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                               ;
+;     -- WIDTH_A                            ; 8                                                       ;
+;     -- NUMWORDS_A                         ; 256                                                     ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                            ;
+;     -- WIDTH_B                            ; 8                                                       ;
+;     -- NUMWORDS_B                         ; 256                                                     ;
+;     -- ADDRESS_REG_B                      ; CLOCK0                                                  ;
+;     -- OUTDATA_REG_B                      ; CLOCK0                                                  ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                    ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                               ;
++-------------------------------------------+---------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                          ;
++----------------------------------------------------------------------------+----------------------+----------------------+
+; Option                                                                     ; Setting              ; Default Value        ;
++----------------------------------------------------------------------------+----------------------+----------------------+
+; Device                                                                     ; EP4CE115F29C7        ;                      ;
+; Top-level entity name                                                      ; SingleCycleProcessor ; SingleCycleProcessor ;
+; Family name                                                                ; Cyclone IV E         ; Cyclone IV GX        ;
+; Use smart compilation                                                      ; Off                  ; Off                  ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                   ; On                   ;
+; Enable compact report table                                                ; Off                  ; Off                  ;
+; Restructure Multiplexers                                                   ; Auto                 ; Auto                 ;
+; Create Debugging Nodes for IP Cores                                        ; Off                  ; Off                  ;
+; Preserve fewer node names                                                  ; On                   ; On                   ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                  ; Off                  ;
+; Verilog Version                                                            ; Verilog_2001         ; Verilog_2001         ;
+; VHDL Version                                                               ; VHDL_1993            ; VHDL_1993            ;
+; State Machine Processing                                                   ; Auto                 ; Auto                 ;
+; Safe State Machine                                                         ; Off                  ; Off                  ;
+; Extract Verilog State Machines                                             ; On                   ; On                   ;
+; Extract VHDL State Machines                                                ; On                   ; On                   ;
+; Ignore Verilog initial constructs                                          ; Off                  ; Off                  ;
+; Iteration limit for constant Verilog loops                                 ; 5000                 ; 5000                 ;
+; Iteration limit for non-constant Verilog loops                             ; 250                  ; 250                  ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                   ; On                   ;
+; Infer RAMs from Raw Logic                                                  ; On                   ; On                   ;
+; Parallel Synthesis                                                         ; On                   ; On                   ;
+; DSP Block Balancing                                                        ; Auto                 ; Auto                 ;
+; NOT Gate Push-Back                                                         ; On                   ; On                   ;
+; Power-Up Don't Care                                                        ; On                   ; On                   ;
+; Remove Redundant Logic Cells                                               ; Off                  ; Off                  ;
+; Remove Duplicate Registers                                                 ; On                   ; On                   ;
+; Ignore CARRY Buffers                                                       ; Off                  ; Off                  ;
+; Ignore CASCADE Buffers                                                     ; Off                  ; Off                  ;
+; Ignore GLOBAL Buffers                                                      ; Off                  ; Off                  ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                  ; Off                  ;
+; Ignore LCELL Buffers                                                       ; Off                  ; Off                  ;
+; Ignore SOFT Buffers                                                        ; On                   ; On                   ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                  ; Off                  ;
+; Optimization Technique                                                     ; Balanced             ; Balanced             ;
+; Carry Chain Length                                                         ; 70                   ; 70                   ;
+; Auto Carry Chains                                                          ; On                   ; On                   ;
+; Auto Open-Drain Pins                                                       ; On                   ; On                   ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                  ; Off                  ;
+; Auto ROM Replacement                                                       ; On                   ; On                   ;
+; Auto RAM Replacement                                                       ; On                   ; On                   ;
+; Auto DSP Block Replacement                                                 ; On                   ; On                   ;
+; Auto Shift Register Replacement                                            ; Auto                 ; Auto                 ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                 ; Auto                 ;
+; Auto Clock Enable Replacement                                              ; On                   ; On                   ;
+; Strict RAM Replacement                                                     ; Off                  ; Off                  ;
+; Allow Synchronous Control Signals                                          ; On                   ; On                   ;
+; Force Use of Synchronous Clear Signals                                     ; Off                  ; Off                  ;
+; Auto RAM Block Balancing                                                   ; On                   ; On                   ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                  ; Off                  ;
+; Auto Resource Sharing                                                      ; Off                  ; Off                  ;
+; Allow Any RAM Size For Recognition                                         ; Off                  ; Off                  ;
+; Allow Any ROM Size For Recognition                                         ; Off                  ; Off                  ;
+; Allow Any Shift Register Size For Recognition                              ; Off                  ; Off                  ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                   ; On                   ;
+; Ignore translate_off and synthesis_off directives                          ; Off                  ; Off                  ;
+; Timing-Driven Synthesis                                                    ; On                   ; On                   ;
+; Report Parameter Settings                                                  ; On                   ; On                   ;
+; Report Source Assignments                                                  ; On                   ; On                   ;
+; Report Connectivity Checks                                                 ; On                   ; On                   ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                  ; Off                  ;
+; Synchronization Register Chain Length                                      ; 2                    ; 2                    ;
+; PowerPlay Power Optimization                                               ; Normal compilation   ; Normal compilation   ;
+; HDL message level                                                          ; Level2               ; Level2               ;
+; Suppress Register Optimization Related Messages                            ; Off                  ; Off                  ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                 ; 5000                 ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                 ; 5000                 ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                  ; 100                  ;
+; Clock MUX Protection                                                       ; On                   ; On                   ;
+; Auto Gated Clock Conversion                                                ; Off                  ; Off                  ;
+; Block Design Naming                                                        ; Auto                 ; Auto                 ;
+; SDC constraint protection                                                  ; Off                  ; Off                  ;
+; Synthesis Effort                                                           ; Auto                 ; Auto                 ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                   ; On                   ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                  ; Off                  ;
+; Analysis & Synthesis Message Level                                         ; Medium               ; Medium               ;
+; Disable Register Merging Across Hierarchies                                ; Auto                 ; Auto                 ;
+; Resource Aware Inference For Block RAM                                     ; On                   ; On                   ;
+; Synthesis Seed                                                             ; 1                    ; 1                    ;
++----------------------------------------------------------------------------+----------------------+----------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitALU:alu|eightBit8x3MUX:mux" ;
++------------+-------+----------+--------------------------------+
+; Port       ; Type  ; Severity ; Details                        ;
++------------+-------+----------+--------------------------------+
+; i_a3       ; Input ; Info     ; Stuck at GND                   ;
+; i_a4       ; Input ; Info     ; Stuck at GND                   ;
+; i_a5       ; Input ; Info     ; Stuck at GND                   ;
+; i_a7[7..1] ; Input ; Info     ; Stuck at GND                   ;
++------------+-------+----------+--------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitALU:alu|eightBitComparator:comparator|oneBitComparator:comp0"               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; o_eq ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitALU:alu|eightBitComparator:comparator|oneBitComparator:comp1"               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; o_eq ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitALU:alu|eightBitComparator:comparator|oneBitComparator:comp2"               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; o_eq ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitALU:alu|eightBitComparator:comparator|oneBitComparator:comp3"               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; o_eq ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitALU:alu|eightBitComparator:comparator|oneBitComparator:comp4"               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; o_eq ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitALU:alu|eightBitComparator:comparator|oneBitComparator:comp5"               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; o_eq ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitALU:alu|eightBitComparator:comparator|oneBitComparator:comp6"               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; o_eq ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitALU:alu|eightBitComparator:comparator|oneBitComparator:comp7"                   ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_gtprev ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_ltprev ; Input  ; Info     ; Stuck at GND                                                                        ;
+; o_eq     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitALU:alu|eightBitComparator:comparator"                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; o_gt ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; o_eq ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitALU:alu|eightBitAdder:subtractor"                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; i_cin  ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitALU:alu|eightBitAdder:adder"                                                  ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; i_cin  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; o_cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBit2x1MUX:writeRegMUX"                                                              ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_a[7..3] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_b[7..3] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; o_q[7..3] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------+
+; Port Connectivity Checks: "eightBit2x1MUX:branchOrJump" ;
++-----------+-------+----------+--------------------------+
+; Port      ; Type  ; Severity ; Details                  ;
++-----------+-------+----------+--------------------------+
+; i_b[1..0] ; Input ; Info     ; Stuck at GND             ;
++-----------+-------+----------+--------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitAdder:branchAdder"                                                               ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_y[1..0] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_cin     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; o_cout    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitAdder:PCAdder"                                                                   ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_y[7..3] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_y[1..0] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_y[2]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; i_cin     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; o_cout    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitRegister:PC|enARdFF_2:bit0"                                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitRegister:PC|enARdFF_2:bit1"                                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitRegister:PC|enARdFF_2:bit2"                                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitRegister:PC|enARdFF_2:bit3"                                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitRegister:PC|enARdFF_2:bit4"                                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitRegister:PC|enARdFF_2:bit5"                                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitRegister:PC|enARdFF_2:bit6"                                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "eightBitRegister:PC|enARdFF_2:bit7"                                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; o_qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------+
+; Port Connectivity Checks: "eightBitRegister:PC" ;
++----------+-------+----------+-------------------+
+; Port     ; Type  ; Severity ; Details           ;
++----------+-------+----------+-------------------+
+; i_enable ; Input ; Info     ; Stuck at VCC      ;
++----------+-------+----------+-------------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "eightBit8x3MUX:ioMUX" ;
++---------+-------+----------+---------------------+
+; Port    ; Type  ; Severity ; Details             ;
++---------+-------+----------+---------------------+
+; i_a5[7] ; Input ; Info     ; Stuck at GND        ;
+; i_a6[7] ; Input ; Info     ; Stuck at GND        ;
+; i_a7[7] ; Input ; Info     ; Stuck at GND        ;
++---------+-------+----------+---------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Elaboration
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Fri Mar 22 13:46:48 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SingleCycleProcessor -c SingleCycleProcessor --analysis_and_elaboration
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file lpm_rom1.vhd
+    Info (12022): Found design unit 1: lpm_rom1-SYN
+    Info (12023): Found entity 1: lpm_rom1
+Info (12021): Found 2 design units, including 1 entities, in source file lpm_ram2.vhd
+    Info (12022): Found design unit 1: lpm_ram2-SYN
+    Info (12023): Found entity 1: lpm_ram2
+Info (12021): Found 2 design units, including 1 entities, in source file dispcontroller.vhd
+    Info (12022): Found design unit 1: DispController-behave
+    Info (12023): Found entity 1: DispController
+Info (12021): Found 2 design units, including 1 entities, in source file datamemory.vhd
+    Info (12022): Found design unit 1: dataMemory-struct
+    Info (12023): Found entity 1: dataMemory
+Info (12021): Found 2 design units, including 1 entities, in source file registerfile.vhd
+    Info (12022): Found design unit 1: registerFile-rtl
+    Info (12023): Found entity 1: registerFile
+Info (12021): Found 2 design units, including 1 entities, in source file onebitfulladder.vhd
+    Info (12022): Found design unit 1: oneBitFullAdder-rtl
+    Info (12023): Found entity 1: oneBitFullAdder
+Info (12021): Found 2 design units, including 1 entities, in source file onebitcomparator.vhd
+    Info (12022): Found design unit 1: oneBitComparator-rtl
+    Info (12023): Found entity 1: oneBitComparator
+Info (12021): Found 2 design units, including 1 entities, in source file endff_2.vhd
+    Info (12022): Found design unit 1: endFF_2-rtl
+    Info (12023): Found entity 1: endFF_2
+Info (12021): Found 2 design units, including 1 entities, in source file enardff_2.vhd
+    Info (12022): Found design unit 1: enARdFF_2-rtl
+    Info (12023): Found entity 1: enARdFF_2
+Info (12021): Found 2 design units, including 1 entities, in source file eightbitregister.vhd
+    Info (12022): Found design unit 1: eightbitRegister-rtl
+    Info (12023): Found entity 1: eightBitRegister
+Info (12021): Found 2 design units, including 1 entities, in source file eightbitdecoder.vhd
+    Info (12022): Found design unit 1: eightBitDecoder-struct
+    Info (12023): Found entity 1: eightBitDecoder
+Info (12021): Found 2 design units, including 1 entities, in source file eightbitcomparator.vhd
+    Info (12022): Found design unit 1: eightBitComparator-rtl
+    Info (12023): Found entity 1: eightBitComparator
+Info (12021): Found 2 design units, including 1 entities, in source file eightbitalu.vhd
+    Info (12022): Found design unit 1: eightBitALU-struct
+    Info (12023): Found entity 1: eightBitALU
+Info (12021): Found 2 design units, including 1 entities, in source file eightbitadder.vhd
+    Info (12022): Found design unit 1: eightBitAdder-struct
+    Info (12023): Found entity 1: eightBitAdder
+Info (12021): Found 2 design units, including 1 entities, in source file eightbit8x3mux.vhd
+    Info (12022): Found design unit 1: eightBit8x3MUX-struct
+    Info (12023): Found entity 1: eightBit8x3MUX
+Info (12021): Found 2 design units, including 1 entities, in source file eightbit2x1mux.vhd
+    Info (12022): Found design unit 1: eightBit2x1MUX-struct
+    Info (12023): Found entity 1: eightBit2x1MUX
+Info (12021): Found 2 design units, including 1 entities, in source file controlunitalu.vhd
+    Info (12022): Found design unit 1: controlUnitALU-struct
+    Info (12023): Found entity 1: controlUnitALU
+Info (12021): Found 2 design units, including 1 entities, in source file controlunit.vhd
+    Info (12022): Found design unit 1: controlUnit-struct
+    Info (12023): Found entity 1: controlUnit
+Info (12021): Found 2 design units, including 1 entities, in source file singlecycleprocessor.vhd
+    Info (12022): Found design unit 1: singleCycleProcessor-rtl
+    Info (12023): Found entity 1: singleCycleProcessor
+Info (12021): Found 2 design units, including 1 entities, in source file instructionmemory.vhd
+    Info (12022): Found design unit 1: instructionMemory-struct
+    Info (12023): Found entity 1: instructionMemory
+Info (12021): Found 2 design units, including 1 entities, in source file clockdiv.vhd
+    Info (12022): Found design unit 1: clockDiv-a
+    Info (12023): Found entity 1: clockDiv
+Info (12021): Found 2 design units, including 1 entities, in source file clockdiv2.vhd
+    Info (12022): Found design unit 1: clockDiv2-rtl
+    Info (12023): Found entity 1: clockDiv2
+Info (12021): Found 2 design units, including 1 entities, in source file singlecycleprocessor_testbench.vhd
+    Info (12022): Found design unit 1: tb_singleCycleProcessor-testbench
+    Info (12023): Found entity 1: tb_singleCycleProcessor
+Info (12127): Elaborating entity "SingleCycleProcessor" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at SingleCycleProcessor.vhd(176): object "int_PCCout" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at SingleCycleProcessor.vhd(180): object "int_PCBranchCout" assigned a value but never read
+Info (12128): Elaborating entity "DispController" for hierarchy "DispController:displayOutput"
+Warning (10492): VHDL Process Statement warning at DispController.vhd(80): signal "swap" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DispController.vhd(81): signal "bin1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DispController.vhd(82): signal "bin2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DispController.vhd(91): signal "hex1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DispController.vhd(92): signal "hex2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DispController.vhd(93): signal "hex3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DispController.vhd(94): signal "hex4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DispController.vhd(95): signal "hex5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DispController.vhd(96): signal "hex6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DispController.vhd(97): signal "hex7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at DispController.vhd(98): signal "hex8" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "eightBit8x3MUX" for hierarchy "eightBit8x3MUX:ioMUX"
+Info (12128): Elaborating entity "eightBitRegister" for hierarchy "eightBitRegister:PC"
+Info (12128): Elaborating entity "enARdFF_2" for hierarchy "eightBitRegister:PC|enARdFF_2:bit7"
+Info (12128): Elaborating entity "eightBitAdder" for hierarchy "eightBitAdder:PCAdder"
+Info (12128): Elaborating entity "oneBitFullAdder" for hierarchy "eightBitAdder:PCAdder|oneBitFullAdder:adder7"
+Info (12128): Elaborating entity "lpm_rom1" for hierarchy "lpm_rom1:instructionMem"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "lpm_rom1:instructionMem|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "lpm_rom1:instructionMem|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "lpm_rom1:instructionMem|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "instruction.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "256"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "widthad_a" = "8"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_fr91.tdf
+    Info (12023): Found entity 1: altsyncram_fr91
+Info (12128): Elaborating entity "altsyncram_fr91" for hierarchy "lpm_rom1:instructionMem|altsyncram:altsyncram_component|altsyncram_fr91:auto_generated"
+Info (12128): Elaborating entity "eightBit2x1MUX" for hierarchy "eightBit2x1MUX:branchSelect"
+Info (12128): Elaborating entity "registerFile" for hierarchy "registerFile:registers"
+Info (12128): Elaborating entity "eightBitDecoder" for hierarchy "registerFile:registers|eightBitDecoder:decoder"
+Info (12128): Elaborating entity "controlUnit" for hierarchy "controlUnit:control"
+Info (12128): Elaborating entity "controlUnitALU" for hierarchy "controlUnitALU:controlUnitALUunit"
+Info (12128): Elaborating entity "eightBitALU" for hierarchy "eightBitALU:alu"
+Warning (10036): Verilog HDL or VHDL warning at eightBitALU.vhd(36): object "int_cout" assigned a value but never read
+Info (12128): Elaborating entity "eightBitComparator" for hierarchy "eightBitALU:alu|eightBitComparator:comparator"
+Info (12128): Elaborating entity "oneBitComparator" for hierarchy "eightBitALU:alu|eightBitComparator:comparator|oneBitComparator:comp7"
+Info (12128): Elaborating entity "lpm_ram2" for hierarchy "lpm_ram2:dataMem"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "lpm_ram2:dataMem|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "lpm_ram2:dataMem|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "lpm_ram2:dataMem|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "address_aclr_b" = "NONE"
+    Info (12134): Parameter "address_reg_b" = "CLOCK0"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
+    Info (12134): Parameter "init_file" = "data.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "256"
+    Info (12134): Parameter "numwords_b" = "256"
+    Info (12134): Parameter "operation_mode" = "DUAL_PORT"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_b" = "CLOCK0"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "widthad_a" = "8"
+    Info (12134): Parameter "widthad_b" = "8"
+    Info (12134): Parameter "width_a" = "8"
+    Info (12134): Parameter "width_b" = "8"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_map1.tdf
+    Info (12023): Found entity 1: altsyncram_map1
+Info (12128): Elaborating entity "altsyncram_map1" for hierarchy "lpm_ram2:dataMem|altsyncram:altsyncram_component|altsyncram_map1:auto_generated"
+Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4626 megabytes
+    Info: Processing ended: Fri Mar 22 13:46:54 2024
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:03
+
+
