@@ -1,0 +1,610 @@
+|eightBitALU
+i_op[0] => eightBit8x3MUX:mux.i_sel[0]
+i_op[1] => eightBit8x3MUX:mux.i_sel[1]
+i_op[2] => eightBit8x3MUX:mux.i_sel[2]
+i_A[0] => int_AND[0].IN0
+i_A[0] => int_OR[0].IN0
+i_A[0] => eightBitAdder:adder.i_x[0]
+i_A[0] => eightBitAdder:subtractor.i_x[0]
+i_A[0] => eightBitComparator:comparator.i_Ai[0]
+i_A[1] => int_AND[1].IN0
+i_A[1] => int_OR[1].IN0
+i_A[1] => eightBitAdder:adder.i_x[1]
+i_A[1] => eightBitAdder:subtractor.i_x[1]
+i_A[1] => eightBitComparator:comparator.i_Ai[1]
+i_A[2] => int_AND[2].IN0
+i_A[2] => int_OR[2].IN0
+i_A[2] => eightBitAdder:adder.i_x[2]
+i_A[2] => eightBitAdder:subtractor.i_x[2]
+i_A[2] => eightBitComparator:comparator.i_Ai[2]
+i_A[3] => int_AND[3].IN0
+i_A[3] => int_OR[3].IN0
+i_A[3] => eightBitAdder:adder.i_x[3]
+i_A[3] => eightBitAdder:subtractor.i_x[3]
+i_A[3] => eightBitComparator:comparator.i_Ai[3]
+i_A[4] => int_AND[4].IN0
+i_A[4] => int_OR[4].IN0
+i_A[4] => eightBitAdder:adder.i_x[4]
+i_A[4] => eightBitAdder:subtractor.i_x[4]
+i_A[4] => eightBitComparator:comparator.i_Ai[4]
+i_A[5] => int_AND[5].IN0
+i_A[5] => int_OR[5].IN0
+i_A[5] => eightBitAdder:adder.i_x[5]
+i_A[5] => eightBitAdder:subtractor.i_x[5]
+i_A[5] => eightBitComparator:comparator.i_Ai[5]
+i_A[6] => int_AND[6].IN0
+i_A[6] => int_OR[6].IN0
+i_A[6] => eightBitAdder:adder.i_x[6]
+i_A[6] => eightBitAdder:subtractor.i_x[6]
+i_A[6] => eightBitComparator:comparator.i_Ai[6]
+i_A[7] => int_AND[7].IN0
+i_A[7] => int_OR[7].IN0
+i_A[7] => eightBitAdder:adder.i_x[7]
+i_A[7] => eightBitAdder:subtractor.i_x[7]
+i_A[7] => eightBitComparator:comparator.i_Ai[7]
+i_B[0] => int_AND[0].IN1
+i_B[0] => int_OR[0].IN1
+i_B[0] => eightBitAdder:adder.i_y[0]
+i_B[0] => eightBitComparator:comparator.i_Bi[0]
+i_B[0] => eightBitAdder:subtractor.i_y[0]
+i_B[1] => int_AND[1].IN1
+i_B[1] => int_OR[1].IN1
+i_B[1] => eightBitAdder:adder.i_y[1]
+i_B[1] => eightBitComparator:comparator.i_Bi[1]
+i_B[1] => eightBitAdder:subtractor.i_y[1]
+i_B[2] => int_AND[2].IN1
+i_B[2] => int_OR[2].IN1
+i_B[2] => eightBitAdder:adder.i_y[2]
+i_B[2] => eightBitComparator:comparator.i_Bi[2]
+i_B[2] => eightBitAdder:subtractor.i_y[2]
+i_B[3] => int_AND[3].IN1
+i_B[3] => int_OR[3].IN1
+i_B[3] => eightBitAdder:adder.i_y[3]
+i_B[3] => eightBitComparator:comparator.i_Bi[3]
+i_B[3] => eightBitAdder:subtractor.i_y[3]
+i_B[4] => int_AND[4].IN1
+i_B[4] => int_OR[4].IN1
+i_B[4] => eightBitAdder:adder.i_y[4]
+i_B[4] => eightBitComparator:comparator.i_Bi[4]
+i_B[4] => eightBitAdder:subtractor.i_y[4]
+i_B[5] => int_AND[5].IN1
+i_B[5] => int_OR[5].IN1
+i_B[5] => eightBitAdder:adder.i_y[5]
+i_B[5] => eightBitComparator:comparator.i_Bi[5]
+i_B[5] => eightBitAdder:subtractor.i_y[5]
+i_B[6] => int_AND[6].IN1
+i_B[6] => int_OR[6].IN1
+i_B[6] => eightBitAdder:adder.i_y[6]
+i_B[6] => eightBitComparator:comparator.i_Bi[6]
+i_B[6] => eightBitAdder:subtractor.i_y[6]
+i_B[7] => int_AND[7].IN1
+i_B[7] => int_OR[7].IN1
+i_B[7] => eightBitAdder:adder.i_y[7]
+i_B[7] => eightBitComparator:comparator.i_Bi[7]
+i_B[7] => eightBitAdder:subtractor.i_y[7]
+o_zero <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+o_q[0] <= eightBit8x3MUX:mux.o_q[0]
+o_q[1] <= eightBit8x3MUX:mux.o_q[1]
+o_q[2] <= eightBit8x3MUX:mux.o_q[2]
+o_q[3] <= eightBit8x3MUX:mux.o_q[3]
+o_q[4] <= eightBit8x3MUX:mux.o_q[4]
+o_q[5] <= eightBit8x3MUX:mux.o_q[5]
+o_q[6] <= eightBit8x3MUX:mux.o_q[6]
+o_q[7] <= eightBit8x3MUX:mux.o_q[7]
+
+
+|eightBitALU|eightBitAdder:adder
+i_x[0] => oneBitFullAdder:adder0.i_x
+i_x[1] => oneBitFullAdder:adder1.i_x
+i_x[2] => oneBitFullAdder:adder2.i_x
+i_x[3] => oneBitFullAdder:adder3.i_x
+i_x[4] => oneBitFullAdder:adder4.i_x
+i_x[5] => oneBitFullAdder:adder5.i_x
+i_x[6] => oneBitFullAdder:adder6.i_x
+i_x[7] => oneBitFullAdder:adder7.i_x
+i_y[0] => oneBitFullAdder:adder0.i_y
+i_y[1] => oneBitFullAdder:adder1.i_y
+i_y[2] => oneBitFullAdder:adder2.i_y
+i_y[3] => oneBitFullAdder:adder3.i_y
+i_y[4] => oneBitFullAdder:adder4.i_y
+i_y[5] => oneBitFullAdder:adder5.i_y
+i_y[6] => oneBitFullAdder:adder6.i_y
+i_y[7] => oneBitFullAdder:adder7.i_y
+i_cin => oneBitFullAdder:adder0.i_cin
+o_cout <= oneBitFullAdder:adder7.o_cout
+o_s[0] <= oneBitFullAdder:adder0.o_s
+o_s[1] <= oneBitFullAdder:adder1.o_s
+o_s[2] <= oneBitFullAdder:adder2.o_s
+o_s[3] <= oneBitFullAdder:adder3.o_s
+o_s[4] <= oneBitFullAdder:adder4.o_s
+o_s[5] <= oneBitFullAdder:adder5.o_s
+o_s[6] <= oneBitFullAdder:adder6.o_s
+o_s[7] <= oneBitFullAdder:adder7.o_s
+
+
+|eightBitALU|eightBitAdder:adder|oneBitFullAdder:adder7
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitAdder:adder|oneBitFullAdder:adder6
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitAdder:adder|oneBitFullAdder:adder5
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitAdder:adder|oneBitFullAdder:adder4
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitAdder:adder|oneBitFullAdder:adder3
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitAdder:adder|oneBitFullAdder:adder2
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitAdder:adder|oneBitFullAdder:adder1
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitAdder:adder|oneBitFullAdder:adder0
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitAdder:subtractor
+i_x[0] => oneBitFullAdder:adder0.i_x
+i_x[1] => oneBitFullAdder:adder1.i_x
+i_x[2] => oneBitFullAdder:adder2.i_x
+i_x[3] => oneBitFullAdder:adder3.i_x
+i_x[4] => oneBitFullAdder:adder4.i_x
+i_x[5] => oneBitFullAdder:adder5.i_x
+i_x[6] => oneBitFullAdder:adder6.i_x
+i_x[7] => oneBitFullAdder:adder7.i_x
+i_y[0] => oneBitFullAdder:adder0.i_y
+i_y[1] => oneBitFullAdder:adder1.i_y
+i_y[2] => oneBitFullAdder:adder2.i_y
+i_y[3] => oneBitFullAdder:adder3.i_y
+i_y[4] => oneBitFullAdder:adder4.i_y
+i_y[5] => oneBitFullAdder:adder5.i_y
+i_y[6] => oneBitFullAdder:adder6.i_y
+i_y[7] => oneBitFullAdder:adder7.i_y
+i_cin => oneBitFullAdder:adder0.i_cin
+o_cout <= oneBitFullAdder:adder7.o_cout
+o_s[0] <= oneBitFullAdder:adder0.o_s
+o_s[1] <= oneBitFullAdder:adder1.o_s
+o_s[2] <= oneBitFullAdder:adder2.o_s
+o_s[3] <= oneBitFullAdder:adder3.o_s
+o_s[4] <= oneBitFullAdder:adder4.o_s
+o_s[5] <= oneBitFullAdder:adder5.o_s
+o_s[6] <= oneBitFullAdder:adder6.o_s
+o_s[7] <= oneBitFullAdder:adder7.o_s
+
+
+|eightBitALU|eightBitAdder:subtractor|oneBitFullAdder:adder7
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitAdder:subtractor|oneBitFullAdder:adder6
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitAdder:subtractor|oneBitFullAdder:adder5
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitAdder:subtractor|oneBitFullAdder:adder4
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitAdder:subtractor|oneBitFullAdder:adder3
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitAdder:subtractor|oneBitFullAdder:adder2
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitAdder:subtractor|oneBitFullAdder:adder1
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitAdder:subtractor|oneBitFullAdder:adder0
+i_x => int_s.IN0
+i_x => int_cout.IN0
+i_x => int_cout.IN0
+i_y => int_s.IN1
+i_y => int_cout.IN1
+i_y => int_cout.IN0
+i_cin => int_s.IN1
+i_cin => int_cout.IN1
+i_cin => int_cout.IN1
+o_cout <= int_cout.DB_MAX_OUTPUT_PORT_TYPE
+o_s <= int_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitComparator:comparator
+i_Ai[0] => oneBitComparator:comp0.i_Ai
+i_Ai[1] => oneBitComparator:comp1.i_Ai
+i_Ai[2] => oneBitComparator:comp2.i_Ai
+i_Ai[3] => oneBitComparator:comp3.i_Ai
+i_Ai[4] => oneBitComparator:comp4.i_Ai
+i_Ai[5] => oneBitComparator:comp5.i_Ai
+i_Ai[6] => oneBitComparator:comp6.i_Ai
+i_Ai[7] => oneBitComparator:comp7.i_Ai
+i_Bi[0] => oneBitComparator:comp0.i_Bi
+i_Bi[1] => oneBitComparator:comp1.i_Bi
+i_Bi[2] => oneBitComparator:comp2.i_Bi
+i_Bi[3] => oneBitComparator:comp3.i_Bi
+i_Bi[4] => oneBitComparator:comp4.i_Bi
+i_Bi[5] => oneBitComparator:comp5.i_Bi
+i_Bi[6] => oneBitComparator:comp6.i_Bi
+i_Bi[7] => oneBitComparator:comp7.i_Bi
+o_GT <= oneBitComparator:comp0.o_GT
+o_LT <= oneBitComparator:comp0.o_LT
+o_EQ <= o_EQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitComparator:comparator|oneBitComparator:comp7
+i_Ai => int_GT.IN0
+i_Ai => int_LT.IN0
+i_Bi => int_LT.IN1
+i_Bi => int_GT.IN1
+i_GTPrevious => int_GT.IN1
+i_GTPrevious => int_LT.IN1
+i_LTPrevious => int_LT.IN1
+i_LTPrevious => int_GT.IN1
+o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
+o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
+o_EQ <= o_EQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitComparator:comparator|oneBitComparator:comp6
+i_Ai => int_GT.IN0
+i_Ai => int_LT.IN0
+i_Bi => int_LT.IN1
+i_Bi => int_GT.IN1
+i_GTPrevious => int_GT.IN1
+i_GTPrevious => int_LT.IN1
+i_LTPrevious => int_LT.IN1
+i_LTPrevious => int_GT.IN1
+o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
+o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
+o_EQ <= o_EQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitComparator:comparator|oneBitComparator:comp5
+i_Ai => int_GT.IN0
+i_Ai => int_LT.IN0
+i_Bi => int_LT.IN1
+i_Bi => int_GT.IN1
+i_GTPrevious => int_GT.IN1
+i_GTPrevious => int_LT.IN1
+i_LTPrevious => int_LT.IN1
+i_LTPrevious => int_GT.IN1
+o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
+o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
+o_EQ <= o_EQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitComparator:comparator|oneBitComparator:comp4
+i_Ai => int_GT.IN0
+i_Ai => int_LT.IN0
+i_Bi => int_LT.IN1
+i_Bi => int_GT.IN1
+i_GTPrevious => int_GT.IN1
+i_GTPrevious => int_LT.IN1
+i_LTPrevious => int_LT.IN1
+i_LTPrevious => int_GT.IN1
+o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
+o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
+o_EQ <= o_EQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitComparator:comparator|oneBitComparator:comp3
+i_Ai => int_GT.IN0
+i_Ai => int_LT.IN0
+i_Bi => int_LT.IN1
+i_Bi => int_GT.IN1
+i_GTPrevious => int_GT.IN1
+i_GTPrevious => int_LT.IN1
+i_LTPrevious => int_LT.IN1
+i_LTPrevious => int_GT.IN1
+o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
+o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
+o_EQ <= o_EQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitComparator:comparator|oneBitComparator:comp2
+i_Ai => int_GT.IN0
+i_Ai => int_LT.IN0
+i_Bi => int_LT.IN1
+i_Bi => int_GT.IN1
+i_GTPrevious => int_GT.IN1
+i_GTPrevious => int_LT.IN1
+i_LTPrevious => int_LT.IN1
+i_LTPrevious => int_GT.IN1
+o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
+o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
+o_EQ <= o_EQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitComparator:comparator|oneBitComparator:comp1
+i_Ai => int_GT.IN0
+i_Ai => int_LT.IN0
+i_Bi => int_LT.IN1
+i_Bi => int_GT.IN1
+i_GTPrevious => int_GT.IN1
+i_GTPrevious => int_LT.IN1
+i_LTPrevious => int_LT.IN1
+i_LTPrevious => int_GT.IN1
+o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
+o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
+o_EQ <= o_EQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBitComparator:comparator|oneBitComparator:comp0
+i_Ai => int_GT.IN0
+i_Ai => int_LT.IN0
+i_Bi => int_LT.IN1
+i_Bi => int_GT.IN1
+i_GTPrevious => int_GT.IN1
+i_GTPrevious => int_LT.IN1
+i_LTPrevious => int_LT.IN1
+i_LTPrevious => int_GT.IN1
+o_GT <= int_GT.DB_MAX_OUTPUT_PORT_TYPE
+o_LT <= int_LT.DB_MAX_OUTPUT_PORT_TYPE
+o_EQ <= o_EQ.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|eightBitALU|eightBit8x3MUX:mux
+i_sel[0] => Mux0.IN2
+i_sel[0] => Mux1.IN2
+i_sel[0] => Mux2.IN2
+i_sel[0] => Mux3.IN2
+i_sel[0] => Mux4.IN2
+i_sel[0] => Mux5.IN2
+i_sel[0] => Mux6.IN2
+i_sel[0] => Mux7.IN2
+i_sel[1] => Mux0.IN1
+i_sel[1] => Mux1.IN1
+i_sel[1] => Mux2.IN1
+i_sel[1] => Mux3.IN1
+i_sel[1] => Mux4.IN1
+i_sel[1] => Mux5.IN1
+i_sel[1] => Mux6.IN1
+i_sel[1] => Mux7.IN1
+i_sel[2] => Mux0.IN0
+i_sel[2] => Mux1.IN0
+i_sel[2] => Mux2.IN0
+i_sel[2] => Mux3.IN0
+i_sel[2] => Mux4.IN0
+i_sel[2] => Mux5.IN0
+i_sel[2] => Mux6.IN0
+i_sel[2] => Mux7.IN0
+i_A0[0] => Mux7.IN3
+i_A0[1] => Mux6.IN3
+i_A0[2] => Mux5.IN3
+i_A0[3] => Mux4.IN3
+i_A0[4] => Mux3.IN3
+i_A0[5] => Mux2.IN3
+i_A0[6] => Mux1.IN3
+i_A0[7] => Mux0.IN3
+i_A1[0] => Mux7.IN4
+i_A1[1] => Mux6.IN4
+i_A1[2] => Mux5.IN4
+i_A1[3] => Mux4.IN4
+i_A1[4] => Mux3.IN4
+i_A1[5] => Mux2.IN4
+i_A1[6] => Mux1.IN4
+i_A1[7] => Mux0.IN4
+i_A2[0] => Mux7.IN5
+i_A2[1] => Mux6.IN5
+i_A2[2] => Mux5.IN5
+i_A2[3] => Mux4.IN5
+i_A2[4] => Mux3.IN5
+i_A2[5] => Mux2.IN5
+i_A2[6] => Mux1.IN5
+i_A2[7] => Mux0.IN5
+i_A3[0] => Mux7.IN6
+i_A3[1] => Mux6.IN6
+i_A3[2] => Mux5.IN6
+i_A3[3] => Mux4.IN6
+i_A3[4] => Mux3.IN6
+i_A3[5] => Mux2.IN6
+i_A3[6] => Mux1.IN6
+i_A3[7] => Mux0.IN6
+i_A4[0] => Mux7.IN7
+i_A4[1] => Mux6.IN7
+i_A4[2] => Mux5.IN7
+i_A4[3] => Mux4.IN7
+i_A4[4] => Mux3.IN7
+i_A4[5] => Mux2.IN7
+i_A4[6] => Mux1.IN7
+i_A4[7] => Mux0.IN7
+i_A5[0] => Mux7.IN8
+i_A5[1] => Mux6.IN8
+i_A5[2] => Mux5.IN8
+i_A5[3] => Mux4.IN8
+i_A5[4] => Mux3.IN8
+i_A5[5] => Mux2.IN8
+i_A5[6] => Mux1.IN8
+i_A5[7] => Mux0.IN8
+i_A6[0] => Mux7.IN9
+i_A6[1] => Mux6.IN9
+i_A6[2] => Mux5.IN9
+i_A6[3] => Mux4.IN9
+i_A6[4] => Mux3.IN9
+i_A6[5] => Mux2.IN9
+i_A6[6] => Mux1.IN9
+i_A6[7] => Mux0.IN9
+i_A7[0] => Mux7.IN10
+i_A7[1] => Mux6.IN10
+i_A7[2] => Mux5.IN10
+i_A7[3] => Mux4.IN10
+i_A7[4] => Mux3.IN10
+i_A7[5] => Mux2.IN10
+i_A7[6] => Mux1.IN10
+i_A7[7] => Mux0.IN10
+o_q[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+o_q[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+o_q[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+o_q[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+o_q[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+o_q[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+o_q[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+o_q[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,215 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Zarvaan Bacha\Documents\School\Year 4\Winter\CEG 3156 - Computer Systems Design\Labs\Lab 2\Code\Register File\simulation\modelsim
+Eeightbit8x3mux
+Z1 w1678916598
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\Zarvaan Bacha\Documents\School\Year 4\Winter\CEG 3156 - Computer Systems Design\Labs\Lab 2\Code\Register File\simulation\modelsim
+Z5 8C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/eightBit8x3MUX.vhd
+Z6 FC:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/eightBit8x3MUX.vhd
+l0
+L4
+VjQlk3b51:nKifn:DYmC::0
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1678984362.843000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/eightBit8x3MUX.vhd|
+Z10 !s107 C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/eightBit8x3MUX.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 X`3P7[a>AZX85OY@lWMii0
+!i10b 1
+Astruct
+R2
+R3
+DEx4 work 14 eightbit8x3mux 0 22 jQlk3b51:nKifn:DYmC::0
+l16
+L12
+VhHRP^EJHV4ZKDAZ][jFDB1
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 I887DHiFOfM?P?LF[Dn]l1
+!i10b 1
+Eeightbitdecoder
+R1
+R2
+R3
+R4
+Z13 8C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/eightBitDecoder.vhd
+Z14 FC:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/eightBitDecoder.vhd
+l0
+L4
+VN?7zZzCY6;[S>hb_X^E>b2
+R7
+31
+Z15 !s108 1678984362.782000
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/eightBitDecoder.vhd|
+Z17 !s107 C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/eightBitDecoder.vhd|
+R11
+R12
+!s100 Zl=4K3ZNAA:d?@?i4cR652
+!i10b 1
+Astruct
+R2
+R3
+DEx4 work 15 eightbitdecoder 0 22 N?7zZzCY6;[S>hb_X^E>b2
+l14
+L10
+VcA]3zVYAeoCXjU;YnUThU0
+R7
+31
+R15
+R16
+R17
+R11
+R12
+!s100 mb6=oM9l:5m<MCLiOd@3J3
+!i10b 1
+Eeightbitregister
+Z18 w1678384091
+R2
+R3
+R4
+Z19 8C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/eightBitRegister.vhd
+Z20 FC:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/eightBitRegister.vhd
+l0
+L4
+VDi8Um3CBz7[XZ<[W^hY?`0
+R7
+31
+Z21 !s108 1678984362.722000
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/eightBitRegister.vhd|
+Z23 !s107 C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/eightBitRegister.vhd|
+R11
+R12
+!s100 5P=S8a@f0mh=<N]2PYI=g0
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 16 eightbitregister 0 22 Di8Um3CBz7[XZ<[W^hY?`0
+l22
+L10
+V2k>=ak3inY:<H=c_[j29X3
+R7
+31
+R21
+R22
+R23
+R11
+R12
+!s100 fJ3XQciT0eZQ2?kEeL9Q33
+!i10b 1
+Eenardff_2
+Z24 w1678379936
+R2
+R3
+R4
+Z25 8C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/enardFF_2.vhd
+Z26 FC:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/enardFF_2.vhd
+l0
+L31
+VefK2f?3R7`bZO40Rc84Mm0
+R7
+31
+Z27 !s108 1678984362.663000
+Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/enardFF_2.vhd|
+Z29 !s107 C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/enardFF_2.vhd|
+R11
+R12
+!s100 LM:aJ[Ade62O^TDCQB2jH0
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 9 enardff_2 0 22 efK2f?3R7`bZO40Rc84Mm0
+l43
+L40
+VAd]:U5^6W=P5UO^;ST?Bz2
+R7
+31
+R27
+R28
+R29
+R11
+R12
+!s100 n`NKG5gX7V@?eV@4dAU663
+!i10b 1
+Eregisterfile
+Z30 w1678983041
+R2
+R3
+R4
+Z31 8C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/registerFile.vhd
+Z32 FC:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/registerFile.vhd
+l0
+L4
+V2ci?<ffTV`L@eObmVP`6V2
+R7
+31
+Z33 !s108 1678984362.902000
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/registerFile.vhd|
+Z35 !s107 C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/registerFile.vhd|
+R11
+R12
+!s100 SFYN?POO`aJWJ_9N7fcUQ3
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 12 registerfile 0 22 2ci?<ffTV`L@eObmVP`6V2
+l41
+L12
+V8Oe>7dz1T4B3f6nUPgROV1
+R7
+31
+R33
+R34
+R35
+R11
+R12
+!s100 Kf6j8e;?<95daFlzL]EL[3
+!i10b 1
+Eregisterfile_tb
+Z36 w1678984332
+R2
+R3
+R4
+Z37 8C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/registerFile_Testbench.vhd
+Z38 FC:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/registerFile_Testbench.vhd
+l0
+L4
+V_GW^TGnF9Mn2Ro23CSNZI1
+!s100 V0eOYLKeAgXE^adWM_P2i1
+R7
+32
+!i10b 1
+Z39 !s108 1678984376.509000
+Z40 !s90 -reportprogress|300|-work|work|C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/registerFile_Testbench.vhd|
+Z41 !s107 C:/Users/Zarvaan Bacha/Documents/School/Year 4/Winter/CEG 3156 - Computer Systems Design/Labs/Lab 2/Code/Register File/registerFile_Testbench.vhd|
+Z42 o-work work -O0
+R12
+Atb_arch
+R2
+R3
+DEx4 work 15 registerfile_tb 0 22 _GW^TGnF9Mn2Ro23CSNZI1
+l29
+L7
+VS3SIkb<aLTDf^iDnMQa6_0
+!s100 QIbCc^i6b^f:9LihnA_gh2
+R7
+32
+!i10b 1
+R39
+R40
+R41
+R42
+R12

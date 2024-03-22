@@ -1,0 +1,7 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity clockDiv is
+	port(in_clk : in std_logic;
+			out_clk : out std_logic);
+end clockDiv

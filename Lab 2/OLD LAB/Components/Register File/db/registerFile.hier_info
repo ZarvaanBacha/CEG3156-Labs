@@ -1,0 +1,1269 @@
+|registerFile
+i_gReset => eightBitRegister:register0.i_gReset
+i_gReset => eightBitRegister:register1.i_gReset
+i_gReset => eightBitRegister:register2.i_gReset
+i_gReset => eightBitRegister:register3.i_gReset
+i_gReset => eightBitRegister:register4.i_gReset
+i_gReset => eightBitRegister:register5.i_gReset
+i_gReset => eightBitRegister:register6.i_gReset
+i_gReset => eightBitRegister:register7.i_gReset
+i_clock => eightBitRegister:register0.i_clock
+i_clock => eightBitRegister:register1.i_clock
+i_clock => eightBitRegister:register2.i_clock
+i_clock => eightBitRegister:register3.i_clock
+i_clock => eightBitRegister:register4.i_clock
+i_clock => eightBitRegister:register5.i_clock
+i_clock => eightBitRegister:register6.i_clock
+i_clock => eightBitRegister:register7.i_clock
+i_regWrite => int_enable[0].IN1
+i_regWrite => int_enable[1].IN1
+i_regWrite => int_enable[2].IN1
+i_regWrite => int_enable[3].IN1
+i_regWrite => int_enable[4].IN1
+i_regWrite => int_enable[5].IN1
+i_regWrite => int_enable[6].IN1
+i_regWrite => int_enable[7].IN1
+i_readRegister1[0] => eightBit8x3MUX:readData1.i_sel[0]
+i_readRegister1[1] => eightBit8x3MUX:readData1.i_sel[1]
+i_readRegister1[2] => eightBit8x3MUX:readData1.i_sel[2]
+i_readRegister2[0] => eightBit8x3MUX:readData2.i_sel[0]
+i_readRegister2[1] => eightBit8x3MUX:readData2.i_sel[1]
+i_readRegister2[2] => eightBit8x3MUX:readData2.i_sel[2]
+i_writeRegister[0] => eightBitDecoder:decoder.i_sel[0]
+i_writeRegister[1] => eightBitDecoder:decoder.i_sel[1]
+i_writeRegister[2] => eightBitDecoder:decoder.i_sel[2]
+i_writeData[0] => eightBitRegister:register0.i_Data[0]
+i_writeData[0] => eightBitRegister:register1.i_Data[0]
+i_writeData[0] => eightBitRegister:register2.i_Data[0]
+i_writeData[0] => eightBitRegister:register3.i_Data[0]
+i_writeData[0] => eightBitRegister:register4.i_Data[0]
+i_writeData[0] => eightBitRegister:register5.i_Data[0]
+i_writeData[0] => eightBitRegister:register6.i_Data[0]
+i_writeData[0] => eightBitRegister:register7.i_Data[0]
+i_writeData[1] => eightBitRegister:register0.i_Data[1]
+i_writeData[1] => eightBitRegister:register1.i_Data[1]
+i_writeData[1] => eightBitRegister:register2.i_Data[1]
+i_writeData[1] => eightBitRegister:register3.i_Data[1]
+i_writeData[1] => eightBitRegister:register4.i_Data[1]
+i_writeData[1] => eightBitRegister:register5.i_Data[1]
+i_writeData[1] => eightBitRegister:register6.i_Data[1]
+i_writeData[1] => eightBitRegister:register7.i_Data[1]
+i_writeData[2] => eightBitRegister:register0.i_Data[2]
+i_writeData[2] => eightBitRegister:register1.i_Data[2]
+i_writeData[2] => eightBitRegister:register2.i_Data[2]
+i_writeData[2] => eightBitRegister:register3.i_Data[2]
+i_writeData[2] => eightBitRegister:register4.i_Data[2]
+i_writeData[2] => eightBitRegister:register5.i_Data[2]
+i_writeData[2] => eightBitRegister:register6.i_Data[2]
+i_writeData[2] => eightBitRegister:register7.i_Data[2]
+i_writeData[3] => eightBitRegister:register0.i_Data[3]
+i_writeData[3] => eightBitRegister:register1.i_Data[3]
+i_writeData[3] => eightBitRegister:register2.i_Data[3]
+i_writeData[3] => eightBitRegister:register3.i_Data[3]
+i_writeData[3] => eightBitRegister:register4.i_Data[3]
+i_writeData[3] => eightBitRegister:register5.i_Data[3]
+i_writeData[3] => eightBitRegister:register6.i_Data[3]
+i_writeData[3] => eightBitRegister:register7.i_Data[3]
+i_writeData[4] => eightBitRegister:register0.i_Data[4]
+i_writeData[4] => eightBitRegister:register1.i_Data[4]
+i_writeData[4] => eightBitRegister:register2.i_Data[4]
+i_writeData[4] => eightBitRegister:register3.i_Data[4]
+i_writeData[4] => eightBitRegister:register4.i_Data[4]
+i_writeData[4] => eightBitRegister:register5.i_Data[4]
+i_writeData[4] => eightBitRegister:register6.i_Data[4]
+i_writeData[4] => eightBitRegister:register7.i_Data[4]
+i_writeData[5] => eightBitRegister:register0.i_Data[5]
+i_writeData[5] => eightBitRegister:register1.i_Data[5]
+i_writeData[5] => eightBitRegister:register2.i_Data[5]
+i_writeData[5] => eightBitRegister:register3.i_Data[5]
+i_writeData[5] => eightBitRegister:register4.i_Data[5]
+i_writeData[5] => eightBitRegister:register5.i_Data[5]
+i_writeData[5] => eightBitRegister:register6.i_Data[5]
+i_writeData[5] => eightBitRegister:register7.i_Data[5]
+i_writeData[6] => eightBitRegister:register0.i_Data[6]
+i_writeData[6] => eightBitRegister:register1.i_Data[6]
+i_writeData[6] => eightBitRegister:register2.i_Data[6]
+i_writeData[6] => eightBitRegister:register3.i_Data[6]
+i_writeData[6] => eightBitRegister:register4.i_Data[6]
+i_writeData[6] => eightBitRegister:register5.i_Data[6]
+i_writeData[6] => eightBitRegister:register6.i_Data[6]
+i_writeData[6] => eightBitRegister:register7.i_Data[6]
+i_writeData[7] => eightBitRegister:register0.i_Data[7]
+i_writeData[7] => eightBitRegister:register1.i_Data[7]
+i_writeData[7] => eightBitRegister:register2.i_Data[7]
+i_writeData[7] => eightBitRegister:register3.i_Data[7]
+i_writeData[7] => eightBitRegister:register4.i_Data[7]
+i_writeData[7] => eightBitRegister:register5.i_Data[7]
+i_writeData[7] => eightBitRegister:register6.i_Data[7]
+i_writeData[7] => eightBitRegister:register7.i_Data[7]
+o_readData1[0] <= eightBit8x3MUX:readData1.o_q[0]
+o_readData1[1] <= eightBit8x3MUX:readData1.o_q[1]
+o_readData1[2] <= eightBit8x3MUX:readData1.o_q[2]
+o_readData1[3] <= eightBit8x3MUX:readData1.o_q[3]
+o_readData1[4] <= eightBit8x3MUX:readData1.o_q[4]
+o_readData1[5] <= eightBit8x3MUX:readData1.o_q[5]
+o_readData1[6] <= eightBit8x3MUX:readData1.o_q[6]
+o_readData1[7] <= eightBit8x3MUX:readData1.o_q[7]
+o_readData2[0] <= eightBit8x3MUX:readData2.o_q[0]
+o_readData2[1] <= eightBit8x3MUX:readData2.o_q[1]
+o_readData2[2] <= eightBit8x3MUX:readData2.o_q[2]
+o_readData2[3] <= eightBit8x3MUX:readData2.o_q[3]
+o_readData2[4] <= eightBit8x3MUX:readData2.o_q[4]
+o_readData2[5] <= eightBit8x3MUX:readData2.o_q[5]
+o_readData2[6] <= eightBit8x3MUX:readData2.o_q[6]
+o_readData2[7] <= eightBit8x3MUX:readData2.o_q[7]
+
+
+|registerFile|eightBitDecoder:decoder
+i_sel[0] => Mux0.IN10
+i_sel[0] => Mux1.IN10
+i_sel[0] => Mux2.IN10
+i_sel[0] => Mux3.IN10
+i_sel[0] => Mux4.IN10
+i_sel[0] => Mux5.IN10
+i_sel[0] => Mux6.IN10
+i_sel[0] => Mux7.IN10
+i_sel[1] => Mux0.IN9
+i_sel[1] => Mux1.IN9
+i_sel[1] => Mux2.IN9
+i_sel[1] => Mux3.IN9
+i_sel[1] => Mux4.IN9
+i_sel[1] => Mux5.IN9
+i_sel[1] => Mux6.IN9
+i_sel[1] => Mux7.IN9
+i_sel[2] => Mux0.IN8
+i_sel[2] => Mux1.IN8
+i_sel[2] => Mux2.IN8
+i_sel[2] => Mux3.IN8
+i_sel[2] => Mux4.IN8
+i_sel[2] => Mux5.IN8
+i_sel[2] => Mux6.IN8
+i_sel[2] => Mux7.IN8
+o_q[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+o_q[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+o_q[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+o_q[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+o_q[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+o_q[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+o_q[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+o_q[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBit8x3MUX:readData1
+i_sel[0] => Mux0.IN2
+i_sel[0] => Mux1.IN2
+i_sel[0] => Mux2.IN2
+i_sel[0] => Mux3.IN2
+i_sel[0] => Mux4.IN2
+i_sel[0] => Mux5.IN2
+i_sel[0] => Mux6.IN2
+i_sel[0] => Mux7.IN2
+i_sel[1] => Mux0.IN1
+i_sel[1] => Mux1.IN1
+i_sel[1] => Mux2.IN1
+i_sel[1] => Mux3.IN1
+i_sel[1] => Mux4.IN1
+i_sel[1] => Mux5.IN1
+i_sel[1] => Mux6.IN1
+i_sel[1] => Mux7.IN1
+i_sel[2] => Mux0.IN0
+i_sel[2] => Mux1.IN0
+i_sel[2] => Mux2.IN0
+i_sel[2] => Mux3.IN0
+i_sel[2] => Mux4.IN0
+i_sel[2] => Mux5.IN0
+i_sel[2] => Mux6.IN0
+i_sel[2] => Mux7.IN0
+i_A0[0] => Mux7.IN3
+i_A0[1] => Mux6.IN3
+i_A0[2] => Mux5.IN3
+i_A0[3] => Mux4.IN3
+i_A0[4] => Mux3.IN3
+i_A0[5] => Mux2.IN3
+i_A0[6] => Mux1.IN3
+i_A0[7] => Mux0.IN3
+i_A1[0] => Mux7.IN4
+i_A1[1] => Mux6.IN4
+i_A1[2] => Mux5.IN4
+i_A1[3] => Mux4.IN4
+i_A1[4] => Mux3.IN4
+i_A1[5] => Mux2.IN4
+i_A1[6] => Mux1.IN4
+i_A1[7] => Mux0.IN4
+i_A2[0] => Mux7.IN5
+i_A2[1] => Mux6.IN5
+i_A2[2] => Mux5.IN5
+i_A2[3] => Mux4.IN5
+i_A2[4] => Mux3.IN5
+i_A2[5] => Mux2.IN5
+i_A2[6] => Mux1.IN5
+i_A2[7] => Mux0.IN5
+i_A3[0] => Mux7.IN6
+i_A3[1] => Mux6.IN6
+i_A3[2] => Mux5.IN6
+i_A3[3] => Mux4.IN6
+i_A3[4] => Mux3.IN6
+i_A3[5] => Mux2.IN6
+i_A3[6] => Mux1.IN6
+i_A3[7] => Mux0.IN6
+i_A4[0] => Mux7.IN7
+i_A4[1] => Mux6.IN7
+i_A4[2] => Mux5.IN7
+i_A4[3] => Mux4.IN7
+i_A4[4] => Mux3.IN7
+i_A4[5] => Mux2.IN7
+i_A4[6] => Mux1.IN7
+i_A4[7] => Mux0.IN7
+i_A5[0] => Mux7.IN8
+i_A5[1] => Mux6.IN8
+i_A5[2] => Mux5.IN8
+i_A5[3] => Mux4.IN8
+i_A5[4] => Mux3.IN8
+i_A5[5] => Mux2.IN8
+i_A5[6] => Mux1.IN8
+i_A5[7] => Mux0.IN8
+i_A6[0] => Mux7.IN9
+i_A6[1] => Mux6.IN9
+i_A6[2] => Mux5.IN9
+i_A6[3] => Mux4.IN9
+i_A6[4] => Mux3.IN9
+i_A6[5] => Mux2.IN9
+i_A6[6] => Mux1.IN9
+i_A6[7] => Mux0.IN9
+i_A7[0] => Mux7.IN10
+i_A7[1] => Mux6.IN10
+i_A7[2] => Mux5.IN10
+i_A7[3] => Mux4.IN10
+i_A7[4] => Mux3.IN10
+i_A7[5] => Mux2.IN10
+i_A7[6] => Mux1.IN10
+i_A7[7] => Mux0.IN10
+o_q[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+o_q[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+o_q[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+o_q[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+o_q[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+o_q[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+o_q[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+o_q[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBit8x3MUX:readData2
+i_sel[0] => Mux0.IN2
+i_sel[0] => Mux1.IN2
+i_sel[0] => Mux2.IN2
+i_sel[0] => Mux3.IN2
+i_sel[0] => Mux4.IN2
+i_sel[0] => Mux5.IN2
+i_sel[0] => Mux6.IN2
+i_sel[0] => Mux7.IN2
+i_sel[1] => Mux0.IN1
+i_sel[1] => Mux1.IN1
+i_sel[1] => Mux2.IN1
+i_sel[1] => Mux3.IN1
+i_sel[1] => Mux4.IN1
+i_sel[1] => Mux5.IN1
+i_sel[1] => Mux6.IN1
+i_sel[1] => Mux7.IN1
+i_sel[2] => Mux0.IN0
+i_sel[2] => Mux1.IN0
+i_sel[2] => Mux2.IN0
+i_sel[2] => Mux3.IN0
+i_sel[2] => Mux4.IN0
+i_sel[2] => Mux5.IN0
+i_sel[2] => Mux6.IN0
+i_sel[2] => Mux7.IN0
+i_A0[0] => Mux7.IN3
+i_A0[1] => Mux6.IN3
+i_A0[2] => Mux5.IN3
+i_A0[3] => Mux4.IN3
+i_A0[4] => Mux3.IN3
+i_A0[5] => Mux2.IN3
+i_A0[6] => Mux1.IN3
+i_A0[7] => Mux0.IN3
+i_A1[0] => Mux7.IN4
+i_A1[1] => Mux6.IN4
+i_A1[2] => Mux5.IN4
+i_A1[3] => Mux4.IN4
+i_A1[4] => Mux3.IN4
+i_A1[5] => Mux2.IN4
+i_A1[6] => Mux1.IN4
+i_A1[7] => Mux0.IN4
+i_A2[0] => Mux7.IN5
+i_A2[1] => Mux6.IN5
+i_A2[2] => Mux5.IN5
+i_A2[3] => Mux4.IN5
+i_A2[4] => Mux3.IN5
+i_A2[5] => Mux2.IN5
+i_A2[6] => Mux1.IN5
+i_A2[7] => Mux0.IN5
+i_A3[0] => Mux7.IN6
+i_A3[1] => Mux6.IN6
+i_A3[2] => Mux5.IN6
+i_A3[3] => Mux4.IN6
+i_A3[4] => Mux3.IN6
+i_A3[5] => Mux2.IN6
+i_A3[6] => Mux1.IN6
+i_A3[7] => Mux0.IN6
+i_A4[0] => Mux7.IN7
+i_A4[1] => Mux6.IN7
+i_A4[2] => Mux5.IN7
+i_A4[3] => Mux4.IN7
+i_A4[4] => Mux3.IN7
+i_A4[5] => Mux2.IN7
+i_A4[6] => Mux1.IN7
+i_A4[7] => Mux0.IN7
+i_A5[0] => Mux7.IN8
+i_A5[1] => Mux6.IN8
+i_A5[2] => Mux5.IN8
+i_A5[3] => Mux4.IN8
+i_A5[4] => Mux3.IN8
+i_A5[5] => Mux2.IN8
+i_A5[6] => Mux1.IN8
+i_A5[7] => Mux0.IN8
+i_A6[0] => Mux7.IN9
+i_A6[1] => Mux6.IN9
+i_A6[2] => Mux5.IN9
+i_A6[3] => Mux4.IN9
+i_A6[4] => Mux3.IN9
+i_A6[5] => Mux2.IN9
+i_A6[6] => Mux1.IN9
+i_A6[7] => Mux0.IN9
+i_A7[0] => Mux7.IN10
+i_A7[1] => Mux6.IN10
+i_A7[2] => Mux5.IN10
+i_A7[3] => Mux4.IN10
+i_A7[4] => Mux3.IN10
+i_A7[5] => Mux2.IN10
+i_A7[6] => Mux1.IN10
+i_A7[7] => Mux0.IN10
+o_q[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+o_q[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+o_q[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+o_q[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+o_q[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+o_q[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+o_q[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+o_q[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register0
+i_clock => enardFF_2:bit7.i_clock
+i_clock => enardFF_2:bit6.i_clock
+i_clock => enardFF_2:bit5.i_clock
+i_clock => enardFF_2:bit4.i_clock
+i_clock => enardFF_2:bit3.i_clock
+i_clock => enardFF_2:bit2.i_clock
+i_clock => enardFF_2:bit1.i_clock
+i_clock => enardFF_2:bit0.i_clock
+i_gReset => enardFF_2:bit7.i_resetBar
+i_gReset => enardFF_2:bit6.i_resetBar
+i_gReset => enardFF_2:bit5.i_resetBar
+i_gReset => enardFF_2:bit4.i_resetBar
+i_gReset => enardFF_2:bit3.i_resetBar
+i_gReset => enardFF_2:bit2.i_resetBar
+i_gReset => enardFF_2:bit1.i_resetBar
+i_gReset => enardFF_2:bit0.i_resetBar
+i_enable => enardFF_2:bit7.i_enable
+i_enable => enardFF_2:bit6.i_enable
+i_enable => enardFF_2:bit5.i_enable
+i_enable => enardFF_2:bit4.i_enable
+i_enable => enardFF_2:bit3.i_enable
+i_enable => enardFF_2:bit2.i_enable
+i_enable => enardFF_2:bit1.i_enable
+i_enable => enardFF_2:bit0.i_enable
+i_Data[0] => enardFF_2:bit0.i_d
+i_Data[1] => enardFF_2:bit1.i_d
+i_Data[2] => enardFF_2:bit2.i_d
+i_Data[3] => enardFF_2:bit3.i_d
+i_Data[4] => enardFF_2:bit4.i_d
+i_Data[5] => enardFF_2:bit5.i_d
+i_Data[6] => enardFF_2:bit6.i_d
+i_Data[7] => enardFF_2:bit7.i_d
+o_q[0] <= enardFF_2:bit0.o_q
+o_q[1] <= enardFF_2:bit1.o_q
+o_q[2] <= enardFF_2:bit2.o_q
+o_q[3] <= enardFF_2:bit3.o_q
+o_q[4] <= enardFF_2:bit4.o_q
+o_q[5] <= enardFF_2:bit5.o_q
+o_q[6] <= enardFF_2:bit6.o_q
+o_q[7] <= enardFF_2:bit7.o_q
+
+
+|registerFile|eightBitRegister:register0|enARdFF_2:bit7
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register0|enARdFF_2:bit6
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register0|enARdFF_2:bit5
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register0|enARdFF_2:bit4
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register0|enARdFF_2:bit3
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register0|enARdFF_2:bit2
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register0|enARdFF_2:bit1
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register0|enARdFF_2:bit0
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register1
+i_clock => enardFF_2:bit7.i_clock
+i_clock => enardFF_2:bit6.i_clock
+i_clock => enardFF_2:bit5.i_clock
+i_clock => enardFF_2:bit4.i_clock
+i_clock => enardFF_2:bit3.i_clock
+i_clock => enardFF_2:bit2.i_clock
+i_clock => enardFF_2:bit1.i_clock
+i_clock => enardFF_2:bit0.i_clock
+i_gReset => enardFF_2:bit7.i_resetBar
+i_gReset => enardFF_2:bit6.i_resetBar
+i_gReset => enardFF_2:bit5.i_resetBar
+i_gReset => enardFF_2:bit4.i_resetBar
+i_gReset => enardFF_2:bit3.i_resetBar
+i_gReset => enardFF_2:bit2.i_resetBar
+i_gReset => enardFF_2:bit1.i_resetBar
+i_gReset => enardFF_2:bit0.i_resetBar
+i_enable => enardFF_2:bit7.i_enable
+i_enable => enardFF_2:bit6.i_enable
+i_enable => enardFF_2:bit5.i_enable
+i_enable => enardFF_2:bit4.i_enable
+i_enable => enardFF_2:bit3.i_enable
+i_enable => enardFF_2:bit2.i_enable
+i_enable => enardFF_2:bit1.i_enable
+i_enable => enardFF_2:bit0.i_enable
+i_Data[0] => enardFF_2:bit0.i_d
+i_Data[1] => enardFF_2:bit1.i_d
+i_Data[2] => enardFF_2:bit2.i_d
+i_Data[3] => enardFF_2:bit3.i_d
+i_Data[4] => enardFF_2:bit4.i_d
+i_Data[5] => enardFF_2:bit5.i_d
+i_Data[6] => enardFF_2:bit6.i_d
+i_Data[7] => enardFF_2:bit7.i_d
+o_q[0] <= enardFF_2:bit0.o_q
+o_q[1] <= enardFF_2:bit1.o_q
+o_q[2] <= enardFF_2:bit2.o_q
+o_q[3] <= enardFF_2:bit3.o_q
+o_q[4] <= enardFF_2:bit4.o_q
+o_q[5] <= enardFF_2:bit5.o_q
+o_q[6] <= enardFF_2:bit6.o_q
+o_q[7] <= enardFF_2:bit7.o_q
+
+
+|registerFile|eightBitRegister:register1|enARdFF_2:bit7
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register1|enARdFF_2:bit6
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register1|enARdFF_2:bit5
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register1|enARdFF_2:bit4
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register1|enARdFF_2:bit3
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register1|enARdFF_2:bit2
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register1|enARdFF_2:bit1
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register1|enARdFF_2:bit0
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register2
+i_clock => enardFF_2:bit7.i_clock
+i_clock => enardFF_2:bit6.i_clock
+i_clock => enardFF_2:bit5.i_clock
+i_clock => enardFF_2:bit4.i_clock
+i_clock => enardFF_2:bit3.i_clock
+i_clock => enardFF_2:bit2.i_clock
+i_clock => enardFF_2:bit1.i_clock
+i_clock => enardFF_2:bit0.i_clock
+i_gReset => enardFF_2:bit7.i_resetBar
+i_gReset => enardFF_2:bit6.i_resetBar
+i_gReset => enardFF_2:bit5.i_resetBar
+i_gReset => enardFF_2:bit4.i_resetBar
+i_gReset => enardFF_2:bit3.i_resetBar
+i_gReset => enardFF_2:bit2.i_resetBar
+i_gReset => enardFF_2:bit1.i_resetBar
+i_gReset => enardFF_2:bit0.i_resetBar
+i_enable => enardFF_2:bit7.i_enable
+i_enable => enardFF_2:bit6.i_enable
+i_enable => enardFF_2:bit5.i_enable
+i_enable => enardFF_2:bit4.i_enable
+i_enable => enardFF_2:bit3.i_enable
+i_enable => enardFF_2:bit2.i_enable
+i_enable => enardFF_2:bit1.i_enable
+i_enable => enardFF_2:bit0.i_enable
+i_Data[0] => enardFF_2:bit0.i_d
+i_Data[1] => enardFF_2:bit1.i_d
+i_Data[2] => enardFF_2:bit2.i_d
+i_Data[3] => enardFF_2:bit3.i_d
+i_Data[4] => enardFF_2:bit4.i_d
+i_Data[5] => enardFF_2:bit5.i_d
+i_Data[6] => enardFF_2:bit6.i_d
+i_Data[7] => enardFF_2:bit7.i_d
+o_q[0] <= enardFF_2:bit0.o_q
+o_q[1] <= enardFF_2:bit1.o_q
+o_q[2] <= enardFF_2:bit2.o_q
+o_q[3] <= enardFF_2:bit3.o_q
+o_q[4] <= enardFF_2:bit4.o_q
+o_q[5] <= enardFF_2:bit5.o_q
+o_q[6] <= enardFF_2:bit6.o_q
+o_q[7] <= enardFF_2:bit7.o_q
+
+
+|registerFile|eightBitRegister:register2|enARdFF_2:bit7
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register2|enARdFF_2:bit6
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register2|enARdFF_2:bit5
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register2|enARdFF_2:bit4
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register2|enARdFF_2:bit3
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register2|enARdFF_2:bit2
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register2|enARdFF_2:bit1
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register2|enARdFF_2:bit0
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register3
+i_clock => enardFF_2:bit7.i_clock
+i_clock => enardFF_2:bit6.i_clock
+i_clock => enardFF_2:bit5.i_clock
+i_clock => enardFF_2:bit4.i_clock
+i_clock => enardFF_2:bit3.i_clock
+i_clock => enardFF_2:bit2.i_clock
+i_clock => enardFF_2:bit1.i_clock
+i_clock => enardFF_2:bit0.i_clock
+i_gReset => enardFF_2:bit7.i_resetBar
+i_gReset => enardFF_2:bit6.i_resetBar
+i_gReset => enardFF_2:bit5.i_resetBar
+i_gReset => enardFF_2:bit4.i_resetBar
+i_gReset => enardFF_2:bit3.i_resetBar
+i_gReset => enardFF_2:bit2.i_resetBar
+i_gReset => enardFF_2:bit1.i_resetBar
+i_gReset => enardFF_2:bit0.i_resetBar
+i_enable => enardFF_2:bit7.i_enable
+i_enable => enardFF_2:bit6.i_enable
+i_enable => enardFF_2:bit5.i_enable
+i_enable => enardFF_2:bit4.i_enable
+i_enable => enardFF_2:bit3.i_enable
+i_enable => enardFF_2:bit2.i_enable
+i_enable => enardFF_2:bit1.i_enable
+i_enable => enardFF_2:bit0.i_enable
+i_Data[0] => enardFF_2:bit0.i_d
+i_Data[1] => enardFF_2:bit1.i_d
+i_Data[2] => enardFF_2:bit2.i_d
+i_Data[3] => enardFF_2:bit3.i_d
+i_Data[4] => enardFF_2:bit4.i_d
+i_Data[5] => enardFF_2:bit5.i_d
+i_Data[6] => enardFF_2:bit6.i_d
+i_Data[7] => enardFF_2:bit7.i_d
+o_q[0] <= enardFF_2:bit0.o_q
+o_q[1] <= enardFF_2:bit1.o_q
+o_q[2] <= enardFF_2:bit2.o_q
+o_q[3] <= enardFF_2:bit3.o_q
+o_q[4] <= enardFF_2:bit4.o_q
+o_q[5] <= enardFF_2:bit5.o_q
+o_q[6] <= enardFF_2:bit6.o_q
+o_q[7] <= enardFF_2:bit7.o_q
+
+
+|registerFile|eightBitRegister:register3|enARdFF_2:bit7
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register3|enARdFF_2:bit6
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register3|enARdFF_2:bit5
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register3|enARdFF_2:bit4
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register3|enARdFF_2:bit3
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register3|enARdFF_2:bit2
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register3|enARdFF_2:bit1
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register3|enARdFF_2:bit0
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register4
+i_clock => enardFF_2:bit7.i_clock
+i_clock => enardFF_2:bit6.i_clock
+i_clock => enardFF_2:bit5.i_clock
+i_clock => enardFF_2:bit4.i_clock
+i_clock => enardFF_2:bit3.i_clock
+i_clock => enardFF_2:bit2.i_clock
+i_clock => enardFF_2:bit1.i_clock
+i_clock => enardFF_2:bit0.i_clock
+i_gReset => enardFF_2:bit7.i_resetBar
+i_gReset => enardFF_2:bit6.i_resetBar
+i_gReset => enardFF_2:bit5.i_resetBar
+i_gReset => enardFF_2:bit4.i_resetBar
+i_gReset => enardFF_2:bit3.i_resetBar
+i_gReset => enardFF_2:bit2.i_resetBar
+i_gReset => enardFF_2:bit1.i_resetBar
+i_gReset => enardFF_2:bit0.i_resetBar
+i_enable => enardFF_2:bit7.i_enable
+i_enable => enardFF_2:bit6.i_enable
+i_enable => enardFF_2:bit5.i_enable
+i_enable => enardFF_2:bit4.i_enable
+i_enable => enardFF_2:bit3.i_enable
+i_enable => enardFF_2:bit2.i_enable
+i_enable => enardFF_2:bit1.i_enable
+i_enable => enardFF_2:bit0.i_enable
+i_Data[0] => enardFF_2:bit0.i_d
+i_Data[1] => enardFF_2:bit1.i_d
+i_Data[2] => enardFF_2:bit2.i_d
+i_Data[3] => enardFF_2:bit3.i_d
+i_Data[4] => enardFF_2:bit4.i_d
+i_Data[5] => enardFF_2:bit5.i_d
+i_Data[6] => enardFF_2:bit6.i_d
+i_Data[7] => enardFF_2:bit7.i_d
+o_q[0] <= enardFF_2:bit0.o_q
+o_q[1] <= enardFF_2:bit1.o_q
+o_q[2] <= enardFF_2:bit2.o_q
+o_q[3] <= enardFF_2:bit3.o_q
+o_q[4] <= enardFF_2:bit4.o_q
+o_q[5] <= enardFF_2:bit5.o_q
+o_q[6] <= enardFF_2:bit6.o_q
+o_q[7] <= enardFF_2:bit7.o_q
+
+
+|registerFile|eightBitRegister:register4|enARdFF_2:bit7
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register4|enARdFF_2:bit6
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register4|enARdFF_2:bit5
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register4|enARdFF_2:bit4
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register4|enARdFF_2:bit3
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register4|enARdFF_2:bit2
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register4|enARdFF_2:bit1
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register4|enARdFF_2:bit0
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register5
+i_clock => enardFF_2:bit7.i_clock
+i_clock => enardFF_2:bit6.i_clock
+i_clock => enardFF_2:bit5.i_clock
+i_clock => enardFF_2:bit4.i_clock
+i_clock => enardFF_2:bit3.i_clock
+i_clock => enardFF_2:bit2.i_clock
+i_clock => enardFF_2:bit1.i_clock
+i_clock => enardFF_2:bit0.i_clock
+i_gReset => enardFF_2:bit7.i_resetBar
+i_gReset => enardFF_2:bit6.i_resetBar
+i_gReset => enardFF_2:bit5.i_resetBar
+i_gReset => enardFF_2:bit4.i_resetBar
+i_gReset => enardFF_2:bit3.i_resetBar
+i_gReset => enardFF_2:bit2.i_resetBar
+i_gReset => enardFF_2:bit1.i_resetBar
+i_gReset => enardFF_2:bit0.i_resetBar
+i_enable => enardFF_2:bit7.i_enable
+i_enable => enardFF_2:bit6.i_enable
+i_enable => enardFF_2:bit5.i_enable
+i_enable => enardFF_2:bit4.i_enable
+i_enable => enardFF_2:bit3.i_enable
+i_enable => enardFF_2:bit2.i_enable
+i_enable => enardFF_2:bit1.i_enable
+i_enable => enardFF_2:bit0.i_enable
+i_Data[0] => enardFF_2:bit0.i_d
+i_Data[1] => enardFF_2:bit1.i_d
+i_Data[2] => enardFF_2:bit2.i_d
+i_Data[3] => enardFF_2:bit3.i_d
+i_Data[4] => enardFF_2:bit4.i_d
+i_Data[5] => enardFF_2:bit5.i_d
+i_Data[6] => enardFF_2:bit6.i_d
+i_Data[7] => enardFF_2:bit7.i_d
+o_q[0] <= enardFF_2:bit0.o_q
+o_q[1] <= enardFF_2:bit1.o_q
+o_q[2] <= enardFF_2:bit2.o_q
+o_q[3] <= enardFF_2:bit3.o_q
+o_q[4] <= enardFF_2:bit4.o_q
+o_q[5] <= enardFF_2:bit5.o_q
+o_q[6] <= enardFF_2:bit6.o_q
+o_q[7] <= enardFF_2:bit7.o_q
+
+
+|registerFile|eightBitRegister:register5|enARdFF_2:bit7
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register5|enARdFF_2:bit6
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register5|enARdFF_2:bit5
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register5|enARdFF_2:bit4
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register5|enARdFF_2:bit3
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register5|enARdFF_2:bit2
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register5|enARdFF_2:bit1
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register5|enARdFF_2:bit0
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register6
+i_clock => enardFF_2:bit7.i_clock
+i_clock => enardFF_2:bit6.i_clock
+i_clock => enardFF_2:bit5.i_clock
+i_clock => enardFF_2:bit4.i_clock
+i_clock => enardFF_2:bit3.i_clock
+i_clock => enardFF_2:bit2.i_clock
+i_clock => enardFF_2:bit1.i_clock
+i_clock => enardFF_2:bit0.i_clock
+i_gReset => enardFF_2:bit7.i_resetBar
+i_gReset => enardFF_2:bit6.i_resetBar
+i_gReset => enardFF_2:bit5.i_resetBar
+i_gReset => enardFF_2:bit4.i_resetBar
+i_gReset => enardFF_2:bit3.i_resetBar
+i_gReset => enardFF_2:bit2.i_resetBar
+i_gReset => enardFF_2:bit1.i_resetBar
+i_gReset => enardFF_2:bit0.i_resetBar
+i_enable => enardFF_2:bit7.i_enable
+i_enable => enardFF_2:bit6.i_enable
+i_enable => enardFF_2:bit5.i_enable
+i_enable => enardFF_2:bit4.i_enable
+i_enable => enardFF_2:bit3.i_enable
+i_enable => enardFF_2:bit2.i_enable
+i_enable => enardFF_2:bit1.i_enable
+i_enable => enardFF_2:bit0.i_enable
+i_Data[0] => enardFF_2:bit0.i_d
+i_Data[1] => enardFF_2:bit1.i_d
+i_Data[2] => enardFF_2:bit2.i_d
+i_Data[3] => enardFF_2:bit3.i_d
+i_Data[4] => enardFF_2:bit4.i_d
+i_Data[5] => enardFF_2:bit5.i_d
+i_Data[6] => enardFF_2:bit6.i_d
+i_Data[7] => enardFF_2:bit7.i_d
+o_q[0] <= enardFF_2:bit0.o_q
+o_q[1] <= enardFF_2:bit1.o_q
+o_q[2] <= enardFF_2:bit2.o_q
+o_q[3] <= enardFF_2:bit3.o_q
+o_q[4] <= enardFF_2:bit4.o_q
+o_q[5] <= enardFF_2:bit5.o_q
+o_q[6] <= enardFF_2:bit6.o_q
+o_q[7] <= enardFF_2:bit7.o_q
+
+
+|registerFile|eightBitRegister:register6|enARdFF_2:bit7
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register6|enARdFF_2:bit6
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register6|enARdFF_2:bit5
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register6|enARdFF_2:bit4
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register6|enARdFF_2:bit3
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register6|enARdFF_2:bit2
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register6|enARdFF_2:bit1
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register6|enARdFF_2:bit0
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register7
+i_clock => enardFF_2:bit7.i_clock
+i_clock => enardFF_2:bit6.i_clock
+i_clock => enardFF_2:bit5.i_clock
+i_clock => enardFF_2:bit4.i_clock
+i_clock => enardFF_2:bit3.i_clock
+i_clock => enardFF_2:bit2.i_clock
+i_clock => enardFF_2:bit1.i_clock
+i_clock => enardFF_2:bit0.i_clock
+i_gReset => enardFF_2:bit7.i_resetBar
+i_gReset => enardFF_2:bit6.i_resetBar
+i_gReset => enardFF_2:bit5.i_resetBar
+i_gReset => enardFF_2:bit4.i_resetBar
+i_gReset => enardFF_2:bit3.i_resetBar
+i_gReset => enardFF_2:bit2.i_resetBar
+i_gReset => enardFF_2:bit1.i_resetBar
+i_gReset => enardFF_2:bit0.i_resetBar
+i_enable => enardFF_2:bit7.i_enable
+i_enable => enardFF_2:bit6.i_enable
+i_enable => enardFF_2:bit5.i_enable
+i_enable => enardFF_2:bit4.i_enable
+i_enable => enardFF_2:bit3.i_enable
+i_enable => enardFF_2:bit2.i_enable
+i_enable => enardFF_2:bit1.i_enable
+i_enable => enardFF_2:bit0.i_enable
+i_Data[0] => enardFF_2:bit0.i_d
+i_Data[1] => enardFF_2:bit1.i_d
+i_Data[2] => enardFF_2:bit2.i_d
+i_Data[3] => enardFF_2:bit3.i_d
+i_Data[4] => enardFF_2:bit4.i_d
+i_Data[5] => enardFF_2:bit5.i_d
+i_Data[6] => enardFF_2:bit6.i_d
+i_Data[7] => enardFF_2:bit7.i_d
+o_q[0] <= enardFF_2:bit0.o_q
+o_q[1] <= enardFF_2:bit1.o_q
+o_q[2] <= enardFF_2:bit2.o_q
+o_q[3] <= enardFF_2:bit3.o_q
+o_q[4] <= enardFF_2:bit4.o_q
+o_q[5] <= enardFF_2:bit5.o_q
+o_q[6] <= enardFF_2:bit6.o_q
+o_q[7] <= enardFF_2:bit7.o_q
+
+
+|registerFile|eightBitRegister:register7|enARdFF_2:bit7
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register7|enARdFF_2:bit6
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register7|enARdFF_2:bit5
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register7|enARdFF_2:bit4
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register7|enARdFF_2:bit3
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register7|enARdFF_2:bit2
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register7|enARdFF_2:bit1
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|eightBitRegister:register7|enARdFF_2:bit0
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+

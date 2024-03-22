@@ -1,0 +1,75 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\neira\OneDrive\Escritorio\8 semestre\Computer_System_Design\Labs\Lab 2\testbench\eightBitComparator_tb\simulation\modelsim
+Eeightbitcomparator
+Z1 w1678820561
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\neira\OneDrive\Escritorio\8 semestre\Computer_System_Design\Labs\Lab 2\testbench\eightBitComparator_tb\simulation\modelsim
+Z5 8C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitComparator_tb/eightBitComparator.vhd
+Z6 FC:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitComparator_tb/eightBitComparator.vhd
+l0
+L4
+VfL>GAeH;PAT8_=PTU:B812
+!s100 l`l950ELPWiTN5hm4BOC^2
+Z7 OV;C;10.1d;51
+31
+!i10b 1
+Z8 !s108 1678821941.183000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitComparator_tb/eightBitComparator.vhd|
+Z10 !s107 C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitComparator_tb/eightBitComparator.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+Artl
+R2
+R3
+DEx4 work 18 eightbitcomparator 0 22 fL>GAeH;PAT8_=PTU:B812
+l21
+L10
+VQI;hMMa65cTW@>z5ZH0@X2
+!s100 6=J>;@21hYzRP=iAccH0S1
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12
+Eonebitcomparator
+Z13 w1674842635
+R2
+R3
+R4
+Z14 8C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitComparator_tb/oneBitComparator.vhd
+Z15 FC:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitComparator_tb/oneBitComparator.vhd
+l0
+L4
+V=NAS[<n>eTmZ=iT4P>YGk0
+R7
+31
+Z16 !s108 1678821940.898000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitComparator_tb/oneBitComparator.vhd|
+Z18 !s107 C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBitComparator_tb/oneBitComparator.vhd|
+R11
+R12
+!s100 Hjl24EbT9DJN5HaFS1Ofz0
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 16 onebitcomparator 0 22 =NAS[<n>eTmZ=iT4P>YGk0
+l14
+L11
+V?cCM[cJ1:F`J0XXQbRN_W0
+R7
+31
+R16
+R17
+R18
+R11
+R12
+!s100 4iXLAL1h:aTFH`US_f1[P0
+!i10b 1

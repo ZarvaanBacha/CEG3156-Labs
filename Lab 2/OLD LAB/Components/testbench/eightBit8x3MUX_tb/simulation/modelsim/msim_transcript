@@ -1,0 +1,108 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do eightBit8x3MUX_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBit8x3MUX_tb/eightBit8x3MUX.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity eightBit8x3MUX
+# -- Compiling architecture struct of eightBit8x3MUX
+# 
+vcom -reportprogress 300 -work work {C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBit8x3MUX_tb/eightBit8x3MUX_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity eightBit8x3MUX_tb
+# -- Compiling architecture tb of eightBit8x3MUX_tb
+vsim +altera -do eightBit8x3MUX_run_msim_rtl_vhdl.do -l msim_transcript -gui work.eightbit8x3mux_tb
+# vsim +altera -do eightBit8x3MUX_run_msim_rtl_vhdl.do -l msim_transcript -gui work.eightbit8x3mux_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.eightbit8x3mux_tb(tb)
+# Loading work.eightbit8x3mux(struct)
+# do eightBit8x3MUX_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBit8x3MUX_tb/eightBit8x3MUX.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity eightBit8x3MUX
+# -- Compiling architecture struct of eightBit8x3MUX
+# 
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/i_sel
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/i_A0
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/i_A1
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/i_A2
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/i_A3
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/i_A4
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/i_A5
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/i_A6
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/i_A7
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/o_q
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/int_q
+run
+# ** Error: Test case 1 failed
+#    Time: 10 ns  Iteration: 0  Instance: /eightbit8x3mux_tb
+quit -sim
+# Load canceled
+vcom -reportprogress 300 -work work {C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBit8x3MUX_tb/eightBit8x3MUX_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity eightBit8x3MUX_tb
+# -- Compiling architecture tb of eightBit8x3MUX_tb
+vsim +altera -do eightBit8x3MUX_run_msim_rtl_vhdl.do -l msim_transcript -gui work.eightbit8x3mux_tb
+# vsim +altera -do eightBit8x3MUX_run_msim_rtl_vhdl.do -l msim_transcript -gui work.eightbit8x3mux_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.eightbit8x3mux_tb(tb)
+# Loading work.eightbit8x3mux(struct)
+# do eightBit8x3MUX_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBit8x3MUX_tb/eightBit8x3MUX.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity eightBit8x3MUX
+# -- Compiling architecture struct of eightBit8x3MUX
+# 
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/i_sel
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/i_A0
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/i_A1
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/i_A2
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/i_A3
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/i_A4
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/i_A5
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/i_A6
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/i_A7
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/o_q
+add wave -position end  sim:/eightbit8x3mux_tb/DUT/int_q
+run

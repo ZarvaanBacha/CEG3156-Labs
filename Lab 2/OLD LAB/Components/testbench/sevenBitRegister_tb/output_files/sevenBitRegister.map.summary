@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Feb 08 15:44:52 2023
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Revision Name : sevenBitRegister
+Top-level Entity Name : sevenBitRegister
+Family : Cyclone IV E
+Total logic elements : 7
+    Total combinational functions : 0
+    Dedicated logic registers : 7
+Total registers : 7
+Total pins : 17
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,40 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\neira\OneDrive\Escritorio\8 semestre\Computer_System_Design\Labs\Lab 2\testbench\eightBit2x1MUX_tb\simulation\modelsim
+Eeightbit2x1mux
+Z1 w1678822441
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\neira\OneDrive\Escritorio\8 semestre\Computer_System_Design\Labs\Lab 2\testbench\eightBit2x1MUX_tb\simulation\modelsim
+Z5 8C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBit2x1MUX_tb/eightBit2x1MUX.vhd
+Z6 FC:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBit2x1MUX_tb/eightBit2x1MUX.vhd
+l0
+L4
+VhhafF;2O55VS3]A053@432
+!s100 PQo90dg;3W:ORlI13hA[m2
+Z7 OV;C;10.1d;51
+31
+!i10b 1
+Z8 !s108 1678822831.448000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBit2x1MUX_tb/eightBit2x1MUX.vhd|
+Z10 !s107 C:/Users/neira/OneDrive/Escritorio/8 semestre/Computer_System_Design/Labs/Lab 2/testbench/eightBit2x1MUX_tb/eightBit2x1MUX.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+Astruct
+R2
+R3
+DEx4 work 14 eightbit2x1mux 0 22 hhafF;2O55VS3]A053@432
+l14
+L12
+VPfKj1a6]`d_6UOf6mPfS33
+!s100 6;ni:[dc_L@E=N:H;R;cW2
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12
