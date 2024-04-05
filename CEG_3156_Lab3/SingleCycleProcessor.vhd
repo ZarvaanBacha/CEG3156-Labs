@@ -81,7 +81,19 @@ COMPONENT DispController
 			co_display1, co_display2, co_display3, co_display4, co_display5, co_display6, co_display7, co_display8: out std_logic_vector (6 downto 0));
 END COMPONENT;
 
-component clk_div
+component IDIFRegister is 
+	port(
+		in_clk, in_rst : in std_logic;
+		ifid_write : in std_logic; 
+		in_instruction : in std_logic_vector(31 downto 0);
+		in_pc : in std_logic_vector(7 downto 0);
+		out_instruction : out std_logic_vector(31 downto 0);
+		out_pc : out std_logic_vector(7 downto 0)
+	);
+
+end component; 
+
+component clockDiv
 	PORT
 	(
 		clock_25Mhz				: IN	STD_LOGIC;
@@ -95,8 +107,56 @@ component clk_div
 	
 END component;
 
+COMPONENT clockDiv2
+	port(in_clk : in std_logic;
+			out_clk : out std_logic);
+END COMPONENT;
+
+component IDEXRegister is 
+	port(
+		in_clk, in_rst : in std_logic; 
+		in_pc : in std_logic_vector(7 downto 0); --
+		in_rdData1, in_rdData2 : in std_logic_vector(7 downto 0); --
+		in_sExtended : in std_logic_vector(7 downto 0); --
+		in_instr20_16, in_instr15_11 : in std_logic_vector(4 downto 0); 
+		in_aluOP : in std_logic_vector(1 downto 0); --EX --
+		in_regDst, in_aluSrc : in std_logic;  -- EX --
+		in_memRead, in_memWrite, in_branch : in std_logic;  -- M --
+		in_regWrite, in_memToReg : in std_logic; -- WB --
+		
+		out_rdData1, out_rdData2, out_pc : out std_logic_vector(7 downto 0);
+		out_sExtended : out std_logic_vector(7 downto 0);
+		out_instr20_16, out_instr15_11 : out std_logic_vector(4 downto 0);
+		out_aluOp : out std_logic_vector(1 downto 0);
+		out_regDst, out_aluSrc : out std_logic;  
+		out_memRead, out_memWrite, out_branch : out std_logic; 
+		out_regWrite, out_memToReg : out std_logic
+	);
+end component;
+
+component EXMemRegister is 
+	port(
+		in_clk, in_rst : in std_logic; 
+		
+		in_branchALU, in_resALU : in std_logic_vector(7 downto 0); 
+		in_aluZero : in std_logic; 
+		
+		in_rdData2 : in std_logic_vector(7 downto 0); 
+		in_RegDstRes : in std_logic_vector(4 downto 0); 
+		
+		in_memRead, in_memWrite, in_branch : in std_logic;  -- M 
+		in_regWrite, in_memToReg : in std_logic; -- WB 
+		
+		out_aluZero : out std_logic; 
+		out_resALU, out_branchALU : out std_logic_vector(7 downto 0);
+		out_rdData2 : out std_logic_vector(7 downto 0);
+		out_memRead, out_memWrite, out_branch : out std_logic; 
+		out_regWrite, out_memToReg : out std_logic;
+		out_RegDstRes : out std_logic_vector(4 downto 0)
+	);
+end component;
 --Clock Signal
-SIGNAL int_DivClk, int_memClk : STD_LOGIC;
+SIGNAL int_DivClk : STD_LOGIC;
 
 --PC Signals
 SIGNAL int_PCin, int_PCout : STD_LOGIC_VECTOR(7 downto 0);
@@ -132,22 +192,20 @@ SIGNAL int_aluInputB, int_readDataMemory : STD_LOGIC_VECTOR(7 downto 0);
 
 SIGNAL int_muxOut : STD_LOGIC_VECTOR(7 downto 0);
 
+signal ifid_instruction : std_logic_vector(31 downto 0);
+
+signal ifid_pc4 : std_logic_vector(7 downto 0);
+
+signal idex_rdData1, idex_rdData2, idex_pc, idex_sExtended : std_logic_vector(7 downto 0);; 
+signal idex_instr20_16, idex_instr15_11 : std_logic_vector(4 downto 0); 
+signal idex_aluOp  : std_logic_vector(1 downto 0);
+signal idex_regDst, idex_aluSrc, idex_memRead, idex_memWrite, idex_branch, idex_regWrite, idex_memToReg : std_logic; 
+signal exmem_aluZero,exmem_memRead, exmem_memWrite, exmem_branch, exmem_regWrite, exmem_memToReg : std_logic; 
+signal exmem_resALU, exmem_branchALU, exmem_rdData2, exmem_RegDstRes : std_logic_vector(7 downto 0);
 BEGIN
 
+int_DivClk <= GClock;
 
-div_clk : clk_div
-	port map(
-			clock_25Mhz				=> GClock,
-		clock_1MHz				=> open, 
-		clock_100KHz			=> open, 
-		clock_10KHz				=> open,
-		clock_1KHz				=> open,
-		clock_100Hz				=> open,
-		clock_10Hz				=> open, --int_memClk,
-		clock_1Hz				=> open -- int_divClk
-	);
-int_memClk <= memClock;
-int_divClk <= GClock;
 int_readRegister1 <= int_instruction(23 downto 21);
 int_readRegister2 <= int_instruction(18 downto 16);
 	
@@ -167,7 +225,7 @@ displayOutput: DispController
 			co_display6 	=> o_display6,
 			co_display7 	=> o_display7,
 			co_display8 	=> o_display8);
-
+			
 ioMUX: mux81n
 	generic map(8)
 	PORT MAP (	
@@ -181,6 +239,80 @@ ioMUX: mux81n
 			i6 	=> int_muxOther,
 			i7 	=> int_muxOther,
 			outp 	=> int_muxOut);
+
+IDIF: IDIFRegister
+			port map(
+		    in_clk => GClock, 
+        in_rst => GReset,
+		    ifid_write => '0', 
+		    in_instruction => int_instruction,
+		    in_pc => int_PCnext,
+        out_instruction => ifid_instruction,
+        out_pc  => ifid_pc4
+			); 
+	
+IDEX : IDEXRegister 
+  port map (
+      in_clk => GClock, 
+      in_rst => GReset,
+      in_pc => ifid_pc4,
+      in_rdData1 => int_readData1, 
+      in_rdData2 => int_readData2, 
+      in_sExtended => int_extendedShiftedAddress,
+      in_instr20_16 => ifid_instruction(20 downto 16), 
+      in_instr15_11 => ifid_instruction(15 downto 11), 
+      in_aluOP => int_aluOp,
+      in_regDst => int_regDst, 
+      in_aluSrc => int_aluSrc,
+      in_memRead => int_memRead, 
+      in_memWrite => int_memWrite, 
+      in_branch => int_branch,
+      in_regWrite => int_regWrite, 
+      in_memToReg => int_memToReg,
+      out_rdData1 => idex_rdData1, 
+      out_rdData2 => idex_rdData2, 
+      out_pc  => idex_pc
+      out_sExtended => idex_sExtended,
+      out_instr20_16 => idex_instr20_16, 
+      out_instr15_11 => idex_instr15_11
+      out_aluOp =>idex_aluOp,
+      out_regDst => idex_regDst, 
+      out_aluSrc => idex_aluSrc, 
+      out_memRead => idex_memRead, 
+      out_memWrite => idex_memRead, 
+      out_branch => idex_branch,
+		  out_regWrite => idex_regWrite, 
+      out_memToReg =>idex_memToReg
+  );
+EXMem : EXMemRegister 
+	port map(
+		in_clk => GClock, 
+    in_rst => GReset, 
+		
+		in_branchALU, 
+    in_resALU => int_aluRes,
+		in_aluZero => int_zero, 
+		
+		in_rdData2 => idex_rdData2, 
+		in_RegDstRes => int_writeRegister, 
+		
+    in_memRead => idex_memRead, 
+    in_memWrite => idex_memWrite, 
+    in_branch => idex_branch,
+		in_regWrite => idex_regWrite, 
+    in_memToReg => idex_memToReg,
+		
+		out_aluZero => exmem_aluZero,
+		out_resALU => exmem_resALU, 
+    out_branchALU => exmem_branchALU,
+		out_rdData2 => exmem_rdData2, 
+		out_memRead => exmem_memRead, 
+    out_memWrite => exmem_memWrite, 
+    out_branch => exmem_branch, 
+		out_regWrite => exmem_regWrite, 
+    out_memToReg => exmem_memToReg, 
+		out_RegDstRes => exmem_RegDstRes
+	);
 
 PC: uniShiftReg
 	generic map(8)
@@ -303,7 +435,7 @@ alu: nBitALU
 
 dataMem: ram_unreg
 	PORT MAP ( --CLOCK_50
-			clock 		=> int_memClk, 
+			clock 		=> memClock, 
 			wren 			=> int_memWrite,
 			rdaddress 	=> int_aluRes,
 			wraddress 	=> int_aluRes, 

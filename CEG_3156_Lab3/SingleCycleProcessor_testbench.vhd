@@ -83,7 +83,7 @@ architecture testbench of singleCycleProcessor_testbench is
 		
 			int_GReset <= '0';
 			int_valueSel <= "001";
-			wait for period*2;
+			wait for period;
 			
 			int_GReset <= '1';
 --			wait for period*10;
