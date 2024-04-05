@@ -1,0 +1,10 @@
+library ieee;
+use ieee.std_logic_1164.all; 
+use work.core_utils.all;
+entity IDIFRegister is 
+	port(
+		in_clk, in_rst
+	
+	);
+
+end entity; 

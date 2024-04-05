@@ -1,0 +1,227 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do CEG_3156_Lab3_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/DispController.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DispController
+# -- Compiling architecture behave of DispController
+# vcom -93 -work work {D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/controlUnitALU.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlUnitALU
+# -- Compiling architecture struct of controlUnitALU
+# vcom -93 -work work {D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/controlUnit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlUnit
+# -- Compiling architecture struct of controlUnit
+# vcom -93 -work work {D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/OneBitComparator.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity oneBitComparator
+# -- Compiling architecture rtl of oneBitComparator
+# vcom -93 -work work {D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/nto2nDecoder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity nto2nDecoder
+# -- Compiling architecture struct of nto2nDecoder
+# vcom -93 -work work {D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/mux81n.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux81
+# -- Compiling architecture rtl of mux81
+# -- Compiling entity mux81n
+# -- Compiling architecture rtl of mux81n
+# vcom -93 -work work {D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/mux41n.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux41
+# -- Compiling architecture rtl of mux41
+# -- Compiling entity mux41n
+# -- Compiling architecture rtl of mux41n
+# vcom -93 -work work {D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/mux21n.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux21
+# -- Compiling architecture rtl of mux21
+# -- Compiling entity mux21n
+# -- Compiling architecture rtl of mux21n
+# vcom -93 -work work {D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/enardFF_2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity enARdFF_2
+# -- Compiling architecture rtl of enARdFF_2
+# vcom -93 -work work {D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/core_utils.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package core_utils
+# vcom -93 -work work {D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/adder_nbit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fadder
+# -- Compiling architecture rtl of fadder
+# -- Compiling entity adder_nbit
+# -- Compiling architecture rtl of adder_nbit
+# vcom -93 -work work {D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/rom_unregistered.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity rom_unregistered
+# -- Compiling architecture SYN of rom_unregistered
+# vcom -93 -work work {D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/ram_unreg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity ram_unreg
+# -- Compiling architecture SYN of ram_unreg
+# vcom -93 -work work {D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/SingleCycleProcessor.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package core_utils
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity singleCycleProcessor
+# -- Compiling architecture rtl of singleCycleProcessor
+# ** Warning: D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/SingleCycleProcessor.vhd(194): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# vcom -93 -work work {D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/registerFile.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package core_utils
+# -- Compiling entity registerFile
+# -- Compiling architecture rtl of registerFile
+# vcom -93 -work work {D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/nBitALU.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package core_utils
+# -- Compiling entity nBitALU
+# -- Compiling architecture struct of nBitALU
+# vcom -93 -work work {D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/nBitComparator.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package core_utils
+# -- Compiling entity nBitComparator
+# -- Compiling architecture rtl of nBitComparator
+# vcom -93 -work work {D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/uniShiftReg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package core_utils
+# -- Compiling entity uniShiftReg
+# -- Compiling architecture rtl of uniShiftReg
+# 
+# vcom -93 -work work {D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/SingleCycleProcessor_testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity singleCycleProcessor_testbench
+# -- Compiling architecture testbench of singleCycleProcessor_testbench
+# ** Warning: [4] D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/SingleCycleProcessor_testbench.vhd(13): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] D:/quartus/CEG_3156_Lab3/CEG_3156_Lab3/SingleCycleProcessor_testbench.vhd(107): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  singlecycleprocessor_testbench
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=\"+acc\" -t 1ps singlecycleprocessor_testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.singlecycleprocessor_testbench(testbench)
+# Loading work.core_utils
+# Loading lpm.lpm_components
+# Loading work.singlecycleprocessor(rtl)
+# Loading ieee.numeric_std(body)
+# Loading work.dispcontroller(behave)
+# Loading work.mux81n(rtl)
+# Loading work.mux81(rtl)
+# Loading work.unishiftreg(rtl)
+# Loading work.mux41(rtl)
+# Loading work.enardff_2(rtl)
+# Loading work.adder_nbit(rtl)
+# Loading work.fadder(rtl)
+# Loading work.mux21n(rtl)
+# Loading work.mux21(rtl)
+# Loading altera_mf.altera_mf_components
+# Loading work.rom_unregistered(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+# Loading work.registerfile(rtl)
+# Loading work.nto2ndecoder(struct)
+# Loading work.controlunit(struct)
+# Loading work.controlunitalu(struct)
+# Loading work.nbitalu(struct)
+# Loading work.nbitcomparator(rtl)
+# Loading work.onebitcomparator(rtl)
+# Loading work.ram_unreg(syn)
+# ** Warning: Design size of 302 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: legio  Hostname: PCPCPCPCPCPCPC  ProcessID: 10920
+# 
+#           Attempting to use alternate WLF file "./wlftw0s8z3".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftw0s8z3
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
+#    Time: 0 ps  Iteration: 0  Instance: /singlecycleprocessor_testbench/uut/dataMem/altsyncram_component
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /singlecycleprocessor_testbench/uut/registers/decoder

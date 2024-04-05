@@ -1,0 +1,12 @@
+library ieee;
+use ieee.std_logic_1164.all; 
+use work.core_utils.all;
+entity IDEXRegister is 
+	port(
+		in_clk, in_rst : in std_logic; 
+		in_rdData1, in_rdData2 : in std_logic_vector(7 downto 0);
+		in_sExtended : in std_logic_vector(7 downto 0)
+	
+	);
+
+end IDEXRegister;

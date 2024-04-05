@@ -1,0 +1,210 @@
+$comment
+	File created using the following command:
+		vcd file CEG_3156_Lab3.msim.vcd -direction
+$end
+$date
+	Thu Apr 04 18:57:39 2024
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module nBitALU_vlg_vec_tst $end
+$var reg 8 ! i_A [7:0] $end
+$var reg 8 " i_B [7:0] $end
+$var reg 3 # i_op [2:0] $end
+$var wire 1 $ o_q [7] $end
+$var wire 1 % o_q [6] $end
+$var wire 1 & o_q [5] $end
+$var wire 1 ' o_q [4] $end
+$var wire 1 ( o_q [3] $end
+$var wire 1 ) o_q [2] $end
+$var wire 1 * o_q [1] $end
+$var wire 1 + o_q [0] $end
+$var wire 1 , o_zero $end
+$var wire 1 - sampler $end
+$scope module i1 $end
+$var wire 1 . gnd $end
+$var wire 1 / vcc $end
+$var wire 1 0 unknown $end
+$var tri1 1 1 devclrn $end
+$var tri1 1 2 devpor $end
+$var tri1 1 3 devoe $end
+$var wire 1 4 o_zero~output_o $end
+$var wire 1 5 o_q[0]~output_o $end
+$var wire 1 6 o_q[1]~output_o $end
+$var wire 1 7 o_q[2]~output_o $end
+$var wire 1 8 o_q[3]~output_o $end
+$var wire 1 9 o_q[4]~output_o $end
+$var wire 1 : o_q[5]~output_o $end
+$var wire 1 ; o_q[6]~output_o $end
+$var wire 1 < o_q[7]~output_o $end
+$var wire 1 = i_op[1]~input_o $end
+$var wire 1 > i_op[0]~input_o $end
+$var wire 1 ? int_tosub~0_combout $end
+$var wire 1 @ i_A[7]~input_o $end
+$var wire 1 A i_B[7]~input_o $end
+$var wire 1 B i_op[2]~input_o $end
+$var wire 1 C int_tosub~combout $end
+$var wire 1 D i_B[6]~input_o $end
+$var wire 1 E i_B[5]~input_o $end
+$var wire 1 F i_B[4]~input_o $end
+$var wire 1 G i_B[3]~input_o $end
+$var wire 1 H i_B[2]~input_o $end
+$var wire 1 I i_B[1]~input_o $end
+$var wire 1 J i_A[0]~input_o $end
+$var wire 1 K i_B[0]~input_o $end
+$var wire 1 L adder|gen:0:foo|c_out~0_combout $end
+$var wire 1 M i_A[1]~input_o $end
+$var wire 1 N adder|gen:1:foo|c_out~0_combout $end
+$var wire 1 O i_A[2]~input_o $end
+$var wire 1 P adder|gen:2:foo|c_out~0_combout $end
+$var wire 1 Q i_A[3]~input_o $end
+$var wire 1 R adder|gen:3:foo|c_out~0_combout $end
+$var wire 1 S i_A[4]~input_o $end
+$var wire 1 T adder|gen:4:foo|c_out~0_combout $end
+$var wire 1 U i_A[5]~input_o $end
+$var wire 1 V adder|gen:5:foo|c_out~0_combout $end
+$var wire 1 W i_A[6]~input_o $end
+$var wire 1 X adder|gen:6:foo|c_out~0_combout $end
+$var wire 1 Y adder|gen:7:foo|s_out~combout $end
+$var wire 1 Z mux|genMuxes:7:smallMux|outp~0_combout $end
+$var wire 1 [ mux|genMuxes:7:smallMux|outp~1_combout $end
+$var wire 1 \ adder|gen:2:foo|s_out~combout $end
+$var wire 1 ] mux|genMuxes:2:smallMux|outp~0_combout $end
+$var wire 1 ^ mux|genMuxes:2:smallMux|outp~1_combout $end
+$var wire 1 _ Equal0~0_combout $end
+$var wire 1 ` adder|gen:4:foo|s_out~combout $end
+$var wire 1 a adder|gen:3:foo|s_out~combout $end
+$var wire 1 b mux|genMuxes:3:smallMux|outp~0_combout $end
+$var wire 1 c mux|genMuxes:3:smallMux|outp~1_combout $end
+$var wire 1 d mux|genMuxes:4:smallMux|outp~0_combout $end
+$var wire 1 e Equal0~1_combout $end
+$var wire 1 f mux|genMuxes:1:smallMux|outp~0_combout $end
+$var wire 1 g adder|gen:1:foo|s_out~0_combout $end
+$var wire 1 h mux|genMuxes:1:smallMux|outp~1_combout $end
+$var wire 1 i adder|gen:5:foo|s_out~combout $end
+$var wire 1 j mux|genMuxes:5:smallMux|outp~0_combout $end
+$var wire 1 k mux|genMuxes:5:smallMux|outp~1_combout $end
+$var wire 1 l adder|gen:6:foo|s_out~combout $end
+$var wire 1 m mux|genMuxes:6:smallMux|outp~0_combout $end
+$var wire 1 n mux|genMuxes:6:smallMux|outp~1_combout $end
+$var wire 1 o Equal0~2_combout $end
+$var wire 1 p mux|genMuxes:0:smallMux|outp~0_combout $end
+$var wire 1 q mux|genMuxes:0:smallMux|outp~1_combout $end
+$var wire 1 r comparator|genloop:5:comp|o_LT~0_combout $end
+$var wire 1 s comparator|genloop:5:comp|o_LT~1_combout $end
+$var wire 1 t comparator|genloop:5:comp|o_GT~0_combout $end
+$var wire 1 u comparator|genloop:5:comp|o_GT~1_combout $end
+$var wire 1 v comparator|genloop:0:comp|o_LT~0_combout $end
+$var wire 1 w comparator|genloop:0:comp|o_LT~1_combout $end
+$var wire 1 x mux|genMuxes:0:smallMux|outp~2_combout $end
+$var wire 1 y mux|genMuxes:0:smallMux|outp~3_combout $end
+$var wire 1 z mux|genMuxes:0:smallMux|outp~4_combout $end
+$var wire 1 { mux|genMuxes:0:smallMux|outp~5_combout $end
+$var wire 1 | Equal0~3_combout $end
+$var wire 1 } mux|genMuxes:4:smallMux|outp~1_combout $end
+$var wire 1 ~ mux|genMuxes:7:smallMux|outp~2_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1000100 !
+b11101110 "
+b10 #
+0+
+1*
+0)
+0(
+1'
+1&
+0%
+0$
+0,
+x-
+0.
+1/
+x0
+11
+12
+13
+04
+05
+16
+07
+08
+19
+1:
+0;
+0<
+1=
+0>
+1?
+0@
+1A
+0B
+0C
+1D
+1E
+0F
+1G
+1H
+1I
+0J
+0K
+0L
+0M
+0N
+1O
+1P
+0Q
+1R
+0S
+0T
+0U
+0V
+1W
+1X
+0Y
+0Z
+0[
+0\
+1]
+0^
+1_
+1`
+0a
+0b
+0c
+0d
+0e
+0f
+1g
+1h
+1i
+0j
+1k
+0l
+1m
+0n
+0o
+0p
+0q
+1r
+1s
+0t
+0u
+1v
+1w
+1x
+1y
+0z
+0{
+0|
+1}
+0~
+$end
+#1000000
