@@ -1,0 +1,867 @@
+TimeQuest Timing Analyzer report for hazardDetectionUnit
+Fri Apr 05 11:21:08 2024
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Propagation Delay
+ 13. Minimum Propagation Delay
+ 14. Slow 1200mV 85C Model Metastability Report
+ 15. Slow 1200mV 0C Model Fmax Summary
+ 16. Slow 1200mV 0C Model Setup Summary
+ 17. Slow 1200mV 0C Model Hold Summary
+ 18. Slow 1200mV 0C Model Recovery Summary
+ 19. Slow 1200mV 0C Model Removal Summary
+ 20. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 21. Propagation Delay
+ 22. Minimum Propagation Delay
+ 23. Slow 1200mV 0C Model Metastability Report
+ 24. Fast 1200mV 0C Model Setup Summary
+ 25. Fast 1200mV 0C Model Hold Summary
+ 26. Fast 1200mV 0C Model Recovery Summary
+ 27. Fast 1200mV 0C Model Removal Summary
+ 28. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 29. Propagation Delay
+ 30. Minimum Propagation Delay
+ 31. Fast 1200mV 0C Model Metastability Report
+ 32. Multicorner Timing Analysis Summary
+ 33. Progagation Delay
+ 34. Minimum Progagation Delay
+ 35. Board Trace Model Assignments
+ 36. Input Transition Times
+ 37. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 38. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 39. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 40. Clock Transfers
+ 41. Report TCCS
+ 42. Report RSKM
+ 43. Unconstrained Paths
+ 44. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name      ; hazardDetectionUnit                                ;
+; Device Family      ; Cyclone IV GX                                      ;
+; Device Name        ; EP4CGX15BF14C6                                     ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Enabled                                            ;
++--------------------+----------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Fmax Summary ;
+--------------------------------------
+No paths to report.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
+---------------------------------------
+; Slow 1200mV 85C Model Setup Summary ;
+---------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Hold Summary ;
+--------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
+-----------------------------------------------------
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
+-----------------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------------------+
+; Propagation Delay                                              ;
++--------------+-------------+--------+--------+--------+--------+
+; Input Port   ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++--------------+-------------+--------+--------+--------+--------+
+; idExMemRead  ; PCwrite     ;        ; 10.084 ; 10.485 ;        ;
+; idExMemRead  ; ctrlMux     ; 9.865  ;        ;        ; 10.277 ;
+; idExMemRead  ; ifIdWrite   ;        ; 9.370  ; 9.799  ;        ;
+; idExRegRt[0] ; PCwrite     ; 7.375  ; 7.432  ; 7.553  ; 7.619  ;
+; idExRegRt[0] ; ctrlMux     ; 7.213  ; 7.167  ; 7.400  ; 7.345  ;
+; idExRegRt[0] ; ifIdWrite   ; 6.689  ; 6.718  ; 6.867  ; 6.905  ;
+; idExRegRt[1] ; PCwrite     ; 10.580 ; 10.602 ; 11.044 ; 11.122 ;
+; idExRegRt[1] ; ctrlMux     ; 10.383 ; 10.372 ; 10.903 ; 10.836 ;
+; idExRegRt[1] ; ifIdWrite   ; 9.894  ; 9.888  ; 10.358 ; 10.408 ;
+; idExRegRt[2] ; PCwrite     ; 10.515 ; 10.569 ; 10.934 ; 10.997 ;
+; idExRegRt[2] ; ctrlMux     ; 10.350 ; 10.307 ; 10.778 ; 10.726 ;
+; idExRegRt[2] ; ifIdWrite   ; 9.829  ; 9.855  ; 10.248 ; 10.283 ;
+; idExRegRt[3] ; PCwrite     ; 10.339 ; 10.395 ; 10.760 ; 10.784 ;
+; idExRegRt[3] ; ctrlMux     ; 10.176 ; 10.131 ; 10.565 ; 10.552 ;
+; idExRegRt[3] ; ifIdWrite   ; 9.653  ; 9.681  ; 10.074 ; 10.070 ;
+; idExRegRt[4] ; PCwrite     ; 10.459 ; 10.468 ; 10.868 ; 10.927 ;
+; idExRegRt[4] ; ctrlMux     ; 10.249 ; 10.251 ; 10.708 ; 10.660 ;
+; idExRegRt[4] ; ifIdWrite   ; 9.773  ; 9.754  ; 10.182 ; 10.213 ;
+; ifIdRegRs[0] ; PCwrite     ; 9.899  ; 9.877  ; 10.260 ; 10.367 ;
+; ifIdRegRs[0] ; ctrlMux     ; 9.658  ; 9.691  ; 10.148 ; 10.052 ;
+; ifIdRegRs[0] ; ifIdWrite   ; 9.213  ; 9.163  ; 9.574  ; 9.653  ;
+; ifIdRegRs[1] ; PCwrite     ; 10.177 ; 10.236 ; 10.622 ; 10.649 ;
+; ifIdRegRs[1] ; ctrlMux     ; 10.017 ; 9.969  ; 10.430 ; 10.414 ;
+; ifIdRegRs[1] ; ifIdWrite   ; 9.491  ; 9.522  ; 9.936  ; 9.935  ;
+; ifIdRegRs[2] ; PCwrite     ; 10.553 ; 10.532 ; 10.913 ; 11.006 ;
+; ifIdRegRs[2] ; ctrlMux     ; 10.313 ; 10.345 ; 10.787 ; 10.705 ;
+; ifIdRegRs[2] ; ifIdWrite   ; 9.867  ; 9.818  ; 10.227 ; 10.292 ;
+; ifIdRegRs[3] ; PCwrite     ; 10.702 ; 10.720 ; 11.062 ; 11.138 ;
+; ifIdRegRs[3] ; ctrlMux     ; 10.501 ; 10.494 ; 10.919 ; 10.854 ;
+; ifIdRegRs[3] ; ifIdWrite   ; 10.016 ; 10.006 ; 10.376 ; 10.424 ;
+; ifIdRegRs[4] ; PCwrite     ; 9.711  ; 9.774  ; 10.138 ; 10.210 ;
+; ifIdRegRs[4] ; ctrlMux     ; 9.555  ; 9.503  ; 9.991  ; 9.930  ;
+; ifIdRegRs[4] ; ifIdWrite   ; 9.025  ; 9.060  ; 9.452  ; 9.496  ;
+; ifIdRegRt[0] ; PCwrite     ; 9.654  ; 9.661  ; 10.017 ; 10.153 ;
+; ifIdRegRt[0] ; ctrlMux     ; 9.442  ; 9.446  ; 9.934  ; 9.809  ;
+; ifIdRegRt[0] ; ifIdWrite   ; 8.968  ; 8.947  ; 9.331  ; 9.439  ;
+; ifIdRegRt[1] ; PCwrite     ; 10.101 ; 10.189 ; 10.610 ; 10.666 ;
+; ifIdRegRt[1] ; ctrlMux     ; 9.970  ; 9.893  ; 10.447 ; 10.402 ;
+; ifIdRegRt[1] ; ifIdWrite   ; 9.415  ; 9.475  ; 9.924  ; 9.952  ;
+; ifIdRegRt[2] ; PCwrite     ; 10.572 ; 10.544 ; 10.922 ; 11.008 ;
+; ifIdRegRt[2] ; ctrlMux     ; 10.325 ; 10.364 ; 10.789 ; 10.714 ;
+; ifIdRegRt[2] ; ifIdWrite   ; 9.886  ; 9.830  ; 10.236 ; 10.294 ;
+; ifIdRegRt[3] ; PCwrite     ; 10.378 ; 10.389 ; 10.732 ; 10.801 ;
+; ifIdRegRt[3] ; ctrlMux     ; 10.170 ; 10.170 ; 10.582 ; 10.524 ;
+; ifIdRegRt[3] ; ifIdWrite   ; 9.692  ; 9.675  ; 10.046 ; 10.087 ;
+; ifIdRegRt[4] ; PCwrite     ; 10.226 ; 10.277 ; 10.716 ; 10.736 ;
+; ifIdRegRt[4] ; ctrlMux     ; 10.058 ; 10.018 ; 10.517 ; 10.508 ;
+; ifIdRegRt[4] ; ifIdWrite   ; 9.540  ; 9.563  ; 10.030 ; 10.022 ;
+; isBranch     ; ifIdWrite   ;        ; 5.685  ; 5.775  ;        ;
++--------------+-------------+--------+--------+--------+--------+
+
+
++----------------------------------------------------------------+
+; Minimum Propagation Delay                                      ;
++--------------+-------------+--------+--------+--------+--------+
+; Input Port   ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++--------------+-------------+--------+--------+--------+--------+
+; idExMemRead  ; PCwrite     ;        ; 9.545  ; 9.918  ;        ;
+; idExMemRead  ; ctrlMux     ; 9.335  ;        ;        ; 9.719  ;
+; idExMemRead  ; ifIdWrite   ;        ; 8.894  ; 9.296  ;        ;
+; idExRegRt[0] ; PCwrite     ; 6.861  ; 6.948  ; 7.039  ; 7.135  ;
+; idExRegRt[0] ; ctrlMux     ; 6.738  ; 6.662  ; 6.925  ; 6.840  ;
+; idExRegRt[0] ; ifIdWrite   ; 6.239  ; 6.297  ; 6.417  ; 6.484  ;
+; idExRegRt[1] ; PCwrite     ; 9.889  ; 9.936  ; 10.373 ; 10.468 ;
+; idExRegRt[1] ; ctrlMux     ; 9.726  ; 9.690  ; 10.258 ; 10.174 ;
+; idExRegRt[1] ; ifIdWrite   ; 9.267  ; 9.285  ; 9.751  ; 9.817  ;
+; idExRegRt[2] ; PCwrite     ; 9.967  ; 10.028 ; 10.375 ; 10.445 ;
+; idExRegRt[2] ; ctrlMux     ; 9.818  ; 9.768  ; 10.235 ; 10.176 ;
+; idExRegRt[2] ; ifIdWrite   ; 9.345  ; 9.377  ; 9.753  ; 9.794  ;
+; idExRegRt[3] ; PCwrite     ; 9.795  ; 9.858  ; 10.207 ; 10.239 ;
+; idExRegRt[3] ; ctrlMux     ; 9.648  ; 9.596  ; 10.029 ; 10.008 ;
+; idExRegRt[3] ; ifIdWrite   ; 9.173  ; 9.207  ; 9.585  ; 9.588  ;
+; idExRegRt[4] ; PCwrite     ; 10.026 ; 10.003 ; 10.378 ; 10.480 ;
+; idExRegRt[4] ; ctrlMux     ; 9.793  ; 9.827  ; 10.270 ; 10.179 ;
+; idExRegRt[4] ; ifIdWrite   ; 9.404  ; 9.352  ; 9.756  ; 9.829  ;
+; ifIdRegRs[0] ; PCwrite     ; 9.481  ; 9.483  ; 9.820  ; 9.956  ;
+; ifIdRegRs[0] ; ctrlMux     ; 9.273  ; 9.282  ; 9.746  ; 9.621  ;
+; ifIdRegRs[0] ; ifIdWrite   ; 8.859  ; 8.832  ; 9.198  ; 9.305  ;
+; ifIdRegRs[1] ; PCwrite     ; 9.748  ; 9.834  ; 10.184 ; 10.239 ;
+; ifIdRegRs[1] ; ctrlMux     ; 9.624  ; 9.549  ; 10.029 ; 9.985  ;
+; ifIdRegRs[1] ; ifIdWrite   ; 9.126  ; 9.183  ; 9.562  ; 9.588  ;
+; ifIdRegRs[2] ; PCwrite     ; 10.158 ; 10.096 ; 10.491 ; 10.565 ;
+; ifIdRegRs[2] ; ctrlMux     ; 9.886  ; 9.959  ; 10.355 ; 10.292 ;
+; ifIdRegRs[2] ; ifIdWrite   ; 9.536  ; 9.445  ; 9.869  ; 9.914  ;
+; ifIdRegRs[3] ; PCwrite     ; 10.260 ; 10.243 ; 10.640 ; 10.684 ;
+; ifIdRegRs[3] ; ctrlMux     ; 10.033 ; 10.061 ; 10.474 ; 10.441 ;
+; ifIdRegRs[3] ; ifIdWrite   ; 9.638  ; 9.592  ; 10.018 ; 10.033 ;
+; ifIdRegRs[4] ; PCwrite     ; 9.363  ; 9.427  ; 9.779  ; 9.852  ;
+; ifIdRegRs[4] ; ctrlMux     ; 9.217  ; 9.164  ; 9.642  ; 9.580  ;
+; ifIdRegRs[4] ; ifIdWrite   ; 8.741  ; 8.776  ; 9.157  ; 9.201  ;
+; ifIdRegRt[0] ; PCwrite     ; 9.305  ; 9.310  ; 9.647  ; 9.786  ;
+; ifIdRegRt[0] ; ctrlMux     ; 9.100  ; 9.106  ; 9.576  ; 9.448  ;
+; ifIdRegRt[0] ; ifIdWrite   ; 8.683  ; 8.659  ; 9.025  ; 9.135  ;
+; ifIdRegRt[1] ; PCwrite     ; 9.736  ; 9.825  ; 10.234 ; 10.292 ;
+; ifIdRegRt[1] ; ctrlMux     ; 9.615  ; 9.537  ; 10.082 ; 10.035 ;
+; ifIdRegRt[1] ; ifIdWrite   ; 9.114  ; 9.174  ; 9.612  ; 9.641  ;
+; ifIdRegRt[2] ; PCwrite     ; 10.162 ; 10.138 ; 10.487 ; 10.599 ;
+; ifIdRegRt[2] ; ctrlMux     ; 9.928  ; 9.963  ; 10.389 ; 10.288 ;
+; ifIdRegRt[2] ; ifIdWrite   ; 9.540  ; 9.487  ; 9.865  ; 9.948  ;
+; ifIdRegRt[3] ; PCwrite     ; 9.936  ; 9.957  ; 10.310 ; 10.392 ;
+; ifIdRegRt[3] ; ctrlMux     ; 9.747  ; 9.737  ; 10.182 ; 10.111 ;
+; ifIdRegRt[3] ; ifIdWrite   ; 9.314  ; 9.306  ; 9.688  ; 9.741  ;
+; ifIdRegRt[4] ; PCwrite     ; 9.832  ; 9.895  ; 10.308 ; 10.342 ;
+; ifIdRegRt[4] ; ctrlMux     ; 9.685  ; 9.633  ; 10.132 ; 10.109 ;
+; ifIdRegRt[4] ; ifIdWrite   ; 9.210  ; 9.244  ; 9.686  ; 9.691  ;
+; isBranch     ; ifIdWrite   ;        ; 5.546  ; 5.636  ;        ;
++--------------+-------------+--------+--------+--------+--------+
+
+
+----------------------------------------------
+; Slow 1200mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Fmax Summary ;
+-------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++------------------------------------------------------------+
+; Propagation Delay                                          ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; idExMemRead  ; PCwrite     ;       ; 8.993 ; 9.245 ;       ;
+; idExMemRead  ; ctrlMux     ; 8.785 ;       ;       ; 9.060 ;
+; idExMemRead  ; ifIdWrite   ;       ; 8.284 ; 8.584 ;       ;
+; idExRegRt[0] ; PCwrite     ; 6.599 ; 6.713 ; 6.765 ; 6.887 ;
+; idExRegRt[0] ; ctrlMux     ; 6.505 ; 6.414 ; 6.679 ; 6.580 ;
+; idExRegRt[0] ; ifIdWrite   ; 5.938 ; 6.004 ; 6.104 ; 6.178 ;
+; idExRegRt[1] ; PCwrite     ; 9.387 ; 9.469 ; 9.753 ; 9.883 ;
+; idExRegRt[1] ; ctrlMux     ; 9.261 ; 9.202 ; 9.675 ; 9.568 ;
+; idExRegRt[1] ; ifIdWrite   ; 8.726 ; 8.760 ; 9.092 ; 9.174 ;
+; idExRegRt[2] ; PCwrite     ; 9.332 ; 9.445 ; 9.653 ; 9.774 ;
+; idExRegRt[2] ; ctrlMux     ; 9.237 ; 9.147 ; 9.566 ; 9.468 ;
+; idExRegRt[2] ; ifIdWrite   ; 8.671 ; 8.736 ; 8.992 ; 9.065 ;
+; idExRegRt[3] ; PCwrite     ; 9.159 ; 9.274 ; 9.502 ; 9.588 ;
+; idExRegRt[3] ; ctrlMux     ; 9.066 ; 8.974 ; 9.380 ; 9.317 ;
+; idExRegRt[3] ; ifIdWrite   ; 8.498 ; 8.565 ; 8.841 ; 8.879 ;
+; idExRegRt[4] ; PCwrite     ; 9.284 ; 9.356 ; 9.585 ; 9.698 ;
+; idExRegRt[4] ; ctrlMux     ; 9.148 ; 9.099 ; 9.490 ; 9.400 ;
+; idExRegRt[4] ; ifIdWrite   ; 8.623 ; 8.647 ; 8.924 ; 8.989 ;
+; ifIdRegRs[0] ; PCwrite     ; 8.760 ; 8.802 ; 9.044 ; 9.203 ;
+; ifIdRegRs[0] ; ctrlMux     ; 8.594 ; 8.575 ; 8.995 ; 8.859 ;
+; ifIdRegRs[0] ; ifIdWrite   ; 8.099 ; 8.093 ; 8.383 ; 8.494 ;
+; ifIdRegRs[1] ; PCwrite     ; 9.024 ; 9.140 ; 9.370 ; 9.457 ;
+; ifIdRegRs[1] ; ctrlMux     ; 8.932 ; 8.839 ; 9.249 ; 9.185 ;
+; ifIdRegRs[1] ; ifIdWrite   ; 8.363 ; 8.431 ; 8.709 ; 8.748 ;
+; ifIdRegRs[2] ; PCwrite     ; 9.356 ; 9.401 ; 9.635 ; 9.784 ;
+; ifIdRegRs[2] ; ctrlMux     ; 9.193 ; 9.171 ; 9.576 ; 9.450 ;
+; ifIdRegRs[2] ; ifIdWrite   ; 8.695 ; 8.692 ; 8.974 ; 9.075 ;
+; ifIdRegRs[3] ; PCwrite     ; 9.498 ; 9.578 ; 9.767 ; 9.895 ;
+; ifIdRegRs[3] ; ctrlMux     ; 9.370 ; 9.313 ; 9.687 ; 9.582 ;
+; ifIdRegRs[3] ; ifIdWrite   ; 8.837 ; 8.869 ; 9.106 ; 9.186 ;
+; ifIdRegRs[4] ; PCwrite     ; 8.611 ; 8.721 ; 8.943 ; 9.061 ;
+; ifIdRegRs[4] ; ctrlMux     ; 8.513 ; 8.426 ; 8.853 ; 8.758 ;
+; ifIdRegRs[4] ; ifIdWrite   ; 7.950 ; 8.012 ; 8.282 ; 8.352 ;
+; ifIdRegRt[0] ; PCwrite     ; 8.541 ; 8.602 ; 8.833 ; 9.011 ;
+; ifIdRegRt[0] ; ctrlMux     ; 8.394 ; 8.356 ; 8.803 ; 8.648 ;
+; ifIdRegRt[0] ; ifIdWrite   ; 7.880 ; 7.893 ; 8.172 ; 8.302 ;
+; ifIdRegRt[1] ; PCwrite     ; 8.960 ; 9.095 ; 9.375 ; 9.481 ;
+; ifIdRegRt[1] ; ctrlMux     ; 8.887 ; 8.775 ; 9.273 ; 9.190 ;
+; ifIdRegRt[1] ; ifIdWrite   ; 8.299 ; 8.386 ; 8.714 ; 8.772 ;
+; ifIdRegRt[2] ; PCwrite     ; 9.374 ; 9.419 ; 9.635 ; 9.784 ;
+; ifIdRegRt[2] ; ctrlMux     ; 9.211 ; 9.189 ; 9.576 ; 9.450 ;
+; ifIdRegRt[2] ; ifIdWrite   ; 8.713 ; 8.710 ; 8.974 ; 9.075 ;
+; ifIdRegRt[3] ; PCwrite     ; 9.188 ; 9.268 ; 9.466 ; 9.594 ;
+; ifIdRegRt[3] ; ctrlMux     ; 9.060 ; 9.003 ; 9.386 ; 9.281 ;
+; ifIdRegRt[3] ; ifIdWrite   ; 8.527 ; 8.559 ; 8.805 ; 8.885 ;
+; ifIdRegRt[4] ; PCwrite     ; 9.075 ; 9.183 ; 9.458 ; 9.537 ;
+; ifIdRegRt[4] ; ctrlMux     ; 8.975 ; 8.890 ; 9.329 ; 9.273 ;
+; ifIdRegRt[4] ; ifIdWrite   ; 8.414 ; 8.474 ; 8.797 ; 8.828 ;
+; isBranch     ; ifIdWrite   ;       ; 5.065 ; 5.137 ;       ;
++--------------+-------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------+
+; Minimum Propagation Delay                                  ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; idExMemRead  ; PCwrite     ;       ; 8.509 ; 8.754 ;       ;
+; idExMemRead  ; ctrlMux     ; 8.310 ;       ;       ; 8.576 ;
+; idExMemRead  ; ifIdWrite   ;       ; 7.859 ; 8.151 ;       ;
+; idExRegRt[0] ; PCwrite     ; 6.141 ; 6.271 ; 6.308 ; 6.444 ;
+; idExRegRt[0] ; ctrlMux     ; 6.072 ; 5.963 ; 6.245 ; 6.130 ;
+; idExRegRt[0] ; ifIdWrite   ; 5.538 ; 5.621 ; 5.705 ; 5.794 ;
+; idExRegRt[1] ; PCwrite     ; 8.771 ; 8.866 ; 9.160 ; 9.295 ;
+; idExRegRt[1] ; ctrlMux     ; 8.667 ; 8.593 ; 9.096 ; 8.982 ;
+; idExRegRt[1] ; ifIdWrite   ; 8.168 ; 8.216 ; 8.557 ; 8.645 ;
+; idExRegRt[2] ; PCwrite     ; 8.837 ; 8.955 ; 9.152 ; 9.276 ;
+; idExRegRt[2] ; ctrlMux     ; 8.756 ; 8.659 ; 9.077 ; 8.974 ;
+; idExRegRt[2] ; ifIdWrite   ; 8.234 ; 8.305 ; 8.549 ; 8.626 ;
+; idExRegRt[3] ; PCwrite     ; 8.669 ; 8.789 ; 9.004 ; 9.096 ;
+; idExRegRt[3] ; ctrlMux     ; 8.590 ; 8.491 ; 8.897 ; 8.826 ;
+; idExRegRt[3] ; ifIdWrite   ; 8.066 ; 8.139 ; 8.401 ; 8.446 ;
+; idExRegRt[4] ; PCwrite     ; 8.909 ; 8.938 ; 9.158 ; 9.301 ;
+; idExRegRt[4] ; ctrlMux     ; 8.739 ; 8.731 ; 9.102 ; 8.980 ;
+; idExRegRt[4] ; ifIdWrite   ; 8.306 ; 8.288 ; 8.555 ; 8.651 ;
+; ifIdRegRs[0] ; PCwrite     ; 8.390 ; 8.446 ; 8.656 ; 8.831 ;
+; ifIdRegRs[0] ; ctrlMux     ; 8.247 ; 8.212 ; 8.632 ; 8.478 ;
+; ifIdRegRs[0] ; ifIdWrite   ; 7.787 ; 7.796 ; 8.053 ; 8.181 ;
+; ifIdRegRs[1] ; PCwrite     ; 8.644 ; 8.778 ; 8.983 ; 9.089 ;
+; ifIdRegRs[1] ; ctrlMux     ; 8.579 ; 8.466 ; 8.890 ; 8.805 ;
+; ifIdRegRs[1] ; ifIdWrite   ; 8.041 ; 8.128 ; 8.380 ; 8.439 ;
+; ifIdRegRs[2] ; PCwrite     ; 9.002 ; 9.004 ; 9.259 ; 9.383 ;
+; ifIdRegRs[2] ; ctrlMux     ; 8.805 ; 8.824 ; 9.184 ; 9.081 ;
+; ifIdRegRs[2] ; ifIdWrite   ; 8.399 ; 8.354 ; 8.656 ; 8.733 ;
+; ifIdRegRs[3] ; PCwrite     ; 9.098 ; 9.144 ; 9.390 ; 9.485 ;
+; ifIdRegRs[3] ; ctrlMux     ; 8.945 ; 8.920 ; 9.286 ; 9.212 ;
+; ifIdRegRs[3] ; ifIdWrite   ; 8.495 ; 8.494 ; 8.787 ; 8.835 ;
+; ifIdRegRs[4] ; PCwrite     ; 8.300 ; 8.409 ; 8.626 ; 8.741 ;
+; ifIdRegRs[4] ; ctrlMux     ; 8.210 ; 8.122 ; 8.542 ; 8.448 ;
+; ifIdRegRs[4] ; ifIdWrite   ; 7.697 ; 7.759 ; 8.023 ; 8.091 ;
+; ifIdRegRt[0] ; PCwrite     ; 8.233 ; 8.287 ; 8.506 ; 8.679 ;
+; ifIdRegRt[0] ; ctrlMux     ; 8.088 ; 8.055 ; 8.480 ; 8.328 ;
+; ifIdRegRt[0] ; ifIdWrite   ; 7.630 ; 7.637 ; 7.903 ; 8.029 ;
+; ifIdRegRt[1] ; PCwrite     ; 8.636 ; 8.768 ; 9.041 ; 9.145 ;
+; ifIdRegRt[1] ; ctrlMux     ; 8.569 ; 8.458 ; 8.946 ; 8.863 ;
+; ifIdRegRt[1] ; ifIdWrite   ; 8.033 ; 8.118 ; 8.438 ; 8.495 ;
+; ifIdRegRt[2] ; PCwrite     ; 9.012 ; 9.051 ; 9.251 ; 9.412 ;
+; ifIdRegRt[2] ; ctrlMux     ; 8.852 ; 8.834 ; 9.213 ; 9.073 ;
+; ifIdRegRt[2] ; ifIdWrite   ; 8.409 ; 8.401 ; 8.648 ; 8.762 ;
+; ifIdRegRt[3] ; PCwrite     ; 8.793 ; 8.876 ; 9.094 ; 9.226 ;
+; ifIdRegRt[3] ; ctrlMux     ; 8.677 ; 8.615 ; 9.027 ; 8.916 ;
+; ifIdRegRt[3] ; ifIdWrite   ; 8.190 ; 8.226 ; 8.491 ; 8.576 ;
+; ifIdRegRt[4] ; PCwrite     ; 8.724 ; 8.838 ; 9.097 ; 9.184 ;
+; ifIdRegRt[4] ; ctrlMux     ; 8.639 ; 8.546 ; 8.985 ; 8.919 ;
+; ifIdRegRt[4] ; ifIdWrite   ; 8.121 ; 8.188 ; 8.494 ; 8.534 ;
+; isBranch     ; ifIdWrite   ;       ; 4.937 ; 5.012 ;       ;
++--------------+-------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Slow 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
+--------------------------------------
+; Fast 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Fast 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++------------------------------------------------------------+
+; Propagation Delay                                          ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; idExMemRead  ; PCwrite     ;       ; 5.806 ; 6.590 ;       ;
+; idExMemRead  ; ctrlMux     ; 5.691 ;       ;       ; 6.466 ;
+; idExMemRead  ; ifIdWrite   ;       ; 5.510 ; 6.179 ;       ;
+; idExRegRt[0] ; PCwrite     ; 4.486 ; 4.294 ; 4.832 ; 4.647 ;
+; idExRegRt[0] ; ctrlMux     ; 4.179 ; 4.362 ; 4.532 ; 4.708 ;
+; idExRegRt[0] ; ifIdWrite   ; 4.075 ; 3.998 ; 4.421 ; 4.351 ;
+; idExRegRt[1] ; PCwrite     ; 6.324 ; 6.122 ; 6.945 ; 6.770 ;
+; idExRegRt[1] ; ctrlMux     ; 6.007 ; 6.200 ; 6.655 ; 6.821 ;
+; idExRegRt[1] ; ifIdWrite   ; 5.913 ; 5.826 ; 6.534 ; 6.474 ;
+; idExRegRt[2] ; PCwrite     ; 6.256 ; 6.057 ; 6.840 ; 6.648 ;
+; idExRegRt[2] ; ctrlMux     ; 5.942 ; 6.132 ; 6.533 ; 6.716 ;
+; idExRegRt[2] ; ifIdWrite   ; 5.845 ; 5.761 ; 6.429 ; 6.352 ;
+; idExRegRt[3] ; PCwrite     ; 6.163 ; 5.967 ; 6.724 ; 6.510 ;
+; idExRegRt[3] ; ctrlMux     ; 5.852 ; 6.039 ; 6.395 ; 6.600 ;
+; idExRegRt[3] ; ifIdWrite   ; 5.752 ; 5.671 ; 6.313 ; 6.214 ;
+; idExRegRt[4] ; PCwrite     ; 6.233 ; 6.020 ; 6.821 ; 6.637 ;
+; idExRegRt[4] ; ctrlMux     ; 5.905 ; 6.109 ; 6.522 ; 6.697 ;
+; idExRegRt[4] ; ifIdWrite   ; 5.822 ; 5.724 ; 6.410 ; 6.341 ;
+; ifIdRegRs[0] ; PCwrite     ; 5.919 ; 5.686 ; 6.444 ; 6.287 ;
+; ifIdRegRs[0] ; ctrlMux     ; 5.571 ; 5.795 ; 6.172 ; 6.320 ;
+; ifIdRegRs[0] ; ifIdWrite   ; 5.508 ; 5.390 ; 6.033 ; 5.991 ;
+; ifIdRegRs[1] ; PCwrite     ; 6.071 ; 5.882 ; 6.666 ; 6.459 ;
+; ifIdRegRs[1] ; ctrlMux     ; 5.767 ; 5.947 ; 6.344 ; 6.542 ;
+; ifIdRegRs[1] ; ifIdWrite   ; 5.660 ; 5.586 ; 6.255 ; 6.163 ;
+; ifIdRegRs[2] ; PCwrite     ; 6.287 ; 6.048 ; 6.824 ; 6.655 ;
+; ifIdRegRs[2] ; ctrlMux     ; 5.933 ; 6.163 ; 6.540 ; 6.700 ;
+; ifIdRegRs[2] ; ifIdWrite   ; 5.876 ; 5.752 ; 6.413 ; 6.359 ;
+; ifIdRegRs[3] ; PCwrite     ; 6.351 ; 6.141 ; 6.901 ; 6.719 ;
+; ifIdRegRs[3] ; ctrlMux     ; 6.026 ; 6.227 ; 6.604 ; 6.777 ;
+; ifIdRegRs[3] ; ifIdWrite   ; 5.940 ; 5.845 ; 6.490 ; 6.423 ;
+; ifIdRegRs[4] ; PCwrite     ; 5.822 ; 5.637 ; 6.386 ; 6.208 ;
+; ifIdRegRs[4] ; ctrlMux     ; 5.522 ; 5.698 ; 6.093 ; 6.262 ;
+; ifIdRegRs[4] ; ifIdWrite   ; 5.411 ; 5.341 ; 5.975 ; 5.912 ;
+; ifIdRegRt[0] ; PCwrite     ; 5.786 ; 5.571 ; 6.314 ; 6.175 ;
+; ifIdRegRt[0] ; ctrlMux     ; 5.456 ; 5.662 ; 6.060 ; 6.190 ;
+; ifIdRegRt[0] ; ifIdWrite   ; 5.375 ; 5.275 ; 5.903 ; 5.879 ;
+; ifIdRegRt[1] ; PCwrite     ; 6.054 ; 5.883 ; 6.692 ; 6.503 ;
+; ifIdRegRt[1] ; ctrlMux     ; 5.768 ; 5.930 ; 6.388 ; 6.568 ;
+; ifIdRegRt[1] ; ifIdWrite   ; 5.643 ; 5.587 ; 6.281 ; 6.207 ;
+; ifIdRegRt[2] ; PCwrite     ; 6.292 ; 6.044 ; 6.834 ; 6.656 ;
+; ifIdRegRt[2] ; ctrlMux     ; 5.929 ; 6.168 ; 6.541 ; 6.710 ;
+; ifIdRegRt[2] ; ifIdWrite   ; 5.881 ; 5.748 ; 6.423 ; 6.360 ;
+; ifIdRegRt[3] ; PCwrite     ; 6.177 ; 5.958 ; 6.716 ; 6.525 ;
+; ifIdRegRt[3] ; ctrlMux     ; 5.843 ; 6.053 ; 6.410 ; 6.592 ;
+; ifIdRegRt[3] ; ifIdWrite   ; 5.766 ; 5.662 ; 6.305 ; 6.229 ;
+; ifIdRegRt[4] ; PCwrite     ; 6.108 ; 5.916 ; 6.731 ; 6.520 ;
+; ifIdRegRt[4] ; ctrlMux     ; 5.801 ; 5.984 ; 6.405 ; 6.607 ;
+; ifIdRegRt[4] ; ifIdWrite   ; 5.697 ; 5.620 ; 6.320 ; 6.224 ;
+; isBranch     ; ifIdWrite   ;       ; 3.439 ; 3.820 ;       ;
++--------------+-------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------+
+; Minimum Propagation Delay                                  ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; idExMemRead  ; PCwrite     ;       ; 5.497 ; 6.246 ;       ;
+; idExMemRead  ; ctrlMux     ; 5.387 ;       ;       ; 6.127 ;
+; idExMemRead  ; ifIdWrite   ;       ; 5.239 ; 5.878 ;       ;
+; idExRegRt[0] ; PCwrite     ; 4.181 ; 4.012 ; 4.529 ; 4.367 ;
+; idExRegRt[0] ; ctrlMux     ; 3.902 ; 4.062 ; 4.257 ; 4.410 ;
+; idExRegRt[0] ; ifIdWrite   ; 3.813 ; 3.754 ; 4.161 ; 4.109 ;
+; idExRegRt[1] ; PCwrite     ; 5.923 ; 5.738 ; 6.548 ; 6.391 ;
+; idExRegRt[1] ; ctrlMux     ; 5.628 ; 5.804 ; 6.281 ; 6.429 ;
+; idExRegRt[1] ; ifIdWrite   ; 5.555 ; 5.480 ; 6.180 ; 6.133 ;
+; idExRegRt[2] ; PCwrite     ; 5.937 ; 5.743 ; 6.512 ; 6.325 ;
+; idExRegRt[2] ; ctrlMux     ; 5.633 ; 5.818 ; 6.215 ; 6.393 ;
+; idExRegRt[2] ; ifIdWrite   ; 5.569 ; 5.485 ; 6.144 ; 6.067 ;
+; idExRegRt[3] ; PCwrite     ; 5.845 ; 5.656 ; 6.400 ; 6.191 ;
+; idExRegRt[3] ; ctrlMux     ; 5.546 ; 5.726 ; 6.081 ; 6.281 ;
+; idExRegRt[3] ; ifIdWrite   ; 5.477 ; 5.398 ; 6.032 ; 5.933 ;
+; idExRegRt[4] ; PCwrite     ; 5.972 ; 5.752 ; 6.526 ; 6.377 ;
+; idExRegRt[4] ; ctrlMux     ; 5.642 ; 5.853 ; 6.267 ; 6.407 ;
+; idExRegRt[4] ; ifIdWrite   ; 5.604 ; 5.494 ; 6.158 ; 6.119 ;
+; ifIdRegRs[0] ; PCwrite     ; 5.662 ; 5.457 ; 6.174 ; 6.041 ;
+; ifIdRegRs[0] ; ctrlMux     ; 5.347 ; 5.543 ; 5.931 ; 6.055 ;
+; ifIdRegRs[0] ; ifIdWrite   ; 5.294 ; 5.199 ; 5.806 ; 5.783 ;
+; ifIdRegRs[1] ; PCwrite     ; 5.814 ; 5.650 ; 6.402 ; 6.218 ;
+; ifIdRegRs[1] ; ctrlMux     ; 5.540 ; 5.695 ; 6.108 ; 6.283 ;
+; ifIdRegRs[1] ; ifIdWrite   ; 5.446 ; 5.392 ; 6.034 ; 5.960 ;
+; ifIdRegRs[2] ; PCwrite     ; 6.049 ; 5.798 ; 6.574 ; 6.397 ;
+; ifIdRegRs[2] ; ctrlMux     ; 5.688 ; 5.930 ; 6.287 ; 6.455 ;
+; ifIdRegRs[2] ; ifIdWrite   ; 5.681 ; 5.540 ; 6.206 ; 6.139 ;
+; ifIdRegRs[3] ; PCwrite     ; 6.097 ; 5.867 ; 6.657 ; 6.460 ;
+; ifIdRegRs[3] ; ctrlMux     ; 5.757 ; 5.978 ; 6.350 ; 6.538 ;
+; ifIdRegRs[3] ; ifIdWrite   ; 5.729 ; 5.609 ; 6.289 ; 6.202 ;
+; ifIdRegRs[4] ; PCwrite     ; 5.611 ; 5.433 ; 6.169 ; 5.998 ;
+; ifIdRegRs[4] ; ctrlMux     ; 5.323 ; 5.492 ; 5.888 ; 6.050 ;
+; ifIdRegRs[4] ; ifIdWrite   ; 5.243 ; 5.175 ; 5.801 ; 5.740 ;
+; ifIdRegRt[0] ; PCwrite     ; 5.570 ; 5.365 ; 6.085 ; 5.952 ;
+; ifIdRegRt[0] ; ctrlMux     ; 5.255 ; 5.451 ; 5.842 ; 5.966 ;
+; ifIdRegRt[0] ; ifIdWrite   ; 5.202 ; 5.107 ; 5.717 ; 5.694 ;
+; ifIdRegRt[1] ; PCwrite     ; 5.834 ; 5.670 ; 6.464 ; 6.280 ;
+; ifIdRegRt[1] ; ctrlMux     ; 5.560 ; 5.715 ; 6.170 ; 6.345 ;
+; ifIdRegRt[1] ; ifIdWrite   ; 5.466 ; 5.412 ; 6.096 ; 6.022 ;
+; ifIdRegRt[2] ; PCwrite     ; 6.042 ; 5.811 ; 6.571 ; 6.414 ;
+; ifIdRegRt[2] ; ctrlMux     ; 5.701 ; 5.923 ; 6.304 ; 6.452 ;
+; ifIdRegRt[2] ; ifIdWrite   ; 5.674 ; 5.553 ; 6.203 ; 6.156 ;
+; ifIdRegRt[3] ; PCwrite     ; 5.919 ; 5.709 ; 6.467 ; 6.290 ;
+; ifIdRegRt[3] ; ctrlMux     ; 5.599 ; 5.800 ; 6.180 ; 6.348 ;
+; ifIdRegRt[3] ; ifIdWrite   ; 5.551 ; 5.451 ; 6.099 ; 6.032 ;
+; ifIdRegRt[4] ; PCwrite     ; 5.870 ; 5.693 ; 6.485 ; 6.289 ;
+; ifIdRegRt[4] ; ctrlMux     ; 5.583 ; 5.751 ; 6.179 ; 6.366 ;
+; ifIdRegRt[4] ; ifIdWrite   ; 5.502 ; 5.435 ; 6.117 ; 6.031 ;
+; isBranch     ; ifIdWrite   ;       ; 3.354 ; 3.735 ;       ;
++--------------+-------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Fast 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++----------------------------------------------------------------+
+; Progagation Delay                                              ;
++--------------+-------------+--------+--------+--------+--------+
+; Input Port   ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++--------------+-------------+--------+--------+--------+--------+
+; idExMemRead  ; PCwrite     ;        ; 10.084 ; 10.485 ;        ;
+; idExMemRead  ; ctrlMux     ; 9.865  ;        ;        ; 10.277 ;
+; idExMemRead  ; ifIdWrite   ;        ; 9.370  ; 9.799  ;        ;
+; idExRegRt[0] ; PCwrite     ; 7.375  ; 7.432  ; 7.553  ; 7.619  ;
+; idExRegRt[0] ; ctrlMux     ; 7.213  ; 7.167  ; 7.400  ; 7.345  ;
+; idExRegRt[0] ; ifIdWrite   ; 6.689  ; 6.718  ; 6.867  ; 6.905  ;
+; idExRegRt[1] ; PCwrite     ; 10.580 ; 10.602 ; 11.044 ; 11.122 ;
+; idExRegRt[1] ; ctrlMux     ; 10.383 ; 10.372 ; 10.903 ; 10.836 ;
+; idExRegRt[1] ; ifIdWrite   ; 9.894  ; 9.888  ; 10.358 ; 10.408 ;
+; idExRegRt[2] ; PCwrite     ; 10.515 ; 10.569 ; 10.934 ; 10.997 ;
+; idExRegRt[2] ; ctrlMux     ; 10.350 ; 10.307 ; 10.778 ; 10.726 ;
+; idExRegRt[2] ; ifIdWrite   ; 9.829  ; 9.855  ; 10.248 ; 10.283 ;
+; idExRegRt[3] ; PCwrite     ; 10.339 ; 10.395 ; 10.760 ; 10.784 ;
+; idExRegRt[3] ; ctrlMux     ; 10.176 ; 10.131 ; 10.565 ; 10.552 ;
+; idExRegRt[3] ; ifIdWrite   ; 9.653  ; 9.681  ; 10.074 ; 10.070 ;
+; idExRegRt[4] ; PCwrite     ; 10.459 ; 10.468 ; 10.868 ; 10.927 ;
+; idExRegRt[4] ; ctrlMux     ; 10.249 ; 10.251 ; 10.708 ; 10.660 ;
+; idExRegRt[4] ; ifIdWrite   ; 9.773  ; 9.754  ; 10.182 ; 10.213 ;
+; ifIdRegRs[0] ; PCwrite     ; 9.899  ; 9.877  ; 10.260 ; 10.367 ;
+; ifIdRegRs[0] ; ctrlMux     ; 9.658  ; 9.691  ; 10.148 ; 10.052 ;
+; ifIdRegRs[0] ; ifIdWrite   ; 9.213  ; 9.163  ; 9.574  ; 9.653  ;
+; ifIdRegRs[1] ; PCwrite     ; 10.177 ; 10.236 ; 10.622 ; 10.649 ;
+; ifIdRegRs[1] ; ctrlMux     ; 10.017 ; 9.969  ; 10.430 ; 10.414 ;
+; ifIdRegRs[1] ; ifIdWrite   ; 9.491  ; 9.522  ; 9.936  ; 9.935  ;
+; ifIdRegRs[2] ; PCwrite     ; 10.553 ; 10.532 ; 10.913 ; 11.006 ;
+; ifIdRegRs[2] ; ctrlMux     ; 10.313 ; 10.345 ; 10.787 ; 10.705 ;
+; ifIdRegRs[2] ; ifIdWrite   ; 9.867  ; 9.818  ; 10.227 ; 10.292 ;
+; ifIdRegRs[3] ; PCwrite     ; 10.702 ; 10.720 ; 11.062 ; 11.138 ;
+; ifIdRegRs[3] ; ctrlMux     ; 10.501 ; 10.494 ; 10.919 ; 10.854 ;
+; ifIdRegRs[3] ; ifIdWrite   ; 10.016 ; 10.006 ; 10.376 ; 10.424 ;
+; ifIdRegRs[4] ; PCwrite     ; 9.711  ; 9.774  ; 10.138 ; 10.210 ;
+; ifIdRegRs[4] ; ctrlMux     ; 9.555  ; 9.503  ; 9.991  ; 9.930  ;
+; ifIdRegRs[4] ; ifIdWrite   ; 9.025  ; 9.060  ; 9.452  ; 9.496  ;
+; ifIdRegRt[0] ; PCwrite     ; 9.654  ; 9.661  ; 10.017 ; 10.153 ;
+; ifIdRegRt[0] ; ctrlMux     ; 9.442  ; 9.446  ; 9.934  ; 9.809  ;
+; ifIdRegRt[0] ; ifIdWrite   ; 8.968  ; 8.947  ; 9.331  ; 9.439  ;
+; ifIdRegRt[1] ; PCwrite     ; 10.101 ; 10.189 ; 10.610 ; 10.666 ;
+; ifIdRegRt[1] ; ctrlMux     ; 9.970  ; 9.893  ; 10.447 ; 10.402 ;
+; ifIdRegRt[1] ; ifIdWrite   ; 9.415  ; 9.475  ; 9.924  ; 9.952  ;
+; ifIdRegRt[2] ; PCwrite     ; 10.572 ; 10.544 ; 10.922 ; 11.008 ;
+; ifIdRegRt[2] ; ctrlMux     ; 10.325 ; 10.364 ; 10.789 ; 10.714 ;
+; ifIdRegRt[2] ; ifIdWrite   ; 9.886  ; 9.830  ; 10.236 ; 10.294 ;
+; ifIdRegRt[3] ; PCwrite     ; 10.378 ; 10.389 ; 10.732 ; 10.801 ;
+; ifIdRegRt[3] ; ctrlMux     ; 10.170 ; 10.170 ; 10.582 ; 10.524 ;
+; ifIdRegRt[3] ; ifIdWrite   ; 9.692  ; 9.675  ; 10.046 ; 10.087 ;
+; ifIdRegRt[4] ; PCwrite     ; 10.226 ; 10.277 ; 10.716 ; 10.736 ;
+; ifIdRegRt[4] ; ctrlMux     ; 10.058 ; 10.018 ; 10.517 ; 10.508 ;
+; ifIdRegRt[4] ; ifIdWrite   ; 9.540  ; 9.563  ; 10.030 ; 10.022 ;
+; isBranch     ; ifIdWrite   ;        ; 5.685  ; 5.775  ;        ;
++--------------+-------------+--------+--------+--------+--------+
+
+
++------------------------------------------------------------+
+; Minimum Progagation Delay                                  ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; idExMemRead  ; PCwrite     ;       ; 5.497 ; 6.246 ;       ;
+; idExMemRead  ; ctrlMux     ; 5.387 ;       ;       ; 6.127 ;
+; idExMemRead  ; ifIdWrite   ;       ; 5.239 ; 5.878 ;       ;
+; idExRegRt[0] ; PCwrite     ; 4.181 ; 4.012 ; 4.529 ; 4.367 ;
+; idExRegRt[0] ; ctrlMux     ; 3.902 ; 4.062 ; 4.257 ; 4.410 ;
+; idExRegRt[0] ; ifIdWrite   ; 3.813 ; 3.754 ; 4.161 ; 4.109 ;
+; idExRegRt[1] ; PCwrite     ; 5.923 ; 5.738 ; 6.548 ; 6.391 ;
+; idExRegRt[1] ; ctrlMux     ; 5.628 ; 5.804 ; 6.281 ; 6.429 ;
+; idExRegRt[1] ; ifIdWrite   ; 5.555 ; 5.480 ; 6.180 ; 6.133 ;
+; idExRegRt[2] ; PCwrite     ; 5.937 ; 5.743 ; 6.512 ; 6.325 ;
+; idExRegRt[2] ; ctrlMux     ; 5.633 ; 5.818 ; 6.215 ; 6.393 ;
+; idExRegRt[2] ; ifIdWrite   ; 5.569 ; 5.485 ; 6.144 ; 6.067 ;
+; idExRegRt[3] ; PCwrite     ; 5.845 ; 5.656 ; 6.400 ; 6.191 ;
+; idExRegRt[3] ; ctrlMux     ; 5.546 ; 5.726 ; 6.081 ; 6.281 ;
+; idExRegRt[3] ; ifIdWrite   ; 5.477 ; 5.398 ; 6.032 ; 5.933 ;
+; idExRegRt[4] ; PCwrite     ; 5.972 ; 5.752 ; 6.526 ; 6.377 ;
+; idExRegRt[4] ; ctrlMux     ; 5.642 ; 5.853 ; 6.267 ; 6.407 ;
+; idExRegRt[4] ; ifIdWrite   ; 5.604 ; 5.494 ; 6.158 ; 6.119 ;
+; ifIdRegRs[0] ; PCwrite     ; 5.662 ; 5.457 ; 6.174 ; 6.041 ;
+; ifIdRegRs[0] ; ctrlMux     ; 5.347 ; 5.543 ; 5.931 ; 6.055 ;
+; ifIdRegRs[0] ; ifIdWrite   ; 5.294 ; 5.199 ; 5.806 ; 5.783 ;
+; ifIdRegRs[1] ; PCwrite     ; 5.814 ; 5.650 ; 6.402 ; 6.218 ;
+; ifIdRegRs[1] ; ctrlMux     ; 5.540 ; 5.695 ; 6.108 ; 6.283 ;
+; ifIdRegRs[1] ; ifIdWrite   ; 5.446 ; 5.392 ; 6.034 ; 5.960 ;
+; ifIdRegRs[2] ; PCwrite     ; 6.049 ; 5.798 ; 6.574 ; 6.397 ;
+; ifIdRegRs[2] ; ctrlMux     ; 5.688 ; 5.930 ; 6.287 ; 6.455 ;
+; ifIdRegRs[2] ; ifIdWrite   ; 5.681 ; 5.540 ; 6.206 ; 6.139 ;
+; ifIdRegRs[3] ; PCwrite     ; 6.097 ; 5.867 ; 6.657 ; 6.460 ;
+; ifIdRegRs[3] ; ctrlMux     ; 5.757 ; 5.978 ; 6.350 ; 6.538 ;
+; ifIdRegRs[3] ; ifIdWrite   ; 5.729 ; 5.609 ; 6.289 ; 6.202 ;
+; ifIdRegRs[4] ; PCwrite     ; 5.611 ; 5.433 ; 6.169 ; 5.998 ;
+; ifIdRegRs[4] ; ctrlMux     ; 5.323 ; 5.492 ; 5.888 ; 6.050 ;
+; ifIdRegRs[4] ; ifIdWrite   ; 5.243 ; 5.175 ; 5.801 ; 5.740 ;
+; ifIdRegRt[0] ; PCwrite     ; 5.570 ; 5.365 ; 6.085 ; 5.952 ;
+; ifIdRegRt[0] ; ctrlMux     ; 5.255 ; 5.451 ; 5.842 ; 5.966 ;
+; ifIdRegRt[0] ; ifIdWrite   ; 5.202 ; 5.107 ; 5.717 ; 5.694 ;
+; ifIdRegRt[1] ; PCwrite     ; 5.834 ; 5.670 ; 6.464 ; 6.280 ;
+; ifIdRegRt[1] ; ctrlMux     ; 5.560 ; 5.715 ; 6.170 ; 6.345 ;
+; ifIdRegRt[1] ; ifIdWrite   ; 5.466 ; 5.412 ; 6.096 ; 6.022 ;
+; ifIdRegRt[2] ; PCwrite     ; 6.042 ; 5.811 ; 6.571 ; 6.414 ;
+; ifIdRegRt[2] ; ctrlMux     ; 5.701 ; 5.923 ; 6.304 ; 6.452 ;
+; ifIdRegRt[2] ; ifIdWrite   ; 5.674 ; 5.553 ; 6.203 ; 6.156 ;
+; ifIdRegRt[3] ; PCwrite     ; 5.919 ; 5.709 ; 6.467 ; 6.290 ;
+; ifIdRegRt[3] ; ctrlMux     ; 5.599 ; 5.800 ; 6.180 ; 6.348 ;
+; ifIdRegRt[3] ; ifIdWrite   ; 5.551 ; 5.451 ; 6.099 ; 6.032 ;
+; ifIdRegRt[4] ; PCwrite     ; 5.870 ; 5.693 ; 6.485 ; 6.289 ;
+; ifIdRegRt[4] ; ctrlMux     ; 5.583 ; 5.751 ; 6.179 ; 6.366 ;
+; ifIdRegRt[4] ; ifIdWrite   ; 5.502 ; 5.435 ; 6.117 ; 6.031 ;
+; isBranch     ; ifIdWrite   ;       ; 3.354 ; 3.735 ;       ;
++--------------+-------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; ifIdWrite     ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; PCwrite       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ctrlMux       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++-------------------------------------------------------------------+
+; Input Transition Times                                            ;
++----------------+--------------+-----------------+-----------------+
+; Pin            ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++----------------+--------------+-----------------+-----------------+
+; isBranch       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; idExRegRt[0]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; idExRegRt[1]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ifIdRegRs[1]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ifIdRegRs[0]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ifIdRegRt[1]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ifIdRegRt[0]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; idExMemRead    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; idExRegRt[2]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; idExRegRt[3]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ifIdRegRt[3]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ifIdRegRt[2]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; idExRegRt[4]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ifIdRegRt[4]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ifIdRegRs[3]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ifIdRegRs[2]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ifIdRegRs[4]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_NCSO~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++----------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; ifIdWrite     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.34 V              ; -0.00668 V          ; 0.218 V                              ; 0.076 V                              ; 1.92e-09 s                  ; 1.81e-09 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.34 V             ; -0.00668 V         ; 0.218 V                             ; 0.076 V                             ; 1.92e-09 s                 ; 1.81e-09 s                 ; No                        ; Yes                       ;
+; PCwrite       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; ctrlMux       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.76e-09 V                   ; 2.4 V               ; -0.034 V            ; 0.102 V                              ; 0.065 V                              ; 2.49e-10 s                  ; 3.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.76e-09 V                  ; 2.4 V              ; -0.034 V           ; 0.102 V                             ; 0.065 V                             ; 2.49e-10 s                 ; 3.49e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.94e-09 V                   ; 2.39 V              ; -0.0344 V           ; 0.156 V                              ; 0.089 V                              ; 2.68e-10 s                  ; 2.6e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.94e-09 V                  ; 2.39 V             ; -0.0344 V          ; 0.156 V                             ; 0.089 V                             ; 2.68e-10 s                 ; 2.6e-10 s                  ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; ifIdWrite     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.33 V              ; -0.00286 V          ; 0.193 V                              ; 0.042 V                              ; 2.32e-09 s                  ; 2.21e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.33 V             ; -0.00286 V         ; 0.193 V                             ; 0.042 V                             ; 2.32e-09 s                 ; 2.21e-09 s                 ; Yes                       ; Yes                       ;
+; PCwrite       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; ctrlMux       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.93e-07 V                   ; 2.37 V              ; -0.0278 V           ; 0.106 V                              ; 0.115 V                              ; 2.69e-10 s                  ; 4.05e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.93e-07 V                  ; 2.37 V             ; -0.0278 V          ; 0.106 V                             ; 0.115 V                             ; 2.69e-10 s                 ; 4.05e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.76e-07 V                   ; 2.36 V              ; -0.00439 V          ; 0.088 V                              ; 0.007 V                              ; 4.05e-10 s                  ; 3.35e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 9.76e-07 V                  ; 2.36 V             ; -0.00439 V         ; 0.088 V                             ; 0.007 V                             ; 4.05e-10 s                 ; 3.35e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; ifIdWrite     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.65 V              ; -0.0115 V           ; 0.219 V                              ; 0.115 V                              ; 1.64e-09 s                  ; 1.57e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.65 V             ; -0.0115 V          ; 0.219 V                             ; 0.115 V                             ; 1.64e-09 s                 ; 1.57e-09 s                 ; No                        ; Yes                       ;
+; PCwrite       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; ctrlMux       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.06e-08 V                   ; 2.86 V              ; -0.0341 V           ; 0.364 V                              ; 0.046 V                              ; 1.17e-10 s                  ; 2.6e-10 s                   ; No                         ; Yes                        ; 2.62 V                      ; 3.06e-08 V                  ; 2.86 V             ; -0.0341 V          ; 0.364 V                             ; 0.046 V                             ; 1.17e-10 s                 ; 2.6e-10 s                  ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.81e-08 V                   ; 2.72 V              ; -0.0542 V           ; 0.144 V                              ; 0.087 V                              ; 2.55e-10 s                  ; 2.14e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 3.81e-08 V                  ; 2.72 V             ; -0.0542 V          ; 0.144 V                             ; 0.087 V                             ; 2.55e-10 s                 ; 2.14e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 17    ; 17   ;
+; Unconstrained Input Port Paths  ; 49    ; 49   ;
+; Unconstrained Output Ports      ; 3     ; 3    ;
+; Unconstrained Output Port Paths ; 49    ; 49   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Fri Apr 05 11:21:05 2024
+Info: Command: quartus_sta hazardDetectionUnit -c hazardDetectionUnit
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
+Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'hazardDetectionUnit.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow 1200mV 85C Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Fast 1200mV 0C Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4605 megabytes
+    Info: Processing ended: Fri Apr 05 11:21:08 2024
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+

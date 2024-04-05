@@ -1,0 +1,75 @@
+m255
+K3
+13
+cModel Technology
+Z0 dX:\School\Year 5\Computer Systems Design\CEG3156-Labs\Lab 3\simulation\modelsim
+Ehazarddetectionunit
+Z1 w1712330181
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dX:\School\Year 5\Computer Systems Design\CEG3156-Labs\Lab 3\simulation\modelsim
+Z5 8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3/hazardDetectionUnit.vhd
+Z6 FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3/hazardDetectionUnit.vhd
+l0
+L8
+V24moKTF>;Z;YRKOn9A`ii2
+!s100 5nbAOGz85@A5206Y6LNDB3
+Z7 OV;C;10.1d;51
+31
+!i10b 1
+Z8 !s108 1712330503.204000
+Z9 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3/hazardDetectionUnit.vhd|
+Z10 !s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3/hazardDetectionUnit.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+Astructural
+R2
+R3
+Z13 DEx4 work 19 hazarddetectionunit 0 22 24moKTF>;Z;YRKOn9A`ii2
+l27
+L23
+Z14 VEWYm9g3oPMIIXaRJ;;>Y`0
+Z15 !s100 2b86`8Ij?LVGRj[JKi=z42
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12
+Ehazarddetectionunit_tb
+Z16 w1712330319
+R2
+R3
+R4
+Z17 8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3/hazardDetectionUnit_tb.vhd
+Z18 FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3/hazardDetectionUnit_tb.vhd
+l0
+L4
+V8TBEOicSfcabhD24aZn_D2
+R7
+31
+Z19 !s108 1712330503.016000
+Z20 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3/hazardDetectionUnit_tb.vhd|
+Z21 !s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3/hazardDetectionUnit_tb.vhd|
+R11
+R12
+!s100 =:]jB9_NEJR5]:35_Fb>:0
+!i10b 1
+Atb
+R2
+R3
+DEx4 work 22 hazarddetectionunit_tb 0 22 8TBEOicSfcabhD24aZn_D2
+l30
+L7
+V8HzI0ZXmU@kKGMcX0_cT<3
+R7
+31
+R19
+R20
+R21
+R11
+R12
+!s100 7R?KCSKVN[8LP_@Si8fB41
+!i10b 1

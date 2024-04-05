@@ -1,0 +1,28 @@
+|hazardDetectionUnit
+idExMemRead => hazard1.IN1
+isBranch => ifIdWrite.IN1
+idExRegRt[0] => IdExRtEqIfIdRs[0].IN0
+idExRegRt[0] => IdExRtEqIfIdRt[0].IN0
+idExRegRt[1] => IdExRtEqIfIdRs[1].IN0
+idExRegRt[1] => IdExRtEqIfIdRt[1].IN0
+idExRegRt[2] => IdExRtEqIfIdRs[2].IN0
+idExRegRt[2] => IdExRtEqIfIdRt[2].IN0
+idExRegRt[3] => IdExRtEqIfIdRs[3].IN0
+idExRegRt[3] => IdExRtEqIfIdRt[3].IN0
+idExRegRt[4] => IdExRtEqIfIdRs[4].IN0
+idExRegRt[4] => IdExRtEqIfIdRt[4].IN0
+ifIdRegRs[0] => IdExRtEqIfIdRs[0].IN1
+ifIdRegRs[1] => IdExRtEqIfIdRs[1].IN1
+ifIdRegRs[2] => IdExRtEqIfIdRs[2].IN1
+ifIdRegRs[3] => IdExRtEqIfIdRs[3].IN1
+ifIdRegRs[4] => IdExRtEqIfIdRs[4].IN1
+ifIdRegRt[0] => IdExRtEqIfIdRt[0].IN1
+ifIdRegRt[1] => IdExRtEqIfIdRt[1].IN1
+ifIdRegRt[2] => IdExRtEqIfIdRt[2].IN1
+ifIdRegRt[3] => IdExRtEqIfIdRt[3].IN1
+ifIdRegRt[4] => IdExRtEqIfIdRt[4].IN1
+ifIdWrite <= ifIdWrite.DB_MAX_OUTPUT_PORT_TYPE
+PCwrite <= hazard1.DB_MAX_OUTPUT_PORT_TYPE
+ctrlMux <= hazard1.DB_MAX_OUTPUT_PORT_TYPE
+
+
