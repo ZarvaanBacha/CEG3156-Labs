@@ -1,0 +1,251 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do CEG_3156_Lab3_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlib core
+# ** Warning: (vlib-34) Library already exists at "core".
+# 
+# vmap core core
+# Modifying modelsim.ini
+# vcom -93 -work core {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/core/OneBitComparator.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity oneBitComparator
+# -- Compiling architecture rtl of oneBitComparator
+# vcom -93 -work core {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/core/nto2nDecoder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity nto2nDecoder
+# -- Compiling architecture struct of nto2nDecoder
+# vcom -93 -work core {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/core/mux81n.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux81
+# -- Compiling architecture rtl of mux81
+# -- Compiling entity mux81n
+# -- Compiling architecture rtl of mux81n
+# vcom -93 -work core {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/core/mux41n.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux41
+# -- Compiling architecture rtl of mux41
+# -- Compiling entity mux41n
+# -- Compiling architecture rtl of mux41n
+# vcom -93 -work core {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/core/mux21n.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux21
+# -- Compiling architecture rtl of mux21
+# -- Compiling entity mux21n
+# -- Compiling architecture rtl of mux21n
+# vcom -93 -work core {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/core/enardFF_2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity enARdFF_2
+# -- Compiling architecture rtl of enARdFF_2
+# vcom -93 -work core {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/core/core_utils.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package core_utils
+# vcom -93 -work core {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/core/cmp.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cmp_1
+# -- Compiling architecture struct of cmp_1
+# -- Compiling entity cmp
+# -- Compiling architecture struct of cmp
+# vcom -93 -work core {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/core/adder_nbit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fadder
+# -- Compiling architecture rtl of fadder
+# -- Compiling entity adder_nbit
+# -- Compiling architecture rtl of adder_nbit
+# vlib pipeline
+# ** Warning: (vlib-34) Library already exists at "pipeline".
+# 
+# vmap pipeline pipeline
+# Modifying modelsim.ini
+# vcom -93 -work pipeline {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/pipeline/pipeline_pack.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package pipeline_pack
+# vlib processor
+# ** Warning: (vlib-34) Library already exists at "processor".
+# 
+# vmap processor processor
+# Modifying modelsim.ini
+# vcom -93 -work processor {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/hazardDetectionUnit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity HazardDetectionUnit
+# -- Compiling architecture structural of HazardDetectionUnit
+# vcom -93 -work processor {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/controlUnitALU.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlUnitALU
+# -- Compiling architecture struct of controlUnitALU
+# vcom -93 -work processor {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/controlUnit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlUnit
+# -- Compiling architecture struct of controlUnit
+# vcom -93 -work work {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/rom_unregistered.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity rom_unregistered
+# -- Compiling architecture SYN of rom_unregistered
+# vcom -93 -work work {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/ram_en_unreg2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity ram_en_unreg2
+# -- Compiling architecture SYN of ram_en_unreg2
+# vcom -93 -work work {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/DispController.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DispController
+# -- Compiling architecture behave of DispController
+# vcom -93 -work processor {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/processor_pack.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package processor_pack
+# vcom -93 -work core {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/core/uniShiftReg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package core_utils
+# -- Compiling entity uniShiftReg
+# -- Compiling architecture rtl of uniShiftReg
+# vcom -93 -work core {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/core/nBitComparator.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package core_utils
+# -- Compiling entity nBitComparator
+# -- Compiling architecture rtl of nBitComparator
+# vcom -93 -work pipeline {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/pipeline/MemWBRegister.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package core_utils
+# -- Compiling entity MEMWBRegister
+# -- Compiling architecture rtl of MEMWBRegister
+# vcom -93 -work pipeline {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/pipeline/IDIFRegister.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package core_utils
+# -- Compiling entity IDIFRegister
+# -- Compiling architecture rtl of IDIFRegister
+# vcom -93 -work pipeline {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/pipeline/IDEXRegister.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package core_utils
+# -- Compiling entity IDEXRegister
+# -- Compiling architecture rtl of IDEXRegister
+# vcom -93 -work pipeline {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/pipeline/EXMemRegister.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package core_utils
+# -- Compiling entity EXMemRegister
+# -- Compiling architecture rtl of EXMemRegister
+# vcom -93 -work processor {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/registerFile.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package core_utils
+# -- Compiling entity registerFile
+# -- Compiling architecture rtl of registerFile
+# vcom -93 -work processor {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/nBitALU.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package core_utils
+# -- Compiling entity nBitALU
+# -- Compiling architecture struct of nBitALU
+# vcom -93 -work processor {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/forwardingUnit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package core_utils
+# -- Compiling entity forwardingUnit
+# -- Compiling architecture rtl of forwardingUnit
+# vcom -93 -work work {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/SingleCycleProcessor.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package core_utils
+# -- Loading package pipeline_pack
+# -- Loading package processor_pack
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity singleCycleProcessor
+# -- Compiling architecture rtl of singleCycleProcessor
+# ** Warning: X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/SingleCycleProcessor.vhd(150): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# ** Error: X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/SingleCycleProcessor.vhd(235): (vcom-1436) Actual expression (infix expression) of formal "in0" is not globally static.
+# 
+# ** Error: X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/SingleCycleProcessor.vhd(494): VHDL Compiler exiting
+# ** Error: C:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./CEG_3156_Lab3_run_msim_rtl_vhdl.do line 40
+# C:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/SingleCycleProcessor.vhd}"

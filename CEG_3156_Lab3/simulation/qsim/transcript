@@ -13,7 +13,7 @@
 # 
 # Top level modules:
 # 	singleCycleProcessor_vlg_vec_tst
-# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.SingleCycleProcessor_vlg_vec_tst 
+# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.SingleCycleProcessor_vlg_vec_tst 
 # ** Error: (vsim-3170) Could not find 'work.SingleCycleProcessor_vlg_vec_tst'.
 # 
 # Error loading design

@@ -124,6 +124,7 @@ signal exmem_resALU, exmem_branchALU, exmem_rdData2, exmem_RegDstRes : std_logic
 signal memwb_resALU, memwb_writeReg, memwb_dataMem : std_logic_vector(7 downto 0);
 signal memwb_regWrite, memwb_memToReg : std_logic; 
 
+signal int_concat : std_logic_vector(9 downto 0);
 BEGIN
 
 int_DivClk <= GClock;
@@ -225,14 +226,14 @@ registers: registerFile
 -- signal ctl_MuxJmp, ctl_MuxBranch : std_logic;
 -- signal ctl_MuxMemRead, ctl_MuxMemToReg, ctl_MuxMemWrite, ctl_MuxAluSrc : std_logic;
 -- signal ctl_MuxRegWrite : std_logic;
-
+int_concat <= (ctl_MuxMemToReg & ctl_MuxRegWrite) & 
+					(ctl_MuxMemRead & ctl_MuxMemWrite & ctl_MuxJmp & ctl_MuxBranch) &
+					(ctl_muxAluOp & ctl_MuxAluSrc & ctl_MuxRegDst);
 ctl_hazard_mux : mux21n 
 	generic map(10)
 	port map(
 		sel 	=> int_ctlMux, -- WB M Ex
-		in0 	=> 	(ctl_MuxMemToReg & ctl_MuxRegWrite) & 
-					(ctl_MuxMemRead & ctl_MuxMemWrite & ctl_MuxJmp & ctl_MuxBranch) &
-					(ctl_muxAluOp & ctl_MuxAluSrc & ctl_MuxRegDst),
+		in0 	=> int_concat,
 		in1		=> (others => '0'),
 		outp 	=> ctl_muxOut
 	);

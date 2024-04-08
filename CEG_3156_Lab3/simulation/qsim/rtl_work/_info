@@ -2,23 +2,23 @@ m255
 K3
 13
 cModel Technology
-Z0 dD:\quartus\CEG_3156_Lab3\simulation\qsim
+Z0 dX:\School\Year 5\Computer Systems Design\CEG3156-Labs\CEG_3156_Lab3\simulation\qsim
 Edispcontroller
-Z1 w1712444848
+Z1 w1712331739
 Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z5 dD:\quartus\CEG_3156_Lab3\simulation\qsim
-Z6 8D:/quartus/CEG_3156_Lab3/DispController.vhd
-Z7 FD:/quartus/CEG_3156_Lab3/DispController.vhd
+Z5 dX:\School\Year 5\Computer Systems Design\CEG3156-Labs\CEG_3156_Lab3\simulation\qsim
+Z6 8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/DispController.vhd
+Z7 FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/DispController.vhd
 l0
 L5
 V3H:Fo_o7DoAhl=IM]e3<k3
 Z8 OV;C;10.1d;51
 31
-Z9 !s108 1712542592.848000
-Z10 !s90 -reportprogress|300|-93|-work|work|D:/quartus/CEG_3156_Lab3/DispController.vhd|
-Z11 !s107 D:/quartus/CEG_3156_Lab3/DispController.vhd|
+Z9 !s108 1712592972.517000
+Z10 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/DispController.vhd|
+Z11 !s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/DispController.vhd|
 Z12 o-93 -work work -O0
 Z13 tExplicit 1
 !s100 hjV:n=jEPYNVZ0eKIdk9U3
@@ -41,21 +41,21 @@ R13
 !s100 ]d_Y8n:f8T0H=N;@;o3iJ3
 !i10b 1
 Eram_en_unreg2
-Z14 w1712524319
-Z15 DPx9 altera_mf 20 altera_mf_components 0 22 zh;bE09gCIPDVLK?MN49L3
+Z14 w1712592398
+Z15 DPx9 altera_mf 20 altera_mf_components 0 22 No]@D`cShSLI4UOb8Ijo62
 R3
 R4
 R5
-Z16 8D:/quartus/CEG_3156_Lab3/ram_en_unreg2.vhd
-Z17 FD:/quartus/CEG_3156_Lab3/ram_en_unreg2.vhd
+Z16 8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/ram_en_unreg2.vhd
+Z17 FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/ram_en_unreg2.vhd
 l0
 L42
 VX85f=7S7Y43=gQ;HN@FZm1
 R8
 31
-Z18 !s108 1712542592.735000
-Z19 !s90 -reportprogress|300|-93|-work|work|D:/quartus/CEG_3156_Lab3/ram_en_unreg2.vhd|
-Z20 !s107 D:/quartus/CEG_3156_Lab3/ram_en_unreg2.vhd|
+Z18 !s108 1712592972.329000
+Z19 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/ram_en_unreg2.vhd|
+Z20 !s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/ram_en_unreg2.vhd|
 R12
 R13
 !s100 [MOFmOKa7OnXZ1CS>@iCj0
@@ -67,7 +67,7 @@ R4
 DEx4 work 13 ram_en_unreg2 0 22 X85f=7S7Y43=gQ;HN@FZm1
 l60
 L56
-VHTneChk2PX:V_daUboh`Z2
+V<M=<Pf@?XcnMUE<P@c:e<0
 R8
 31
 R18
@@ -75,24 +75,24 @@ R19
 R20
 R12
 R13
-!s100 01JaI91JcGgSHi:=z1IZM0
+!s100 KBP4iDamNbTGS94OR8AL=1
 !i10b 1
 Erom_unregistered
-R1
+Z21 w1712331740
 R15
 R3
 R4
 R5
-Z21 8D:/quartus/CEG_3156_Lab3/rom_unregistered.vhd
-Z22 FD:/quartus/CEG_3156_Lab3/rom_unregistered.vhd
+Z22 8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/rom_unregistered.vhd
+Z23 FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/rom_unregistered.vhd
 l0
 L42
 V:cIVTeMjccZF67jQId51L3
 R8
 31
-Z23 !s108 1712542592.686000
-Z24 !s90 -reportprogress|300|-93|-work|work|D:/quartus/CEG_3156_Lab3/rom_unregistered.vhd|
-Z25 !s107 D:/quartus/CEG_3156_Lab3/rom_unregistered.vhd|
+Z24 !s108 1712592972.142000
+Z25 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/rom_unregistered.vhd|
+Z26 !s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/rom_unregistered.vhd|
 R12
 R13
 !s100 ?`98Z]ze>8;]m]JgONb263
@@ -107,131 +107,97 @@ L52
 VmZi2HRTD0MK]DhVF]ceO@2
 R8
 31
-R23
 R24
 R25
+R26
 R12
 R13
 !s100 [g4k3bNUB5CmLBVY:`BC?1
 !i10b 1
 Esinglecycleprocessor
-Z26 w1712542076
-Z27 DPx3 lpm 14 lpm_components 0 22 Wog`[CL=7N916SZzK3:hL2
-Z28 DPx8 pipeline 13 pipeline_pack 0 22 B]15PkhT76C0VfRm>HiUJ1
-Z29 DPx4 core 10 core_utils 0 22 oJ<N;S;Bz5kj66N0_`_zQ0
+Z27 w1712591488
+Z28 DPx3 lpm 14 lpm_components 0 22 iingGbl@N@a>h=m<^4?ml0
+Z29 DPx9 processor 14 processor_pack 0 22 diKD7`VkdAUdfeXUaf7ke1
+Z30 DPx8 pipeline 13 pipeline_pack 0 22 W=G>^SgWEQZ_ZEU7EcKz:3
+Z31 DPx4 core 10 core_utils 0 22 oJ<N;S;Bz5kj66N0_`_zQ0
 R3
 R4
 R5
-Z30 8D:/quartus/CEG_3156_Lab3/SingleCycleProcessor.vhd
-Z31 FD:/quartus/CEG_3156_Lab3/SingleCycleProcessor.vhd
+Z32 8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/SingleCycleProcessor.vhd
+Z33 FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/SingleCycleProcessor.vhd
 l0
 L16
-VfXD^bz8_>n8o>g<Q5Q0]K3
+VQIa?zh:hGJB^Qi=kOiT_>0
 R8
 31
-Z32 !s108 1712542593.301000
-Z33 !s90 -reportprogress|300|-93|-work|work|D:/quartus/CEG_3156_Lab3/SingleCycleProcessor.vhd|
-Z34 !s107 D:/quartus/CEG_3156_Lab3/SingleCycleProcessor.vhd|
+Z34 !s108 1712592974.876000
+Z35 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/SingleCycleProcessor.vhd|
+Z36 !s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/SingleCycleProcessor.vhd|
 R12
 R13
-!s100 J1]zc4^?jS9;8c]`[SHV02
+!s100 _UCICiSnAa7kH5bRQXH1g0
 !i10b 1
 Artl
-R27
 R28
 R29
+R30
+R31
 R3
 R4
-DEx4 work 20 singlecycleprocessor 0 22 fXD^bz8_>n8o>g<Q5Q0]K3
-l203
+Z37 DEx4 work 20 singlecycleprocessor 0 22 QIa?zh:hGJB^Qi=kOiT_>0
+l128
 L27
-V`]:bQLNRc8R6KiLC^=64Y1
+Vl^S]NhicQeWW=Y_KI?<jY3
 R8
 31
-R32
-R33
 R34
+R35
+R36
 R12
 R13
-!s100 :3JNYjeHI8_m<5gPMD[T`2
+!s100 [nUgYg1=jBYzZ@iFTGJF92
 !i10b 1
-vsingleCycleProcessor
-IoYUgafC9;bj<1QzTD;4eU2
-Va3_Y;dC_Lz@Cob5LX<dDA3
+Esinglecycleprocessor_testbench
+Z38 w1712592197
+R28
+R29
+R30
+R31
+R37
+R3
+R4
 R5
-Z35 w1712542726
-Z36 8CEG_3156_Lab3.vo
-Z37 FCEG_3156_Lab3.vo
-L0 31
-Z38 OV;L;10.1d;51
-r1
+Z39 8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/SingleCycleProcessor_testbench.vhd
+Z40 FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/SingleCycleProcessor_testbench.vhd
+l0
+L4
+Va;CU2PW40z^g3l9Z>z7O<3
+!s100 EZZg>U]QF0]KlJ76oFNG20
+R8
 31
-Z39 !s90 -work|work|CEG_3156_Lab3.vo|
-Z40 o-work work -O0
-nsingle@cycle@processor
 !i10b 1
-!s100 1jC>`0ilfAc0Zz=517iVZ0
-!s85 0
-!s108 1712542727.351000
-Z41 !s107 CEG_3156_Lab3.vo|
-!s101 -O0
-vsingleCycleProcessor_vlg_check_tst
-!i10b 1
-!s100 Qh?Z5G5CUJ9;HeSGnYIF:0
-Ie>Mb]UX`A^BU]WKT8S3Q:3
-Vb9APUYDzATd1XSHTSF6Cj2
-R5
-R35
-Z42 8Waveform1.vwf.vt
-Z43 FWaveform1.vwf.vt
-L0 65
-R38
-r1
-!s85 0
+Z41 !s108 1712592975.110000
+Z42 !s90 -reportprogress|300|-93|-work|work|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/SingleCycleProcessor_testbench.vhd|
+Z43 !s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/SingleCycleProcessor_testbench.vhd|
+R12
+R13
+Atestbench
+R28
+R29
+R30
+R31
+R3
+R4
+DEx4 work 30 singlecycleprocessor_testbench 0 22 a;CU2PW40z^g3l9Z>z7O<3
+l25
+L7
+VZN]4eNK?C@CKzMc[7na`>2
+!s100 Z[mf9[IDNY_gkZHJoVH=93
+R8
 31
-Z44 !s108 1712542727.441000
-Z45 !s107 Waveform1.vwf.vt|
-Z46 !s90 -work|work|Waveform1.vwf.vt|
-!s101 -O0
-R40
-nsingle@cycle@processor_vlg_check_tst
-vsingleCycleProcessor_vlg_sample_tst
 !i10b 1
-!s100 U;;=26^Q?CC1<a1Lz<61Q2
-IElAI4cdhZQICoYGmP5bj@0
-V=4mJ2UH6n[G^5:P;]U_<H2
-R5
-R35
+R41
 R42
 R43
-L0 29
-R38
-r1
-!s85 0
-31
-R44
-R45
-R46
-!s101 -O0
-R40
-nsingle@cycle@processor_vlg_sample_tst
-vsingleCycleProcessor_vlg_vec_tst
-!i10b 1
-!s100 elonUTAAC^9In^_`z;]lL2
-IRZo<@3TL1igFdihUh@z<H0
-V=mX18cD_6mdlMj5?jEzjm2
-R5
-R35
-R42
-R43
-L0 2049
-R38
-r1
-!s85 0
-31
-R44
-R45
-R46
-!s101 -O0
-R40
-nsingle@cycle@processor_vlg_vec_tst
+R12
+R13

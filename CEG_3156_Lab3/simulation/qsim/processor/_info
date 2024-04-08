@@ -4,20 +4,20 @@ K3
 cModel Technology
 Z0 dD:\quartus\CEG_3156_Lab3\simulation\qsim
 Econtrolunit
-Z1 w1712444848
+Z1 w1712588848
 Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z4 dD:\quartus\CEG_3156_Lab3\simulation\qsim
-Z5 8D:/quartus/CEG_3156_Lab3/processor/controlUnit.vhd
-Z6 FD:/quartus/CEG_3156_Lab3/processor/controlUnit.vhd
+Z4 dX:\School\Year 5\Computer Systems Design\CEG3156-Labs\CEG_3156_Lab3\simulation\qsim
+Z5 8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/controlUnit.vhd
+Z6 FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/controlUnit.vhd
 l0
 L4
 V8PcoL]ezI]Z;Q9a]9<99B2
 Z7 OV;C;10.1d;51
 31
-Z8 !s108 1712542592.644000
-Z9 !s90 -reportprogress|300|-93|-work|processor|D:/quartus/CEG_3156_Lab3/processor/controlUnit.vhd|
-Z10 !s107 D:/quartus/CEG_3156_Lab3/processor/controlUnit.vhd|
+Z8 !s108 1712592971.970000
+Z9 !s90 -reportprogress|300|-93|-work|processor|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/controlUnit.vhd|
+Z10 !s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/controlUnit.vhd|
 Z11 o-93 -work processor -O0
 Z12 tExplicit 1
 !s100 aWj84ZPjNM7LKH@eA5[m71
@@ -43,16 +43,16 @@ R1
 R2
 R3
 R4
-Z13 8D:/quartus/CEG_3156_Lab3/processor/controlUnitALU.vhd
-Z14 FD:/quartus/CEG_3156_Lab3/processor/controlUnitALU.vhd
+Z13 8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/controlUnitALU.vhd
+Z14 FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/controlUnitALU.vhd
 l0
 L4
 V]CcQTj4g6a7F2lj@=L`WR1
 R7
 31
-Z15 !s108 1712542592.602000
-Z16 !s90 -reportprogress|300|-93|-work|processor|D:/quartus/CEG_3156_Lab3/processor/controlUnitALU.vhd|
-Z17 !s107 D:/quartus/CEG_3156_Lab3/processor/controlUnitALU.vhd|
+Z15 !s108 1712592971.735000
+Z16 !s90 -reportprogress|300|-93|-work|processor|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/controlUnitALU.vhd|
+Z17 !s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/controlUnitALU.vhd|
 R11
 R12
 !s100 n3ElfYf=_53SgB@41ITRF1
@@ -74,57 +74,57 @@ R12
 !s100 T`0oEnUc_7<4^YChJPe>>0
 !i10b 1
 Eforwardingunit
-Z18 w1712519735
-Z19 DPx4 core 10 core_utils 0 22 oJ<N;S;Bz5kj66N0_`_zQ0
+R1
+Z18 DPx4 core 10 core_utils 0 22 oJ<N;S;Bz5kj66N0_`_zQ0
 R2
 R3
 R4
-Z20 8D:/quartus/CEG_3156_Lab3/processor/forwardingUnit.vhd
-Z21 FD:/quartus/CEG_3156_Lab3/processor/forwardingUnit.vhd
+Z19 8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/forwardingUnit.vhd
+Z20 FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/forwardingUnit.vhd
 l0
-L6
+L7
 Vz0g;_1B8hkQg^6TF[?2UQ3
-!s100 76Rae7BXFafFQGfDAT3HI0
+!s100 `L3Xam=AKDYG^1e>Hg`<K2
 R7
 31
 !i10b 1
-Z22 !s108 1712542593.260000
-Z23 !s90 -reportprogress|300|-93|-work|processor|D:/quartus/CEG_3156_Lab3/processor/forwardingUnit.vhd|
-Z24 !s107 D:/quartus/CEG_3156_Lab3/processor/forwardingUnit.vhd|
+Z21 !s108 1712592974.626000
+Z22 !s90 -reportprogress|300|-93|-work|processor|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/forwardingUnit.vhd|
+Z23 !s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/forwardingUnit.vhd|
 R11
 R12
 Artl
-R19
+R18
 R2
 R3
-Z25 DEx4 work 14 forwardingunit 0 22 z0g;_1B8hkQg^6TF[?2UQ3
-l39
-L20
-Z26 VV?JGnXjX@^kncYK=:jESm2
-Z27 !s100 kNHT0H6;Dh0VclPfJ];>F2
+Z24 DEx4 work 14 forwardingunit 0 22 z0g;_1B8hkQg^6TF[?2UQ3
+l41
+L22
+Z25 VV?JGnXjX@^kncYK=:jESm2
+Z26 !s100 `]VeWf8ZIGf1CF`8@FXBO3
 R7
 31
 !i10b 1
+R21
 R22
 R23
-R24
 R11
 R12
 Ehazarddetectionunit
-Z28 w1712455584
+R1
 R2
 R3
 R4
-Z29 8D:/quartus/CEG_3156_Lab3/processor/hazardDetectionUnit.vhd
-Z30 FD:/quartus/CEG_3156_Lab3/processor/hazardDetectionUnit.vhd
+Z27 8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/hazardDetectionUnit.vhd
+Z28 FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/hazardDetectionUnit.vhd
 l0
 L8
 V[Z6>@1BjeJ<nFZK6MSFB30
 R7
 31
-Z31 !s108 1712542592.560000
-Z32 !s90 -reportprogress|300|-93|-work|processor|D:/quartus/CEG_3156_Lab3/processor/hazardDetectionUnit.vhd|
-Z33 !s107 D:/quartus/CEG_3156_Lab3/processor/hazardDetectionUnit.vhd|
+Z29 !s108 1712592971.454000
+Z30 !s90 -reportprogress|300|-93|-work|processor|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/hazardDetectionUnit.vhd|
+Z31 !s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/hazardDetectionUnit.vhd|
 R11
 R12
 !s100 5nbAOGz85@A5206Y6LNDB3
@@ -138,37 +138,37 @@ L23
 Vo>C8m<Cb:LhMSSMa;aJE[3
 R7
 31
+R29
+R30
 R31
-R32
-R33
 R11
 R12
 !s100 2b86`8Ij?LVGRj[JKi=z42
 !i10b 1
 Enbitalu
-Z34 w1712519354
-R19
-Z35 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R1
+R18
+Z32 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 R2
 R3
 R4
-Z36 8D:/quartus/CEG_3156_Lab3/processor/nBitALU.vhd
-Z37 FD:/quartus/CEG_3156_Lab3/processor/nBitALU.vhd
+Z33 8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/nBitALU.vhd
+Z34 FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/nBitALU.vhd
 l0
 L9
 V]fhjHBH;l7H008]kOMXWU2
 R7
 31
-Z38 !s108 1712542593.215000
-Z39 !s90 -reportprogress|300|-93|-work|processor|D:/quartus/CEG_3156_Lab3/processor/nBitALU.vhd|
-Z40 !s107 D:/quartus/CEG_3156_Lab3/processor/nBitALU.vhd|
+Z35 !s108 1712592974.392000
+Z36 !s90 -reportprogress|300|-93|-work|processor|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/nBitALU.vhd|
+Z37 !s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/nBitALU.vhd|
 R11
 R12
 !s100 7TSihRJ`7`[1277^4P@La2
 !i10b 1
 Astruct
-R19
-R35
+R18
+R32
 R2
 R3
 DEx4 work 7 nbitalu 0 22 ]fhjHBH;l7H008]kOMXWU2
@@ -178,34 +178,53 @@ Vm[@AY9jfD`cPF3Z;bdHYB0
 !s100 Le>?7Nb>mm69YN@=@gDoH0
 R7
 31
-R38
-R39
-R40
+R35
+R36
+R37
 R11
 R12
 !i10b 1
+Pprocessor_pack
+R2
+R3
+R1
+R4
+8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/processor_pack.vhd
+FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/processor_pack.vhd
+l0
+L4
+VdiKD7`VkdAUdfeXUaf7ke1
+R7
+31
+R11
+R12
+!s100 ^3<m0LWPI8KBgCP9LN>MZ2
+!i10b 1
+!s108 1712592972.704000
+!s90 -reportprogress|300|-93|-work|processor|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/processor_pack.vhd|
+!s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/processor_pack.vhd|
 Eregisterfile
-Z41 w1712518381
-R19
+R1
+R18
 R2
 R3
 R4
-Z42 8D:/quartus/CEG_3156_Lab3/processor/registerFile.vhd
-Z43 FD:/quartus/CEG_3156_Lab3/processor/registerFile.vhd
+Z38 8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/registerFile.vhd
+Z39 FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/registerFile.vhd
 l0
 L5
 VYPhYZg?>oUG:1F0D2zG[V2
 R7
 31
-Z44 !s108 1712542593.165000
-Z45 !s90 -reportprogress|300|-93|-work|processor|D:/quartus/CEG_3156_Lab3/processor/registerFile.vhd|
-Z46 !s107 D:/quartus/CEG_3156_Lab3/processor/registerFile.vhd|
+Z40 !s108 1712592974.189000
+Z41 !s90 -reportprogress|300|-93|-work|processor|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/registerFile.vhd|
+Z42 !s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/CEG_3156_Lab3/processor/registerFile.vhd|
 R11
 R12
 !s100 BO^=:8=:8`za>A6GN?8X03
 !i10b 1
 Artl
-R19
+R18
 R2
 R3
 DEx4 work 12 registerfile 0 22 YPhYZg?>oUG:1F0D2zG[V2
@@ -214,9 +233,9 @@ L13
 VdL9LLUBgB9zM1I_>2>]8H3
 R7
 31
-R44
-R45
-R46
+R40
+R41
+R42
 R11
 R12
 !s100 :@X6IbY9KZA1AM6<I1VCW1
