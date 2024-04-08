@@ -127,7 +127,7 @@ signal memwb_regWrite, memwb_memToReg : std_logic;
 signal int_concat : std_logic_vector(9 downto 0);
 BEGIN
 
-int_DivClk <= GClock;
+--int_DivClk <= GClock;
 
 
 
@@ -155,6 +155,11 @@ PCAdder: adder_nbit
 		overflow_out 	=> open,
 		s_out 			=> int_PCnext
 	);
+divider: clockDiv
+	PORT MAP
+	(
+		clock_25Mhz	=> Gclock,
+		clock_1Hz	=> int_DivClk);
 
 PCSrc_Mux: mux21n
 	generic map(8)
@@ -418,7 +423,7 @@ int_pcSrc <= (exmem_aluZero and exmem_branch) or exmem_jmp;
 
 dataMem: ram_en_unreg2
 	PORT MAP ( --CLOCK_50
-			clock 		=> memClock, 
+			clock 		=> not int_DivClk, 
 			rden		=> exmem_memRead,
 			wren 		=> exmem_memWrite,
 			rdaddress 	=> exmem_resALU,

@@ -6,14 +6,8 @@ GReset => registerFile:registers.i_gReset
 GReset => IDEXRegister:IDEX.in_rst
 GReset => EXMemRegister:EXMem.in_rst
 GReset => MEMWBRegister:MEMWB.in_rst
-GClock => uniShiftReg:PC.in_clk
-GClock => rom_unregistered:instructionMem.clock
-GClock => IDIFRegister:IDIF.in_clk
-GClock => registerFile:registers.i_clock
-GClock => IDEXRegister:IDEX.in_clk
-GClock => EXMemRegister:EXMem.in_clk
-GClock => MEMWBRegister:MEMWB.in_clk
-memClock => ram_en_unreg2:dataMem.clock
+GClock => clockDiv:divider.clock_25Mhz
+memClock => ~NO_FANOUT~
 ValueSelect[0] => mux81n:ioMUX.sel[0]
 ValueSelect[1] => mux81n:ioMUX.sel[1]
 ValueSelect[2] => mux81n:ioMUX.sel[2]
@@ -511,6 +505,29 @@ c_in => s_out.IN1
 c_in => c_out.IN1
 c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
 s_out <= s_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SingleCycleProcessor|clockDiv:divider
+clock_25Mhz => clock_1Hz~reg0.CLK
+clock_25Mhz => clock_10Hz~reg0.CLK
+clock_25Mhz => clock_100Hz~reg0.CLK
+clock_25Mhz => clock_1KHz~reg0.CLK
+clock_25Mhz => clock_10KHz~reg0.CLK
+clock_25Mhz => clock_100KHz~reg0.CLK
+clock_25Mhz => clock_1MHz~reg0.CLK
+clock_25Mhz => clock_1Mhz_int.CLK
+clock_25Mhz => count_1Mhz[0].CLK
+clock_25Mhz => count_1Mhz[1].CLK
+clock_25Mhz => count_1Mhz[2].CLK
+clock_25Mhz => count_1Mhz[3].CLK
+clock_25Mhz => count_1Mhz[4].CLK
+clock_1MHz <= clock_1MHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_100KHz <= clock_100KHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_10KHz <= clock_10KHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1KHz <= clock_1KHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_100Hz <= clock_100Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_10Hz <= clock_10Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1Hz <= clock_1Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |SingleCycleProcessor|mux21n:PCSrc_Mux
