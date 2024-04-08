@@ -1,5 +1,5 @@
 LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_1164.all;
 
 entity singleCycleProcessor_testbench is
 end singleCycleProcessor_testbench;
@@ -10,7 +10,7 @@ architecture testbench of singleCycleProcessor_testbench is
 	signal int_muxOut: std_logic_vector(7 downto 0);
 	signal int_instructionOut: std_logic_vector(31 downto 0);
 	
-	constant period: time := 20ns; 
+	constant period: time := 20 ns; 
 	signal sim_end : boolean := false;
 	component SingleCycleProcessor is 
 		PORT (
@@ -22,8 +22,6 @@ architecture testbench of singleCycleProcessor_testbench is
 			BranchOut, ZeroOut, MemWriteOut, RegWriteOut 	: OUT STD_LOGIC;
 			o_display1, o_display2, o_display3, o_display4, o_display5, o_display6, o_display7, o_display8: out std_logic_vector (6 downto 0));
 	end component;
-	
-	
 	begin
 	
 		uut : SingleCycleProcessor
@@ -104,7 +102,7 @@ architecture testbench of singleCycleProcessor_testbench is
 --			int_valueSel <= "000";
 --			wait for period*3;
 			
-			wait for 2000ns; 
+			wait for 2000 ns; 
 			sim_end <= true;
 			wait;
 		end process;
