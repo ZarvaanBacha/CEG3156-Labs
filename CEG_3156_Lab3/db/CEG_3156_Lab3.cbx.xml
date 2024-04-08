@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="CEG_3156_Lab3">
+		<CBX_INST_ENTRY INSTANCE_NAME="|SingleCycleProcessor|ram_en_unreg2:dataMem|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_h7p3.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|SingleCycleProcessor|rom_unregistered:instructionMem|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ngs3.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

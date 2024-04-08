@@ -1,0 +1,485 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\quartus\CEG_3156_Lab3\simulation\qsim
+Eadder_nbit
+Z1 w1712444848
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dD:\quartus\CEG_3156_Lab3\simulation\qsim
+Z5 8D:/quartus/CEG_3156_Lab3/core/adder_nbit.vhd
+Z6 FD:/quartus/CEG_3156_Lab3/core/adder_nbit.vhd
+l0
+L20
+VN11@905k[FWlC6z7NEKiW0
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1712542592.365000
+Z9 !s90 -reportprogress|300|-93|-work|core|D:/quartus/CEG_3156_Lab3/core/adder_nbit.vhd|
+Z10 !s107 D:/quartus/CEG_3156_Lab3/core/adder_nbit.vhd|
+Z11 o-93 -work core -O0
+Z12 tExplicit 1
+!s100 TM]B^H6:]JW<ViOamn3HO1
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 10 adder_nbit 0 22 N11@905k[FWlC6z7NEKiW0
+l38
+L29
+V[kAz;a5K4]JRAKSaoaYAP2
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 Ak:eHFM6^mz]9z0g270ca1
+!i10b 1
+Pcore_utils
+R2
+R3
+w1712518537
+R4
+8D:/quartus/CEG_3156_Lab3/core/core_utils.vhd
+FD:/quartus/CEG_3156_Lab3/core/core_utils.vhd
+l0
+L4
+VoJ<N;S;Bz5kj66N0_`_zQ0
+R7
+31
+R11
+R12
+!s100 iEdj:60V:3<=YjSOm[DQ10
+!i10b 1
+!s108 1712542592.324000
+!s90 -reportprogress|300|-93|-work|core|D:/quartus/CEG_3156_Lab3/core/core_utils.vhd|
+!s107 D:/quartus/CEG_3156_Lab3/core/core_utils.vhd|
+Eenardff_2
+R1
+R2
+R3
+R4
+Z13 8D:/quartus/CEG_3156_Lab3/core/enardFF_2.vhd
+Z14 FD:/quartus/CEG_3156_Lab3/core/enardFF_2.vhd
+l0
+L31
+V1h_ZjfFA9OSEZJJXCIj2n1
+R7
+31
+Z15 !s108 1712542592.282000
+Z16 !s90 -reportprogress|300|-93|-work|core|D:/quartus/CEG_3156_Lab3/core/enardFF_2.vhd|
+Z17 !s107 D:/quartus/CEG_3156_Lab3/core/enardFF_2.vhd|
+R11
+R12
+!s100 LM:aJ[Ade62O^TDCQB2jH0
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 9 enardff_2 0 22 1h_ZjfFA9OSEZJJXCIj2n1
+l43
+L40
+VozjUK0=igKGZa@Nn02eRX1
+R7
+31
+R15
+R16
+R17
+R11
+R12
+!s100 n`NKG5gX7V@?eV@4dAU663
+!i10b 1
+Efadder
+R1
+R2
+R3
+R4
+R5
+R6
+l0
+L4
+VVoaV<[N@DaWS9EigzkiPX1
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 iBFS;PdPmH;7:=nNDKO^X3
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 6 fadder 0 22 VoaV<[N@DaWS9EigzkiPX1
+l12
+L11
+V<HgQ4oK?L_0>1`zIjYFg=1
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 42Tg]@]m;S3I1mS<OnUfa2
+!i10b 1
+Emux21
+R1
+R2
+R3
+R4
+Z18 8D:/quartus/CEG_3156_Lab3/core/mux21n.vhd
+Z19 FD:/quartus/CEG_3156_Lab3/core/mux21n.vhd
+l0
+L4
+ViR`D?NliUGEmBcC^HA`iH3
+R7
+31
+Z20 !s108 1712542592.228000
+Z21 !s90 -reportprogress|300|-93|-work|core|D:/quartus/CEG_3156_Lab3/core/mux21n.vhd|
+Z22 !s107 D:/quartus/CEG_3156_Lab3/core/mux21n.vhd|
+R11
+R12
+!s100 z[12hH=?0O^^6[e65g=OK2
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 5 mux21 0 22 iR`D?NliUGEmBcC^HA`iH3
+l10
+L9
+Vb3YHz6bIzaU6CZm@Y<?gd0
+R7
+31
+R20
+R21
+R22
+R11
+R12
+!s100 h@n;bTHKlYQ0FiZ5R>NLh1
+!i10b 1
+Emux21n
+R1
+R2
+R3
+R4
+R18
+R19
+l0
+L18
+V97eInjehA`9oN5z_9bChL0
+R7
+31
+R20
+R21
+R22
+R11
+R12
+!s100 lcB]<UgGHTMfL8PFECZ7L3
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 6 mux21n 0 22 97eInjehA`9oN5z_9bChL0
+l33
+L26
+V@MELQDfZ3JC?IZ<5AmIal3
+R7
+31
+R20
+R21
+R22
+R11
+R12
+!s100 D]NjG2BNHPPY=72Domf0R2
+!i10b 1
+Emux41
+R1
+R2
+R3
+R4
+Z23 8D:/quartus/CEG_3156_Lab3/core/mux41n.vhd
+Z24 FD:/quartus/CEG_3156_Lab3/core/mux41n.vhd
+l0
+L3
+Vo0BMl_4V<fK^;YhikA_Y80
+R7
+31
+Z25 !s108 1712542592.167000
+Z26 !s90 -reportprogress|300|-93|-work|core|D:/quartus/CEG_3156_Lab3/core/mux41n.vhd|
+Z27 !s107 D:/quartus/CEG_3156_Lab3/core/mux41n.vhd|
+R11
+R12
+!s100 2<kbIc7EUAe6c=?;i^>Ca1
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 5 mux41 0 22 o0BMl_4V<fK^;YhikA_Y80
+l11
+L10
+V>HmIeZ74;=fKKgQ9FA2NP2
+R7
+31
+R25
+R26
+R27
+R11
+R12
+!s100 ;:_8Y4;fzT4Ce3oQgcCf22
+!i10b 1
+Emux41n
+R1
+R2
+R3
+R4
+R23
+R24
+l0
+L20
+Vo?`KAIL3LSPlCHcbD>TA;3
+R7
+31
+R25
+R26
+R27
+R11
+R12
+!s100 zeHMJkQb>P_0PR9?V7gD33
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 6 mux41n 0 22 o?`KAIL3LSPlCHcbD>TA;3
+l38
+L29
+VUh:4Bee_KQIjc1DOe0<_K1
+R7
+31
+R25
+R26
+R27
+R11
+R12
+!s100 oKWIY[_>`:i:=YdG7JNRN3
+!i10b 1
+Emux81
+R1
+R2
+R3
+R4
+Z28 8D:/quartus/CEG_3156_Lab3/core/mux81n.vhd
+Z29 FD:/quartus/CEG_3156_Lab3/core/mux81n.vhd
+l0
+L3
+V>0]EEEeP038g:Ab4icTzZ1
+R7
+31
+Z30 !s108 1712542592.101000
+Z31 !s90 -reportprogress|300|-93|-work|core|D:/quartus/CEG_3156_Lab3/core/mux81n.vhd|
+Z32 !s107 D:/quartus/CEG_3156_Lab3/core/mux81n.vhd|
+R11
+R12
+!s100 a;DnP;Y3QiOm[b;UFPP;90
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 5 mux81 0 22 >0]EEEeP038g:Ab4icTzZ1
+l12
+L11
+Vo3iNQd<dPI74OJ5lH[R`;3
+R7
+31
+R30
+R31
+R32
+R11
+R12
+!s100 m@JK3InlNHoBRa=GURNMm0
+!i10b 1
+Emux81n
+R1
+R2
+R3
+R4
+R28
+R29
+l0
+L28
+Vi:A`_X2MHk9l?=WUNmE8_1
+R7
+31
+R30
+R31
+R32
+R11
+R12
+!s100 k9io4Z>HS3_o4Hj9<6N:j2
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 6 mux81n 0 22 i:A`_X2MHk9l?=WUNmE8_1
+l47
+L37
+ViYE6ci:MTR0OHkJR;URCF2
+R7
+31
+R30
+R31
+R32
+R11
+R12
+!s100 >_8cMGJ::gV2ElH982KS`3
+!i10b 1
+Enbitcomparator
+R1
+Z33 DPx4 work 10 core_utils 0 22 oJ<N;S;Bz5kj66N0_`_zQ0
+R2
+R3
+R4
+Z34 8D:/quartus/CEG_3156_Lab3/core/nBitComparator.vhd
+Z35 FD:/quartus/CEG_3156_Lab3/core/nBitComparator.vhd
+l0
+L4
+V]J]ZSCJdTSl1mn9zU64RB2
+!s100 aAD_knoADjJMk^YT>LR893
+R7
+31
+!i10b 1
+Z36 !s108 1712542592.939000
+Z37 !s90 -reportprogress|300|-93|-work|core|D:/quartus/CEG_3156_Lab3/core/nBitComparator.vhd|
+Z38 !s107 D:/quartus/CEG_3156_Lab3/core/nBitComparator.vhd|
+R11
+R12
+Artl
+R33
+R2
+R3
+Z39 DEx4 work 14 nbitcomparator 0 22 ]J]ZSCJdTSl1mn9zU64RB2
+l20
+L11
+Z40 V`VL;94W6RIWgng;HTnd`V1
+Z41 !s100 V45^njz6IPn5JW9AoEB0D0
+R7
+31
+!i10b 1
+R36
+R37
+R38
+R11
+R12
+Ento2ndecoder
+R1
+Z42 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z43 8D:/quartus/CEG_3156_Lab3/core/nto2nDecoder.vhd
+Z44 FD:/quartus/CEG_3156_Lab3/core/nto2nDecoder.vhd
+l0
+L4
+V2A]jC73EnV?aNQSOZYhQ21
+R7
+31
+Z45 !s108 1712542592.058000
+Z46 !s90 -reportprogress|300|-93|-work|core|D:/quartus/CEG_3156_Lab3/core/nto2nDecoder.vhd|
+Z47 !s107 D:/quartus/CEG_3156_Lab3/core/nto2nDecoder.vhd|
+R11
+R12
+!s100 ST7_5<En?TWmMKZALRzXW3
+!i10b 1
+Astruct
+R42
+R2
+R3
+DEx4 work 12 nto2ndecoder 0 22 2A]jC73EnV?aNQSOZYhQ21
+l12
+L11
+VlMBMbX@EKJn;lk6Dc0cJA3
+R7
+31
+R45
+R46
+R47
+R11
+R12
+!s100 L>:HQOBTB5Ab3:Ij>9b_K2
+!i10b 1
+Eonebitcomparator
+R1
+R2
+R3
+R4
+Z48 8D:/quartus/CEG_3156_Lab3/core/OneBitComparator.vhd
+Z49 FD:/quartus/CEG_3156_Lab3/core/OneBitComparator.vhd
+l0
+L4
+Vo6MhiQLFNNHLa3nBDXER;0
+R7
+31
+Z50 !s108 1712542592.010000
+Z51 !s90 -reportprogress|300|-93|-work|core|D:/quartus/CEG_3156_Lab3/core/OneBitComparator.vhd|
+Z52 !s107 D:/quartus/CEG_3156_Lab3/core/OneBitComparator.vhd|
+R11
+R12
+!s100 W4R_IF79LVWCf?=@`FE2Y2
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 16 onebitcomparator 0 22 o6MhiQLFNNHLa3nBDXER;0
+l12
+L9
+VM22LCEihiB7Q8^kLHWBUX3
+R7
+31
+R50
+R51
+R52
+R11
+R12
+!s100 =UBdaX1<NWJIWXIVOZ8cM2
+!i10b 1
+Eunishiftreg
+Z53 w1712518011
+Z54 DPx4 core 10 core_utils 0 22 oJ<N;S;Bz5kj66N0_`_zQ0
+R2
+R3
+R4
+Z55 8D:/quartus/CEG_3156_Lab3/core/uniShiftReg.vhd
+Z56 FD:/quartus/CEG_3156_Lab3/core/uniShiftReg.vhd
+l0
+L7
+V0lVY[VE]JV97i>h?@=2722
+R7
+31
+Z57 !s108 1712542592.897000
+Z58 !s90 -reportprogress|300|-93|-work|core|D:/quartus/CEG_3156_Lab3/core/uniShiftReg.vhd|
+Z59 !s107 D:/quartus/CEG_3156_Lab3/core/uniShiftReg.vhd|
+R11
+R12
+!s100 leX2o7oM^aJZJ<=IF<eg=2
+!i10b 1
+Artl
+R54
+R2
+R3
+DEx4 work 11 unishiftreg 0 22 0lVY[VE]JV97i>h?@=2722
+l19
+L17
+V8ceN:3]SVBznb?Uezf23i0
+!s100 43SenHaDOOD;B`MEMFO>o2
+R7
+31
+R57
+R58
+R59
+R11
+R12
+!i10b 1

@@ -1,0 +1,32 @@
+[libraries]
+
+
+core.files=[
+    'core/core_utils.vhd',
+    'core/mux21n.vhd',
+    'core/mux41n.vhd',
+    'core/mux81n.vhd',
+    'core/adder_nbit.vhd',
+    'core/OneBitComparator.vhd',
+    'core/nBitComparator.vhd',
+    'core/nto2nDecoder.vhd',
+    'core/uniShiftReg.vhd',
+    'core/enardFF_2.vhd',
+    'core/*.vhd'
+]
+
+pipeline.files = [
+    'pipeline/IDIFRegister.vhd',
+    'pipeline/IDEXRegister.vhd',
+    'pipeline/MemWBRegister.vhd',
+    'pipeline/EXMemRegister.vhd',
+    'pipeline/pipeline_pack.vhd'
+]
+
+processor.files = [
+    'processor/*.vhd'
+]
+
+default.files = [
+    'singleCycleProcessor.vhd'
+]

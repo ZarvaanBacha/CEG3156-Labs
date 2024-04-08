@@ -1,0 +1,172 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\quartus\CEG_3156_Lab3\simulation\qsim
+Eexmemregister
+Z1 w1712541320
+Z2 DPx4 core 10 core_utils 0 22 oJ<N;S;Bz5kj66N0_`_zQ0
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dD:\quartus\CEG_3156_Lab3\simulation\qsim
+Z6 8D:/quartus/CEG_3156_Lab3/pipeline/EXMemRegister.vhd
+Z7 FD:/quartus/CEG_3156_Lab3/pipeline/EXMemRegister.vhd
+l0
+L5
+VgFzP_1LSL=0NX:aXlDY_X2
+!s100 `Y6ikWlJSX2I_1WlMKEm=1
+Z8 OV;C;10.1d;51
+31
+!i10b 1
+Z9 !s108 1712542593.121000
+Z10 !s90 -reportprogress|300|-93|-work|pipeline|D:/quartus/CEG_3156_Lab3/pipeline/EXMemRegister.vhd|
+Z11 !s107 D:/quartus/CEG_3156_Lab3/pipeline/EXMemRegister.vhd|
+Z12 o-93 -work pipeline -O0
+Z13 tExplicit 1
+Artl
+R2
+R3
+R4
+Z14 DEx4 work 13 exmemregister 0 22 gFzP_1LSL=0NX:aXlDY_X2
+l27
+L26
+Z15 VT_LL^9mJnZHb6AbnGQ]?Q1
+Z16 !s100 OUK[aFBPU^MzO?SWbjiW62
+R8
+31
+!i10b 1
+R9
+R10
+R11
+R12
+R13
+Eidexregister
+Z17 w1712541132
+R2
+R3
+R4
+R5
+Z18 8D:/quartus/CEG_3156_Lab3/pipeline/IDEXRegister.vhd
+Z19 FD:/quartus/CEG_3156_Lab3/pipeline/IDEXRegister.vhd
+l0
+L5
+V>L1_iGX5[QkN^9WIOSZaY2
+R8
+31
+Z20 !s108 1712542593.078000
+Z21 !s90 -reportprogress|300|-93|-work|pipeline|D:/quartus/CEG_3156_Lab3/pipeline/IDEXRegister.vhd|
+Z22 !s107 D:/quartus/CEG_3156_Lab3/pipeline/IDEXRegister.vhd|
+R12
+R13
+!s100 @K3nccf=PaaLlQMX1O5l83
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 12 idexregister 0 22 >L1_iGX5[QkN^9WIOSZaY2
+l28
+L27
+V?<nn]?i>nbHTZULQB4EET2
+!s100 oDT2S9O`iUDO8Mh_`JHL:0
+R8
+31
+R20
+R21
+R22
+R12
+R13
+!i10b 1
+Eidifregister
+Z23 w1712517401
+R2
+R3
+R4
+R5
+Z24 8D:/quartus/CEG_3156_Lab3/pipeline/IDIFRegister.vhd
+Z25 FD:/quartus/CEG_3156_Lab3/pipeline/IDIFRegister.vhd
+l0
+L5
+V=RC_>FzNNAH0=afnd^0z73
+R8
+31
+Z26 !s108 1712542593.033000
+Z27 !s90 -reportprogress|300|-93|-work|pipeline|D:/quartus/CEG_3156_Lab3/pipeline/IDIFRegister.vhd|
+Z28 !s107 D:/quartus/CEG_3156_Lab3/pipeline/IDIFRegister.vhd|
+R12
+R13
+!s100 XiLD>Q_8CSz_2Y?i;`<610
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 12 idifregister 0 22 =RC_>FzNNAH0=afnd^0z73
+l18
+L17
+VI^2_3]ReXc88<BQPMibAl2
+R8
+31
+R26
+R27
+R28
+R12
+R13
+!s100 XiIFN=XTlA4BAP0eQLK=l2
+!i10b 1
+Ememwbregister
+Z29 w1712521682
+R2
+R3
+R4
+R5
+Z30 8D:/quartus/CEG_3156_Lab3/pipeline/MemWBRegister.vhd
+Z31 FD:/quartus/CEG_3156_Lab3/pipeline/MemWBRegister.vhd
+l0
+L6
+VT38NVkSA>2J=HV3W3OWkG1
+R8
+31
+Z32 !s108 1712542592.990000
+Z33 !s90 -reportprogress|300|-93|-work|pipeline|D:/quartus/CEG_3156_Lab3/pipeline/MemWBRegister.vhd|
+Z34 !s107 D:/quartus/CEG_3156_Lab3/pipeline/MemWBRegister.vhd|
+R12
+R13
+!s100 a5AIjVb=CB=LXzQjdcY@B0
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 13 memwbregister 0 22 T38NVkSA>2J=HV3W3OWkG1
+l23
+L22
+V1NUY=k8FURdl@jR6<RS5<0
+R8
+31
+R32
+R33
+R34
+R12
+R13
+!s100 36Cie2EQGSBWY?E]hSj=;1
+!i10b 1
+Ppipeline_pack
+R3
+R4
+w1712541892
+R5
+8D:/quartus/CEG_3156_Lab3/pipeline/pipeline_pack.vhd
+FD:/quartus/CEG_3156_Lab3/pipeline/pipeline_pack.vhd
+l0
+L4
+VB]15PkhT76C0VfRm>HiUJ1
+R8
+31
+R12
+R13
+!s100 YMV9WDF:GNZY_<JPbmB6J0
+!i10b 1
+!s108 1712542592.478000
+!s90 -reportprogress|300|-93|-work|pipeline|D:/quartus/CEG_3156_Lab3/pipeline/pipeline_pack.vhd|
+!s107 D:/quartus/CEG_3156_Lab3/pipeline/pipeline_pack.vhd|
