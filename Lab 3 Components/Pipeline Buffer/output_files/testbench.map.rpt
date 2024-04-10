@@ -1,5 +1,5 @@
-Analysis & Elaboration report for testbench
-Wed Apr 10 11:37:53 2024
+Analysis & Elaboration report for Testbench
+Wed Apr 10 15:42:17 2024
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -9,18 +9,25 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: uniShiftReg:dataMem
+  4. Parameter Settings for User Entity Instance: uniShiftReg:branchALU
   5. Parameter Settings for User Entity Instance: uniShiftReg:resALU
   6. Parameter Settings for User Entity Instance: uniShiftReg:RegDstRes
-  7. Analysis & Elaboration Settings
-  8. Port Connectivity Checks: "uniShiftReg:RegDstRes"
-  9. Port Connectivity Checks: "enARdFF_2:memToReg_FF"
- 10. Port Connectivity Checks: "enARdFF_2:regWrite_FF"
+  7. Parameter Settings for User Entity Instance: uniShiftReg:rdData2
+  8. Analysis & Elaboration Settings
+  9. Port Connectivity Checks: "uniShiftReg:rdData2"
+ 10. Port Connectivity Checks: "uniShiftReg:RegDstRes"
  11. Port Connectivity Checks: "uniShiftReg:resALU"
- 12. Port Connectivity Checks: "uniShiftReg:dataMem|mux41:mux_msb"
- 13. Port Connectivity Checks: "uniShiftReg:dataMem|mux41:mux_lsb"
- 14. Port Connectivity Checks: "uniShiftReg:dataMem"
- 15. Analysis & Elaboration Messages
+ 12. Port Connectivity Checks: "uniShiftReg:branchALU|mux41:mux_msb"
+ 13. Port Connectivity Checks: "uniShiftReg:branchALU|mux41:mux_lsb"
+ 14. Port Connectivity Checks: "uniShiftReg:branchALU"
+ 15. Port Connectivity Checks: "enARdFF_2:memToReg_FF"
+ 16. Port Connectivity Checks: "enARdFF_2:regWrite_FF"
+ 17. Port Connectivity Checks: "enARdFF_2:jmp_FF"
+ 18. Port Connectivity Checks: "enARdFF_2:branch_FF"
+ 19. Port Connectivity Checks: "enARdFF_2:memWrite_FF"
+ 20. Port Connectivity Checks: "enARdFF_2:memRead_FF"
+ 21. Port Connectivity Checks: "enARdFF_2:aluZero"
+ 22. Analysis & Elaboration Messages
 
 
 
@@ -46,10 +53,10 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                  ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Wed Apr 10 11:37:53 2024      ;
+; Analysis & Elaboration Status      ; Successful - Wed Apr 10 15:42:17 2024      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
-; Revision Name                      ; testbench                                  ;
-; Top-level Entity Name              ; MEMWBRegister                              ;
+; Revision Name                      ; Testbench                                  ;
+; Top-level Entity Name              ; EXMemRegister                              ;
 ; Family                             ; Cyclone IV GX                              ;
 ; Total logic elements               ; N/A until Partition Merge                  ;
 ;     Total combinational functions  ; N/A until Partition Merge                  ;
@@ -78,13 +85,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: uniShiftReg:dataMem ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; n              ; 8     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: uniShiftReg:branchALU ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; n              ; 8     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -108,12 +115,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: uniShiftReg:rdData2 ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; n              ; 8     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Settings                                                                                      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; MemWBRegister      ; testbench          ;
+; Top-level entity name                                                      ; EXMemRegister      ; Testbench          ;
 ; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -195,7 +212,61 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "uniShiftReg:rdData2"                                                                       ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; in_enable   ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; in_shl      ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; in_shr      ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; out_databar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "uniShiftReg:RegDstRes"                                                                     ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; in_enable   ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; in_shl      ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; in_shr      ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; out_databar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "uniShiftReg:resALU"                                                                        ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; in_enable   ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; in_shl      ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; in_shr      ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; out_databar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "uniShiftReg:branchALU|mux41:mux_msb" ;
++------+-------+----------+---------------------------------------+
+; Port ; Type  ; Severity ; Details                               ;
++------+-------+----------+---------------------------------------+
+; two  ; Input ; Info     ; Stuck at GND                          ;
++------+-------+----------+---------------------------------------+
+
+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "uniShiftReg:branchALU|mux41:mux_lsb" ;
++------+-------+----------+---------------------------------------+
+; Port ; Type  ; Severity ; Details                               ;
++------+-------+----------+---------------------------------------+
+; one  ; Input ; Info     ; Stuck at GND                          ;
++------+-------+----------+---------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "uniShiftReg:branchALU"                                                                     ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port        ; Type   ; Severity ; Details                                                                             ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -226,46 +297,54 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "uniShiftReg:resALU"                                                                        ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; in_enable   ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; in_shl      ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; in_shr      ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; out_databar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "enARdFF_2:jmp_FF"                                                                       ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------+
-; Port Connectivity Checks: "uniShiftReg:dataMem|mux41:mux_msb" ;
-+------+-------+----------+-------------------------------------+
-; Port ; Type  ; Severity ; Details                             ;
-+------+-------+----------+-------------------------------------+
-; two  ; Input ; Info     ; Stuck at GND                        ;
-+------+-------+----------+-------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "enARdFF_2:branch_FF"                                                                    ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------+
-; Port Connectivity Checks: "uniShiftReg:dataMem|mux41:mux_lsb" ;
-+------+-------+----------+-------------------------------------+
-; Port ; Type  ; Severity ; Details                             ;
-+------+-------+----------+-------------------------------------+
-; one  ; Input ; Info     ; Stuck at GND                        ;
-+------+-------+----------+-------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "enARdFF_2:memWrite_FF"                                                                  ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "uniShiftReg:dataMem"                                                                       ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; in_enable   ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; in_shl      ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; in_shr      ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; out_databar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "enARdFF_2:memRead_FF"                                                                   ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "enARdFF_2:aluZero"                                                                      ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; i_enable ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_qbar   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------+
@@ -274,21 +353,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Elaboration
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Wed Apr 10 11:37:50 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off testbench -c testbench --analysis_and_elaboration
+    Info: Processing started: Wed Apr 10 15:42:14 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Testbench -c Testbench --analysis_and_elaboration
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file memwbregister.vhd
-    Info (12022): Found design unit 1: MEMWBRegister-rtl
-    Info (12023): Found entity 1: MEMWBRegister
-Info (12021): Found 2 design units, including 1 entities, in source file idifregister.vhd
-    Info (12022): Found design unit 1: IDIFRegister-rtl
-    Info (12023): Found entity 1: IDIFRegister
-Info (12021): Found 2 design units, including 1 entities, in source file idexregister.vhd
-    Info (12022): Found design unit 1: IDEXRegister-rtl
-    Info (12023): Found entity 1: IDEXRegister
-Info (12021): Found 2 design units, including 1 entities, in source file exmemregister.vhd
-    Info (12022): Found design unit 1: EXMemRegister-rtl
-    Info (12023): Found entity 1: EXMemRegister
+Info (12021): Found 1 design units, including 0 entities, in source file pipeline/pipeline_pack.vhd
+    Info (12022): Found design unit 1: pipeline_pack (pipeline)
 Info (12021): Found 2 design units, including 1 entities, in source file memwbregister_tb.vhd
     Info (12022): Found design unit 1: MEMWBRegister_tb-tb_arch
     Info (12023): Found entity 1: MEMWBRegister_tb
@@ -324,7 +393,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file core/en
     Info (12022): Found design unit 1: enARdFF_2-rtl
     Info (12023): Found entity 1: enARdFF_2
 Info (12021): Found 1 design units, including 0 entities, in source file core/core_utils.vhd
-    Info (12022): Found design unit 1: core_utils
+    Info (12022): Found design unit 1: core_utils (core)
 Info (12021): Found 4 design units, including 2 entities, in source file core/cmp.vhd
     Info (12022): Found design unit 1: cmp_1-struct
     Info (12022): Found design unit 2: cmp-struct
@@ -335,13 +404,34 @@ Info (12021): Found 4 design units, including 2 entities, in source file core/ad
     Info (12022): Found design unit 2: adder_nbit-rtl
     Info (12023): Found entity 1: fadder
     Info (12023): Found entity 2: adder_nbit
-Info (12127): Elaborating entity "MemWBRegister" for the top level hierarchy
-Info (12128): Elaborating entity "uniShiftReg" for hierarchy "uniShiftReg:dataMem"
-Info (12128): Elaborating entity "mux41" for hierarchy "uniShiftReg:dataMem|mux41:mux_lsb"
-Info (12128): Elaborating entity "enARdFF_2" for hierarchy "uniShiftReg:dataMem|enARdFF_2:dff_lsb"
+Info (12021): Found 2 design units, including 1 entities, in source file pipeline/memwbregister.vhd
+    Info (12022): Found design unit 1: MEMWBRegister-rtl
+    Info (12023): Found entity 1: MEMWBRegister
+Info (12021): Found 2 design units, including 1 entities, in source file pipeline/idifregister.vhd
+    Info (12022): Found design unit 1: IDIFRegister-rtl
+    Info (12023): Found entity 1: IDIFRegister
+Info (12021): Found 2 design units, including 1 entities, in source file pipeline/idexregister.vhd
+    Info (12022): Found design unit 1: IDEXRegister-rtl
+    Info (12023): Found entity 1: IDEXRegister
+Info (12021): Found 2 design units, including 1 entities, in source file pipeline/exmemregister.vhd
+    Info (12022): Found design unit 1: EXMemRegister-rtl
+    Info (12023): Found entity 1: EXMemRegister
+Info (12021): Found 2 design units, including 1 entities, in source file idifregister_tb.vhd
+    Info (12022): Found design unit 1: IDIFRegister_tb-tb_arch
+    Info (12023): Found entity 1: IDIFRegister_tb
+Info (12021): Found 2 design units, including 1 entities, in source file idexregister_tb.vhd
+    Info (12022): Found design unit 1: IDEXRegister_tb-tb_arch
+    Info (12023): Found entity 1: IDEXRegister_tb
+Info (12021): Found 2 design units, including 1 entities, in source file exmemregister_tb.vhd
+    Info (12022): Found design unit 1: EXMemRegister_tb-tb_arch
+    Info (12023): Found entity 1: EXMemRegister_tb
+Info (12127): Elaborating entity "EXMemRegister" for the top level hierarchy
+Info (12128): Elaborating entity "enARdFF_2" for hierarchy "enARdFF_2:aluZero"
+Info (12128): Elaborating entity "uniShiftReg" for hierarchy "uniShiftReg:branchALU"
+Info (12128): Elaborating entity "mux41" for hierarchy "uniShiftReg:branchALU|mux41:mux_lsb"
 Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4670 megabytes
-    Info: Processing ended: Wed Apr 10 11:37:53 2024
+    Info: Processing ended: Wed Apr 10 15:42:17 2024
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 

@@ -1,5 +1,5 @@
 # Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
-# do testbench_run_msim_rtl_vhdl.do 
+# do Testbench_run_msim_rtl_vhdl.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -10,7 +10,12 @@
 # ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/mux41n.vhd}
+# vlib core
+# ** Warning: (vlib-34) Library already exists at "core".
+# 
+# vmap core core
+# Modifying modelsim.ini
+# vcom -93 -work core {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/mux41n.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -19,30 +24,117 @@
 # -- Compiling architecture rtl of mux41
 # -- Compiling entity mux41n
 # -- Compiling architecture rtl of mux41n
-# vcom -93 -work work {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/enardFF_2.vhd}
+# vcom -93 -work core {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/enardFF_2.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity enARdFF_2
 # -- Compiling architecture rtl of enARdFF_2
-# vcom -93 -work work {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/core_utils.vhd}
+# vcom -93 -work core {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/core_utils.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package core_utils
-# vcom -93 -work work {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/MemWBRegister.vhd}
+# vcom -93 -work core {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/uniShiftReg.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# ** Error: X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/MemWBRegister.vhd(3): Library core not found.
-# ** Error: X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/MemWBRegister.vhd(4): (vcom-1136) Unknown identifier "core".
+# -- Loading package core_utils
+# -- Compiling entity uniShiftReg
+# -- Compiling architecture rtl of uniShiftReg
+# vlib pipeline
+# ** Warning: (vlib-34) Library already exists at "pipeline".
 # 
-# ** Error: X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/MemWBRegister.vhd(6): VHDL Compiler exiting
-# ** Error: C:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./testbench_run_msim_rtl_vhdl.do line 11
-# C:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 -work work {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/MemWBRegister.vhd}"
+# vmap pipeline pipeline
+# Modifying modelsim.ini
+# vcom -93 -work pipeline {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/pipeline/EXMemRegister.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package core_utils
+# -- Compiling entity EXMemRegister
+# -- Compiling architecture rtl of EXMemRegister
+# 
+# vcom -93 -work work {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/EXMemRegister_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EXMemRegister_tb
+# -- Compiling architecture tb_arch of EXMemRegister_tb
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -L core -L pipeline -voptargs="+acc"  ExMEMRegister_tb
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -L core -L pipeline -voptargs=\"+acc\" -t 1ps ExMEMRegister_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.exmemregister_tb(tb_arch)
+# Loading core.core_utils
+# Loading pipeline.exmemregister(rtl)
+# Loading core.enardff_2(rtl)
+# Loading core.unishiftreg(rtl)
+# Loading core.mux41(rtl)
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: zarvaanbacha  Hostname: ZARVAANBACH78C4  ProcessID: 7212
+# 
+#           Attempting to use alternate WLF file "./wlft155vz5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft155vz5
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Error: Case 1: Incorrect output aluZero after reset
+#    Time: 20 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 1: Incorrect output resALU after reset
+#    Time: 20 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 1: Incorrect output branchALU after reset
+#    Time: 20 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 1: Incorrect output rdData2 after reset
+#    Time: 20 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 1: Incorrect output RegDstRes after reset
+#    Time: 20 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 1: Incorrect output memRead after reset
+#    Time: 20 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 1: Incorrect output memWrite after reset
+#    Time: 20 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 1: Incorrect output branch after reset
+#    Time: 20 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 1: Incorrect output jmp after reset
+#    Time: 20 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 1: Incorrect output regWrite after reset
+#    Time: 20 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 1: Incorrect output memToReg after reset
+#    Time: 20 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 3: Incorrect output aluZero after hold
+#    Time: 180 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 3: Incorrect output resALU after hold
+#    Time: 180 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 3: Incorrect output branchALU after hold
+#    Time: 180 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 3: Incorrect output rdData2 after hold
+#    Time: 180 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 3: Incorrect output RegDstRes after hold
+#    Time: 180 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 3: Incorrect output memRead after hold
+#    Time: 180 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 3: Incorrect output memWrite after hold
+#    Time: 180 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 3: Incorrect output branch after hold
+#    Time: 180 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 3: Incorrect output jmp after hold
+#    Time: 180 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 3: Incorrect output regWrite after hold
+#    Time: 180 ns  Iteration: 0  Instance: /exmemregister_tb
+# ** Error: Case 3: Incorrect output memToReg after hold
+#    Time: 180 ns  Iteration: 0  Instance: /exmemregister_tb

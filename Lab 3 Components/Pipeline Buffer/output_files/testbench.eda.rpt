@@ -1,5 +1,5 @@
-EDA Netlist Writer report for testbench
-Wed Apr 10 11:20:19 2024
+EDA Netlist Writer report for Testbench
+Wed Apr 10 15:34:10 2024
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -36,9 +36,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Apr 10 11:20:19 2024 ;
-; Revision Name             ; testbench                             ;
-; Top-level Entity Name     ; MEMWBRegister                         ;
+; EDA Netlist Writer Status ; Successful - Wed Apr 10 15:34:10 2024 ;
+; Revision Name             ; Testbench                             ;
+; Top-level Entity Name     ; EXMemRegister                         ;
 ; Family                    ; Cyclone IV GX                         ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -71,14 +71,14 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Generated Files                                                                                                                                 ;
 +-------------------------------------------------------------------------------------------------------------------------------------------------+
-; X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/testbench_6_1200mv_85c_slow.vho      ;
-; X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/testbench_6_1200mv_0c_slow.vho       ;
-; X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/testbench_min_1200mv_0c_fast.vho     ;
-; X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/testbench.vho                        ;
-; X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/testbench_6_1200mv_85c_vhd_slow.sdo  ;
-; X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/testbench_6_1200mv_0c_vhd_slow.sdo   ;
-; X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/testbench_min_1200mv_0c_vhd_fast.sdo ;
-; X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/testbench_vhd.sdo                    ;
+; X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/Testbench_6_1200mv_85c_slow.vho      ;
+; X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/Testbench_6_1200mv_0c_slow.vho       ;
+; X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/Testbench_min_1200mv_0c_fast.vho     ;
+; X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/Testbench.vho                        ;
+; X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/Testbench_6_1200mv_85c_vhd_slow.sdo  ;
+; X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/Testbench_6_1200mv_0c_vhd_slow.sdo   ;
+; X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/Testbench_min_1200mv_0c_vhd_fast.sdo ;
+; X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/Testbench_vhd.sdo                    ;
 +-------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -88,19 +88,19 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Wed Apr 10 11:20:18 2024
-Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off testbench -c testbench
-Info (204019): Generated file testbench_6_1200mv_85c_slow.vho in folder "X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file testbench_6_1200mv_0c_slow.vho in folder "X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file testbench_min_1200mv_0c_fast.vho in folder "X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file testbench.vho in folder "X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file testbench_6_1200mv_85c_vhd_slow.sdo in folder "X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file testbench_6_1200mv_0c_vhd_slow.sdo in folder "X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file testbench_min_1200mv_0c_vhd_fast.sdo in folder "X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file testbench_vhd.sdo in folder "X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/" for EDA simulation tool
+    Info: Processing started: Wed Apr 10 15:34:09 2024
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Testbench -c Testbench
+Info (204019): Generated file Testbench_6_1200mv_85c_slow.vho in folder "X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Testbench_6_1200mv_0c_slow.vho in folder "X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Testbench_min_1200mv_0c_fast.vho in folder "X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Testbench.vho in folder "X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Testbench_6_1200mv_85c_vhd_slow.sdo in folder "X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Testbench_6_1200mv_0c_vhd_slow.sdo in folder "X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Testbench_min_1200mv_0c_vhd_fast.sdo in folder "X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Testbench_vhd.sdo in folder "X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4569 megabytes
-    Info: Processing ended: Wed Apr 10 11:20:19 2024
+    Info: Peak virtual memory: 4580 megabytes
+    Info: Processing ended: Wed Apr 10 15:34:10 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

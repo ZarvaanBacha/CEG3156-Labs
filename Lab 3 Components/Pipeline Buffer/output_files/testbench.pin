@@ -71,7 +71,7 @@
  ---------------------------------------------------------------------------------
 
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-CHIP  "testbench"  ASSIGNED TO AN: EP4CGX22CF19C6
+CHIP  "Testbench"  ASSIGNED TO AN: EP4CGX22CF19C6
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
@@ -79,35 +79,35 @@ GND                          : A1        : gnd    :                   :         
 GND                          : A2        : gnd    :                   :         :           :                
 GND                          : A3        : gnd    :                   :         :           :                
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : A4        : input  : 2.5 V             :         : 9         : N              
-out_writeReg[0]              : A5        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A5        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A6        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A7        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A8        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A9        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A10       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A11       :        :                   :         : 8         :                
-in_RegDstRes[7]              : A12       : input  : 2.5 V             :         : 7         : N              
-in_resALU[3]                 : A13       : input  : 2.5 V             :         : 7         : N              
-out_writeReg[5]              : A14       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : A15       :        :                   :         : 7         :                
+GND+                         : A12       :        :                   :         : 7         :                
+out_branchALU[5]             : A13       : output : 2.5 V             :         : 7         : N              
+out_branchALU[4]             : A14       : output : 2.5 V             :         : 7         : N              
+in_branchALU[4]              : A15       : input  : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A16       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A17       :        :                   :         : 7         :                
-out_resALU[0]                : A18       : output : 2.5 V             :         : 7         : N              
+out_resALU[1]                : A17       : output : 2.5 V             :         : 7         : N              
+out_RegDstRes[4]             : A18       : output : 2.5 V             :         : 7         : N              
 GXB_NC                       : B1        :        :                   :         : QL0       :                
 GXB_NC                       : B2        :        :                   :         : QL0       :                
 GND                          : B3        : gnd    :                   :         :           :                
 ~ALTERA_ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : B4        : input  : 2.5 V             :         : 9         : N              
-in_resALU[4]                 : B5        : input  : 2.5 V             :         : 8         : N              
+in_resALU[2]                 : B5        : input  : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : B6        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B7        :        :                   :         : 8         :                
 GND                          : B8        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B9        :        :                   :         : 8         :                
+out_branchALU[3]             : B9        : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : B10       :        :                   :         : 8         :                
 GND                          : B11       : gnd    :                   :         :           :                
 GND+                         : B12       :        :                   :         : 7         :                
-out_resALU[3]                : B13       : output : 2.5 V             :         : 7         : N              
+out_RegDstRes[1]             : B13       : output : 2.5 V             :         : 7         : N              
 GND                          : B14       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B15       :        :                   :         : 7         :                
+in_rdData2[5]                : B15       : input  : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : B16       :        :                   :         : 7         :                
 GND                          : B17       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B18       :        :                   :         : 7         :                
@@ -116,18 +116,18 @@ GND                          : C2        : gnd    :                   :         
 GND                          : C3        : gnd    :                   :         :           :                
 nCONFIG                      : C4        :        :                   :         : 9         :                
 ~ALTERA_NCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C5        : input  : 2.5 V             :         : 9         : N              
-in_RegDstRes[0]              : C6        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C6        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C7        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C8        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C9        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C10       :        :                   :         : 8         :                
-out_writeReg[7]              : C11       : output : 2.5 V             :         : 8         : N              
+out_branchALU[0]             : C11       : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C12       :        :                   :         : 7         :                
-in_RegDstRes[5]              : C13       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C13       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C14       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C15       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C16       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C17       :        :                   :         : 7         :                
+out_rdData2[5]               : C15       : output : 2.5 V             :         : 7         : N              
+in_RegDstRes[7]              : C16       : input  : 2.5 V             :         : 7         : N              
+in_resALU[1]                 : C17       : input  : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C18       :        :                   :         : 7         :                
 GXB_GND*                     : D1        :        :                   :         : QL0       :                
 GXB_GND*                     : D2        :        :                   :         : QL0       :                
@@ -138,31 +138,31 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : D7        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D8        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D9        :        :                   :         : 8         :                
-out_dataMem[1]               : D10       : output : 2.5 V             :         : 7         : N              
-out_regWrite                 : D11       : output : 2.5 V             :         : 7         : N              
+in_branchALU[0]              : D10       : input  : 2.5 V             :         : 7         : N              
+in_branchALU[5]              : D11       : input  : 2.5 V             :         : 7         : N              
 in_regWrite                  : D12       : input  : 2.5 V             :         : 7         : N              
-out_resALU[2]                : D13       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D13       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D14       :        :                   :         : 7         :                
-in_resALU[0]                 : D15       : input  : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : D16       :        :                   :         : 7         :                
-out_dataMem[7]               : D17       : output : 2.5 V             :         : 6         : N              
-in_dataMem[7]                : D18       : input  : 2.5 V             :         : 6         : N              
+in_RegDstRes[4]              : D15       : input  : 2.5 V             :         : 7         : N              
+out_RegDstRes[7]             : D16       : output : 2.5 V             :         : 7         : N              
+in_memWrite                  : D17       : input  : 2.5 V             :         : 6         : N              
+out_memWrite                 : D18       : output : 2.5 V             :         : 6         : N              
 GND                          : E1        : gnd    :                   :         :           :                
 GND                          : E2        : gnd    :                   :         :           :                
 TMS                          : E3        : input  :                   :         : 9         :                
 TDO                          : E4        : output :                   :         : 9         :                
 TCK                          : E5        : input  :                   :         : 9         :                
-out_resALU[4]                : E6        : output : 2.5 V             :         : 8         : N              
+out_resALU[2]                : E6        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E7        : power  :                   : 2.5V    : 8         :                
 GND                          : E8        : gnd    :                   :         :           :                
 VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
-in_dataMem[1]                : E10       : input  : 2.5 V             :         : 7         : N              
+out_regWrite                 : E10       : output : 2.5 V             :         : 7         : N              
 GND                          : E11       : gnd    :                   :         :           :                
-in_resALU[2]                 : E12       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E12       :        :                   :         : 7         :                
 VCCIO7                       : E13       : power  :                   : 2.5V    : 7         :                
 GND                          : E14       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E15       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E16       :        :                   :         : 6         :                
+out_RegDstRes[2]             : E15       : output : 2.5 V             :         : 6         : N              
+out_rdData2[2]               : E16       : output : 2.5 V             :         : 6         : N              
 GND                          : E17       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E18       :        :                   :         : 6         :                
 GXB_NC                       : F1        :        :                   :         : QL0       :                
@@ -179,9 +179,9 @@ VCCIO7                       : F11       : power  :                   : 2.5V    
 VCCIO7                       : F12       : power  :                   : 2.5V    : 7         :                
 GND                          : F13       : gnd    :                   :         :           :                
 VCCD_PLL                     : F14       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F15       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F16       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F17       :        :                   :         : 6         :                
+in_rdData2[2]                : F15       : input  : 2.5 V             :         : 6         : N              
+in_RegDstRes[2]              : F16       : input  : 2.5 V             :         : 6         : N              
+out_memToReg                 : F17       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : F18       :        :                   :         : 6         :                
 GND                          : G1        : gnd    :                   :         :           :                
 GND                          : G2        : gnd    :                   :         :           :                
@@ -198,9 +198,9 @@ VCCINT                       : G12       : power  :                   : 1.2V    
 VCCA                         : G13       : power  :                   : 2.5V    :           :                
 VCCIO6                       : G14       : power  :                   : 2.5V    : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G15       :        :                   :         : 6         :                
-out_writeReg[2]              : G16       : output : 2.5 V             :         : 6         : N              
-in_RegDstRes[2]              : G17       : input  : 2.5 V             :         : 6         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : G18       :        :                   :         : 6         :                
+out_resALU[6]                : G16       : output : 2.5 V             :         : 6         : N              
+in_resALU[6]                 : G17       : input  : 2.5 V             :         : 6         : N              
+in_memToReg                  : G18       : input  : 2.5 V             :         : 6         : N              
 GXB_GND*                     : H1        :        :                   :         : QL0       :                
 GXB_GND*                     : H2        :        :                   :         : QL0       :                
 VCCL_GXB                     : H3        : power  :                   : 1.2V    :           :                
@@ -234,8 +234,8 @@ VCCINT                       : J12       : power  :                   : 1.2V    
 GND                          : J13       : gnd    :                   :         :           :                
 VCCINT                       : J14       : power  :                   : 1.2V    :           :                
 VCCIO6                       : J15       : power  :                   : 2.5V    : 6         :                
-in_dataMem[0]                : J16       : input  : 2.5 V             :         : 6         : N              
-out_dataMem[0]               : J17       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J16       :        :                   :         : 6         :                
+in_resALU[5]                 : J17       : input  : 2.5 V             :         : 6         : N              
 GND+                         : J18       :        :                   :         : 6         :                
 GXB_NC                       : K1        :        :                   :         : QL0       :                
 GXB_NC                       : K2        :        :                   :         : QL0       :                
@@ -252,7 +252,7 @@ GND                          : K12       : gnd    :                   :         
 VCCINT                       : K13       : power  :                   : 1.2V    :           :                
 VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : K15       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : K16       :        :                   :         : 5         :                
+out_jmp                      : K16       : output : 2.5 V             :         : 5         : N              
 GND+                         : K17       :        :                   :         : 5         :                
 GND+                         : K18       :        :                   :         : 5         :                
 GND                          : L1        : gnd    :                   :         :           :                
@@ -269,10 +269,10 @@ GND                          : L11       : gnd    :                   :         
 VCCINT                       : L12       : power  :                   : 1.2V    :           :                
 VCCA                         : L13       : power  :                   : 2.5V    :           :                
 GND                          : L14       : gnd    :                   :         :           :                
-out_dataMem[6]               : L15       : output : 2.5 V             :         : 5         : N              
-in_dataMem[6]                : L16       : input  : 2.5 V             :         : 5         : N              
+in_branchALU[1]              : L15       : input  : 2.5 V             :         : 5         : N              
+out_branchALU[1]             : L16       : output : 2.5 V             :         : 5         : N              
 GND                          : L17       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L18       :        :                   :         : 5         :                
+out_resALU[5]                : L18       : output : 2.5 V             :         : 5         : N              
 GXB_GND*                     : M1        :        :                   :         : QL0       :                
 GXB_GND*                     : M2        :        :                   :         : QL0       :                
 VCCL_GXB                     : M3        : power  :                   : 1.2V    :           :                
@@ -288,9 +288,9 @@ GND                          : M12       : gnd    :                   :         
 GND                          : M13       : gnd    :                   :         :           :                
 VCCD_PLL                     : M14       : power  :                   : 1.2V    :           :                
 VCCIO5                       : M15       : power  :                   : 2.5V    : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : M16       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : M17       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : M18       :        :                   :         : 5         :                
+out_branchALU[2]             : M16       : output : 2.5 V             :         : 5         : N              
+in_branchALU[2]              : M17       : input  : 2.5 V             :         : 5         : N              
+in_jmp                       : M18       : input  : 2.5 V             :         : 5         : N              
 GND                          : N1        : gnd    :                   :         :           :                
 GND                          : N2        : gnd    :                   :         :           :                
 VCCA_GXB                     : N3        : power  :                   : 2.5V    :           :                
@@ -305,28 +305,28 @@ VCCIO4                       : N11       : power  :                   : 2.5V    
 VCCIO4                       : N12       : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : N13       : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : N14       : power  :                   : 2.5V    : 4         :                
-out_dataMem[4]               : N15       : output : 2.5 V             :         : 5         : N              
-out_memToReg                 : N16       : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : N17       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : N18       :        :                   :         : 5         :                
+out_memRead                  : N15       : output : 2.5 V             :         : 5         : N              
+in_memRead                   : N16       : input  : 2.5 V             :         : 5         : N              
+in_RegDstRes[0]              : N17       : input  : 2.5 V             :         : 5         : N              
+out_RegDstRes[0]             : N18       : output : 2.5 V             :         : 5         : N              
 GXB_NC                       : P1        :        :                   :         : QL0       :                
 GXB_NC                       : P2        :        :                   :         : QL0       :                
 GND                          : P3        : gnd    :                   :         :           :                
 MSEL2                        : P4        :        :                   :         : 3         :                
 GND                          : P5        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P6        :        :                   :         : 3         :                
+out_branch                   : P6        : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
 GND                          : P8        : gnd    :                   :         :           :                
 VCCIO3                       : P9        : power  :                   : 2.5V    : 3         :                
-out_resALU[1]                : P10       : output : 2.5 V             :         : 3         : N              
+out_resALU[7]                : P10       : output : 2.5 V             :         : 3         : N              
 GND                          : P11       : gnd    :                   :         :           :                
-out_dataMem[2]               : P12       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P12       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P13       :        :                   :         : 4         :                
 GND                          : P14       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P15       :        :                   :         : 4         :                
-in_memToReg                  : P16       : input  : 2.5 V             :         : 5         : N              
+in_RegDstRes[5]              : P15       : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P16       :        :                   :         : 5         :                
 GND                          : P17       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P18       :        :                   :         : 5         :                
+in_rdData2[4]                : P18       : input  : 2.5 V             :         : 5         : N              
 GND                          : R1        : gnd    :                   :         :           :                
 GND                          : R2        : gnd    :                   :         :           :                
 GND                          : R3        : gnd    :                   :         :           :                
@@ -334,35 +334,35 @@ VCCL_GXB                     : R4        : power  :                   : 1.2V    
 MSEL1                        : R5        :        :                   :         : 3         :                
 ~ALTERA_NCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : R6        : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : R7        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R8        :        :                   :         : 3         :                
+in_rdData2[6]                : R8        : input  : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : R9        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R10       :        :                   :         : 3         :                
-in_RegDstRes[6]              : R11       : input  : 2.5 V             :         : 4         : N              
-in_RegDstRes[4]              : R12       : input  : 2.5 V             :         : 4         : N              
-in_dataMem[2]                : R13       : input  : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : R14       :        :                   :         : 4         :                
+out_resALU[0]                : R10       : output : 2.5 V             :         : 3         : N              
+in_rdData2[3]                : R11       : input  : 2.5 V             :         : 4         : N              
+in_branchALU[6]              : R12       : input  : 2.5 V             :         : 4         : N              
+out_branchALU[6]             : R13       : output : 2.5 V             :         : 4         : N              
+out_RegDstRes[5]             : R14       : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : R15       :        :                   :         : 4         :                
-in_dataMem[4]                : R16       : input  : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : R17       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R18       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R16       :        :                   :         : 5         :                
+in_resALU[3]                 : R17       : input  : 2.5 V             :         : 5         : N              
+out_rdData2[4]               : R18       : output : 2.5 V             :         : 5         : N              
 GXB_GND*                     : T1        :        :                   :         : QL0       :                
 GXB_GND*                     : T2        :        :                   :         : QL0       :                
 GND                          : T3        : gnd    :                   :         :           :                
 VCCA_GXB                     : T4        : power  :                   : 2.5V    :           :                
 MSEL0                        : T5        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T6        :        :                   :         : 3         :                
+in_branch                    : T6        : input  : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : T7        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T8        :        :                   :         : 3         :                
+out_branchALU[7]             : T8        : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : T9        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T10       :        :                   :         : 3         :                
-out_writeReg[3]              : T11       : output : 2.5 V             :         : 4         : N              
-out_dataMem[5]               : T12       : output : 2.5 V             :         : 4         : N              
-in_dataMem[3]                : T13       : input  : 2.5 V             :         : 4         : N              
-out_resALU[6]                : T14       : output : 2.5 V             :         : 4         : N              
-in_resALU[5]                 : T15       : input  : 2.5 V             :         : 4         : N              
-out_resALU[5]                : T16       : output : 2.5 V             :         : 4         : N              
+in_branchALU[3]              : T10       : input  : 2.5 V             :         : 3         : N              
+out_rdData2[3]               : T11       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T12       :        :                   :         : 4         :                
+out_RegDstRes[3]             : T13       : output : 2.5 V             :         : 4         : N              
+in_rdData2[1]                : T14       : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T15       :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T16       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T17       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T18       :        :                   :         : 5         :                
+out_resALU[3]                : T18       : output : 2.5 V             :         : 5         : N              
 GND                          : U1        : gnd    :                   :         :           :                
 GND                          : U2        : gnd    :                   :         :           :                
 NC                           : U3        :        :                   :         :           :                
@@ -371,31 +371,31 @@ GND                          : U5        : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : U6        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U7        :        :                   :         : 3         :                
 GND                          : U8        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U9        :        :                   :         : 3         :                
+in_branchALU[7]              : U9        : input  : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : U10       :        :                   :         : 3         :                
 GND                          : U11       : gnd    :                   :         :           :                
-in_dataMem[5]                : U12       : input  : 2.5 V             :         : 4         : N              
-out_writeReg[6]              : U13       : output : 2.5 V             :         : 4         : N              
+in_RegDstRes[1]              : U12       : input  : 2.5 V             :         : 4         : N              
+in_resALU[7]                 : U13       : input  : 2.5 V             :         : 4         : N              
 GND                          : U14       : gnd    :                   :         :           :                
-out_dataMem[3]               : U15       : output : 2.5 V             :         : 4         : N              
-in_resALU[6]                 : U16       : input  : 2.5 V             :         : 4         : N              
+out_rdData2[1]               : U15       : output : 2.5 V             :         : 4         : N              
+in_RegDstRes[3]              : U16       : input  : 2.5 V             :         : 4         : N              
 GND                          : U17       : gnd    :                   :         :           :                
-in_RegDstRes[1]              : U18       : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U18       :        :                   :         : 4         :                
 RREF                         : V1        :        :                   :         :           :                
 GND                          : V2        : gnd    :                   :         :           :                
 NC                           : V3        :        :                   :         :           :                
 nSTATUS                      : V4        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V5        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V6        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V7        :        :                   :         : 3         :                
+out_RegDstRes[6]             : V5        : output : 2.5 V             :         : 3         : N              
+in_RegDstRes[6]              : V6        : input  : 2.5 V             :         : 3         : N              
+out_rdData2[6]               : V7        : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V8        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V9        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V10       :        :                   :         : 3         :                
-GND+                         : V11       :        :                   :         : 4         :                
-GND+                         : V12       :        :                   :         : 4         :                
-in_resALU[1]                 : V13       : input  : 2.5 V             :         : 4         : N              
-in_RegDstRes[3]              : V14       : input  : 2.5 V             :         : 4         : N              
-out_writeReg[4]              : V15       : output : 2.5 V             :         : 4         : N              
-in_resALU[7]                 : V16       : input  : 2.5 V             :         : 4         : N              
-out_resALU[7]                : V17       : output : 2.5 V             :         : 4         : N              
-out_writeReg[1]              : V18       : output : 2.5 V             :         : 4         : N              
+in_rdData2[7]                : V9        : input  : 2.5 V             :         : 3         : N              
+out_rdData2[7]               : V10       : output : 2.5 V             :         : 3         : N              
+in_aluZero                   : V11       : input  : 2.5 V             :         : 4         : N              
+in_resALU[0]                 : V12       : input  : 2.5 V             :         : 4         : N              
+out_aluZero                  : V13       : output : 2.5 V             :         : 4         : N              
+out_resALU[4]                : V14       : output : 2.5 V             :         : 4         : N              
+in_resALU[4]                 : V15       : input  : 2.5 V             :         : 4         : N              
+in_rdData2[0]                : V16       : input  : 2.5 V             :         : 4         : N              
+out_rdData2[0]               : V17       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V18       :        :                   :         : 4         :                

@@ -1,30 +1,34 @@
-|MemWBRegister
-in_clk => uniShiftReg:dataMem.in_clk
-in_clk => uniShiftReg:resALU.in_clk
+|EXMemRegister
+in_clk => enArdFF_2:aluZero.i_clock
+in_clk => enArdFF_2:memRead_FF.i_clock
+in_clk => enArdFF_2:memWrite_FF.i_clock
+in_clk => enArdFF_2:branch_FF.i_clock
+in_clk => enArdFF_2:jmp_FF.i_clock
 in_clk => enArdFF_2:regWrite_FF.i_clock
 in_clk => enArdFF_2:memToReg_FF.i_clock
+in_clk => uniShiftReg:branchALU.in_clk
+in_clk => uniShiftReg:resALU.in_clk
 in_clk => uniShiftReg:RegDstRes.in_clk
-in_rst => uniShiftReg:dataMem.in_reset
-in_rst => uniShiftReg:resALU.in_reset
+in_clk => uniShiftReg:rdData2.in_clk
+in_rst => enArdFF_2:aluZero.i_resetBar
+in_rst => enArdFF_2:memRead_FF.i_resetBar
+in_rst => enArdFF_2:memWrite_FF.i_resetBar
+in_rst => enArdFF_2:branch_FF.i_resetBar
+in_rst => enArdFF_2:jmp_FF.i_resetBar
 in_rst => enArdFF_2:regWrite_FF.i_resetBar
 in_rst => enArdFF_2:memToReg_FF.i_resetBar
+in_rst => uniShiftReg:branchALU.in_reset
+in_rst => uniShiftReg:resALU.in_reset
 in_rst => uniShiftReg:RegDstRes.in_reset
-in_dataMem[0] => uniShiftReg:dataMem.in_data[0]
-in_dataMem[1] => uniShiftReg:dataMem.in_data[1]
-in_dataMem[2] => uniShiftReg:dataMem.in_data[2]
-in_dataMem[3] => uniShiftReg:dataMem.in_data[3]
-in_dataMem[4] => uniShiftReg:dataMem.in_data[4]
-in_dataMem[5] => uniShiftReg:dataMem.in_data[5]
-in_dataMem[6] => uniShiftReg:dataMem.in_data[6]
-in_dataMem[7] => uniShiftReg:dataMem.in_data[7]
-in_RegDstRes[0] => uniShiftReg:RegDstRes.in_data[0]
-in_RegDstRes[1] => uniShiftReg:RegDstRes.in_data[1]
-in_RegDstRes[2] => uniShiftReg:RegDstRes.in_data[2]
-in_RegDstRes[3] => uniShiftReg:RegDstRes.in_data[3]
-in_RegDstRes[4] => uniShiftReg:RegDstRes.in_data[4]
-in_RegDstRes[5] => uniShiftReg:RegDstRes.in_data[5]
-in_RegDstRes[6] => uniShiftReg:RegDstRes.in_data[6]
-in_RegDstRes[7] => uniShiftReg:RegDstRes.in_data[7]
+in_rst => uniShiftReg:rdData2.in_reset
+in_branchALU[0] => uniShiftReg:branchALU.in_data[0]
+in_branchALU[1] => uniShiftReg:branchALU.in_data[1]
+in_branchALU[2] => uniShiftReg:branchALU.in_data[2]
+in_branchALU[3] => uniShiftReg:branchALU.in_data[3]
+in_branchALU[4] => uniShiftReg:branchALU.in_data[4]
+in_branchALU[5] => uniShiftReg:branchALU.in_data[5]
+in_branchALU[6] => uniShiftReg:branchALU.in_data[6]
+in_branchALU[7] => uniShiftReg:branchALU.in_data[7]
 in_resALU[0] => uniShiftReg:resALU.in_data[0]
 in_resALU[1] => uniShiftReg:resALU.in_data[1]
 in_resALU[2] => uniShiftReg:resALU.in_data[2]
@@ -33,8 +37,30 @@ in_resALU[4] => uniShiftReg:resALU.in_data[4]
 in_resALU[5] => uniShiftReg:resALU.in_data[5]
 in_resALU[6] => uniShiftReg:resALU.in_data[6]
 in_resALU[7] => uniShiftReg:resALU.in_data[7]
+in_aluZero => enArdFF_2:aluZero.i_d
+in_rdData2[0] => uniShiftReg:rdData2.in_data[0]
+in_rdData2[1] => uniShiftReg:rdData2.in_data[1]
+in_rdData2[2] => uniShiftReg:rdData2.in_data[2]
+in_rdData2[3] => uniShiftReg:rdData2.in_data[3]
+in_rdData2[4] => uniShiftReg:rdData2.in_data[4]
+in_rdData2[5] => uniShiftReg:rdData2.in_data[5]
+in_rdData2[6] => uniShiftReg:rdData2.in_data[6]
+in_rdData2[7] => uniShiftReg:rdData2.in_data[7]
+in_RegDstRes[0] => uniShiftReg:RegDstRes.in_data[0]
+in_RegDstRes[1] => uniShiftReg:RegDstRes.in_data[1]
+in_RegDstRes[2] => uniShiftReg:RegDstRes.in_data[2]
+in_RegDstRes[3] => uniShiftReg:RegDstRes.in_data[3]
+in_RegDstRes[4] => uniShiftReg:RegDstRes.in_data[4]
+in_RegDstRes[5] => uniShiftReg:RegDstRes.in_data[5]
+in_RegDstRes[6] => uniShiftReg:RegDstRes.in_data[6]
+in_RegDstRes[7] => uniShiftReg:RegDstRes.in_data[7]
+in_memRead => enArdFF_2:memRead_FF.i_d
+in_memWrite => enArdFF_2:memWrite_FF.i_d
+in_branch => enArdFF_2:branch_FF.i_d
+in_jmp => enArdFF_2:jmp_FF.i_d
 in_regWrite => enArdFF_2:regWrite_FF.i_d
 in_memToReg => enArdFF_2:memToReg_FF.i_d
+out_aluZero <= enArdFF_2:aluZero.o_q
 out_resALU[0] <= uniShiftReg:resALU.out_data[0]
 out_resALU[1] <= uniShiftReg:resALU.out_data[1]
 out_resALU[2] <= uniShiftReg:resALU.out_data[2]
@@ -43,27 +69,102 @@ out_resALU[4] <= uniShiftReg:resALU.out_data[4]
 out_resALU[5] <= uniShiftReg:resALU.out_data[5]
 out_resALU[6] <= uniShiftReg:resALU.out_data[6]
 out_resALU[7] <= uniShiftReg:resALU.out_data[7]
-out_dataMem[0] <= uniShiftReg:dataMem.out_data[0]
-out_dataMem[1] <= uniShiftReg:dataMem.out_data[1]
-out_dataMem[2] <= uniShiftReg:dataMem.out_data[2]
-out_dataMem[3] <= uniShiftReg:dataMem.out_data[3]
-out_dataMem[4] <= uniShiftReg:dataMem.out_data[4]
-out_dataMem[5] <= uniShiftReg:dataMem.out_data[5]
-out_dataMem[6] <= uniShiftReg:dataMem.out_data[6]
-out_dataMem[7] <= uniShiftReg:dataMem.out_data[7]
+out_branchALU[0] <= uniShiftReg:branchALU.out_data[0]
+out_branchALU[1] <= uniShiftReg:branchALU.out_data[1]
+out_branchALU[2] <= uniShiftReg:branchALU.out_data[2]
+out_branchALU[3] <= uniShiftReg:branchALU.out_data[3]
+out_branchALU[4] <= uniShiftReg:branchALU.out_data[4]
+out_branchALU[5] <= uniShiftReg:branchALU.out_data[5]
+out_branchALU[6] <= uniShiftReg:branchALU.out_data[6]
+out_branchALU[7] <= uniShiftReg:branchALU.out_data[7]
+out_rdData2[0] <= uniShiftReg:rdData2.out_data[0]
+out_rdData2[1] <= uniShiftReg:rdData2.out_data[1]
+out_rdData2[2] <= uniShiftReg:rdData2.out_data[2]
+out_rdData2[3] <= uniShiftReg:rdData2.out_data[3]
+out_rdData2[4] <= uniShiftReg:rdData2.out_data[4]
+out_rdData2[5] <= uniShiftReg:rdData2.out_data[5]
+out_rdData2[6] <= uniShiftReg:rdData2.out_data[6]
+out_rdData2[7] <= uniShiftReg:rdData2.out_data[7]
+out_memRead <= enArdFF_2:memRead_FF.o_q
+out_memWrite <= enArdFF_2:memWrite_FF.o_q
+out_branch <= enArdFF_2:branch_FF.o_q
+out_jmp <= enArdFF_2:jmp_FF.o_q
 out_regWrite <= enArdFF_2:regWrite_FF.o_q
 out_memToReg <= enArdFF_2:memToReg_FF.o_q
-out_writeReg[0] <= uniShiftReg:RegDstRes.out_data[0]
-out_writeReg[1] <= uniShiftReg:RegDstRes.out_data[1]
-out_writeReg[2] <= uniShiftReg:RegDstRes.out_data[2]
-out_writeReg[3] <= uniShiftReg:RegDstRes.out_data[3]
-out_writeReg[4] <= uniShiftReg:RegDstRes.out_data[4]
-out_writeReg[5] <= uniShiftReg:RegDstRes.out_data[5]
-out_writeReg[6] <= uniShiftReg:RegDstRes.out_data[6]
-out_writeReg[7] <= uniShiftReg:RegDstRes.out_data[7]
+out_RegDstRes[0] <= uniShiftReg:RegDstRes.out_data[0]
+out_RegDstRes[1] <= uniShiftReg:RegDstRes.out_data[1]
+out_RegDstRes[2] <= uniShiftReg:RegDstRes.out_data[2]
+out_RegDstRes[3] <= uniShiftReg:RegDstRes.out_data[3]
+out_RegDstRes[4] <= uniShiftReg:RegDstRes.out_data[4]
+out_RegDstRes[5] <= uniShiftReg:RegDstRes.out_data[5]
+out_RegDstRes[6] <= uniShiftReg:RegDstRes.out_data[6]
+out_RegDstRes[7] <= uniShiftReg:RegDstRes.out_data[7]
 
 
-|MemWBRegister|uniShiftReg:dataMem
+|EXMemRegister|enARdFF_2:aluZero
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|enARdFF_2:memRead_FF
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|enARdFF_2:memWrite_FF
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|enARdFF_2:branch_FF
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|enARdFF_2:jmp_FF
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|enARdFF_2:regWrite_FF
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|enARdFF_2:memToReg_FF
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|uniShiftReg:branchALU
 in_clk => enArdFF_2:dff_lsb.i_clock
 in_clk => enArdFF_2:gen:1:dff.i_clock
 in_clk => enArdFF_2:gen:2:dff.i_clock
@@ -130,7 +231,7 @@ out_dataBar[6] <= enArdFF_2:gen:6:dff.o_qBar
 out_dataBar[7] <= enArdFF_2:dff_msb.o_qBar
 
 
-|MemWBRegister|uniShiftReg:dataMem|mux41:mux_lsb
+|EXMemRegister|uniShiftReg:branchALU|mux41:mux_lsb
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -146,7 +247,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:dataMem|enARdFF_2:dff_lsb
+|EXMemRegister|uniShiftReg:branchALU|enARdFF_2:dff_lsb
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -155,7 +256,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:dataMem|enARdFF_2:\gen:1:dff
+|EXMemRegister|uniShiftReg:branchALU|enARdFF_2:\gen:1:dff
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -164,7 +265,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:dataMem|mux41:\gen:1:mux
+|EXMemRegister|uniShiftReg:branchALU|mux41:\gen:1:mux
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -180,7 +281,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:dataMem|enARdFF_2:\gen:2:dff
+|EXMemRegister|uniShiftReg:branchALU|enARdFF_2:\gen:2:dff
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -189,7 +290,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:dataMem|mux41:\gen:2:mux
+|EXMemRegister|uniShiftReg:branchALU|mux41:\gen:2:mux
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -205,7 +306,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:dataMem|enARdFF_2:\gen:3:dff
+|EXMemRegister|uniShiftReg:branchALU|enARdFF_2:\gen:3:dff
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -214,7 +315,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:dataMem|mux41:\gen:3:mux
+|EXMemRegister|uniShiftReg:branchALU|mux41:\gen:3:mux
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -230,7 +331,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:dataMem|enARdFF_2:\gen:4:dff
+|EXMemRegister|uniShiftReg:branchALU|enARdFF_2:\gen:4:dff
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -239,7 +340,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:dataMem|mux41:\gen:4:mux
+|EXMemRegister|uniShiftReg:branchALU|mux41:\gen:4:mux
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -255,7 +356,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:dataMem|enARdFF_2:\gen:5:dff
+|EXMemRegister|uniShiftReg:branchALU|enARdFF_2:\gen:5:dff
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -264,7 +365,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:dataMem|mux41:\gen:5:mux
+|EXMemRegister|uniShiftReg:branchALU|mux41:\gen:5:mux
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -280,7 +381,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:dataMem|enARdFF_2:\gen:6:dff
+|EXMemRegister|uniShiftReg:branchALU|enARdFF_2:\gen:6:dff
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -289,7 +390,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:dataMem|mux41:\gen:6:mux
+|EXMemRegister|uniShiftReg:branchALU|mux41:\gen:6:mux
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -305,7 +406,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:dataMem|mux41:mux_msb
+|EXMemRegister|uniShiftReg:branchALU|mux41:mux_msb
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -321,7 +422,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:dataMem|enARdFF_2:dff_msb
+|EXMemRegister|uniShiftReg:branchALU|enARdFF_2:dff_msb
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -330,7 +431,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:resALU
+|EXMemRegister|uniShiftReg:resALU
 in_clk => enArdFF_2:dff_lsb.i_clock
 in_clk => enArdFF_2:gen:1:dff.i_clock
 in_clk => enArdFF_2:gen:2:dff.i_clock
@@ -397,7 +498,7 @@ out_dataBar[6] <= enArdFF_2:gen:6:dff.o_qBar
 out_dataBar[7] <= enArdFF_2:dff_msb.o_qBar
 
 
-|MemWBRegister|uniShiftReg:resALU|mux41:mux_lsb
+|EXMemRegister|uniShiftReg:resALU|mux41:mux_lsb
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -413,7 +514,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:resALU|enARdFF_2:dff_lsb
+|EXMemRegister|uniShiftReg:resALU|enARdFF_2:dff_lsb
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -422,7 +523,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:resALU|enARdFF_2:\gen:1:dff
+|EXMemRegister|uniShiftReg:resALU|enARdFF_2:\gen:1:dff
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -431,7 +532,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:resALU|mux41:\gen:1:mux
+|EXMemRegister|uniShiftReg:resALU|mux41:\gen:1:mux
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -447,7 +548,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:resALU|enARdFF_2:\gen:2:dff
+|EXMemRegister|uniShiftReg:resALU|enARdFF_2:\gen:2:dff
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -456,7 +557,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:resALU|mux41:\gen:2:mux
+|EXMemRegister|uniShiftReg:resALU|mux41:\gen:2:mux
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -472,7 +573,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:resALU|enARdFF_2:\gen:3:dff
+|EXMemRegister|uniShiftReg:resALU|enARdFF_2:\gen:3:dff
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -481,7 +582,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:resALU|mux41:\gen:3:mux
+|EXMemRegister|uniShiftReg:resALU|mux41:\gen:3:mux
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -497,7 +598,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:resALU|enARdFF_2:\gen:4:dff
+|EXMemRegister|uniShiftReg:resALU|enARdFF_2:\gen:4:dff
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -506,7 +607,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:resALU|mux41:\gen:4:mux
+|EXMemRegister|uniShiftReg:resALU|mux41:\gen:4:mux
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -522,7 +623,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:resALU|enARdFF_2:\gen:5:dff
+|EXMemRegister|uniShiftReg:resALU|enARdFF_2:\gen:5:dff
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -531,7 +632,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:resALU|mux41:\gen:5:mux
+|EXMemRegister|uniShiftReg:resALU|mux41:\gen:5:mux
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -547,7 +648,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:resALU|enARdFF_2:\gen:6:dff
+|EXMemRegister|uniShiftReg:resALU|enARdFF_2:\gen:6:dff
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -556,7 +657,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:resALU|mux41:\gen:6:mux
+|EXMemRegister|uniShiftReg:resALU|mux41:\gen:6:mux
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -572,7 +673,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:resALU|mux41:mux_msb
+|EXMemRegister|uniShiftReg:resALU|mux41:mux_msb
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -588,7 +689,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:resALU|enARdFF_2:dff_msb
+|EXMemRegister|uniShiftReg:resALU|enARdFF_2:dff_msb
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -597,25 +698,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|enARdFF_2:regWrite_FF
-i_resetBar => int_q.ACLR
-i_d => int_q.DATAIN
-i_enable => int_q.ENA
-i_clock => int_q.CLK
-o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|MemWBRegister|enARdFF_2:memToReg_FF
-i_resetBar => int_q.ACLR
-i_d => int_q.DATAIN
-i_enable => int_q.ENA
-i_clock => int_q.CLK
-o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|MemWBRegister|uniShiftReg:RegDstRes
+|EXMemRegister|uniShiftReg:RegDstRes
 in_clk => enArdFF_2:dff_lsb.i_clock
 in_clk => enArdFF_2:gen:1:dff.i_clock
 in_clk => enArdFF_2:gen:2:dff.i_clock
@@ -682,7 +765,7 @@ out_dataBar[6] <= enArdFF_2:gen:6:dff.o_qBar
 out_dataBar[7] <= enArdFF_2:dff_msb.o_qBar
 
 
-|MemWBRegister|uniShiftReg:RegDstRes|mux41:mux_lsb
+|EXMemRegister|uniShiftReg:RegDstRes|mux41:mux_lsb
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -698,7 +781,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:RegDstRes|enARdFF_2:dff_lsb
+|EXMemRegister|uniShiftReg:RegDstRes|enARdFF_2:dff_lsb
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -707,7 +790,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:RegDstRes|enARdFF_2:\gen:1:dff
+|EXMemRegister|uniShiftReg:RegDstRes|enARdFF_2:\gen:1:dff
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -716,7 +799,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:RegDstRes|mux41:\gen:1:mux
+|EXMemRegister|uniShiftReg:RegDstRes|mux41:\gen:1:mux
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -732,7 +815,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:RegDstRes|enARdFF_2:\gen:2:dff
+|EXMemRegister|uniShiftReg:RegDstRes|enARdFF_2:\gen:2:dff
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -741,7 +824,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:RegDstRes|mux41:\gen:2:mux
+|EXMemRegister|uniShiftReg:RegDstRes|mux41:\gen:2:mux
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -757,7 +840,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:RegDstRes|enARdFF_2:\gen:3:dff
+|EXMemRegister|uniShiftReg:RegDstRes|enARdFF_2:\gen:3:dff
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -766,7 +849,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:RegDstRes|mux41:\gen:3:mux
+|EXMemRegister|uniShiftReg:RegDstRes|mux41:\gen:3:mux
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -782,7 +865,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:RegDstRes|enARdFF_2:\gen:4:dff
+|EXMemRegister|uniShiftReg:RegDstRes|enARdFF_2:\gen:4:dff
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -791,7 +874,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:RegDstRes|mux41:\gen:4:mux
+|EXMemRegister|uniShiftReg:RegDstRes|mux41:\gen:4:mux
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -807,7 +890,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:RegDstRes|enARdFF_2:\gen:5:dff
+|EXMemRegister|uniShiftReg:RegDstRes|enARdFF_2:\gen:5:dff
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -816,7 +899,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:RegDstRes|mux41:\gen:5:mux
+|EXMemRegister|uniShiftReg:RegDstRes|mux41:\gen:5:mux
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -832,7 +915,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:RegDstRes|enARdFF_2:\gen:6:dff
+|EXMemRegister|uniShiftReg:RegDstRes|enARdFF_2:\gen:6:dff
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA
@@ -841,7 +924,7 @@ o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:RegDstRes|mux41:\gen:6:mux
+|EXMemRegister|uniShiftReg:RegDstRes|mux41:\gen:6:mux
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -857,7 +940,7 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:RegDstRes|mux41:mux_msb
+|EXMemRegister|uniShiftReg:RegDstRes|mux41:mux_msb
 zero => outp.IN0
 one => outp.IN0
 two => outp.IN0
@@ -873,7 +956,274 @@ sel1 => outp.IN1
 outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MemWBRegister|uniShiftReg:RegDstRes|enARdFF_2:dff_msb
+|EXMemRegister|uniShiftReg:RegDstRes|enARdFF_2:dff_msb
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|uniShiftReg:rdData2
+in_clk => enArdFF_2:dff_lsb.i_clock
+in_clk => enArdFF_2:gen:1:dff.i_clock
+in_clk => enArdFF_2:gen:2:dff.i_clock
+in_clk => enArdFF_2:gen:3:dff.i_clock
+in_clk => enArdFF_2:gen:4:dff.i_clock
+in_clk => enArdFF_2:gen:5:dff.i_clock
+in_clk => enArdFF_2:gen:6:dff.i_clock
+in_clk => enArdFF_2:dff_msb.i_clock
+in_reset => enArdFF_2:dff_lsb.i_resetBar
+in_reset => enArdFF_2:gen:1:dff.i_resetBar
+in_reset => enArdFF_2:gen:2:dff.i_resetBar
+in_reset => enArdFF_2:gen:3:dff.i_resetBar
+in_reset => enArdFF_2:gen:4:dff.i_resetBar
+in_reset => enArdFF_2:gen:5:dff.i_resetBar
+in_reset => enArdFF_2:gen:6:dff.i_resetBar
+in_reset => enArdFF_2:dff_msb.i_resetBar
+in_enable => enArdFF_2:dff_lsb.i_enable
+in_enable => enArdFF_2:gen:1:dff.i_enable
+in_enable => enArdFF_2:gen:2:dff.i_enable
+in_enable => enArdFF_2:gen:3:dff.i_enable
+in_enable => enArdFF_2:gen:4:dff.i_enable
+in_enable => enArdFF_2:gen:5:dff.i_enable
+in_enable => enArdFF_2:gen:6:dff.i_enable
+in_enable => enArdFF_2:dff_msb.i_enable
+in_data[0] => mux41:mux_lsb.three
+in_data[1] => mux41:gen:1:mux.three
+in_data[2] => mux41:gen:2:mux.three
+in_data[3] => mux41:gen:3:mux.three
+in_data[4] => mux41:gen:4:mux.three
+in_data[5] => mux41:gen:5:mux.three
+in_data[6] => mux41:gen:6:mux.three
+in_data[7] => mux41:mux_msb.three
+in_shl => mux41:mux_lsb.sel0
+in_shl => mux41:gen:1:mux.sel0
+in_shl => mux41:gen:2:mux.sel0
+in_shl => mux41:gen:3:mux.sel0
+in_shl => mux41:gen:4:mux.sel0
+in_shl => mux41:gen:5:mux.sel0
+in_shl => mux41:gen:6:mux.sel0
+in_shl => mux41:mux_msb.sel0
+in_shr => mux41:mux_lsb.sel1
+in_shr => mux41:gen:1:mux.sel1
+in_shr => mux41:gen:2:mux.sel1
+in_shr => mux41:gen:3:mux.sel1
+in_shr => mux41:gen:4:mux.sel1
+in_shr => mux41:gen:5:mux.sel1
+in_shr => mux41:gen:6:mux.sel1
+in_shr => mux41:mux_msb.sel1
+out_data[0] <= enArdFF_2:dff_lsb.o_q
+out_data[1] <= enArdFF_2:gen:1:dff.o_q
+out_data[2] <= enArdFF_2:gen:2:dff.o_q
+out_data[3] <= enArdFF_2:gen:3:dff.o_q
+out_data[4] <= enArdFF_2:gen:4:dff.o_q
+out_data[5] <= enArdFF_2:gen:5:dff.o_q
+out_data[6] <= enArdFF_2:gen:6:dff.o_q
+out_data[7] <= enArdFF_2:dff_msb.o_q
+out_dataBar[0] <= enArdFF_2:dff_lsb.o_qBar
+out_dataBar[1] <= enArdFF_2:gen:1:dff.o_qBar
+out_dataBar[2] <= enArdFF_2:gen:2:dff.o_qBar
+out_dataBar[3] <= enArdFF_2:gen:3:dff.o_qBar
+out_dataBar[4] <= enArdFF_2:gen:4:dff.o_qBar
+out_dataBar[5] <= enArdFF_2:gen:5:dff.o_qBar
+out_dataBar[6] <= enArdFF_2:gen:6:dff.o_qBar
+out_dataBar[7] <= enArdFF_2:dff_msb.o_qBar
+
+
+|EXMemRegister|uniShiftReg:rdData2|mux41:mux_lsb
+zero => outp.IN0
+one => outp.IN0
+two => outp.IN0
+three => outp.IN0
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|uniShiftReg:rdData2|enARdFF_2:dff_lsb
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|uniShiftReg:rdData2|enARdFF_2:\gen:1:dff
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|uniShiftReg:rdData2|mux41:\gen:1:mux
+zero => outp.IN0
+one => outp.IN0
+two => outp.IN0
+three => outp.IN0
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|uniShiftReg:rdData2|enARdFF_2:\gen:2:dff
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|uniShiftReg:rdData2|mux41:\gen:2:mux
+zero => outp.IN0
+one => outp.IN0
+two => outp.IN0
+three => outp.IN0
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|uniShiftReg:rdData2|enARdFF_2:\gen:3:dff
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|uniShiftReg:rdData2|mux41:\gen:3:mux
+zero => outp.IN0
+one => outp.IN0
+two => outp.IN0
+three => outp.IN0
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|uniShiftReg:rdData2|enARdFF_2:\gen:4:dff
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|uniShiftReg:rdData2|mux41:\gen:4:mux
+zero => outp.IN0
+one => outp.IN0
+two => outp.IN0
+three => outp.IN0
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|uniShiftReg:rdData2|enARdFF_2:\gen:5:dff
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|uniShiftReg:rdData2|mux41:\gen:5:mux
+zero => outp.IN0
+one => outp.IN0
+two => outp.IN0
+three => outp.IN0
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|uniShiftReg:rdData2|enARdFF_2:\gen:6:dff
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|uniShiftReg:rdData2|mux41:\gen:6:mux
+zero => outp.IN0
+one => outp.IN0
+two => outp.IN0
+three => outp.IN0
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|uniShiftReg:rdData2|mux41:mux_msb
+zero => outp.IN0
+one => outp.IN0
+two => outp.IN0
+three => outp.IN0
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel0 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+sel1 => outp.IN1
+outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EXMemRegister|uniShiftReg:rdData2|enARdFF_2:dff_msb
 i_resetBar => int_q.ACLR
 i_d => int_q.DATAIN
 i_enable => int_q.ENA

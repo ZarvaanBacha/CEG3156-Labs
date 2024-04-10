@@ -1,0 +1,116 @@
+m255
+K3
+13
+cModel Technology
+Z0 dX:\School\Year 5\Computer Systems Design\CEG3156-Labs\Lab 3 Components\Pipeline Buffer\simulation\modelsim
+Eexmemregister
+Z1 w1712588848
+Z2 DPx4 core 10 core_utils 0 22 oJ<N;S;Bz5kj66N0_`_zQ0
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dX:\School\Year 5\Computer Systems Design\CEG3156-Labs\Lab 3 Components\Pipeline Buffer\simulation\modelsim
+Z6 8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/pipeline/EXMemRegister.vhd
+Z7 FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/pipeline/EXMemRegister.vhd
+l0
+L5
+VgFzP_1LSL=0NX:aXlDY_X2
+!s100 `Y6ikWlJSX2I_1WlMKEm=1
+Z8 OV;C;10.1d;51
+31
+!i10b 1
+Z9 !s108 1712778149.423000
+Z10 !s90 -reportprogress|300|-93|-work|pipeline|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/pipeline/EXMemRegister.vhd|
+Z11 !s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/pipeline/EXMemRegister.vhd|
+Z12 o-93 -work pipeline -O0
+Z13 tExplicit 1
+Artl
+R2
+R3
+R4
+Z14 DEx4 work 13 exmemregister 0 22 gFzP_1LSL=0NX:aXlDY_X2
+l27
+L26
+Z15 VT_LL^9mJnZHb6AbnGQ]?Q1
+Z16 !s100 OUK[aFBPU^MzO?SWbjiW62
+R8
+31
+!i10b 1
+R9
+R10
+R11
+R12
+R13
+Eidifregister
+R1
+R2
+R3
+R4
+R5
+Z17 8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/pipeline/IDIFRegister.vhd
+Z18 FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/pipeline/IDIFRegister.vhd
+l0
+L5
+V=RC_>FzNNAH0=afnd^0z73
+R8
+31
+Z19 !s108 1712776719.913000
+Z20 !s90 -reportprogress|300|-93|-work|pipeline|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/pipeline/IDIFRegister.vhd|
+Z21 !s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/pipeline/IDIFRegister.vhd|
+R12
+R13
+!s100 XiLD>Q_8CSz_2Y?i;`<610
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 12 idifregister 0 22 =RC_>FzNNAH0=afnd^0z73
+l18
+L17
+VI^2_3]ReXc88<BQPMibAl2
+R8
+31
+R19
+R20
+R21
+R12
+R13
+!s100 G>?Q413JI83E_EK`CGW:m3
+!i10b 1
+Ememwbregister
+R1
+R2
+R3
+R4
+R5
+Z22 8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/pipeline/MemWBRegister.vhd
+Z23 FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/pipeline/MemWBRegister.vhd
+l0
+L6
+VT38NVkSA>2J=HV3W3OWkG1
+R8
+31
+Z24 !s108 1712775178.840000
+Z25 !s90 -reportprogress|300|-93|-work|pipeline|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/pipeline/MemWBRegister.vhd|
+Z26 !s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/pipeline/MemWBRegister.vhd|
+R12
+R13
+!s100 a5AIjVb=CB=LXzQjdcY@B0
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 13 memwbregister 0 22 T38NVkSA>2J=HV3W3OWkG1
+l23
+L22
+V1NUY=k8FURdl@jR6<RS5<0
+R8
+31
+R24
+R25
+R26
+R12
+R13
+!s100 36Cie2EQGSBWY?E]hSj=;1
+!i10b 1

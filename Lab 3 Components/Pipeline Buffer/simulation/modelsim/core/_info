@@ -1,0 +1,166 @@
+m255
+K3
+13
+cModel Technology
+Z0 dX:\School\Year 5\Computer Systems Design\CEG3156-Labs\Lab 3 Components\Pipeline Buffer\simulation\modelsim
+Pcore_utils
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 w1712588847
+Z4 dX:\School\Year 5\Computer Systems Design\CEG3156-Labs\Lab 3 Components\Pipeline Buffer\simulation\modelsim
+8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/core_utils.vhd
+FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/core_utils.vhd
+l0
+L4
+VoJ<N;S;Bz5kj66N0_`_zQ0
+Z5 OV;C;10.1d;51
+31
+Z6 o-93 -work core -O0
+Z7 tExplicit 1
+!s100 iEdj:60V:3<=YjSOm[DQ10
+!i10b 1
+!s108 1712778149.002000
+!s90 -reportprogress|300|-93|-work|core|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/core_utils.vhd|
+!s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/core_utils.vhd|
+Eenardff_2
+R3
+R1
+R2
+R4
+Z8 8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/enardFF_2.vhd
+Z9 FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/enardFF_2.vhd
+l0
+L31
+V1h_ZjfFA9OSEZJJXCIj2n1
+R5
+31
+Z10 !s108 1712778148.830000
+Z11 !s90 -reportprogress|300|-93|-work|core|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/enardFF_2.vhd|
+Z12 !s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/enardFF_2.vhd|
+R6
+R7
+!s100 LM:aJ[Ade62O^TDCQB2jH0
+!i10b 1
+Artl
+R1
+R2
+DEx4 work 9 enardff_2 0 22 1h_ZjfFA9OSEZJJXCIj2n1
+l43
+L40
+VozjUK0=igKGZa@Nn02eRX1
+R5
+31
+R10
+R11
+R12
+R6
+R7
+!s100 n`NKG5gX7V@?eV@4dAU663
+!i10b 1
+Emux41
+R3
+R1
+R2
+R4
+Z13 8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/mux41n.vhd
+Z14 FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/mux41n.vhd
+l0
+L3
+Vo0BMl_4V<fK^;YhikA_Y80
+R5
+31
+Z15 !s108 1712778148.579000
+Z16 !s90 -reportprogress|300|-93|-work|core|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/mux41n.vhd|
+Z17 !s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/mux41n.vhd|
+R6
+R7
+!s100 2<kbIc7EUAe6c=?;i^>Ca1
+!i10b 1
+Artl
+R1
+R2
+DEx4 work 5 mux41 0 22 o0BMl_4V<fK^;YhikA_Y80
+l11
+L10
+V>HmIeZ74;=fKKgQ9FA2NP2
+R5
+31
+R15
+R16
+R17
+R6
+R7
+!s100 ;:_8Y4;fzT4Ce3oQgcCf22
+!i10b 1
+Emux41n
+R3
+R1
+R2
+R4
+R13
+R14
+l0
+L20
+Vo?`KAIL3LSPlCHcbD>TA;3
+R5
+31
+R15
+R16
+R17
+R6
+R7
+!s100 zeHMJkQb>P_0PR9?V7gD33
+!i10b 1
+Artl
+R1
+R2
+DEx4 work 6 mux41n 0 22 o?`KAIL3LSPlCHcbD>TA;3
+l38
+L29
+VUh:4Bee_KQIjc1DOe0<_K1
+R5
+31
+R15
+R16
+R17
+R6
+R7
+!s100 oKWIY[_>`:i:=YdG7JNRN3
+!i10b 1
+Eunishiftreg
+R3
+Z18 DPx4 core 10 core_utils 0 22 oJ<N;S;Bz5kj66N0_`_zQ0
+R1
+R2
+R4
+Z19 8X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/uniShiftReg.vhd
+Z20 FX:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/uniShiftReg.vhd
+l0
+L7
+V0lVY[VE]JV97i>h?@=2722
+!s100 leX2o7oM^aJZJ<=IF<eg=2
+R5
+31
+!i10b 1
+Z21 !s108 1712778149.142000
+Z22 !s90 -reportprogress|300|-93|-work|core|X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/uniShiftReg.vhd|
+Z23 !s107 X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/uniShiftReg.vhd|
+R6
+R7
+Artl
+R18
+R1
+R2
+Z24 DEx4 work 11 unishiftreg 0 22 0lVY[VE]JV97i>h?@=2722
+l19
+L17
+Z25 V8ceN:3]SVBznb?Uezf23i0
+Z26 !s100 43SenHaDOOD;B`MEMFO>o2
+R5
+31
+!i10b 1
+R21
+R22
+R23
+R6
+R7
