@@ -1,0 +1,48 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do testbench_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/mux41n.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux41
+# -- Compiling architecture rtl of mux41
+# -- Compiling entity mux41n
+# -- Compiling architecture rtl of mux41n
+# vcom -93 -work work {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/enardFF_2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity enARdFF_2
+# -- Compiling architecture rtl of enARdFF_2
+# vcom -93 -work work {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/core/core_utils.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package core_utils
+# vcom -93 -work work {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/MemWBRegister.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/MemWBRegister.vhd(3): Library core not found.
+# ** Error: X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/MemWBRegister.vhd(4): (vcom-1136) Unknown identifier "core".
+# 
+# ** Error: X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/MemWBRegister.vhd(6): VHDL Compiler exiting
+# ** Error: C:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./testbench_run_msim_rtl_vhdl.do line 11
+# C:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {X:/School/Year 5/Computer Systems Design/CEG3156-Labs/Lab 3 Components/Pipeline Buffer/MemWBRegister.vhd}"
